@@ -23,7 +23,7 @@ class ElectricVehicle(Vehicle):
         self._battery = max(self.capacity, self.capacity + fuel)
 
     def print_info(self):
-        super().print_info()list
+        super().print_info()
 
 
 
