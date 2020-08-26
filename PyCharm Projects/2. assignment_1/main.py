@@ -54,7 +54,6 @@ class DSBot(Agent):
 
         # New instance vars
         self._spread = [0, 1000]  # tracks current best bid and ask
-
         self._active_orders = {}
 
     def role(self):
@@ -88,10 +87,14 @@ class DSBot(Agent):
         """
         for order in orders:
             self.inform(order)
-        #     if order.is_pending:
-        #         self._active_orders[order.fm_id] = order
-        #     elif not order.is_pending and order.fm_id in self._active_orders:
-        #         del self._active_orders[order.fm_id]
+
+            # track pending orders
+            if order.is_pending:
+                self._active_orders[order.fm_id] = order
+
+            # delete completed orders
+            elif not order.is_pending and order.fm_id in self._active_orders:
+                del self._active_orders[order.fm_id]
 
         # only call this when there is a new order from the manager
         self._get_best_bid_ask()
@@ -116,10 +119,10 @@ class DSBot(Agent):
         # reset bid and asks! important if not tracking individual orders
         self._spread = [0, 1000]
 
-        # key is order fmid, value is order object
-        all_orders = Order.all()
+        # # key is order fmid, value is order object
+        # all_orders = Order.all()
 
-        for _, order in all_orders.items():
+        for _, order in self._active_orders.items():
 
             if order.is_pending and not order.is_private:
 
