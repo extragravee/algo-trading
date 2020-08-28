@@ -1,5 +1,28 @@
 """
 This is a template for Project 1, Task 1 (Induced demand-supply)
+
+IMPLEMENTATION NOTES: I only buy in private if public order succeeds
+                        so in the event private expires right as public trades, i will
+                        have sent the order in the private - this will automatically
+                        get cleared out in some time - see timed function
+
+0. public market orders based on private done
+0. public order deletion when private expire done
+1. implement corresponding orders in the private market - ONLY when public trade goes through
+2. Ensure code keeps running if there are multiple units / unit changes in private
+2. do a timed function where i check if there are ONLY my orders in private market (look at implementation notes above)
+    then i delete my own private orders
+
+
+
+
+
+
+REWRITE ALL LOGIC IN MAKE_MARKET, AND ENSURE THAT WALKING THE ORDER.CURRENT BOOK EACH TIME
+THERE IS AN UPDATE
+
+AFTER WALKING TEH BOOK, TRACK IF THERE IS A PRIV ORDER, TRACK IF U HAVE PENDIN IN MARKET
+AND MAKE A DECISION ACCORDINGLY
 """
 import copy
 from enum import Enum
@@ -42,6 +65,7 @@ class DSBot(Agent):
         self._bot_type = bot_type
         self._waiting_for_server = False
         self._sent_order_count = 0
+        self._pending_order = False
 
     def role(self):
         return self._role
@@ -79,9 +103,13 @@ class DSBot(Agent):
         for order in orders:
             self.inform(order)
 
-            # if order.is_private and not order.mine: FOR ACTUAL SIMULATION TIMES
             # pending order in private market
+            # even if order is partially filled out, it returns 3 entries
+            # the buy for x units going through (consumed, not pending)
+            # the sell (how many units were sold) (consumed not pending)
+            # an order update, with outstanding quantity and price (pending)
             if order.is_private and order.is_pending:
+                # if order.is_private and not order.mine: FOR ACTUAL SIMULATION TIMES
                 # assign correct role to bot
 
                 if order.order_side == OrderSide.BUY:
@@ -98,18 +126,28 @@ class DSBot(Agent):
 
             # during actual simulation add a not order.mine to this
             # if the private order gets cancelled, delete our order from public market
-            elif order.is_private and order.order_type == OrderType.CANCEL:
+            if order.is_private and order.order_type == OrderType.CANCEL:
                 # for some reason, all the order attributes need to be present, so it's not
                 # possible to keep track of your old order by reference
                 # old order reference only contain the specific attributes we define, everything
                 # else is None type
                 orders = Order.current()
                 for _, o in orders.items():
-                    if o.mine:
+
+                    # future proofing, if multiple types of orders in priv and one type expires
+                    # only delete the corresponding orders in public
+                    if o.mine and not o.is_private and order.order_side == o.order_side\
+                            and not self._waiting_for_server:
                         cancel_order = copy.copy(o)
                         cancel_order.ref = f"Cancel {o.ref}"
                         cancel_order.order_type = OrderType.CANCEL
                         self.send_order(cancel_order)
+                        self._waiting_for_server = True
+                        break
+
+            # if our order gets consumed
+            if order.mine and not order.is_private and order.is_consumed:
+                self._pending_order = False
 
     def _make_market(self, priv_order: Order):
         """
@@ -119,6 +157,12 @@ class DSBot(Agent):
             private order price - Profit margin for buying
             private order price + Profit margin for selling
         """
+        self._pending_order = False
+
+        # ensure we don't have an already active/pending order
+        for _, order in Order.current().items():
+            if order.mine and not order.is_consumed and not order.is_private:
+                self._pending_order = True
 
         # PUBLIC MARKET SIDE ======================================================
 
@@ -137,7 +181,8 @@ class DSBot(Agent):
         ref = f"Order: {self._sent_order_count} - SM"
 
         # submit order
-        self._create_new_order(market, price, units, order_side, order_type, ref)
+        if not self._pending_order and not self._waiting_for_server:
+            self._create_new_order(market, price, units, order_side, order_type, ref)
 
         # PRIVATE MARKET SIDE =====================================================
 
