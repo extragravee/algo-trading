@@ -1,7 +1,7 @@
 """
 This is a template for Project 1, Task 1 (Induced demand-supply)
 """
-
+import copy
 from enum import Enum
 from fmclient import Agent, OrderSide, Order, OrderType, Session, Market
 from typing import List
@@ -41,7 +41,6 @@ class DSBot(Agent):
         # ------ Add new class variable _bot_type to store the type of the bot
         self._bot_type = bot_type
         self._waiting_for_server = False
-        self._sent_orders = {}
         self._sent_order_count = 0
 
     def role(self):
@@ -80,24 +79,37 @@ class DSBot(Agent):
         for order in orders:
             self.inform(order)
 
-            # pending order in private market
             # if order.is_private and not order.mine: FOR ACTUAL SIMULATION TIMES
-
-            if order.is_private:
+            # pending order in private market
+            if order.is_private and order.is_pending:
                 # assign correct role to bot
-                if order.order_side == OrderSide.BUY \
-                        and order.is_pending:
+
+                if order.order_side == OrderSide.BUY:
                     self._role = Role.BUYER
 
-                elif order.order_side == OrderSide.SELL \
-                        and order.is_pending:
+                elif order.order_side == OrderSide.SELL:
                     self._role = Role.SELLER
 
                 # call strategy based on bot type
-                if self._bot_type == BotType.MARKET_MAKER and order.is_pending:
+                if self._bot_type == BotType.MARKET_MAKER:
                     self._make_market(order)
-                elif self._bot_type == BotType.REACTIVE and order.is_pending:
+                elif self._bot_type == BotType.REACTIVE:
                     self._react_to_market(order)
+
+            # during actual simulation add a not order.mine to this
+            # if the private order gets cancelled, delete our order from public market
+            elif order.is_private and order.order_type == OrderType.CANCEL:
+                # for some reason, all the order attributes need to be present, so it's not
+                # possible to keep track of your old order by reference
+                # old order reference only contain the specific attributes we define, everything
+                # else is None type
+                orders = Order.current()
+                for _, o in orders.items():
+                    if o.mine:
+                        cancel_order = copy.copy(o)
+                        cancel_order.ref = f"Cancel {o.ref}"
+                        cancel_order.order_type = OrderType.CANCEL
+                        self.send_order(cancel_order)
 
     def _make_market(self, priv_order: Order):
         """
@@ -126,8 +138,6 @@ class DSBot(Agent):
 
         # submit order
         self._create_new_order(market, price, units, order_side, order_type, ref)
-        self._waiting_for_server = True
-        self._sent_order_count += 1
 
         # PRIVATE MARKET SIDE =====================================================
 
@@ -155,6 +165,8 @@ class DSBot(Agent):
         new_order.ref = ref
 
         self.send_order(new_order)
+        self._waiting_for_server = True
+        self._sent_order_count += 1
 
     def _print_trade_opportunity(self, other_order):
         self.inform(f"I am a {self.role()} with profitable order {other_order}")
