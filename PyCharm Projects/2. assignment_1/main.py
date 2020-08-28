@@ -1,33 +1,16 @@
 """
-
-FNCE30010 - Algorithmic Trading
-921322
-Sidakpreet Mann
-Project 1, Task 1 (Induced demand-supply)
-
-Completed:
-1
-2. is role what we are doing the the public market?
-    eg. private market has buy order, we need to buy in public, but sell in private
-        so is the role buy? or sell?
-
-        **assuming role is what we do in the public market**
-3.
-4.
-
-For now using naive approach and cycling all orders to find best bid,ask
+This is a template for Project 1, Task 1 (Induced demand-supply)
 """
 
-import copy
 from enum import Enum
-from fmclient import Agent, OrderSide, Order, OrderType, Session
+from fmclient import Agent, OrderSide, Order, OrderType, Session, Market
 from typing import List
 
 # Student details
 SUBMISSION = {"number": "921322", "name": "Sidakpreet Mann"}
 
 # ------ Add a variable called PROFIT_MARGIN -----
-PROFIT_MARGIN = 0
+PROFIT_MARGIN = 10
 
 
 # Enum for the roles of the bot
@@ -42,6 +25,12 @@ class BotType(Enum):
     REACTIVE = 1
 
 
+# Differentiate between orders, for self._create_order() function
+class OrderForMarket(Enum):
+    PUBLIC = 0
+    PRIVATE = 1
+
+
 class DSBot(Agent):
     # ------ Add an extra argument bot_type to the constructor -----
     def __init__(self, account, email, password, marketplace_id, bot_type):
@@ -51,10 +40,9 @@ class DSBot(Agent):
         self._role = None
         # ------ Add new class variable _bot_type to store the type of the bot
         self._bot_type = bot_type
-
-        # New instance vars
-        self._spread = [0, 1000]  # tracks current best bid and ask
-        self._active_orders = {}
+        self._waiting_for_server = False
+        self._sent_orders = {}
+        self._sent_order_count = 0
 
     def role(self):
         return self._role
@@ -64,78 +52,109 @@ class DSBot(Agent):
 
     def initialised(self):
         """
-        Stores the market parameters
-        1572 - PublicWidget Market
-        1573 - PrivateWidget Market
+        Initialises bot
+        Stores the market id parameters for Order Management
         """
-
-        # dict to track market params
+        # dict to track market attributes
         markets_to_trade = self.markets
         for key in markets_to_trade:
             self.inform(markets_to_trade[key])
 
+            # initialise market ids
+            if markets_to_trade[key].private_market:
+                self._private_market_id = key
+            else:
+                self._public_market_id = key
+
     def order_accepted(self, order: Order):
-        pass
+        self._waiting_for_server = False
 
     def order_rejected(self, info, order: Order):
-        pass
+        self._waiting_for_server = False
 
     def received_orders(self, orders: List[Order]):
         """
-        Subscriber to Order book updates
+        Subscribed to Order book updates
         :param orders: list of order objects
         """
         for order in orders:
             self.inform(order)
 
-            # track pending orders
-            if order.is_pending:
-                self._active_orders[order.fm_id] = order
+            # pending order in private market
+            # if order.is_private and not order.mine: FOR ACTUAL SIMULATION TIMES
 
-            # delete completed orders
-            elif not order.is_pending and order.fm_id in self._active_orders:
-                del self._active_orders[order.fm_id]
+            if order.is_private:
+                # assign correct role to bot
+                if order.order_side == OrderSide.BUY \
+                        and order.is_pending:
+                    self._role = Role.BUYER
 
-        # only call this when there is a new order from the manager
-        self._get_best_bid_ask()
-        print(self._spread)
-            # # track orders received by manager
-            # if order.is_private and not order.mine:
-            #     self._role = order.order_side
-            #
-            #     bid, ask = self._best_bid_ask()
-            #     # based on bot type, implement strategy
-            #     if self._bot_type == BotType.REACTIVE:
-            #         pass
-            #     else:  # BotType.MarketMaker
-            #         pass
+                elif order.order_side == OrderSide.SELL \
+                        and order.is_pending:
+                    self._role = Role.SELLER
 
-    def _get_best_bid_ask(self):
+                # call strategy based on bot type
+                if self._bot_type == BotType.MARKET_MAKER and order.is_pending:
+                    self._make_market(order)
+                elif self._bot_type == BotType.REACTIVE and order.is_pending:
+                    self._react_to_market(order)
+
+    def _make_market(self, priv_order: Order):
         """
-        Returns the bid and ask order, quantity pairs
-        :param orders: List of all orders
+        Implements market-maker functionality
+
+        Public order price determination -
+            private order price - Profit margin for buying
+            private order price + Profit margin for selling
+        """
+
+        # PUBLIC MARKET SIDE ======================================================
+
+        market = self._public_market_id
+
+        if self._role == Role.BUYER:
+            price = priv_order.price - PROFIT_MARGIN
+            order_side = OrderSide.BUY
+        else:
+            price = priv_order.price + PROFIT_MARGIN
+            order_side = OrderSide.SELL
+
+        # fixed attributes
+        units = 1
+        order_type = OrderType.LIMIT
+        ref = f"Order: {self._sent_order_count} - SM"
+
+        # submit order
+        self._create_new_order(market, price, units, order_side, order_type, ref)
+        self._waiting_for_server = True
+        self._sent_order_count += 1
+
+        # PRIVATE MARKET SIDE =====================================================
+
+    def _create_new_order(self, market: int,
+                          price: int,
+                          units: int,
+                          order_side: OrderSide,
+                          order_type: OrderType,
+                          ref: str):
+        """
+        :param market: market ID for the order
+        :param price: determined price
+        :param units: # of units to be submitted, fixed to 1
+        :param order_side: buy or sell
+        :param order_type: limit or market, fixed to limit
+        :param ref: customer string of format "Order: {self._sent_order_count} - SM"
         :return:
         """
-        # reset bid and asks! important if not tracking individual orders
-        self._spread = [0, 1000]
+        new_order = Order.create_new()
+        new_order.market = Market(market)
+        new_order.price = price
+        new_order.units = units
+        new_order.order_side = order_side
+        new_order.order_type = order_type
+        new_order.ref = ref
 
-        # # key is order fmid, value is order object
-        # all_orders = Order.all()
-
-        for _, order in self._active_orders.items():
-
-            if order.is_pending and not order.is_private:
-
-                # update best bids
-                if order.order_side == OrderSide.BUY:
-                    if order.price > self._spread[0]:
-                        self._spread[0] = order.price
-
-                # update best ask
-                if order.order_side == OrderSide.SELL:
-                    if order.price < self._spread[1]:
-                        self._spread[1] = order.price
-
+        self.send_order(new_order)
 
     def _print_trade_opportunity(self, other_order):
         self.inform(f"I am a {self.role()} with profitable order {other_order}")
@@ -144,17 +163,7 @@ class DSBot(Agent):
         pass
 
     def received_holdings(self, holdings):
-        """
-        Tracks the portfolio holdings
-        :param holdings: attributes of interest cash, cash_available, assets
-        """
-
-        cash = holdings.cash
-        cash_available = holdings.cash_available
-
-        # dict to track units of widgets and private widgets
-        assets = holdings.assets
-        # print(assets)
+        pass
 
     def received_session_info(self, session: Session):
         pass
@@ -164,12 +173,10 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-
-    # For testing
-    # use Marketplace_ID 898 - trial market
-    # bot type is reactive atm
     MARKETPLACE_ID = 898
-    BOT_TYPE = BotType.REACTIVE
 
-    ds_bot = DSBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID, BOT_TYPE)
+    B_TYPE = BotType.MARKET_MAKER
+    # B_TYPE = BotType.REACTIVE
+
+    ds_bot = DSBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID, B_TYPE)
     ds_bot.run()
