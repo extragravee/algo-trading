@@ -1,28 +1,5 @@
 """
 This is a template for Project 1, Task 1 (Induced demand-supply)
-
-IMPLEMENTATION NOTES: I only buy in private if public order succeeds
-                        so in the event private expires right as public trades, i will
-                        have sent the order in the private - this will automatically
-                        get cleared out in some time - see timed function
-
-0. public market orders based on private done
-0. public order deletion when private expire done
-1. implement corresponding orders in the private market - ONLY when public trade goes through
-2. Ensure code keeps running if there are multiple units / unit changes in private
-2. do a timed function where i check if there are ONLY my orders in private market (look at implementation notes above)
-    then i delete my own private orders
-
-
-
-
-
-
-REWRITE ALL LOGIC IN MAKE_MARKET, AND ENSURE THAT WALKING THE ORDER.CURRENT BOOK EACH TIME
-THERE IS AN UPDATE
-
-AFTER WALKING TEH BOOK, TRACK IF THERE IS A PRIV ORDER, TRACK IF U HAVE PENDIN IN MARKET
-AND MAKE A DECISION ACCORDINGLY
 """
 import copy
 from enum import Enum
@@ -48,12 +25,6 @@ class BotType(Enum):
     REACTIVE = 1
 
 
-# Differentiate between orders, for self._create_order() function
-class OrderForMarket(Enum):
-    PUBLIC = 0
-    PRIVATE = 1
-
-
 class DSBot(Agent):
     # ------ Add an extra argument bot_type to the constructor -----
     def __init__(self, account, email, password, marketplace_id, bot_type):
@@ -63,9 +34,9 @@ class DSBot(Agent):
         self._role = None
         # ------ Add new class variable _bot_type to store the type of the bot
         self._bot_type = bot_type
-        self._waiting_for_server = False
         self._sent_order_count = 0
-        self._pending_order = False
+        self._waiting_for_server = False
+        self._priv_order_exists = False
 
     def role(self):
         return self._role
@@ -100,91 +71,76 @@ class DSBot(Agent):
         Subscribed to Order book updates
         :param orders: list of order objects
         """
+
         for order in orders:
             self.inform(order)
 
-            # pending order in private market
-            # even if order is partially filled out, it returns 3 entries
-            # the buy for x units going through (consumed, not pending)
-            # the sell (how many units were sold) (consumed not pending)
-            # an order update, with outstanding quantity and price (pending)
+            # track if there is a private market order from manager
+            # SIMULATION
+            # if order.is_private and order.is_pending and not order.mine:
             if order.is_private and order.is_pending:
-                # if order.is_private and not order.mine: FOR ACTUAL SIMULATION TIMES
-                # assign correct role to bot
+                self._priv_order_exists = True
+            elif order.is_private and order.order_type == OrderType.CANCEL:
+                self._priv_order_exists = False
 
+        # call strategy based on bot type
+        if self._bot_type == BotType.MARKET_MAKER:
+            self._make_market()
+
+    def _make_market(self):
+
+        num_pending_orders = 0
+        num_manager_order = 0
+        manager_order = None
+
+        for _, order in Order.current().items():
+
+            # if i have a current order in the public market
+            if order.mine and not order.is_private:
+                num_pending_orders += 1
+
+                # cancel stale orders in public market
+                if not self._priv_order_exists and not self._waiting_for_server:
+                    cancel_order = copy.copy(order)
+                    cancel_order.ref = f"Cancel {order.ref}"
+                    cancel_order.order_type = OrderType.CANCEL
+                    self.send_order(cancel_order)
+                    self._waiting_for_server = True
+
+            # SIMULATION
+            # if order.is_private and not order.mine:
+            if order.is_private:
+
+                # set role of bot
                 if order.order_side == OrderSide.BUY:
                     self._role = Role.BUYER
-
-                elif order.order_side == OrderSide.SELL:
+                else:
                     self._role = Role.SELLER
 
-                # call strategy based on bot type
-                if self._bot_type == BotType.MARKET_MAKER:
-                    self._make_market(order)
-                elif self._bot_type == BotType.REACTIVE:
-                    self._react_to_market(order)
+                num_manager_order += 1
+                manager_order = order
 
-            # during actual simulation add a not order.mine to this
-            # if the private order gets cancelled, delete our order from public market
-            if order.is_private and order.order_type == OrderType.CANCEL:
-                # for some reason, all the order attributes need to be present, so it's not
-                # possible to keep track of your old order by reference
-                # old order reference only contain the specific attributes we define, everything
-                # else is None type
-                orders = Order.current()
-                for _, o in orders.items():
+        self.inform(f"{num_pending_orders, num_manager_order}")
 
-                    # future proofing, if multiple types of orders in priv and one type expires
-                    # only delete the corresponding orders in public
-                    if o.mine and not o.is_private and order.order_side == o.order_side\
-                            and not self._waiting_for_server:
-                        cancel_order = copy.copy(o)
-                        cancel_order.ref = f"Cancel {o.ref}"
-                        cancel_order.order_type = OrderType.CANCEL
-                        self.send_order(cancel_order)
-                        self._waiting_for_server = True
-                        break
+        # if 0 mine orders in public, and not waiting for server, and there is a
+        # private order to be serviced
+        if num_pending_orders == 0 and not self._waiting_for_server \
+                and num_manager_order > 0:
 
-            # if our order gets consumed
-            if order.mine and not order.is_private and order.is_consumed:
-                self._pending_order = False
+            market = self._public_market_id
 
-    def _make_market(self, priv_order: Order):
-        """
-        Implements market-maker functionality
+            if self._role == Role.BUYER:
+                price = manager_order.price - PROFIT_MARGIN
+                order_side = OrderSide.BUY
+            else:
+                price = manager_order.price + PROFIT_MARGIN
+                order_side = OrderSide.SELL
 
-        Public order price determination -
-            private order price - Profit margin for buying
-            private order price + Profit margin for selling
-        """
-        self._pending_order = False
+            units = 1
+            order_type = OrderType.LIMIT
+            ref = f"Order: {self._sent_order_count} - SM"
 
-        # ensure we don't have an already active/pending order
-        for _, order in Order.current().items():
-            if order.mine and not order.is_consumed and not order.is_private:
-                self._pending_order = True
-
-        # PUBLIC MARKET SIDE ======================================================
-
-        market = self._public_market_id
-
-        if self._role == Role.BUYER:
-            price = priv_order.price - PROFIT_MARGIN
-            order_side = OrderSide.BUY
-        else:
-            price = priv_order.price + PROFIT_MARGIN
-            order_side = OrderSide.SELL
-
-        # fixed attributes
-        units = 1
-        order_type = OrderType.LIMIT
-        ref = f"Order: {self._sent_order_count} - SM"
-
-        # submit order
-        if not self._pending_order and not self._waiting_for_server:
             self._create_new_order(market, price, units, order_side, order_type, ref)
-
-        # PRIVATE MARKET SIDE =====================================================
 
     def _create_new_order(self, market: int,
                           price: int,
