@@ -84,12 +84,13 @@ class DSBot(Agent):
         for order_update in orders:
             if order_update.mine or order_update.is_private:
                 self.inform(order_update)
+                self.inform(order_update.owner_or_target)
 
             # track all active private orders
             if order_update.is_private:
 
                 # add active orders to internal tracker
-                if order_update.is_pending:
+                if not order_update.is_consumed and not order_update.mine:
                     self._active_private_orders[order_update.fm_id] = order_update
                     self._active_private_orders_count += 1
 
@@ -105,7 +106,7 @@ class DSBot(Agent):
                 if order_update.mine:
 
                     # if order is active, add to internal tracker
-                    if order_update.is_pending:
+                    if not order_update.is_consumed:
                         self._active_public_orders[order_update.fm_id] = order_update
                         self._active_public_orders_count += 1
                     # if order is now consumed, remove order
@@ -149,6 +150,7 @@ class DSBot(Agent):
                 units = 1
                 order_type = OrderType.LIMIT
                 ref = f"Order: {self._order_tracking_number} - SM"
+                # PRIVATE ORDER CREATION
 
                 self._create_new_order(price, units, order_side, order_type, ref, is_private)
 
@@ -187,7 +189,7 @@ class DSBot(Agent):
         if is_private:
             market = self._private_market_id
             self._active_private_orders_count += 1
-            new_order.owner_or_target = "M000"
+            new_order.owner_or_target = "T033"
         else:
             market = self._public_market_id
             self._active_public_orders_count += 1
@@ -219,7 +221,7 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 915
+    MARKETPLACE_ID = 898
 
     B_TYPE = BotType.MARKET_MAKER
     # B_TYPE = BotType.REACTIVE

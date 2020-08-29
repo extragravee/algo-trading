@@ -11433,3 +11433,660 @@
 [2020-08-29 19:03:01,602:         agent.DSBot]:    ERROR - Oops. Keyboard Interrupt received from user.
 [2020-08-29 19:03:01,602:         agent.DSBot]:     INFO - Shutting Down
 [2020-08-29 19:03:01,602:         agent.DSBot]:     INFO - I have been asked to stop :-(
+
+=============================== Log Started [2020-08-29 21:51:05 AEST] ===============================
+[2020-08-29 21:51:07,335:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-29 21:51:09,615:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-29 21:51:09,615:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-29 21:51:09,616:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+
+=============================== Log Started [2020-08-29 21:51:30 AEST] ===============================
+[2020-08-29 21:51:32,542:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-29 21:51:34,594:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-29 21:51:34,594:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-29 21:51:34,595:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-29 21:51:35,348:         agent.DSBot]:     INFO - Session: SID:13473:SessionState.OPEN
+[2020-08-29 21:51:35,615:         agent.DSBot]:     INFO - Order(9286038,Mine,SELL,1@78,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:51:35,615:         agent.DSBot]:     INFO - Order(9286068,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:51:35,616:         agent.DSBot]:     INFO - Order(9286513,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:51:35,616:         agent.DSBot]:     INFO - Order(9287209,Mine,SELL,1@1,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:51:35,616:         agent.DSBot]:     INFO - Order(9287800,Mine,SELL,1@0,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:51:35,616:         agent.DSBot]:     INFO - Order(9303259,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:51:35,616:         agent.DSBot]:     INFO - Order(9303271,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:51:35,616:         agent.DSBot]:     INFO - Order(9303293,Mine,SELL,1@297,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:51:35,616:         agent.DSBot]:     INFO - Order(9303295,Mine,BUY,1@900,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:51:35,616:         agent.DSBot]:     INFO - Order(10229840,Mine,SELL,1@199,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:51:35,616:         agent.DSBot]:     INFO - Order(10293531,Others,SELL,1@510,M-1573,LIMIT,REF:'rip',PVT_FROM:T033)
+[2020-08-29 21:51:35,617:         agent.DSBot]:     INFO - Order(10293517,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:51:35,617:         agent.DSBot]:     INFO - Order(10293518,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:51:35,617:         agent.DSBot]:     INFO - Order(10293522,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_TO:T033)
+[2020-08-29 21:51:35,617:         agent.DSBot]:     INFO - Order(10293523,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_FROM:T033)
+[2020-08-29 21:51:35,617:         agent.DSBot]:     INFO - Order(10293529,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:51:35,617:         agent.DSBot]:     INFO - Order(10293530,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_FROM:T033)
+[2020-08-29 21:51:35,617:         agent.DSBot]:     INFO - Order(10293533,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:51:35,617:         agent.DSBot]:     INFO - Order(10293625,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:51:35,617:         agent.DSBot]:     INFO - Order(10293613,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:51:35,617:         agent.DSBot]:     INFO - Order(10293614,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:51:35,617:         agent.DSBot]:     INFO - Order(10293618,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_TO:T033)
+[2020-08-29 21:51:35,618:         agent.DSBot]:     INFO - Order(10293619,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_FROM:T033)
+[2020-08-29 21:51:35,618:         agent.DSBot]:     INFO - Order(10293623,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:51:35,618:         agent.DSBot]:     INFO - Order(10293624,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_FROM:T033)
+[2020-08-29 21:51:35,618:         agent.DSBot]:     INFO - Order(10293627,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:51:35,618:         agent.DSBot]:     INFO - Order(10293647,Mine,SELL,5@0,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:51:35,618:         agent.DSBot]:     INFO - Order(10293649,Others,BUY,5@0,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:51:35,618:         agent.DSBot]:     INFO - Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:51:35,618:         agent.DSBot]:     INFO - Order(10293653,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:51:35,618:         agent.DSBot]:     INFO - Order(10293654,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:51:35,618:         agent.DSBot]:     INFO - Order(10293660,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:51:35,618:         agent.DSBot]:     INFO - Order(10293661,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:51:35,618:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:51:35,619:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:51:35,619:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:51:36,887:         agent.DSBot]:     INFO - Order: 0 - SM accepted.
+[2020-08-29 21:51:36,888:         agent.DSBot]:     INFO - Order(10293668,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')
+[2020-08-29 21:51:37,125:         agent.DSBot]:     INFO - Order(10293668,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')
+[2020-08-29 21:51:37,125:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:51:37,125:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293668: Order(10293668,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 21:51:53,436:         agent.DSBot]:     INFO - Order(10293668,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')
+[2020-08-29 21:51:53,436:         agent.DSBot]:     INFO - Order(10293669,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:51:53,436:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:51:53,436:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:51:53,436:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:51:55,151:         agent.DSBot]:     INFO - Order: 1 - SM accepted.
+[2020-08-29 21:51:55,151:         agent.DSBot]:     INFO - Order(10293670,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:51:55,193:         agent.DSBot]:     INFO - Order(10293670,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:51:55,194:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:51:55,194:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293670: Order(10293670,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')}
+[2020-08-29 21:51:59,709:         agent.DSBot]:     INFO - Order(10293670,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:51:59,709:         agent.DSBot]:     INFO - Order(10293671,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:51:59,710:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:51:59,710:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:51:59,710:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:52:00,420:         agent.DSBot]:     INFO - Order: 2 - SM accepted.
+[2020-08-29 21:52:00,420:         agent.DSBot]:     INFO - Order(10293672,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')
+[2020-08-29 21:52:00,464:         agent.DSBot]:     INFO - Order(10293672,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')
+[2020-08-29 21:52:00,464:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:52:00,464:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293672: Order(10293672,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')}
+[2020-08-29 21:52:01,970:         agent.DSBot]:     INFO - Order(10293672,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')
+[2020-08-29 21:52:01,971:         agent.DSBot]:     INFO - Order(10293673,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:52:01,971:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:52:01,971:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:52:01,971:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:52:02,689:         agent.DSBot]:     INFO - Order: 3 - SM accepted.
+[2020-08-29 21:52:02,689:         agent.DSBot]:     INFO - Order(10293674,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')
+[2020-08-29 21:52:02,724:         agent.DSBot]:     INFO - Order(10293674,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')
+[2020-08-29 21:52:02,724:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:52:02,724:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293674: Order(10293674,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')}
+[2020-08-29 21:52:13,011:         agent.DSBot]:     INFO - Order(10293674,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')
+[2020-08-29 21:52:13,011:         agent.DSBot]:     INFO - Order(10293675,Mine,BUY,1@839,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:52:13,012:         agent.DSBot]:     INFO - Order(10293676,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:52:13,012:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:52:13,012:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:52:13,012:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:52:13,965:         agent.DSBot]:     INFO - Order: 4 - SM accepted.
+[2020-08-29 21:52:13,965:         agent.DSBot]:     INFO - Order(10293677,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 4 - SM')
+[2020-08-29 21:52:14,016:         agent.DSBot]:     INFO - Order(10293677,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 4 - SM')
+[2020-08-29 21:52:14,016:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:52:14,016:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293677: Order(10293677,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 4 - SM')}
+[2020-08-29 21:52:25,558:         agent.DSBot]:     INFO - Order(10293677,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 4 - SM')
+[2020-08-29 21:52:25,558:         agent.DSBot]:     INFO - Order(10293678,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:52:25,559:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:52:25,559:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:52:25,559:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:52:26,240:         agent.DSBot]:     INFO - Order: 5 - SM accepted.
+[2020-08-29 21:52:26,240:         agent.DSBot]:     INFO - Order(10293679,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 5 - SM')
+[2020-08-29 21:52:26,312:         agent.DSBot]:     INFO - Order(10293679,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 5 - SM')
+[2020-08-29 21:52:26,312:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:52:26,312:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293679: Order(10293679,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 5 - SM')}
+[2020-08-29 21:52:35,346:         agent.DSBot]:     INFO - Order(10293679,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 5 - SM')
+[2020-08-29 21:52:35,346:         agent.DSBot]:     INFO - Order(10293680,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:52:35,346:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:52:35,346:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:52:35,347:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:52:36,521:         agent.DSBot]:     INFO - Order: 6 - SM accepted.
+[2020-08-29 21:52:36,521:         agent.DSBot]:     INFO - Order(10293681,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 6 - SM')
+[2020-08-29 21:52:36,600:         agent.DSBot]:     INFO - Order(10293681,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 6 - SM')
+[2020-08-29 21:52:36,600:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:52:36,601:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293681: Order(10293681,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 6 - SM')}
+[2020-08-29 21:52:44,878:         agent.DSBot]:     INFO - Order(10293681,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 6 - SM')
+[2020-08-29 21:52:44,878:         agent.DSBot]:     INFO - Order(10293682,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:52:44,878:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:52:44,878:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:52:44,879:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:52:45,790:         agent.DSBot]:     INFO - Order: 7 - SM accepted.
+[2020-08-29 21:52:45,790:         agent.DSBot]:     INFO - Order(10293683,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 7 - SM')
+[2020-08-29 21:52:45,883:         agent.DSBot]:     INFO - Order(10293683,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 7 - SM')
+[2020-08-29 21:52:45,884:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:52:45,884:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293683: Order(10293683,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 7 - SM')}
+[2020-08-29 21:52:48,141:         agent.DSBot]:     INFO - Order(10293683,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 7 - SM')
+[2020-08-29 21:52:48,142:         agent.DSBot]:     INFO - Order(10293684,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:52:48,142:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:52:48,142:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:52:48,142:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:52:49,059:         agent.DSBot]:     INFO - Order: 8 - SM accepted.
+[2020-08-29 21:52:49,059:         agent.DSBot]:     INFO - Order(10293685,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 8 - SM')
+[2020-08-29 21:52:49,146:         agent.DSBot]:     INFO - Order(10293685,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 8 - SM')
+[2020-08-29 21:52:49,146:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:52:49,147:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293685: Order(10293685,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 8 - SM')}
+
+=============================== Log Started [2020-08-29 21:53:18 AEST] ===============================
+[2020-08-29 21:53:20,308:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-29 21:53:22,355:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-29 21:53:22,355:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-29 21:53:22,355:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-29 21:53:23,121:         agent.DSBot]:     INFO - Session: SID:13473:SessionState.OPEN
+[2020-08-29 21:53:23,387:         agent.DSBot]:     INFO - Order(9286038,Mine,SELL,1@78,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:53:23,387:         agent.DSBot]:     INFO - 9286037
+[2020-08-29 21:53:23,388:         agent.DSBot]:     INFO - Order(9286068,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:53:23,388:         agent.DSBot]:     INFO - 9286067
+[2020-08-29 21:53:23,388:         agent.DSBot]:     INFO - Order(9286513,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:53:23,389:         agent.DSBot]:     INFO - 9286512
+[2020-08-29 21:53:23,389:         agent.DSBot]:     INFO - Order(9287209,Mine,SELL,1@1,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:53:23,389:         agent.DSBot]:     INFO - 9287208
+[2020-08-29 21:53:23,389:         agent.DSBot]:     INFO - Order(9287800,Mine,SELL,1@0,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:53:23,389:         agent.DSBot]:     INFO - 9287800
+[2020-08-29 21:53:23,389:         agent.DSBot]:     INFO - Order(9303259,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:53:23,389:         agent.DSBot]:     INFO - 9303258
+[2020-08-29 21:53:23,389:         agent.DSBot]:     INFO - Order(9303271,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:53:23,389:         agent.DSBot]:     INFO - 9303270
+[2020-08-29 21:53:23,389:         agent.DSBot]:     INFO - Order(9303293,Mine,SELL,1@297,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:53:23,389:         agent.DSBot]:     INFO - 9303292
+[2020-08-29 21:53:23,389:         agent.DSBot]:     INFO - Order(9303295,Mine,BUY,1@900,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:53:23,390:         agent.DSBot]:     INFO - 9303294
+[2020-08-29 21:53:23,390:         agent.DSBot]:     INFO - Order(10229840,Mine,SELL,1@199,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:53:23,390:         agent.DSBot]:     INFO - 10229840
+[2020-08-29 21:53:23,390:         agent.DSBot]:     INFO - Order(10293531,Others,SELL,1@510,M-1573,LIMIT,REF:'rip',PVT_FROM:T033)
+[2020-08-29 21:53:23,390:         agent.DSBot]:     INFO - 10293409
+[2020-08-29 21:53:23,390:         agent.DSBot]:     INFO - Order(10293517,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:53:23,390:         agent.DSBot]:     INFO - 10293517
+[2020-08-29 21:53:23,390:         agent.DSBot]:     INFO - Order(10293518,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:53:23,390:         agent.DSBot]:     INFO - 10293409
+[2020-08-29 21:53:23,390:         agent.DSBot]:     INFO - Order(10293522,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_TO:T033)
+[2020-08-29 21:53:23,390:         agent.DSBot]:     INFO - 10293522
+[2020-08-29 21:53:23,390:         agent.DSBot]:     INFO - Order(10293523,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_FROM:T033)
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - 10293409
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - Order(10293529,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - 10293529
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - Order(10293530,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_FROM:T033)
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - 10293409
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - Order(10293533,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - 10293533
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - Order(10293625,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - 10293611
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - Order(10293613,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - 10293613
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - Order(10293614,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:53:23,391:         agent.DSBot]:     INFO - 10293611
+[2020-08-29 21:53:23,392:         agent.DSBot]:     INFO - Order(10293618,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_TO:T033)
+[2020-08-29 21:53:23,392:         agent.DSBot]:     INFO - 10293618
+[2020-08-29 21:53:23,392:         agent.DSBot]:     INFO - Order(10293619,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_FROM:T033)
+[2020-08-29 21:53:23,392:         agent.DSBot]:     INFO - 10293611
+[2020-08-29 21:53:23,392:         agent.DSBot]:     INFO - Order(10293623,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:53:23,392:         agent.DSBot]:     INFO - 10293623
+[2020-08-29 21:53:23,392:         agent.DSBot]:     INFO - Order(10293624,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_FROM:T033)
+[2020-08-29 21:53:23,392:         agent.DSBot]:     INFO - 10293611
+[2020-08-29 21:53:23,392:         agent.DSBot]:     INFO - Order(10293627,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:53:23,392:         agent.DSBot]:     INFO - 10293627
+[2020-08-29 21:53:23,392:         agent.DSBot]:     INFO - Order(10293647,Mine,SELL,5@0,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:53:23,392:         agent.DSBot]:     INFO - 10293647
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - Order(10293649,Others,BUY,5@0,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - 10293649
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - Order(10293653,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - 10293653
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - Order(10293654,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - Order(10293660,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - 10293660
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - Order(10293661,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:53:23,393:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:53:23,394:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:53:23,394:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:53:24,618:         agent.DSBot]:     INFO - Order: 0 - SM accepted.
+[2020-08-29 21:53:24,619:         agent.DSBot]:     INFO - Order(10293687,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')
+[2020-08-29 21:53:24,647:         agent.DSBot]:     INFO - Order(10293687,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')
+[2020-08-29 21:53:24,647:         agent.DSBot]:     INFO - 10293687
+[2020-08-29 21:53:24,647:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:53:24,647:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293687: Order(10293687,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 21:53:28,411:         agent.DSBot]:     INFO - Order(10293687,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')
+[2020-08-29 21:53:28,412:         agent.DSBot]:     INFO - 10293687
+[2020-08-29 21:53:28,412:         agent.DSBot]:     INFO - Order(10293688,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:53:28,412:         agent.DSBot]:     INFO - 10293687
+[2020-08-29 21:53:28,412:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:53:28,412:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:53:28,413:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:53:28,877:         agent.DSBot]:     INFO - Order: 1 - SM accepted.
+[2020-08-29 21:53:28,878:         agent.DSBot]:     INFO - Order(10293689,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:53:28,916:         agent.DSBot]:     INFO - Order(10293689,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:53:28,916:         agent.DSBot]:     INFO - 10293689
+[2020-08-29 21:53:28,916:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:53:28,916:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293689: Order(10293689,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')}
+[2020-08-29 21:53:32,178:         agent.DSBot]:     INFO - Order(10293689,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:53:32,179:         agent.DSBot]:     INFO - 10293689
+[2020-08-29 21:53:32,179:         agent.DSBot]:     INFO - Order(10293690,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:53:32,179:         agent.DSBot]:     INFO - 10293689
+[2020-08-29 21:53:32,179:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:53:32,180:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:53:32,180:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:53:33,140:         agent.DSBot]:     INFO - Order: 2 - SM accepted.
+[2020-08-29 21:53:33,140:         agent.DSBot]:     INFO - Order(10293691,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')
+[2020-08-29 21:53:33,184:         agent.DSBot]:     INFO - Order(10293691,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')
+[2020-08-29 21:53:33,184:         agent.DSBot]:     INFO - 10293691
+[2020-08-29 21:53:33,184:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:53:33,184:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293691: Order(10293691,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')}
+[2020-08-29 21:54:10,322:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:54:10,323:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293691: Order(10293691,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')}
+[2020-08-29 21:54:10,826:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:54:10,826:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293691: Order(10293691,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')}
+[2020-08-29 21:54:10,827:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:54:10,827:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293691: Order(10293691,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')}
+[2020-08-29 21:54:11,078:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:54:11,079:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293691: Order(10293691,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')}
+[2020-08-29 21:54:39,927:         agent.DSBot]:     INFO - Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:54:39,928:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:54:39,928:         agent.DSBot]:     INFO - Order(10293696,Mine,BUY,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:54:39,928:         agent.DSBot]:     INFO - 10293696
+[2020-08-29 21:54:39,928:         agent.DSBot]:     INFO - Order(10293697,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:54:39,929:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:54:39,929:         agent.DSBot]:     INFO - Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:54:39,929:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:54:39,929:         agent.DSBot]:     INFO - Private: 2, Public: 1
+[2020-08-29 21:54:39,929:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033), 10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293691: Order(10293691,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')}
+[2020-08-29 21:54:45,699:         agent.DSBot]:     INFO - Order(10293691,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')
+[2020-08-29 21:54:45,699:         agent.DSBot]:     INFO - 10293691
+[2020-08-29 21:54:45,699:         agent.DSBot]:     INFO - Order(10293699,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:54:45,699:         agent.DSBot]:     INFO - 10293691
+[2020-08-29 21:54:45,700:         agent.DSBot]:     INFO - Private: 2, Public: 0
+[2020-08-29 21:54:45,700:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033), 10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:54:45,700:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:54:47,222:         agent.DSBot]:     INFO - Order: 3 - SM accepted.
+[2020-08-29 21:54:47,222:         agent.DSBot]:     INFO - Order(10293700,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')
+[2020-08-29 21:54:47,458:         agent.DSBot]:     INFO - Order(10293700,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')
+[2020-08-29 21:54:47,458:         agent.DSBot]:     INFO - 10293700
+[2020-08-29 21:54:47,458:         agent.DSBot]:     INFO - Private: 2, Public: 1
+[2020-08-29 21:54:47,458:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033), 10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293700: Order(10293700,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')}
+[2020-08-29 21:54:47,489:         agent.DSBot]:     INFO - Order: 3 - SM accepted.
+[2020-08-29 21:54:47,489:         agent.DSBot]:     INFO - Order(10293701,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')
+[2020-08-29 21:54:47,710:         agent.DSBot]:     INFO - Order(10293701,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')
+[2020-08-29 21:54:47,711:         agent.DSBot]:     INFO - 10293701
+[2020-08-29 21:54:47,711:         agent.DSBot]:     INFO - Private: 2, Public: 2
+[2020-08-29 21:54:47,711:         agent.DSBot]:     INFO - {10293662: Order(10293662,Others,SELL,3@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033), 10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293700: Order(10293700,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM'), 10293701: Order(10293701,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')}
+
+=============================== Log Started [2020-08-29 21:55:28 AEST] ===============================
+[2020-08-29 21:55:30,076:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-29 21:55:32,156:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-29 21:55:32,156:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-29 21:55:32,156:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-29 21:55:32,912:         agent.DSBot]:     INFO - Session: SID:13473:SessionState.OPEN
+[2020-08-29 21:55:33,174:         agent.DSBot]:     INFO - Order(9286038,Mine,SELL,1@78,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:55:33,174:         agent.DSBot]:     INFO - 9286037
+[2020-08-29 21:55:33,174:         agent.DSBot]:     INFO - Order(9286068,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:55:33,175:         agent.DSBot]:     INFO - 9286067
+[2020-08-29 21:55:33,175:         agent.DSBot]:     INFO - Order(9286513,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:55:33,175:         agent.DSBot]:     INFO - 9286512
+[2020-08-29 21:55:33,175:         agent.DSBot]:     INFO - Order(9287209,Mine,SELL,1@1,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:55:33,175:         agent.DSBot]:     INFO - 9287208
+[2020-08-29 21:55:33,175:         agent.DSBot]:     INFO - Order(9287800,Mine,SELL,1@0,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:55:33,175:         agent.DSBot]:     INFO - 9287800
+[2020-08-29 21:55:33,175:         agent.DSBot]:     INFO - Order(9303259,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:55:33,175:         agent.DSBot]:     INFO - 9303258
+[2020-08-29 21:55:33,175:         agent.DSBot]:     INFO - Order(9303271,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:55:33,175:         agent.DSBot]:     INFO - 9303270
+[2020-08-29 21:55:33,175:         agent.DSBot]:     INFO - Order(9303293,Mine,SELL,1@297,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:55:33,176:         agent.DSBot]:     INFO - 9303292
+[2020-08-29 21:55:33,176:         agent.DSBot]:     INFO - Order(9303295,Mine,BUY,1@900,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:55:33,176:         agent.DSBot]:     INFO - 9303294
+[2020-08-29 21:55:33,176:         agent.DSBot]:     INFO - Order(10229840,Mine,SELL,1@199,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:55:33,176:         agent.DSBot]:     INFO - 10229840
+[2020-08-29 21:55:33,176:         agent.DSBot]:     INFO - Order(10293531,Others,SELL,1@510,M-1573,LIMIT,REF:'rip',PVT_FROM:T033)
+[2020-08-29 21:55:33,176:         agent.DSBot]:     INFO - 10293409
+[2020-08-29 21:55:33,176:         agent.DSBot]:     INFO - Order(10293517,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:55:33,176:         agent.DSBot]:     INFO - 10293517
+[2020-08-29 21:55:33,176:         agent.DSBot]:     INFO - Order(10293518,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:55:33,176:         agent.DSBot]:     INFO - 10293409
+[2020-08-29 21:55:33,176:         agent.DSBot]:     INFO - Order(10293522,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_TO:T033)
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - 10293522
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - Order(10293523,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_FROM:T033)
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - 10293409
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - Order(10293529,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - 10293529
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - Order(10293530,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_FROM:T033)
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - 10293409
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - Order(10293533,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - 10293533
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - Order(10293625,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - 10293611
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - Order(10293613,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:55:33,177:         agent.DSBot]:     INFO - 10293613
+[2020-08-29 21:55:33,178:         agent.DSBot]:     INFO - Order(10293614,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:55:33,178:         agent.DSBot]:     INFO - 10293611
+[2020-08-29 21:55:33,178:         agent.DSBot]:     INFO - Order(10293618,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_TO:T033)
+[2020-08-29 21:55:33,178:         agent.DSBot]:     INFO - 10293618
+[2020-08-29 21:55:33,178:         agent.DSBot]:     INFO - Order(10293619,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_FROM:T033)
+[2020-08-29 21:55:33,178:         agent.DSBot]:     INFO - 10293611
+[2020-08-29 21:55:33,178:         agent.DSBot]:     INFO - Order(10293623,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:55:33,178:         agent.DSBot]:     INFO - 10293623
+[2020-08-29 21:55:33,178:         agent.DSBot]:     INFO - Order(10293624,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_FROM:T033)
+[2020-08-29 21:55:33,178:         agent.DSBot]:     INFO - 10293611
+[2020-08-29 21:55:33,178:         agent.DSBot]:     INFO - Order(10293627,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:55:33,178:         agent.DSBot]:     INFO - 10293627
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - Order(10293647,Mine,SELL,5@0,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - 10293647
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - Order(10293649,Others,BUY,5@0,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - 10293649
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - Order(10293653,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - 10293653
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - Order(10293654,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - Order(10293660,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - 10293660
+[2020-08-29 21:55:33,179:         agent.DSBot]:     INFO - Order(10293661,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:55:33,180:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:55:33,180:         agent.DSBot]:     INFO - Order(10293696,Mine,BUY,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:55:33,180:         agent.DSBot]:     INFO - 10293696
+[2020-08-29 21:55:33,180:         agent.DSBot]:     INFO - Order(10293697,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:55:33,180:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:55:33,180:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:55:33,180:         agent.DSBot]:     INFO - {10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:55:33,180:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:55:34,427:         agent.DSBot]:     INFO - Order: 0 - SM accepted.
+[2020-08-29 21:55:34,427:         agent.DSBot]:     INFO - Order(10293704,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')
+[2020-08-29 21:55:34,435:         agent.DSBot]:     INFO - Order(10293704,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')
+[2020-08-29 21:55:34,435:         agent.DSBot]:     INFO - 10293704
+[2020-08-29 21:55:34,435:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:55:34,435:         agent.DSBot]:     INFO - {10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293704: Order(10293704,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 21:55:43,727:         agent.DSBot]:     INFO - Order(10293705,Mine,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:55:43,727:         agent.DSBot]:     INFO - 10293705
+[2020-08-29 21:55:43,727:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:55:43,728:         agent.DSBot]:     INFO - {10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293704: Order(10293704,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 21:55:48,744:         agent.DSBot]:     INFO - Order(10293705,Mine,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:55:48,744:         agent.DSBot]:     INFO - 10293705
+[2020-08-29 21:55:48,744:         agent.DSBot]:     INFO - Order(10293706,Mine,SELL,1@575,M-1573,CANCEL,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:55:48,744:         agent.DSBot]:     INFO - 10293705
+[2020-08-29 21:55:48,745:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:55:48,745:         agent.DSBot]:     INFO - {10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293704: Order(10293704,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 21:55:58,779:         agent.DSBot]:     INFO - Order(10293707,Mine,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:55:58,780:         agent.DSBot]:     INFO - 10293707
+[2020-08-29 21:55:58,780:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:55:58,780:         agent.DSBot]:     INFO - {10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293704: Order(10293704,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 21:56:08,819:         agent.DSBot]:     INFO - Order(10293707,Mine,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:56:08,819:         agent.DSBot]:     INFO - 10293707
+[2020-08-29 21:56:08,820:         agent.DSBot]:     INFO - Order(10293708,Mine,SELL,1@575,M-1573,CANCEL,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:56:08,820:         agent.DSBot]:     INFO - 10293707
+[2020-08-29 21:56:08,820:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:56:08,820:         agent.DSBot]:     INFO - {10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293704: Order(10293704,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 21:56:13,340:         agent.DSBot]:     INFO - Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:56:13,340:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:56:13,340:         agent.DSBot]:     INFO - Order(10293709,Mine,BUY,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:56:13,340:         agent.DSBot]:     INFO - 10293709
+[2020-08-29 21:56:13,340:         agent.DSBot]:     INFO - Order(10293710,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:56:13,341:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:56:13,341:         agent.DSBot]:     INFO - Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:56:13,341:         agent.DSBot]:     INFO - 10293651
+[2020-08-29 21:56:13,341:         agent.DSBot]:     INFO - Private: 2, Public: 1
+[2020-08-29 21:56:13,341:         agent.DSBot]:     INFO - {10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033), 10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293704: Order(10293704,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 21:56:17,860:         agent.DSBot]:     INFO - Order(10293704,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')
+[2020-08-29 21:56:17,860:         agent.DSBot]:     INFO - 10293704
+[2020-08-29 21:56:17,861:         agent.DSBot]:     INFO - Order(10293712,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:56:17,861:         agent.DSBot]:     INFO - 10293704
+[2020-08-29 21:56:17,861:         agent.DSBot]:     INFO - Private: 2, Public: 0
+[2020-08-29 21:56:17,861:         agent.DSBot]:     INFO - {10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033), 10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:56:17,861:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:56:19,673:         agent.DSBot]:     INFO - Order: 1 - SM accepted.
+[2020-08-29 21:56:19,673:         agent.DSBot]:     INFO - Order(10293713,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:56:19,868:         agent.DSBot]:     INFO - Order(10293713,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:56:19,869:         agent.DSBot]:     INFO - 10293713
+[2020-08-29 21:56:19,869:         agent.DSBot]:     INFO - Private: 2, Public: 1
+[2020-08-29 21:56:19,869:         agent.DSBot]:     INFO - {10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033), 10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293713: Order(10293713,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')}
+[2020-08-29 21:56:19,944:         agent.DSBot]:     INFO - Order: 1 - SM accepted.
+[2020-08-29 21:56:19,945:         agent.DSBot]:     INFO - Order(10293714,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:56:20,120:         agent.DSBot]:     INFO - Order(10293714,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:56:20,121:         agent.DSBot]:     INFO - 10293714
+[2020-08-29 21:56:20,121:         agent.DSBot]:     INFO - Private: 2, Public: 2
+[2020-08-29 21:56:20,121:         agent.DSBot]:     INFO - {10293698: Order(10293698,Others,SELL,2@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033), 10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293713: Order(10293713,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM'), 10293714: Order(10293714,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')}
+
+=============================== Log Started [2020-08-29 21:58:22 AEST] ===============================
+[2020-08-29 21:58:23,993:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-29 21:58:26,019:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-29 21:58:26,019:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-29 21:58:26,019:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-29 21:58:26,522:         agent.DSBot]:     INFO - Session: SID:13473:SessionState.OPEN
+[2020-08-29 21:58:27,036:         agent.DSBot]:     INFO - Order(9286038,Mine,SELL,1@78,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:58:27,037:         agent.DSBot]:     INFO - None
+[2020-08-29 21:58:27,037:         agent.DSBot]:     INFO - Order(9286068,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:58:27,037:         agent.DSBot]:     INFO - None
+[2020-08-29 21:58:27,037:         agent.DSBot]:     INFO - Order(9286513,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:58:27,037:         agent.DSBot]:     INFO - None
+[2020-08-29 21:58:27,037:         agent.DSBot]:     INFO - Order(9287209,Mine,SELL,1@1,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:58:27,037:         agent.DSBot]:     INFO - None
+[2020-08-29 21:58:27,038:         agent.DSBot]:     INFO - Order(9287800,Mine,SELL,1@0,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:58:27,038:         agent.DSBot]:     INFO - None
+[2020-08-29 21:58:27,038:         agent.DSBot]:     INFO - Order(9303259,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:58:27,038:         agent.DSBot]:     INFO - None
+[2020-08-29 21:58:27,038:         agent.DSBot]:     INFO - Order(9303271,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:58:27,038:         agent.DSBot]:     INFO - None
+[2020-08-29 21:58:27,038:         agent.DSBot]:     INFO - Order(9303293,Mine,SELL,1@297,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:58:27,038:         agent.DSBot]:     INFO - None
+[2020-08-29 21:58:27,038:         agent.DSBot]:     INFO - Order(9303295,Mine,BUY,1@900,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:58:27,039:         agent.DSBot]:     INFO - None
+[2020-08-29 21:58:27,039:         agent.DSBot]:     INFO - Order(10229840,Mine,SELL,1@199,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:58:27,039:         agent.DSBot]:     INFO - None
+[2020-08-29 21:58:27,039:         agent.DSBot]:     INFO - Order(10293531,Others,SELL,1@510,M-1573,LIMIT,REF:'rip',PVT_FROM:T033)
+[2020-08-29 21:58:27,039:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,039:         agent.DSBot]:     INFO - Order(10293517,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:58:27,039:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,039:         agent.DSBot]:     INFO - Order(10293518,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:58:27,040:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,040:         agent.DSBot]:     INFO - Order(10293522,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_TO:T033)
+[2020-08-29 21:58:27,040:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,040:         agent.DSBot]:     INFO - Order(10293523,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_FROM:T033)
+[2020-08-29 21:58:27,040:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,040:         agent.DSBot]:     INFO - Order(10293529,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:58:27,040:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,040:         agent.DSBot]:     INFO - Order(10293530,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_FROM:T033)
+[2020-08-29 21:58:27,040:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,041:         agent.DSBot]:     INFO - Order(10293533,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:58:27,041:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,041:         agent.DSBot]:     INFO - Order(10293625,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:58:27,041:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,041:         agent.DSBot]:     INFO - Order(10293613,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:58:27,041:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,041:         agent.DSBot]:     INFO - Order(10293614,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:58:27,041:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,041:         agent.DSBot]:     INFO - Order(10293618,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_TO:T033)
+[2020-08-29 21:58:27,042:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,042:         agent.DSBot]:     INFO - Order(10293619,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_FROM:T033)
+[2020-08-29 21:58:27,042:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,042:         agent.DSBot]:     INFO - Order(10293623,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:58:27,042:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,042:         agent.DSBot]:     INFO - Order(10293624,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_FROM:T033)
+[2020-08-29 21:58:27,042:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,042:         agent.DSBot]:     INFO - Order(10293627,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:58:27,042:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,042:         agent.DSBot]:     INFO - Order(10293647,Mine,SELL,5@0,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - Order(10293649,Others,BUY,5@0,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - Order(10293653,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - Order(10293654,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - Order(10293660,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - Order(10293661,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:58:27,043:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - Order(10293696,Mine,BUY,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - Order(10293697,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - Order(10293709,Mine,BUY,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - Order(10293710,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - Order(10293713,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - None
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - Order(10293714,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - None
+[2020-08-29 21:58:27,044:         agent.DSBot]:     INFO - Private: 1, Public: 2
+[2020-08-29 21:58:27,045:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293713: Order(10293713,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM'), 10293714: Order(10293714,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')}
+
+=============================== Log Started [2020-08-29 21:59:33 AEST] ===============================
+[2020-08-29 21:59:35,817:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-29 21:59:37,915:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-29 21:59:37,915:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-29 21:59:37,915:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-29 21:59:38,669:         agent.DSBot]:     INFO - Session: SID:13473:SessionState.OPEN
+[2020-08-29 21:59:39,184:         agent.DSBot]:     INFO - Order(9286038,Mine,SELL,1@78,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:59:39,184:         agent.DSBot]:     INFO - None
+[2020-08-29 21:59:39,184:         agent.DSBot]:     INFO - Order(9286068,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:59:39,184:         agent.DSBot]:     INFO - None
+[2020-08-29 21:59:39,185:         agent.DSBot]:     INFO - Order(9286513,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:59:39,185:         agent.DSBot]:     INFO - None
+[2020-08-29 21:59:39,185:         agent.DSBot]:     INFO - Order(9287209,Mine,SELL,1@1,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:59:39,185:         agent.DSBot]:     INFO - None
+[2020-08-29 21:59:39,185:         agent.DSBot]:     INFO - Order(9287800,Mine,SELL,1@0,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:59:39,185:         agent.DSBot]:     INFO - None
+[2020-08-29 21:59:39,185:         agent.DSBot]:     INFO - Order(9303259,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:59:39,185:         agent.DSBot]:     INFO - None
+[2020-08-29 21:59:39,185:         agent.DSBot]:     INFO - Order(9303271,Mine,BUY,1@674,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:59:39,185:         agent.DSBot]:     INFO - None
+[2020-08-29 21:59:39,186:         agent.DSBot]:     INFO - Order(9303293,Mine,SELL,1@297,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:59:39,186:         agent.DSBot]:     INFO - None
+[2020-08-29 21:59:39,186:         agent.DSBot]:     INFO - Order(9303295,Mine,BUY,1@900,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 21:59:39,186:         agent.DSBot]:     INFO - None
+[2020-08-29 21:59:39,186:         agent.DSBot]:     INFO - Order(10229840,Mine,SELL,1@199,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 21:59:39,186:         agent.DSBot]:     INFO - None
+[2020-08-29 21:59:39,186:         agent.DSBot]:     INFO - Order(10293531,Others,SELL,1@510,M-1573,LIMIT,REF:'rip',PVT_FROM:T033)
+[2020-08-29 21:59:39,186:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,186:         agent.DSBot]:     INFO - Order(10293517,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:59:39,186:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,187:         agent.DSBot]:     INFO - Order(10293518,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:59:39,187:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,187:         agent.DSBot]:     INFO - Order(10293522,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_TO:T033)
+[2020-08-29 21:59:39,187:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,187:         agent.DSBot]:     INFO - Order(10293523,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_FROM:T033)
+[2020-08-29 21:59:39,187:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,187:         agent.DSBot]:     INFO - Order(10293529,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:59:39,187:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,187:         agent.DSBot]:     INFO - Order(10293530,Others,SELL,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_FROM:T033)
+[2020-08-29 21:59:39,187:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,187:         agent.DSBot]:     INFO - Order(10293533,Mine,BUY,1@510,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:59:39,188:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,188:         agent.DSBot]:     INFO - Order(10293625,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:59:39,188:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,188:         agent.DSBot]:     INFO - Order(10293613,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:59:39,188:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,188:         agent.DSBot]:     INFO - Order(10293614,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:59:39,188:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,188:         agent.DSBot]:     INFO - Order(10293618,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_TO:T033)
+[2020-08-29 21:59:39,188:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,188:         agent.DSBot]:     INFO - Order(10293619,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 2 - SM',PVT_FROM:T033)
+[2020-08-29 21:59:39,188:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,189:         agent.DSBot]:     INFO - Order(10293623,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:59:39,189:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,189:         agent.DSBot]:     INFO - Order(10293624,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_FROM:T033)
+[2020-08-29 21:59:39,189:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,189:         agent.DSBot]:     INFO - Order(10293627,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 4 - SM',PVT_TO:T033)
+[2020-08-29 21:59:39,189:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,189:         agent.DSBot]:     INFO - Order(10293647,Mine,SELL,5@0,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:59:39,189:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,189:         agent.DSBot]:     INFO - Order(10293649,Others,BUY,5@0,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:59:39,189:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,189:         agent.DSBot]:     INFO - Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:59:39,190:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,190:         agent.DSBot]:     INFO - Order(10293653,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:59:39,190:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,190:         agent.DSBot]:     INFO - Order(10293654,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:59:39,190:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,190:         agent.DSBot]:     INFO - Order(10293660,Mine,BUY,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T033)
+[2020-08-29 21:59:39,190:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,190:         agent.DSBot]:     INFO - Order(10293661,Others,SELL,1@575,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_FROM:T033)
+[2020-08-29 21:59:39,190:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,190:         agent.DSBot]:     INFO - Order(10293696,Mine,BUY,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:59:39,191:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,191:         agent.DSBot]:     INFO - Order(10293697,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:59:39,191:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,191:         agent.DSBot]:     INFO - Order(10293709,Mine,BUY,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:59:39,191:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,191:         agent.DSBot]:     INFO - Order(10293710,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 21:59:39,191:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:39,191:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 21:59:39,191:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 21:59:39,191:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 21:59:40,182:         agent.DSBot]:     INFO - Order: 0 - SM accepted.
+[2020-08-29 21:59:40,182:         agent.DSBot]:     INFO - Order(10293719,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')
+[2020-08-29 21:59:40,198:         agent.DSBot]:     INFO - Order(10293719,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')
+[2020-08-29 21:59:40,198:         agent.DSBot]:     INFO - None
+[2020-08-29 21:59:40,198:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:59:40,198:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293719: Order(10293719,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 21:59:53,997:         agent.DSBot]:     INFO - Order(10293720,Mine,BUY,1@290,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:59:53,997:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:53,997:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:59:53,997:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293719: Order(10293719,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 21:59:58,266:         agent.DSBot]:     INFO - Order(10293720,Mine,BUY,1@290,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:59:58,267:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:58,267:         agent.DSBot]:     INFO - Order(10293721,Mine,BUY,1@290,M-1573,CANCEL,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 21:59:58,267:         agent.DSBot]:     INFO - T033
+[2020-08-29 21:59:58,267:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 21:59:58,267:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293719: Order(10293719,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 22:00:01,528:         agent.DSBot]:     INFO - Order(10293722,Mine,BUY,1@290,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 22:00:01,528:         agent.DSBot]:     INFO - T033
+[2020-08-29 22:00:01,528:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 22:00:01,529:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293719: Order(10293719,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 22:00:05,041:         agent.DSBot]:     INFO - Order(10293722,Mine,BUY,1@290,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 22:00:05,042:         agent.DSBot]:     INFO - T033
+[2020-08-29 22:00:05,042:         agent.DSBot]:     INFO - Order(10293723,Mine,BUY,1@290,M-1573,CANCEL,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 22:00:05,042:         agent.DSBot]:     INFO - T033
+[2020-08-29 22:00:05,042:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 22:00:05,042:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293719: Order(10293719,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')}
+[2020-08-29 22:00:27,369:         agent.DSBot]:     INFO - Order(10293719,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 0 - SM')
+[2020-08-29 22:00:27,369:         agent.DSBot]:     INFO - None
+[2020-08-29 22:00:27,370:         agent.DSBot]:     INFO - Order(10293724,Mine,BUY,1@585,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 22:00:27,370:         agent.DSBot]:     INFO - None
+[2020-08-29 22:00:27,370:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 22:00:27,370:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 22:00:27,370:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 22:00:29,214:         agent.DSBot]:     INFO - Order: 1 - SM accepted.
+[2020-08-29 22:00:29,214:         agent.DSBot]:     INFO - Order(10293725,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 22:00:29,378:         agent.DSBot]:     INFO - Order(10293725,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 22:00:29,379:         agent.DSBot]:     INFO - None
+[2020-08-29 22:00:29,379:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 22:00:29,379:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293725: Order(10293725,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')}
+[2020-08-29 22:00:48,952:         agent.DSBot]:     INFO - Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-29 22:00:48,952:         agent.DSBot]:     INFO - T033
+[2020-08-29 22:00:48,953:         agent.DSBot]:     INFO - Order(10293726,Mine,BUY,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_TO:T033)
+[2020-08-29 22:00:48,953:         agent.DSBot]:     INFO - T033
+[2020-08-29 22:00:48,953:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 22:00:48,953:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293725: Order(10293725,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')}
+[2020-08-29 22:00:55,981:         agent.DSBot]:     INFO - Order(10293725,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 1 - SM')
+[2020-08-29 22:00:55,981:         agent.DSBot]:     INFO - None
+[2020-08-29 22:00:55,981:         agent.DSBot]:     INFO - Order(10293727,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 22:00:55,982:         agent.DSBot]:     INFO - None
+[2020-08-29 22:00:55,982:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 22:00:55,982:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 22:00:55,982:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 22:00:57,380:         agent.DSBot]:     INFO - Order: 2 - SM accepted.
+[2020-08-29 22:00:57,381:         agent.DSBot]:     INFO - Order(10293728,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')
+[2020-08-29 22:00:57,490:         agent.DSBot]:     INFO - Order(10293728,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')
+[2020-08-29 22:00:57,490:         agent.DSBot]:     INFO - None
+[2020-08-29 22:00:57,490:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 22:00:57,491:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293728: Order(10293728,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')}
+[2020-08-29 22:00:59,750:         agent.DSBot]:     INFO - Order(10293728,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 2 - SM')
+[2020-08-29 22:00:59,750:         agent.DSBot]:     INFO - None
+[2020-08-29 22:00:59,750:         agent.DSBot]:     INFO - Order(10293729,Mine,SELL,1@585,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 22:00:59,751:         agent.DSBot]:     INFO - None
+[2020-08-29 22:00:59,751:         agent.DSBot]:     INFO - Private: 1, Public: 0
+[2020-08-29 22:00:59,751:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {}
+[2020-08-29 22:00:59,751:         agent.DSBot]:     INFO - Order required ====================================
+[2020-08-29 22:01:00,663:         agent.DSBot]:     INFO - Order: 3 - SM accepted.
+[2020-08-29 22:01:00,663:         agent.DSBot]:     INFO - Order(10293730,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')
+[2020-08-29 22:01:00,755:         agent.DSBot]:     INFO - Order(10293730,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')
+[2020-08-29 22:01:00,756:         agent.DSBot]:     INFO - None
+[2020-08-29 22:01:00,756:         agent.DSBot]:     INFO - Private: 1, Public: 1
+[2020-08-29 22:01:00,756:         agent.DSBot]:     INFO - {10293711: Order(10293711,Others,SELL,1@575,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)}, {10293730: Order(10293730,Mine,SELL,1@585,M-1572,LIMIT,REF:'Order: 3 - SM')}
