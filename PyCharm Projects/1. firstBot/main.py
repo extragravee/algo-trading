@@ -52,12 +52,14 @@ class MyFirstBot(Agent):
         for o in orders_avail:
             # inform method just logs the messages
             self.inform(o)
+            if o.mine:
+                self.inform(o.owner, o.owner_or_target)
 
             # cancelling an order, make sure to check all orders sent are accepted
-            if o.mine:
-                cancel_order = copy.copy(o)
-                cancel_order.order_type = OrderType.CANCEL
-                self.send_order(cancel_order)
+            # if o.mine:
+            #     cancel_order = copy.copy(o)
+            #     cancel_order.order_type = OrderType.CANCEL
+            #     self.send_order(cancel_order)
 
         # order has attribute mine (bool) to know if our order or not
 
@@ -67,15 +69,16 @@ class MyFirstBot(Agent):
 
         if not self._order_sent:
             order = Order.create_new()
-            order.market = Market(1572)
+            order.market = Market(1573)
             order.order_side = OrderSide.BUY
             order.order_type = OrderType.LIMIT
-            order.price = 600
+            order.price = 1
             order.ref = "rip"
             order.units = 1
 
             # we will know this owner/target from the private orders we receive
             # Manager is always M000
+
             order.owner_or_target = "M000"  # sending private orders, the market code should be changed to 1573
             self.send_order(order)
             self._order_sent = True

@@ -36,7 +36,7 @@ class DSBot(Agent):
         self._bot_type = bot_type
         self._sent_order_count = 0
         self._waiting_for_server = False
-        self._priv_order_exists = False
+        self._priv_order_exists = False  # tracks if there is a manager priv order that exists
 
     def role(self):
         return self._role
@@ -80,7 +80,7 @@ class DSBot(Agent):
             # if order.is_private and order.is_pending and not order.mine:
             if order.is_private and order.is_pending:
                 self._priv_order_exists = True
-            elif order.is_private and order.order_type == OrderType.CANCEL:
+            elif order.is_private and order.is_consumed:
                 self._priv_order_exists = False
 
         # call strategy based on bot type
@@ -88,28 +88,37 @@ class DSBot(Agent):
             self._make_market()
 
     def _make_market(self):
-
+        """
+        Market Making Strategy
+        Parts:
+            1. Iterate over all orders, track number of active public orders by me
+            2. Track active private orders
+            3. Cancel stale orders
+            4. If private order by manager exists, and no public orders by me, create one
+        """
         num_pending_orders = 0
         num_manager_order = 0
         manager_order = None
 
-        for _, order in Order.current().items():
+        for _, order in Order.all().items():
 
-            # if i have a current order in the public market
-            if order.mine and not order.is_private:
+            # 1. if i have a current order in the public market
+            if order.mine and not order.is_private and not order.is_consumed:
                 num_pending_orders += 1
 
-                # cancel stale orders in public market
+                # 3. cancel stale orders in public market
                 if not self._priv_order_exists and not self._waiting_for_server:
                     cancel_order = copy.copy(order)
                     cancel_order.ref = f"Cancel {order.ref}"
                     cancel_order.order_type = OrderType.CANCEL
                     self.send_order(cancel_order)
                     self._waiting_for_server = True
+                    self._sent_order_count -= 1
 
+            # 2. track active private orders
             # SIMULATION
             # if order.is_private and not order.mine:
-            if order.is_private:
+            if order.is_private and not order.is_consumed:
 
                 # set role of bot
                 if order.order_side == OrderSide.BUY:
@@ -120,13 +129,14 @@ class DSBot(Agent):
                 num_manager_order += 1
                 manager_order = order
 
-        self.inform(f"{num_pending_orders, num_manager_order}")
-
-        # if 0 mine orders in public, and not waiting for server, and there is a
+        # 4. if 0 mine orders in public, and not waiting for server, and there is a
         # private order to be serviced
         if num_pending_orders == 0 and not self._waiting_for_server \
                 and num_manager_order > 0:
 
+            is_private = False
+
+            # PUBLIC ORDER SIDE - Determine attributes of order to be created==========
             market = self._public_market_id
 
             if self._role == Role.BUYER:
@@ -140,14 +150,32 @@ class DSBot(Agent):
             order_type = OrderType.LIMIT
             ref = f"Order: {self._sent_order_count} - SM"
 
-            self._create_new_order(market, price, units, order_side, order_type, ref)
+            self._create_new_order(market, price, units, order_side, order_type, ref, is_private)
+
+            # PRIVATE ORDER SIDE - Determine attributes of order to be created========
+            # flip attributes
+            is_private = True
+            market = self._private_market_id
+            price = manager_order.price
+
+            if self._role == Role.BUYER:
+                order_side = OrderSide.SELL
+            else:
+                order_side = OrderSide.BUY
+
+            units = 1
+            order_type = OrderType.LIMIT
+            ref = f"Order: {self._sent_order_count} - SM"
+            self._create_new_order(market, price, units, order_side, order_type, ref,
+                                   is_private)
 
     def _create_new_order(self, market: int,
                           price: int,
                           units: int,
                           order_side: OrderSide,
                           order_type: OrderType,
-                          ref: str):
+                          ref: str,
+                          is_private: bool):
         """
         :param market: market ID for the order
         :param price: determined price
@@ -164,6 +192,9 @@ class DSBot(Agent):
         new_order.order_side = order_side
         new_order.order_type = order_type
         new_order.ref = ref
+
+        if is_private:
+            new_order.owner_or_target = "M000"
 
         self.send_order(new_order)
         self._waiting_for_server = True
