@@ -13807,3 +13807,22 @@
 [2020-08-29 23:26:30,217:         agent.DSBot]:     INFO - Order(10293903,Mine,SELL,1@629,M-1572,LIMIT,REF:'Order: 9 - SM')
 [2020-08-29 23:26:30,217:         agent.DSBot]:     INFO - Order(10293905,Mine,SELL,1@629,M-1572,CANCEL,REF:'Cancelled: Order: 9 - SM')
 [2020-08-29 23:26:30,218:         agent.DSBot]:     INFO - 0, 0
+[2020-08-29 23:27:40,177:         agent.DSBot]:     INFO - 0, 0
+[2020-08-29 23:27:45,446:         agent.DSBot]:     INFO - 0, 0
+[2020-08-29 23:29:02,677:         agent.DSBot]:     INFO - Order(10293908,Others,BUY,1@250,M-1572,LIMIT,REF:'buy0')
+[2020-08-29 23:29:02,677:         agent.DSBot]:     INFO - 0, 0
+[2020-08-29 23:29:17,974:         agent.DSBot]:     INFO - Order(10293908,Others,BUY,1@250,M-1572,LIMIT,REF:'buy0')
+[2020-08-29 23:29:17,974:         agent.DSBot]:     INFO - Order(10293909,Others,BUY,1@250,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 23:29:17,974:         agent.DSBot]:     INFO - 0, 0
+[2020-08-29 23:29:20,232:         agent.DSBot]:     INFO - Order(10293910,Others,BUY,1@250,M-1572,LIMIT,REF:'buy0')
+[2020-08-29 23:29:20,233:         agent.DSBot]:     INFO - 0, 0
+[2020-08-29 23:29:22,239:         agent.DSBot]:     INFO - Order(10293910,Others,BUY,1@250,M-1572,LIMIT,REF:'buy0')
+[2020-08-29 23:29:22,240:         agent.DSBot]:     INFO - Order(10293911,Others,BUY,1@250,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 23:29:22,240:         agent.DSBot]:     INFO - 0, 0
+[2020-08-29 23:29:23,748:         agent.DSBot]:     INFO - Order(10293912,Others,BUY,1@250,M-1572,LIMIT,REF:'buy0')
+[2020-08-29 23:29:23,749:         agent.DSBot]:     INFO - 0, 0
+[2020-08-29 23:29:26,257:         agent.DSBot]:     INFO - Order(10293912,Others,BUY,1@250,M-1572,LIMIT,REF:'buy0')
+[2020-08-29 23:29:26,258:         agent.DSBot]:     INFO - Order(10293913,Others,BUY,1@250,M-1572,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-29 23:29:26,258:         agent.DSBot]:     INFO - 0, 0
+[2020-08-29 23:29:27,010:         agent.DSBot]:     INFO - Order(10293914,Others,BUY,1@250,M-1572,LIMIT,REF:'buy0')
+[2020-08-29 23:29:27,010:         agent.DSBot]:     INFO - 0, 0
