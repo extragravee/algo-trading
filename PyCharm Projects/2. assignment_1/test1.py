@@ -37,6 +37,7 @@ class DSBot(Agent):
         self._sent_order_count = 0
         self._waiting_for_server = False
         self._priv_order_exists = False  # tracks if there is a manager priv order that exists
+        self._public_active_orders = False
 
     def role(self):
         return self._role
@@ -73,12 +74,13 @@ class DSBot(Agent):
         """
 
         for order in orders:
-            self.inform(order)
+            if order.mine or order.is_private:
+                self.inform(order)
 
             # track if there is a private market order from manager
             # SIMULATION
             # if order.is_private and order.is_pending and not order.mine:
-            if order.is_private and order.is_pending:
+            if order.is_private and order.is_pending and not order.mine:
                 self._priv_order_exists = True
             elif order.is_private and order.is_consumed:
                 self._priv_order_exists = False
@@ -118,7 +120,7 @@ class DSBot(Agent):
             # 2. track active private orders
             # SIMULATION
             # if order.is_private and not order.mine:
-            if order.is_private and not order.is_consumed:
+            if order.is_private and not order.is_consumed and not order.mine:
 
                 # set role of bot
                 if order.order_side == OrderSide.BUY:
@@ -217,7 +219,7 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 898
+    MARKETPLACE_ID = 915
 
     B_TYPE = BotType.MARKET_MAKER
     # B_TYPE = BotType.REACTIVE
