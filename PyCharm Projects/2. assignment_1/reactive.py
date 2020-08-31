@@ -87,6 +87,7 @@ class DSBot(Agent):
         num_private_orders, num_my_public_orders, my_stale_priv_order, \
             manager_order = self._get_order_book_state()
 
+        # catch is there needs to be an update in the market for this to execute lol
         # if i have ANY orders in the public book, it's stale, so cancel it
         if my_stale_priv_order is not None and not my_stale_priv_order.fm_id == self._last_accepted_public_order_id:
             self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
