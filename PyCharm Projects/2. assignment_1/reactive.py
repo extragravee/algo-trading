@@ -88,15 +88,16 @@ class DSBot(Agent):
             manager_order = self._get_order_book_state()
 
         # if i have ANY orders in the public book, it's stale, so cancel it
-        if my_stale_priv_order is not None:
+        if my_stale_priv_order is not None and not my_stale_priv_order.fm_id == self._last_accepted_public_order_id:
             self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
             self._cancel_order(my_stale_priv_order)
-            self._last_accepted_public_order = None
+            self._last_accepted_public_order_id = 0
 
         # PRIVATE ORDER CREATION ==============================================================
         # only create private order if public order traded successfully
         if (not self._last_accepted_public_order_id == 0) and \
-                (self._last_accepted_public_order_id not in Order.current()):
+                (self._last_accepted_public_order_id not in Order.current()) and \
+                num_private_orders > 0:
 
             self._last_accepted_public_order_id = 0
             self.inform("Last public order traded just fine, create private order")
@@ -110,6 +111,7 @@ class DSBot(Agent):
                 order_side = OrderSide.BUY
             order_type = OrderType.LIMIT
             ref = self._tradeID
+
             self._create_new_order(price, units, order_side, order_type, ref, is_private)
 
         # PRIVATE ORDER CREATION ==============================================================
@@ -121,6 +123,7 @@ class DSBot(Agent):
         # stale orders should be cleared at this stage; there exists a private order
         # create an order based on best bid / ask
         if num_private_orders > 0 and not self._waiting_for_server:
+
             is_private = False
             self._create_profitable_order(best_ask, best_bid, manager_order, is_private)
         # PUBLIC ORDER CREATION ===============================================================
@@ -150,7 +153,7 @@ class DSBot(Agent):
 
         if is_private:
             market = self._private_market_id
-            new_order.owner_or_target = "M000"
+            new_order.owner_or_target = "T033"
         else:
             market = self._public_market_id
 
@@ -161,8 +164,8 @@ class DSBot(Agent):
         new_order.order_type = order_type
         new_order.ref = ref
 
-        self.send_order(new_order)
         self._waiting_for_server = True
+        self.send_order(new_order)
         self._tradeID += 1
 
     @staticmethod
@@ -223,6 +226,7 @@ class DSBot(Agent):
             # if the best selling price is less than
             # or equal to the price we want to buy at, submit order
             if best_ask <= manager_order.price - PROFIT_MARGIN:
+                self.inform("Creating public order========================")
                 price = manager_order.price - PROFIT_MARGIN
                 units = 1
                 order_side = OrderSide.BUY
@@ -235,6 +239,7 @@ class DSBot(Agent):
             # if the best asking price is more than
             # or equal to the price we want to sell at, submit order
             if best_bid >= manager_order.price + PROFIT_MARGIN:
+                self.inform("Creating public order========================")
                 price = manager_order.price + PROFIT_MARGIN
                 units = 1
                 order_side = OrderSide.SELL
