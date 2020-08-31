@@ -14220,3 +14220,291 @@
 [2020-08-31 19:13:55,218:         agent.DSBot]:     INFO - Order(10370222,Mine,SELL,1@100,M-1573,LIMIT,REF:'Order: 1 - SM',PVT_TO:M000)
 [2020-08-31 19:13:55,219:         agent.DSBot]:     INFO - 1, 1
 [2020-08-31 19:13:57,228:         agent.DSBot]:     INFO - 1, 1
+
+=============================== Log Started [2020-08-31 21:32:52 AEST] ===============================
+[2020-08-31 21:32:54,488:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+
+=============================== Log Started [2020-08-31 21:44:39 AEST] ===============================
+[2020-08-31 21:44:41,419:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 21:44:43,528:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 21:44:43,528:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 21:44:43,529:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 21:44:44,281:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 21:44:44,284:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 260
+[2020-08-31 21:44:44,284:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 21:44:46,039:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 275
+[2020-08-31 21:44:46,040:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 21:44:47,548:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:44:47,548:         agent.DSBot]:     INFO - 0, 1
+
+=============================== Log Started [2020-08-31 21:45:26 AEST] ===============================
+[2020-08-31 21:45:27,896:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 21:45:31,614:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 21:45:31,615:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 21:45:31,615:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 21:45:32,370:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 21:45:32,372:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:45:32,373:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 21:45:48,435:         agent.DSBot]:     INFO - Stale order needs cancellation =========================
+[2020-08-31 21:45:48,436:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:45:48,436:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 21:45:53,707:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:45:53,707:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 21:45:55,463:         agent.DSBot]:     INFO - Stale order needs cancellation =========================
+[2020-08-31 21:45:55,463:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:45:55,464:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 21:46:06,250:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:46:06,250:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 21:47:20,251:         agent.DSBot]:     INFO - Stale order needs cancellation =========================
+[2020-08-31 21:47:20,251:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:47:20,252:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 21:47:26,019:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:47:26,019:         agent.DSBot]:     INFO - 0, 1
+
+=============================== Log Started [2020-08-31 21:47:36 AEST] ===============================
+[2020-08-31 21:47:38,596:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 21:47:40,674:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 21:47:40,675:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 21:47:40,675:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 21:47:41,427:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 21:47:41,430:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:47:41,431:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 21:47:44,944:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 21:47:44,944:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:47:44,944:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 21:47:50,217:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:47:50,218:         agent.DSBot]:     INFO - 0, 1
+
+=============================== Log Started [2020-08-31 21:48:45 AEST] ===============================
+[2020-08-31 21:48:47,232:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 21:48:49,302:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 21:48:49,303:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 21:48:49,303:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 21:48:50,057:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 21:48:50,060:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:48:50,060:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 21:48:52,320:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 21:48:52,321:         agent.DSBot]:     INFO - ID: 10413356
+[2020-08-31 21:48:52,321:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:48:52,321:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 21:49:05,120:         agent.DSBot]:     INFO - Best bid: 224, Best ask: 999999
+[2020-08-31 21:49:05,120:         agent.DSBot]:     INFO - 0, 1
+
+=============================== Log Started [2020-08-31 21:52:26 AEST] ===============================
+[2020-08-31 21:52:28,175:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 21:52:30,240:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 21:52:30,240:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 21:52:30,241:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 21:52:45,297:         agent.DSBot]:     INFO - Best bid: 0, Best ask: 999999
+[2020-08-31 21:52:45,298:         agent.DSBot]:     INFO - 0, 0
+[2020-08-31 21:52:50,064:         agent.DSBot]:     INFO - Best bid: 0, Best ask: 999999
+[2020-08-31 21:52:50,064:         agent.DSBot]:     INFO - 0, 0
+[2020-08-31 21:52:57,338:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 21:52:57,339:         agent.DSBot]:     INFO - Best bid: 0, Best ask: 151
+[2020-08-31 21:52:57,339:         agent.DSBot]:     INFO - 1, 0
+[2020-08-31 21:52:59,348:         agent.DSBot]:     INFO - Best bid: 0, Best ask: 999999
+[2020-08-31 21:52:59,348:         agent.DSBot]:     INFO - 0, 0
+[2020-08-31 21:53:15,160:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 21:53:15,160:         agent.DSBot]:     INFO - Best bid: 0, Best ask: 151
+[2020-08-31 21:53:15,160:         agent.DSBot]:     INFO - 1, 0
+[2020-08-31 21:53:16,415:         agent.DSBot]:     INFO - Best bid: 0, Best ask: 999999
+[2020-08-31 21:53:16,415:         agent.DSBot]:     INFO - 0, 0
+
+=============================== Log Started [2020-08-31 22:17:12 AEST] ===============================
+[2020-08-31 22:17:14,862:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:17:16,955:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:17:16,955:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:17:16,955:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:17:17,709:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 22:17:17,712:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+
+=============================== Log Started [2020-08-31 22:17:42 AEST] ===============================
+[2020-08-31 22:17:44,339:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:17:46,497:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:17:46,497:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:17:46,497:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:17:46,999:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 22:17:47,255:         agent.DSBot]:     INFO - Best bid: 1, Best ask: 999999
+[2020-08-31 22:17:47,255:         agent.DSBot]:     INFO - 0, 0
+[2020-08-31 22:17:51,521:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:17:51,522:         agent.DSBot]:     INFO - Best bid: 1, Best ask: 151
+[2020-08-31 22:17:51,522:         agent.DSBot]:     INFO - 1, 0
+[2020-08-31 22:17:53,027:         agent.DSBot]:     INFO - Best bid: 1, Best ask: 999999
+[2020-08-31 22:17:53,028:         agent.DSBot]:     INFO - 0, 0
+
+=============================== Log Started [2020-08-31 22:18:56 AEST] ===============================
+[2020-08-31 22:18:58,423:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:19:00,527:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:19:00,527:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:19:00,527:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:19:01,281:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 22:19:01,285:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-08-31 22:19:15,332:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-08-31 22:19:19,096:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+
+=============================== Log Started [2020-08-31 22:19:22 AEST] ===============================
+[2020-08-31 22:19:24,862:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:19:26,954:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:19:26,955:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:19:26,955:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:19:27,707:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 22:19:27,711:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 990
+[2020-08-31 22:19:27,711:         agent.DSBot]:     INFO - 0, 0
+[2020-08-31 22:19:30,975:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 990
+[2020-08-31 22:19:30,975:         agent.DSBot]:     INFO - 0, 0
+[2020-08-31 22:19:33,485:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:19:33,485:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 151
+[2020-08-31 22:19:33,486:         agent.DSBot]:     INFO - 1, 0
+[2020-08-31 22:19:34,491:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+
+=============================== Log Started [2020-08-31 22:20:59 AEST] ===============================
+[2020-08-31 22:21:01,092:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:21:04,347:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:21:04,348:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:21:04,348:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:21:05,100:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 22:21:05,104:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 990
+[2020-08-31 22:21:05,104:         agent.DSBot]:     INFO - 0, 0
+[2020-08-31 22:21:09,871:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:21:09,871:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 151
+[2020-08-31 22:21:09,871:         agent.DSBot]:     INFO - 1, 0
+[2020-08-31 22:21:10,875:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+
+=============================== Log Started [2020-08-31 22:21:37 AEST] ===============================
+[2020-08-31 22:21:39,156:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:21:41,203:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:21:41,204:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:21:41,204:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:21:41,958:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 22:21:41,962:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 990
+[2020-08-31 22:21:41,962:         agent.DSBot]:     INFO - 0, 0
+[2020-08-31 22:21:44,472:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:21:44,473:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 151
+[2020-08-31 22:21:44,473:         agent.DSBot]:     INFO - 1, 0
+[2020-08-31 22:21:45,728:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+
+=============================== Log Started [2020-08-31 22:24:17 AEST] ===============================
+[2020-08-31 22:24:20,186:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:24:22,247:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:24:22,247:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:24:22,247:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:24:22,750:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+
+=============================== Log Started [2020-08-31 22:24:36 AEST] ===============================
+[2020-08-31 22:24:38,268:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:24:40,511:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:24:40,511:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:24:40,512:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:24:41,265:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+
+=============================== Log Started [2020-08-31 22:25:03 AEST] ===============================
+[2020-08-31 22:25:05,552:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:25:07,640:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:25:07,640:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:25:07,640:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:25:08,395:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 22:25:10,910:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:25:13,922:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:25:15,681:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:25:17,691:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+
+=============================== Log Started [2020-08-31 22:25:35 AEST] ===============================
+[2020-08-31 22:25:37,431:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:25:39,513:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:25:39,513:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:25:39,514:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:25:40,268:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 22:25:40,271:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 990
+[2020-08-31 22:25:40,271:         agent.DSBot]:     INFO - 0, 0
+[2020-08-31 22:25:43,281:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:25:43,282:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 151
+[2020-08-31 22:25:43,282:         agent.DSBot]:     INFO - 1, 0
+[2020-08-31 22:25:44,035:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 990
+[2020-08-31 22:25:44,035:         agent.DSBot]:     INFO - 0, 0
+[2020-08-31 22:25:45,290:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:25:45,290:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 151
+[2020-08-31 22:25:45,291:         agent.DSBot]:     INFO - 1, 0
+[2020-08-31 22:25:46,296:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 990
+[2020-08-31 22:25:46,296:         agent.DSBot]:     INFO - 0, 0
+[2020-08-31 22:26:09,378:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 990
+[2020-08-31 22:26:09,379:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:26:11,388:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:26:11,389:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:26:41,247:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:26:41,247:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 151
+[2020-08-31 22:26:41,247:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 22:26:43,504:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:26:43,504:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:26:43,756:         agent.DSBot]:     INFO - Stale order - SM - OrderSide.BUY-1 being cleared.
+[2020-08-31 22:26:43,756:         agent.DSBot]:     INFO - Best bid: 990, Best ask: 999999
+[2020-08-31 22:26:43,757:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 22:26:45,011:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:26:45,011:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:26:49,524:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:26:49,524:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 151
+[2020-08-31 22:26:49,525:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 22:26:50,278:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:26:50,278:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:26:50,529:         agent.DSBot]:     INFO - Stale order - SM - OrderSide.BUY-2 being cleared.
+[2020-08-31 22:26:50,530:         agent.DSBot]:     INFO - Best bid: 990, Best ask: 999999
+[2020-08-31 22:26:50,530:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 22:26:51,785:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:26:51,785:         agent.DSBot]:     INFO - 0, 1
+
+=============================== Log Started [2020-08-31 22:27:34 AEST] ===============================
+[2020-08-31 22:27:36,368:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:27:38,443:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:27:38,443:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:27:38,443:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:27:39,197:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 22:27:39,453:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:27:39,453:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:27:40,959:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:27:40,960:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 151
+[2020-08-31 22:27:40,960:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 22:27:41,966:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:27:41,967:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:27:42,219:         agent.DSBot]:     INFO - Stale order - SM - OrderSide.BUY-0 being cleared.
+[2020-08-31 22:27:42,220:         agent.DSBot]:     INFO - Best bid: 990, Best ask: 999999
+[2020-08-31 22:27:42,220:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 22:27:43,476:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:27:43,476:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:28:13,334:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-08-31 22:28:13,334:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 151
+[2020-08-31 22:28:13,334:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 22:28:15,593:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:28:15,594:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:28:15,846:         agent.DSBot]:     INFO - Stale order - SM - OrderSide.BUY-1 being cleared.
+[2020-08-31 22:28:15,846:         agent.DSBot]:     INFO - Best bid: 990, Best ask: 999999
+[2020-08-31 22:28:15,847:         agent.DSBot]:     INFO - 1, 1
+[2020-08-31 22:28:17,103:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:28:17,103:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:28:38,421:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:28:38,422:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:28:38,924:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:28:38,924:         agent.DSBot]:     INFO - 0, 1
+
+=============================== Log Started [2020-08-31 22:28:52 AEST] ===============================
+[2020-08-31 22:28:54,666:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:28:56,749:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:28:56,750:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:28:56,750:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:28:57,503:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 22:28:57,507:         agent.DSBot]:     INFO - Order(10367426,Others,BUY,1@356,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T044)
+[2020-08-31 22:28:57,507:         agent.DSBot]:     INFO - Order(10367432,Mine,SELL,1@356,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T044)
+[2020-08-31 22:28:57,507:         agent.DSBot]:     INFO - Order(10367434,Others,BUY,1@356,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T044)
+[2020-08-31 22:28:57,507:         agent.DSBot]:     INFO - Order(10367436,Mine,SELL,1@356,M-1573,LIMIT,REF:'Order: 3 - SM',PVT_TO:T044)
+[2020-08-31 22:28:57,508:         agent.DSBot]:     INFO - Order(10367447,Others,BUY,1@240,M-1572,LIMIT,REF:'Making Market')
+[2020-08-31 22:28:57,508:         agent.DSBot]:     INFO - Order(10379529,Others,SELL,1@275,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:28:57,508:         agent.DSBot]:     INFO - Order(10401084,Others,SELL,1@260,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:28:57,508:         agent.DSBot]:     INFO - Order(10406046,Others,SELL,1@240,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:28:57,508:         agent.DSBot]:     INFO - Order(10406984,Others,BUY,1@224,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:28:57,508:         agent.DSBot]:     INFO - Order(10412727,Mine,BUY,1@260,M-1572,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-08-31 22:28:57,509:         agent.DSBot]:     INFO - Order(10412736,Mine,BUY,1@275,M-1572,LIMIT,REF:'SM - OrderSide.BUY-1')
+[2020-08-31 22:28:57,509:         agent.DSBot]:     INFO - Order(10414230,Mine,SELL,1@224,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:28:57,509:         agent.DSBot]:     INFO - Order(10415599,Others,BUY,1@10,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:28:57,509:         agent.DSBot]:     INFO - Order(10415600,Others,SELL,1@990,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:28:57,509:         agent.DSBot]:     INFO - Order(10415625,Others,BUY,1@1000,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-31 22:28:57,509:         agent.DSBot]:     INFO - Order(10415626,Mine,BUY,1@990,M-1572,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-08-31 22:28:57,510:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:28:57,510:         agent.DSBot]:     INFO - 0, 1
