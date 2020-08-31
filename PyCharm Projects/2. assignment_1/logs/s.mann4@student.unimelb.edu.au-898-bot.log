@@ -14663,3 +14663,77 @@
 [2020-08-31 22:40:01,313:         agent.DSBot]:     INFO - Last public order traded just fine, create private order
 [2020-08-31 22:40:01,313:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
 [2020-08-31 22:40:01,313:         agent.DSBot]:     INFO - 0, 1
+
+=============================== Log Started [2020-08-31 22:45:40 AEST] ===============================
+[2020-08-31 22:45:42,306:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 22:45:44,322:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 22:45:44,322:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 22:45:44,322:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 22:45:45,082:         agent.DSBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 22:45:45,087:         agent.DSBot]:     INFO - Order(10367426,Others,BUY,1@356,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T044)
+[2020-08-31 22:45:45,087:         agent.DSBot]:     INFO - Order(10367432,Mine,SELL,1@356,M-1573,LIMIT,REF:'Order: 0 - SM',PVT_TO:T044)
+[2020-08-31 22:45:45,088:         agent.DSBot]:     INFO - Order(10367434,Others,BUY,1@356,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T044)
+[2020-08-31 22:45:45,088:         agent.DSBot]:     INFO - Order(10367436,Mine,SELL,1@356,M-1573,LIMIT,REF:'Order: 3 - SM',PVT_TO:T044)
+[2020-08-31 22:45:45,088:         agent.DSBot]:     INFO - Order(10367447,Others,BUY,1@240,M-1572,LIMIT,REF:'Making Market')
+[2020-08-31 22:45:45,088:         agent.DSBot]:     INFO - Order(10379529,Others,SELL,1@275,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:45,088:         agent.DSBot]:     INFO - Order(10401084,Others,SELL,1@260,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:45,088:         agent.DSBot]:     INFO - Order(10406046,Others,SELL,1@240,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:45,089:         agent.DSBot]:     INFO - Order(10406984,Others,BUY,1@224,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:45,089:         agent.DSBot]:     INFO - Order(10412727,Mine,BUY,1@260,M-1572,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-08-31 22:45:45,089:         agent.DSBot]:     INFO - Order(10412736,Mine,BUY,1@275,M-1572,LIMIT,REF:'SM - OrderSide.BUY-1')
+[2020-08-31 22:45:45,089:         agent.DSBot]:     INFO - Order(10414230,Mine,SELL,1@224,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:45,089:         agent.DSBot]:     INFO - Order(10415599,Others,BUY,1@10,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:45,089:         agent.DSBot]:     INFO - Order(10415600,Others,SELL,1@990,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:45,090:         agent.DSBot]:     INFO - Order(10415625,Others,BUY,1@1000,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T033)
+[2020-08-31 22:45:45,090:         agent.DSBot]:     INFO - Order(10415626,Mine,BUY,1@990,M-1572,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-08-31 22:45:45,090:         agent.DSBot]:     INFO - Order(10415645,Others,SELL,1@800,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:45,090:         agent.DSBot]:     INFO - Order(10415647,Mine,BUY,1@800,M-1572,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-08-31 22:45:45,090:         agent.DSBot]:     INFO - Order(10415648,Others,SELL,1@800,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:45,090:         agent.DSBot]:     INFO - Order(10415650,Mine,BUY,1@800,M-1572,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-08-31 22:45:45,090:         agent.DSBot]:     INFO - Order(10415651,Others,SELL,1@458,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:45,090:         agent.DSBot]:     INFO - Order(10415653,Mine,BUY,1@458,M-1572,LIMIT,REF:'SM - OrderSide.BUY-1')
+[2020-08-31 22:45:45,090:         agent.DSBot]:     INFO - Order(10415654,Others,SELL,1@458,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:45,090:         agent.DSBot]:     INFO - Order(10415656,Mine,BUY,1@458,M-1572,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-08-31 22:45:45,090:         agent.DSBot]:     INFO - Order(10415657,Others,SELL,1@458,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:45,090:         agent.DSBot]:     INFO - Order(10415659,Mine,BUY,1@458,M-1572,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-08-31 22:45:45,091:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:45:45,091:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:45:55,128:         agent.DSBot]:     INFO - Order(10415660,Others,SELL,1@458,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:55,129:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 458
+[2020-08-31 22:45:55,129:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:45:55,606:         agent.DSBot]:     INFO - 10415661
+[2020-08-31 22:45:55,631:         agent.DSBot]:     INFO - Order(10415660,Others,SELL,1@458,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:45:55,631:         agent.DSBot]:     INFO - Order(10415661,Mine,BUY,1@990,M-1572,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-08-31 22:45:55,631:         agent.DSBot]:     INFO - Order(10415662,Mine,BUY,1@458,M-1572,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-08-31 22:45:55,631:         agent.DSBot]:     INFO - Last public order traded just fine, create private order
+[2020-08-31 22:45:55,631:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:45:55,631:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:45:56,888:         agent.DSBot]:     INFO - Order(10415663,Mine,SELL,1@1000,M-1573,LIMIT,REF:'1',PVT_TO:M000)
+[2020-08-31 22:45:56,888:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:45:56,888:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:46:05,919:         agent.DSBot]:     INFO - Order(10415664,Others,SELL,1@458,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:46:05,919:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 458
+[2020-08-31 22:46:05,919:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:46:07,151:         agent.DSBot]:     INFO - 10415665
+[2020-08-31 22:46:07,174:         agent.DSBot]:     INFO - Order(10415664,Others,SELL,1@458,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:46:07,174:         agent.DSBot]:     INFO - Order(10415665,Mine,BUY,1@990,M-1572,LIMIT,REF:'SM - OrderSide.BUY-2')
+[2020-08-31 22:46:07,174:         agent.DSBot]:     INFO - Order(10415666,Mine,BUY,1@458,M-1572,LIMIT,REF:'SM - OrderSide.BUY-2')
+[2020-08-31 22:46:07,175:         agent.DSBot]:     INFO - Last public order traded just fine, create private order
+[2020-08-31 22:46:07,175:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:46:07,175:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:46:08,429:         agent.DSBot]:     INFO - Order(10415667,Mine,SELL,1@1000,M-1573,LIMIT,REF:'3',PVT_TO:M000)
+[2020-08-31 22:46:08,429:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:46:08,429:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:46:11,944:         agent.DSBot]:     INFO - Order(10415668,Others,SELL,1@458,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:46:11,944:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 458
+[2020-08-31 22:46:11,945:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:46:12,689:         agent.DSBot]:     INFO - 10415669
+[2020-08-31 22:46:12,698:         agent.DSBot]:     INFO - Order(10415668,Others,SELL,1@458,M-1572,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-08-31 22:46:12,698:         agent.DSBot]:     INFO - Order(10415669,Mine,BUY,1@990,M-1572,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-08-31 22:46:12,698:         agent.DSBot]:     INFO - Order(10415670,Mine,BUY,1@458,M-1572,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-08-31 22:46:12,698:         agent.DSBot]:     INFO - Last public order traded just fine, create private order
+[2020-08-31 22:46:12,699:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:46:12,699:         agent.DSBot]:     INFO - 0, 1
+[2020-08-31 22:46:13,957:         agent.DSBot]:     INFO - Order(10415671,Mine,SELL,1@1000,M-1573,LIMIT,REF:'5',PVT_TO:M000)
+[2020-08-31 22:46:13,957:         agent.DSBot]:     INFO - Best bid: 10, Best ask: 999999
+[2020-08-31 22:46:13,957:         agent.DSBot]:     INFO - 0, 1
