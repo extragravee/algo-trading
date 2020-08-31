@@ -97,8 +97,21 @@ class DSBot(Agent):
         # only create private order if public order traded successfully
         if (not self._last_accepted_public_order_id == 0) and \
                 (self._last_accepted_public_order_id not in Order.current()):
+
             self._last_accepted_public_order_id = 0
             self.inform("Last public order traded just fine, create private order")
+
+            is_private = True
+            price = manager_order.price
+            units = 1
+            if self.role() == Role.BUYER:
+                order_side = OrderSide.SELL
+            else:
+                order_side = OrderSide.BUY
+            order_type = OrderType.LIMIT
+            ref = self._tradeID
+            self._create_new_order(price, units, order_side, order_type, ref, is_private)
+
         # PRIVATE ORDER CREATION ==============================================================
 
         self.inform(f"Best bid: {best_bid}, Best ask: {best_ask}")
