@@ -51,20 +51,37 @@ class DSBot(Agent):
         pass
 
     def received_orders(self, orders: List[Order]):
-        for o in orders:
-            # if o.mine or o.is_private:
-            self.inform(o)
+        # for o in orders:
+        #     # if o.mine or o.is_private:
+        #     self.inform(o)
 
         if self._bot_type == BotType.REACTIVE:
             self._react_to_market()
 
     def _react_to_market(self):
+        # track best bid and asks
+        best_bid, best_ask = self._get_best_bid_ask()
 
+        num_private_orders = 0
+        num_my_public_orders = 0
+        # ORDER.CURRENT - no cancelled orders, all is_pending, all not consumed
+        for fm_id, order in Order.current().items():
+            # # if there is a private order not created by me
+            # if order.is_private and not order.mine:
+            #     num_private_orders += 1
+            # elif not order.is_private and
+            # self.inform(order)
+            self.inform(f"type = {order.order_type==OrderType.CANCEL} Is_private: {order.is_private},\n"
+                        f" is_pending: {order.is_pending}, is_consumed: {order.is_consumed}")
+
+        self.inform(f"Best bid: {best_bid}, Best ask: {best_ask}")
+
+    @staticmethod
+    def _get_best_bid_ask():
         # initial bid and asks unrealistic / out of bound
         best_bid = 0
         best_ask = 999999
 
-        # track best bid and asks
         for fm_id, order in Order.current().items():
             if not order.is_consumed and not order.is_private:
                 if order.order_side == OrderSide.BUY and order.price > best_bid:
@@ -72,7 +89,7 @@ class DSBot(Agent):
                 elif order.order_side == OrderSide.SELL and order.price < best_ask:
                     best_ask = order.price
 
-        self.inform(f"Best bid: {best_bid}, Best ask: {best_ask}")
+        return best_bid, best_ask
 
     def _print_trade_opportunity(self, other_order):
         self.inform(f"I am a {self.role()} with profitable order {other_order}")
