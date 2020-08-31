@@ -36,7 +36,7 @@ class DSBot(Agent):
         self._bot_type = bot_type
         self._waiting_for_server = False
         self._tradeID = 0
-        self._last_accepted_public_order = None
+        self._last_accepted_public_order_id = 0
 
     def role(self):
         return self._role
@@ -65,7 +65,8 @@ class DSBot(Agent):
 
         # track my last accepted public order
         if not order.is_private:
-            self._last_accepted_public_order = order
+            self._last_accepted_public_order_id = order.fm_id
+            self.inform(self._last_accepted_public_order_id)
 
     def order_rejected(self, info, order: Order):
         self._waiting_for_server = False
@@ -91,24 +92,14 @@ class DSBot(Agent):
             self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
             self._cancel_order(my_stale_priv_order)
             self._last_accepted_public_order = None
-        #
-        # # PRIVATE ORDER CREATION ==============================================================
-        # # only create private order if public order traded successfully
-        # if self._last_accepted_public_order is not None:
-        #     if self._last_accepted_public_order.fm_id not in Order.current():
-        #         is_private = True
-        #         price = manager_order.price
-        #         units = 1
-        #         if self.role() == Role.BUYER:
-        #             order_side = OrderSide.SELL
-        #         else:
-        #             order_side = OrderSide.BUY
-        #         order_type = OrderType.LIMIT
-        #         ref = self._last_accepted_public_order.ref
-        #
-        #         self._create_new_order(price, units, order_side, order_type, ref, is_private)
-        # # # PRIVATE ORDER CREATION ==============================================================
-        #
+
+        # PRIVATE ORDER CREATION ==============================================================
+        # only create private order if public order traded successfully
+        if (not self._last_accepted_public_order_id == 0) and \
+                (self._last_accepted_public_order_id not in Order.current()):
+            self._last_accepted_public_order_id = 0
+            self.inform("Last public order traded just fine, create private order")
+        # PRIVATE ORDER CREATION ==============================================================
 
         self.inform(f"Best bid: {best_bid}, Best ask: {best_ask}")
         self.inform(f"{num_my_public_orders}, {num_private_orders}")
