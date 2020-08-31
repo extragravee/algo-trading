@@ -655,3 +655,52 @@
 [2020-08-29 21:20:46,468:      agent.FirstBot]:     INFO - Order(10293409,Mine,SELL,4@510,M-1573,LIMIT,REF:'rip',PVT_TO:T002)
 [2020-08-29 21:20:46,468:      agent.FirstBot]:     INFO - Asset(Market(1572,widget,Widget,False),15,15,15,0,True,True)
 [2020-08-29 21:20:46,468:      agent.FirstBot]:     INFO - Asset(Market(1573,privateWidget,PrivateWidget,True),15,11,15,0,True,True)
+
+=============================== Log Started [2020-08-31 18:49:23 AEST] ===============================
+[2020-08-31 18:49:25,213:      agent.FirstBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 18:49:27,350:      agent.FirstBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 18:49:27,350:      agent.FirstBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 18:49:27,350:      agent.FirstBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 18:49:28,105:      agent.FirstBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 18:49:28,105:      agent.FirstBot]:     INFO - Asset(Market(1572,widget,Widget,False),15,15,15,0,True,True)
+[2020-08-31 18:49:28,106:      agent.FirstBot]:     INFO - Asset(Market(1573,privateWidget,PrivateWidget,True),15,15,15,0,True,True)
+[2020-08-31 18:49:28,106:      agent.FirstBot]:     INFO - Order(10367438,Others,BUY,1@35,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T011)
+[2020-08-31 18:49:28,107:      agent.FirstBot]:     INFO - Order(10367440,Mine,BUY,1@250,M-1573,LIMIT,REF:'test',PVT_TO:T027)
+[2020-08-31 18:49:28,107:      agent.FirstBot]:    ERROR - Exception in MyFirstBot.received_orders() method. Run with DEBUG for details.
+[2020-08-31 18:49:44,165:      agent.FirstBot]:     INFO - Order(10367441,Mine,BUY,1@250,M-1573,LIMIT,REF:'test',PVT_TO:T027)
+[2020-08-31 18:49:44,165:      agent.FirstBot]:    ERROR - Exception in MyFirstBot.received_orders() method. Run with DEBUG for details.
+[2020-08-31 18:49:44,165:      agent.FirstBot]:     INFO - Asset(Market(1572,widget,Widget,False),15,15,15,0,True,True)
+[2020-08-31 18:49:44,165:      agent.FirstBot]:     INFO - Asset(Market(1573,privateWidget,PrivateWidget,True),15,15,15,0,True,True)
+[2020-08-31 18:49:44,166:      agent.FirstBot]:     INFO - Order(10367440,Mine,BUY,1@250,M-1573,LIMIT,REF:'test',PVT_TO:T027)
+[2020-08-31 18:49:44,166:      agent.FirstBot]:    ERROR - Exception in MyFirstBot.received_orders() method. Run with DEBUG for details.
+[2020-08-31 18:49:44,166:      agent.FirstBot]:     INFO - Asset(Market(1572,widget,Widget,False),15,15,15,0,True,True)
+[2020-08-31 18:49:44,166:      agent.FirstBot]:     INFO - Asset(Market(1573,privateWidget,PrivateWidget,True),15,15,15,0,True,True)
+
+=============================== Log Started [2020-08-31 18:49:55 AEST] ===============================
+[2020-08-31 18:49:57,215:      agent.FirstBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-08-31 18:49:59,330:      agent.FirstBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-08-31 18:49:59,331:      agent.FirstBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-08-31 18:49:59,331:      agent.FirstBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-08-31 18:50:00,084:      agent.FirstBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 18:50:00,085:      agent.FirstBot]:     INFO - Asset(Market(1572,widget,Widget,False),15,15,15,0,True,True)
+[2020-08-31 18:50:00,085:      agent.FirstBot]:     INFO - Asset(Market(1573,privateWidget,PrivateWidget,True),15,15,15,0,True,True)
+[2020-08-31 18:50:00,086:      agent.FirstBot]:     INFO - Order(10367438,Others,BUY,1@35,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T011)
+[2020-08-31 18:50:00,839:      agent.FirstBot]:     INFO - Order(10367444,Mine,BUY,1@100,M-1573,LIMIT,REF:'rip',PVT_TO:T002)
+[2020-08-31 18:50:00,840:      agent.FirstBot]:    ERROR - Exception in MyFirstBot.received_orders() method. Run with DEBUG for details.
+[2020-08-31 18:50:00,841:      agent.FirstBot]:     INFO - Asset(Market(1572,widget,Widget,False),15,15,15,0,True,True)
+[2020-08-31 18:50:00,841:      agent.FirstBot]:     INFO - Asset(Market(1573,privateWidget,PrivateWidget,True),15,15,15,0,True,True)
+[2020-08-31 18:50:07,869:      agent.FirstBot]:     INFO - Session: SID:14078:SessionState.OPEN
+[2020-08-31 18:50:07,870:      agent.FirstBot]:     INFO - Asset(Market(1572,widget,Widget,False),15,15,15,0,True,True)
+[2020-08-31 18:50:07,870:      agent.FirstBot]:     INFO - Asset(Market(1573,privateWidget,PrivateWidget,True),15,15,15,0,True,True)
+[2020-08-31 18:50:07,871:      agent.FirstBot]:     INFO - Order(10367438,Others,BUY,1@35,M-1573,LIMIT,REF:'fm-ui 2.0.0-beta.48',PVT_FROM:T011)
+[2020-08-31 18:50:07,871:      agent.FirstBot]:     INFO - Order(10367444,Mine,BUY,1@100,M-1573,LIMIT,REF:'rip',PVT_TO:T002)
+[2020-08-31 18:50:07,872:      agent.FirstBot]:    ERROR - Exception in MyFirstBot.received_orders() method. Run with DEBUG for details.
+[2020-08-31 18:50:09,379:      agent.FirstBot]:     INFO - Order(10367445,Mine,BUY,1@250,M-1573,LIMIT,REF:'test',PVT_TO:T027)
+[2020-08-31 18:50:09,379:      agent.FirstBot]:    ERROR - Exception in MyFirstBot.received_orders() method. Run with DEBUG for details.
+[2020-08-31 18:50:09,379:      agent.FirstBot]:     INFO - Asset(Market(1572,widget,Widget,False),15,15,15,0,True,True)
+[2020-08-31 18:50:09,379:      agent.FirstBot]:     INFO - Asset(Market(1573,privateWidget,PrivateWidget,True),15,15,15,0,True,True)
+[2020-08-31 18:50:10,885:      agent.FirstBot]:     INFO - Order(10367446,Mine,BUY,1@250,M-1573,LIMIT,REF:'test',PVT_TO:T027)
+[2020-08-31 18:50:10,886:      agent.FirstBot]:    ERROR - Exception in MyFirstBot.received_orders() method. Run with DEBUG for details.
+[2020-08-31 18:50:10,886:      agent.FirstBot]:     INFO - Asset(Market(1572,widget,Widget,False),15,15,15,0,True,True)
+[2020-08-31 18:50:10,887:      agent.FirstBot]:     INFO - Asset(Market(1573,privateWidget,PrivateWidget,True),15,15,15,0,True,True)
+[2020-08-31 18:52:02,755:      agent.FirstBot]:     INFO - Order(10367447,Others,BUY,1@240,M-1572,LIMIT,REF:'Making Market')

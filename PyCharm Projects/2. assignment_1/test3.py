@@ -37,6 +37,9 @@ class DSBot(Agent):
         self._waiting_for_server = False
         self._total_orders_sent = 0
 
+        # tracks fmif of the previous accepted public order
+        self._last_order_sent = None
+
     def role(self):
         return self._role
 
@@ -62,6 +65,7 @@ class DSBot(Agent):
     def order_accepted(self, order: Order):
         self._waiting_for_server = False
         self._total_orders_sent += 1
+        self._last_order_sent = order.fm_id
         self.inform(f"Accepted: {order}")
 
     def order_rejected(self, info, order: Order):
@@ -70,7 +74,8 @@ class DSBot(Agent):
 
     def received_orders(self, orders: List[Order]):
         for o in orders:
-            self.inform(o)
+            if (o.mine or o.is_private) and not o.is_consumed :
+                self.inform(o)
         if self._bot_type == BotType.REACTIVE:
             pass
         elif self._bot_type == BotType.MARKET_MAKER:
@@ -83,13 +88,24 @@ class DSBot(Agent):
         manager_order = None
 
         for _, order in Order.current().items():
-            if order.mine and not order.is_consumed:
+            # if previous private order sent is consumed
+            if order.fm_id == self._last_order_sent and order.is_consumed:
+                self._last_order_sent = None
+            if order.mine and not order.is_consumed and not order.is_private:
                 num_pending_orders += 1
-            elif order.is_private and not order.mine and order.is_pending:
-                num_manager_orders += 1
-                manager_order = order
+            if order.mine and order.is_consumed and not order.is_private:
+                num_pending_orders -= 1
+            elif order.is_private and not order.mine:
+                if not order.is_consumed:
+                    num_manager_orders += 1
+                    manager_order = order
+                else:
+                    num_manager_orders -= 1
+
+
         self.inform(f"{num_pending_orders}, {num_manager_orders}")
-        # if there is a manager order present
+
+        # if there is a manager order present, decide role
         if num_manager_orders > 0:
             if manager_order.order_side == OrderSide.BUY:
                 self._role = Role.BUYER
@@ -114,6 +130,9 @@ class DSBot(Agent):
 
             self._create_new_order(price, units, order_side, order_type, ref, is_private)
 
+        # if the previous public order has traded, then create private order
+        if num_pending_orders == 0 and self._last_order_sent is not None \
+                and num_manager_orders > 0:
             # create corresponding private order ===================================
             is_private = True
             price = manager_order.price
@@ -125,15 +144,14 @@ class DSBot(Agent):
 
             self._create_new_order(price, units, order_side, order_type, ref, is_private)
 
-        # if stale orders in either market, cancel them
-        if num_manager_orders == 0 and num_pending_orders >= 0:
-            for _, order in Order.current().items():
-                if order.mine:
-                    cancel_order = copy.copy(order)
-                    cancel_order.order_type = OrderType.CANCEL
-                    cancel_order.ref = f"Cancelled: {order.ref}"
-                    self.send_order(cancel_order)
-
+        # # if stale orders in either market, cancel them
+        # if num_manager_orders == 0 and num_pending_orders >= 0:
+        #     for _, order in Order.current().items():
+        #         if order.mine:
+        #             cancel_order = copy.copy(order)
+        #             cancel_order.order_type = OrderType.CANCEL
+        #             cancel_order.ref = f"Cancelled: {order.ref}"
+        #             self.send_order(cancel_order)
 
     def _create_new_order(self,
                           price: int,
@@ -154,7 +172,7 @@ class DSBot(Agent):
 
         if is_private:
             market = self._private_market_id
-            new_order.owner_or_target = "T033"
+            new_order.owner_or_target = "M000"
         else:
             market = self._public_market_id
 
@@ -185,7 +203,7 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 898
+    MARKETPLACE_ID = 915
 
     B_TYPE = BotType.MARKET_MAKER
     # B_TYPE = BotType.REACTIVE

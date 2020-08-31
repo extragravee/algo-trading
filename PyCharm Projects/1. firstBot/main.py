@@ -72,14 +72,14 @@ class MyFirstBot(Agent):
             order.market = Market(1573)
             order.order_side = OrderSide.BUY
             order.order_type = OrderType.LIMIT
-            order.price = 1
+            order.price = 100
             order.ref = "rip"
             order.units = 1
 
             # we will know this owner/target from the private orders we receive
             # Manager is always M000
 
-            order.owner_or_target = "M000"  # sending private orders, the market code should be changed to 1573
+            order.owner_or_target = "T002"  # sending private orders, the market code should be changed to 1573
             self.send_order(order)
             self._order_sent = True
 
@@ -102,5 +102,5 @@ class MyFirstBot(Agent):
 
 
 if __name__ == "__main__":
-    bot = MyFirstBot("ardent-founder", "s.mann4@student.unimelb.edu.au", "921322", 898)
+    bot = MyFirstBot("ardent-founder", "u1@bmm", "3", 898)
     bot.run()
