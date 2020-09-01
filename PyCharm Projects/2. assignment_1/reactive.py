@@ -83,7 +83,8 @@ class DSBot(Agent):
             self.inform(o)
 
         if self._bot_type == BotType.REACTIVE:
-            self._react_to_market()
+            if not self._waiting_for_server:
+                self._react_to_market()
 
     def _react_to_market(self):
         # track best bid and asks
@@ -95,10 +96,10 @@ class DSBot(Agent):
 
         # catch is there needs to be an update in the market for this to execute lol
         # if i have ANY orders in the public book, it's stale, so cancel it
-        if my_stale_priv_order is not None and not my_stale_priv_order.fm_id == self._last_accepted_public_order_id:
-            self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
-            self._cancel_order(my_stale_priv_order)
-            self._last_accepted_public_order_id = 0
+        # if my_stale_priv_order is not None and not my_stale_priv_order.fm_id == self._last_accepted_public_order_id:
+        #     self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
+        #     self._cancel_order(my_stale_priv_order)
+        #     self._last_accepted_public_order_id = 0
 
         # PRIVATE ORDER CREATION ==============================================================
         # only create private order if public order traded successfully
