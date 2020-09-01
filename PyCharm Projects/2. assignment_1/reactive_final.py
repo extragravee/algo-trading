@@ -1,5 +1,11 @@
 """
-This is a template for Project 1, Task 1 (Induced demand-supply)
+FNCE30010 - Algorithmic Trading
+Assignment 1
+Sidakpreet Mann
+921322
+
+Notes:
+    1. Profitable trade printing only implemented for reactive bot type
 """
 import copy
 from enum import Enum
@@ -44,11 +50,35 @@ class DSBot(Agent):
         self._private_widgets_available = 0
         self._public_widgets_available = 0
 
+    # MARKET MAKER FUNCTIONALITY ##########################################################
+
+
+    # SHARED FUNCTIONALITY ################################################################
+
     def role(self):
         return self._role
 
     def pre_start_tasks(self):
         pass
+
+    def received_holdings(self, holdings):
+        """
+        Tracks the portfolio holdings
+        :param holdings: attributes of interest cash, cash_available, assets
+        """
+        # track cash assets
+        self._cash = holdings.cash
+        self._cash_available = holdings.cash_available
+
+        # dict to track units of widgets and private widgets
+        self._assets = holdings.assets
+
+        # track available public and private units
+        for key in self._assets:
+            if key.fm_id == self._public_market_id:
+                self._public_widgets_available = self._assets[key].units_available
+            elif key.fm_id == self._private_market_id:
+                self._private_widgets_available = self._assets[key].units_available
 
     def initialised(self):
         """
@@ -67,17 +97,32 @@ class DSBot(Agent):
                 self._public_market_id = key
 
     def order_accepted(self, order: Order):
+        """
+        Notifies last order being accepted
+        Async - no longer waiting for the server
+        :param order: previous accepted order
+        """
         self._waiting_for_server = False
 
         # track my last accepted public order
         if not order.is_private:
             self._last_accepted_public_order_id = order.fm_id
-            self.inform(self._last_accepted_public_order_id)
 
     def order_rejected(self, info, order: Order):
+        """
+        Notifies last order being rejected
+        Async - no longer waiting for the server
+        :param info: details of rejected order
+        :param order: previous rejected order
+        """
         self._waiting_for_server = False
 
     def received_orders(self, orders: List[Order]):
+        """
+        Subscriber to order updates
+        Notifies new updates in the market
+        :param orders: list of order objects (updates)
+        """
         for o in orders:
             # if o.mine or o.is_private:
             self.inform(o)
@@ -85,64 +130,6 @@ class DSBot(Agent):
         if self._bot_type == BotType.REACTIVE:
             if not self._waiting_for_server:
                 self._react_to_market()
-
-    def _react_to_market(self):
-        # track best bid and asks
-        best_bid, best_ask, best_bid_order, best_ask_order = self._get_best_bid_ask()
-
-        # track state of order book
-        num_private_orders, num_my_public_orders, my_stale_priv_order, \
-            manager_order = self._get_order_book_state()
-
-        # catch is there needs to be an update in the market for this to execute lol
-        # if i have ANY orders in the public book, it's stale, so cancel it
-        # if my_stale_priv_order is not None and not my_stale_priv_order.fm_id == self._last_accepted_public_order_id:
-        #     self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
-        #     self._cancel_order(my_stale_priv_order)
-        #     self._last_accepted_public_order_id = 0
-
-        # PRIVATE ORDER CREATION ==============================================================
-        # only create private order if public order traded successfully
-        if (not self._last_accepted_public_order_id == 0) and \
-                (self._last_accepted_public_order_id not in Order.current()) and \
-                num_private_orders > 0:
-
-            self._last_accepted_public_order_id = 0
-            self.inform("Last public order traded just fine, create private order")
-
-            is_private = True
-            price = manager_order.price
-            units = 1
-            if self.role() == Role.BUYER:
-                order_side = OrderSide.SELL
-            else:
-                order_side = OrderSide.BUY
-            order_type = OrderType.LIMIT
-            ref = f"Private order - {self._tradeID}"
-
-            if (self.role() == Role.BUYER and self._private_widgets_available > 0) or \
-                    (self.role() == Role.SELLER and self._cash_available >= price):
-                self._create_new_order(price, units, order_side, order_type, ref, is_private)
-
-        # PRIVATE ORDER CREATION ==============================================================
-
-        self.inform(f"Best bid: {best_bid}, Best ask: {best_ask}")
-        self.inform(f"{num_my_public_orders}, {num_private_orders}")
-
-        # PUBLIC ORDER CREATION ===============================================================
-        # stale orders should be cleared at this stage; there exists a private order
-        # create an order based on best bid / ask
-        if num_private_orders > 0 and not self._waiting_for_server:
-            is_private = False
-            self._create_profitable_order(best_ask, best_bid, manager_order, is_private,
-                                          best_bid_order, best_ask_order)
-        # PUBLIC ORDER CREATION ===============================================================
-
-    def _cancel_order(self, order):
-        cancel_order = copy.copy(order)
-        cancel_order.order_type = OrderType.CANCEL
-        cancel_order.ref = f"SM - Cancel - {order.ref}"
-        self.send_order(cancel_order)
 
     def _create_new_order(self,
                           price: int,
@@ -152,6 +139,7 @@ class DSBot(Agent):
                           ref: str,
                           is_private: bool):
         """
+        Creates a new order given the parameters
         :param price: determined price
         :param units: # of units to be submitted, fixed to 1
         :param order_side: buy or sell
@@ -178,14 +166,98 @@ class DSBot(Agent):
         self.send_order(new_order)
         self._tradeID += 1
 
+    def _cancel_order(self, order):
+        """
+        Helper function to cancel given order
+        :param order: order to be cancelled
+        """
+        cancel_order = copy.copy(order)
+        cancel_order.order_type = OrderType.CANCEL
+        cancel_order.ref = f"SM - Cancel - {order.ref}"
+        self.send_order(cancel_order)
+
+    def received_completed_orders(self, orders, market_id=None):
+        pass
+
+    def received_session_info(self, session: Session):
+        pass
+
+    # MARKET MAKER FUNCTIONALITY ##########################################################
+
+    def _react_to_market(self):
+        """
+        Ascertains state of the market, best bid and asks
+        Creates orders in public and private market
+        """
+        # track best bid and asks
+        best_bid, best_ask, best_bid_order, best_ask_order = self._get_best_bid_ask()
+
+        # track state of order book
+        num_private_orders, num_my_public_orders, my_stale_priv_order, \
+            manager_order = self._get_order_book_state()
+
+        # if i have ANY orders in the public book, it's stale, so cancel it
+        if my_stale_priv_order is not None and \
+                not my_stale_priv_order.fm_id == self._last_accepted_public_order_id:
+            self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
+            self._cancel_order(my_stale_priv_order)
+            self._last_accepted_public_order_id = 0
+
+        # PRIVATE ORDER CREATION ==============================================================
+        # only create private order if public order traded successfully, and there exists
+        # a corresponding manager order
+        if (not self._last_accepted_public_order_id == 0) and \
+                (self._last_accepted_public_order_id not in Order.current()) and \
+                num_private_orders > 0:
+
+            self._last_accepted_public_order_id = 0
+            self.inform("Last public order traded, creating private order.")
+
+            # Order attributes
+            is_private = True
+            price = manager_order.price
+            units = 1
+            if self.role() == Role.BUYER:
+                order_side = OrderSide.SELL
+            else:
+                order_side = OrderSide.BUY
+            order_type = OrderType.LIMIT
+            ref = f"Private order - {self._tradeID}"
+
+            # if we are a buyer, we sell in private market. Ensure have enough priv widgets
+            # if we are a seller, we buy in private market. Ensure have enough cash
+            if (self.role() == Role.BUYER and self._private_widgets_available > 0) or \
+                    (self.role() == Role.SELLER and self._cash_available >= price):
+                self._create_new_order(price, units, order_side, order_type, ref, is_private)
+
+        # END PRIVATE ORDER CREATION ==========================================================
+
+        # PUBLIC ORDER CREATION ===============================================================
+        # stale orders should be cleared at this stage; there exists a private order
+        # create an order based on best bid / ask
+        if num_private_orders > 0 and not self._waiting_for_server:
+            is_private = False
+            self._create_profitable_order(best_ask, best_bid, manager_order, is_private,
+                                          best_bid_order, best_ask_order)
+        # END PUBLIC ORDER CREATION ===========================================================
+
     @staticmethod
     def _get_best_bid_ask():
+        """
+        Determine and return best active bid and asks in the order book
+        :return: best_bid: best buy price
+                 best_ask: best sell price
+                 best_ask_order: best bid order object
+                 best_bid_order:  best ask order object
+
+        """
         # initial bid and asks unrealistic / out of bound
         best_bid = 0
         best_ask = 999999
         best_ask_order = None
         best_bid_order = None
 
+        # run through the order book, determine best bid and asks
         for fm_id, order in Order.current().items():
             if not order.is_consumed and not order.is_private:
                 if order.order_side == OrderSide.BUY and order.price > best_bid:
@@ -198,37 +270,22 @@ class DSBot(Agent):
         return best_bid, best_ask, best_bid_order, best_ask_order
 
     def _print_trade_opportunity(self, other_order):
+        """
+        Print profitable trade opportunities
+        :param other_order: order that's profitable given the profit margin
+        :return:
+        """
         self.inform(f"I am a {self.role()} with profitable order {other_order}")
 
-    def received_completed_orders(self, orders, market_id=None):
-        pass
-
-    def received_holdings(self, holdings):
-        """
-        Tracks the portfolio holdings
-        :param holdings: attributes of interest cash, cash_available, assets
-        """
-
-        self._cash = holdings.cash
-        self._cash_available = holdings.cash_available
-
-        # dict to track units of widgets and private widgets
-        self._assets = holdings.assets
-
-        self.inform(f"Cash: {self._cash}, Cash Avail: {self._cash_available}")
-
-        # track available public and private units
-        for key in self._assets:
-            if key.fm_id == self._public_market_id:
-                self._public_widgets_available = self._assets[key].units_available
-            elif key.fm_id == self._private_market_id:
-                self._private_widgets_available = self._assets[key].units_available
-        # self.inform(f"{self._private_widgets_available}, {self._public_widgets_available} ***********")
-
-    def received_session_info(self, session: Session):
-        pass
-
     def _get_order_book_state(self):
+        """
+        Ascertain how many active orders are mine, or from the manager to me,
+            and if I have a stale order in the markets
+        :return: num_private_orders : number of active private orders
+                 num_my_public_orders : number of my non-trade public orders
+                 my_stale_priv_order : which order of mine is stale
+                 manager_order : order object created by the manager
+        """
         num_private_orders = 0
         manager_order = None
         num_my_public_orders = 0
@@ -255,6 +312,15 @@ class DSBot(Agent):
 
     def _create_profitable_order(self, best_ask, best_bid, manager_order, is_private,
                                  best_bid_order, best_ask_order):
+        """
+        Handle the creation of profitable orders in the public market
+        :param best_ask: best asking price
+        :param best_bid: best bidding price
+        :param manager_order: manager's order object
+        :param is_private: if order to be created is private or not
+        :param best_bid_order: order object of best bidder
+        :param best_ask_order: order object of best seller
+        """
         # if buyer
         if self.role() == Role.BUYER:
             # if the best selling price is less than
@@ -275,6 +341,7 @@ class DSBot(Agent):
                 else:
                     self.inform("Not enough cash, but want to respond to: ")
                     self._print_trade_opportunity(best_ask_order)
+
         # if we are sellers
         else:
             # if the best asking price is more than
