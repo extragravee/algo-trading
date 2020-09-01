@@ -269,8 +269,11 @@ class DSBot(Agent):
                 # if we have enough cash available, make the order
                 if self._cash_available >= price:
                     self._create_new_order(price, units, order_side, order_type, ref, is_private)
-                self._print_trade_opportunity(best_ask_order)
-
+                    self.inform("Responding to: ")
+                    self._print_trade_opportunity(best_ask_order)
+                else:
+                    self.inform("Not enough cash, but want to respond to: ")
+                    self._print_trade_opportunity(best_ask_order)
         # if we are sellers
         else:
             # if the best asking price is more than
@@ -286,7 +289,11 @@ class DSBot(Agent):
                 # only sell if have any public widgets available
                 if self._public_widgets_available > 0:
                     self._create_new_order(price, units, order_side, order_type, ref, is_private)
-                self._print_trade_opportunity(best_bid_order)
+                    self.inform("Responding to: ")
+                    self._print_trade_opportunity(best_bid_order)
+                else:
+                    self.inform("Not enough widgets, but want to respond to: ")
+                    self._print_trade_opportunity(best_bid_order)
 
 
 if __name__ == "__main__":
