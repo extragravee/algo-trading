@@ -52,7 +52,6 @@ class DSBot(Agent):
 
     # MARKET MAKER FUNCTIONALITY ##########################################################
 
-
     # SHARED FUNCTIONALITY ################################################################
 
     def role(self):
@@ -194,7 +193,7 @@ class DSBot(Agent):
 
         # track state of order book
         num_private_orders, num_my_public_orders, my_stale_priv_order, \
-            manager_order = self._get_order_book_state()
+        manager_order = self._get_order_book_state()
 
         # if i have ANY orders in the public book, it's stale, so cancel it
         if my_stale_priv_order is not None and \
