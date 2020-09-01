@@ -38,6 +38,12 @@ class DSBot(Agent):
         self._tradeID = 0
         self._last_accepted_public_order_id = 0
 
+        self._cash_available = 0
+        self._cash = 0
+        self._assets = {}
+        self._private_widgets_available = 0
+        self._public_widgets_available = 0
+
     def role(self):
         return self._role
 
@@ -81,7 +87,7 @@ class DSBot(Agent):
 
     def _react_to_market(self):
         # track best bid and asks
-        best_bid, best_ask = self._get_best_bid_ask()
+        best_bid, best_ask, best_bid_order, best_ask_order = self._get_best_bid_ask()
 
         # track state of order book
         num_private_orders, num_my_public_orders, my_stale_priv_order, \
@@ -111,9 +117,11 @@ class DSBot(Agent):
             else:
                 order_side = OrderSide.BUY
             order_type = OrderType.LIMIT
-            ref = self._tradeID
+            ref = f"Private order - {self._tradeID}"
 
-            self._create_new_order(price, units, order_side, order_type, ref, is_private)
+            if (self.role() == Role.BUYER and self._private_widgets_available > 0) or \
+                    (self.role() == Role.SELLER and self._cash_available >= price):
+                self._create_new_order(price, units, order_side, order_type, ref, is_private)
 
         # PRIVATE ORDER CREATION ==============================================================
 
@@ -124,9 +132,9 @@ class DSBot(Agent):
         # stale orders should be cleared at this stage; there exists a private order
         # create an order based on best bid / ask
         if num_private_orders > 0 and not self._waiting_for_server:
-
             is_private = False
-            self._create_profitable_order(best_ask, best_bid, manager_order, is_private)
+            self._create_profitable_order(best_ask, best_bid, manager_order, is_private,
+                                          best_bid_order, best_ask_order)
         # PUBLIC ORDER CREATION ===============================================================
 
     def _cancel_order(self, order):
@@ -154,7 +162,7 @@ class DSBot(Agent):
 
         if is_private:
             market = self._private_market_id
-            new_order.owner_or_target = "T033"
+            new_order.owner_or_target = "M000"
         else:
             market = self._public_market_id
 
@@ -174,15 +182,19 @@ class DSBot(Agent):
         # initial bid and asks unrealistic / out of bound
         best_bid = 0
         best_ask = 999999
+        best_ask_order = None
+        best_bid_order = None
 
         for fm_id, order in Order.current().items():
             if not order.is_consumed and not order.is_private:
                 if order.order_side == OrderSide.BUY and order.price > best_bid:
                     best_bid = order.price
+                    best_bid_order = order
                 elif order.order_side == OrderSide.SELL and order.price < best_ask:
                     best_ask = order.price
+                    best_ask_order = order
 
-        return best_bid, best_ask
+        return best_bid, best_ask, best_bid_order, best_ask_order
 
     def _print_trade_opportunity(self, other_order):
         self.inform(f"I am a {self.role()} with profitable order {other_order}")
@@ -191,7 +203,26 @@ class DSBot(Agent):
         pass
 
     def received_holdings(self, holdings):
-        pass
+        """
+        Tracks the portfolio holdings
+        :param holdings: attributes of interest cash, cash_available, assets
+        """
+
+        self._cash = holdings.cash
+        self._cash_available = holdings.cash_available
+
+        # dict to track units of widgets and private widgets
+        self._assets = holdings.assets
+
+        self.inform(f"Cash: {self._cash}, Cash Avail: {self._cash_available}")
+
+        # track available public and private units
+        for key in self._assets:
+            if key.fm_id == self._public_market_id:
+                self._public_widgets_available = self._assets[key].units_available
+            elif key.fm_id == self._private_market_id:
+                self._private_widgets_available = self._assets[key].units_available
+        # self.inform(f"{self._private_widgets_available}, {self._public_widgets_available} ***********")
 
     def received_session_info(self, session: Session):
         pass
@@ -221,19 +252,24 @@ class DSBot(Agent):
 
         return num_private_orders, num_my_public_orders, my_stale_priv_order, manager_order
 
-    def _create_profitable_order(self, best_ask, best_bid, manager_order, is_private):
+    def _create_profitable_order(self, best_ask, best_bid, manager_order, is_private,
+                                 best_bid_order, best_ask_order):
         # if buyer
         if self.role() == Role.BUYER:
             # if the best selling price is less than
             # or equal to the price we want to buy at, submit order
             if best_ask <= manager_order.price - PROFIT_MARGIN:
                 self.inform("Creating public order========================")
-                price = manager_order.price - PROFIT_MARGIN
+                price = best_ask
                 units = 1
                 order_side = OrderSide.BUY
                 order_type = OrderType.LIMIT
                 ref = f"SM - {order_side}-{self._tradeID}"
-                self._create_new_order(price, units, order_side, order_type, ref, is_private)
+
+                # if we have enough cash available, make the order
+                if self._cash_available >= price:
+                    self._create_new_order(price, units, order_side, order_type, ref, is_private)
+                self._print_trade_opportunity(best_ask_order)
 
         # if we are sellers
         else:
@@ -241,19 +277,23 @@ class DSBot(Agent):
             # or equal to the price we want to sell at, submit order
             if best_bid >= manager_order.price + PROFIT_MARGIN:
                 self.inform("Creating public order========================")
-                price = manager_order.price + PROFIT_MARGIN
+                price = best_bid
                 units = 1
                 order_side = OrderSide.SELL
                 order_type = OrderType.LIMIT
                 ref = f"SM - {order_side}-{self._tradeID}"
-                self._create_new_order(price, units, order_side, order_type, ref, is_private)
+
+                # only sell if have any public widgets available
+                if self._public_widgets_available > 0:
+                    self._create_new_order(price, units, order_side, order_type, ref, is_private)
+                self._print_trade_opportunity(best_bid_order)
 
 
 if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 898
+    MARKETPLACE_ID = 915
 
     # B_TYPE = BotType.MARKET_MAKER
     B_TYPE = BotType.REACTIVE
