@@ -53,69 +53,55 @@ class DSBot(Agent):
     # MARKET MAKER FUNCTIONALITY ##########################################################
     def _make_market(self):
 
-        # track state of order book
-        num_private_orders, num_my_public_orders, \
-            my_stale_priv_order, manager_order = self._get_order_book_state()
+        num_private_orders, num_my_public_orders, my_stale_priv_order, \
+            manager_order = self._get_order_book_state()
         self.inform(f"{num_my_public_orders}, {num_private_orders}")
 
-        # check if my last public order has traded, and there is a private order
-        if not self._last_accepted_public_order_id == 0 and \
-                (self._last_accepted_public_order_id not in Order.current()) and \
-                num_private_orders > 0:
-            self.inform("Last order traded fine, make private order ==============")
-            #     # reset the flag
-            self._last_accepted_public_order_id = 0
-            self._create_market_maker_private_order(manager_order)
+        # PRIVATE ORDER CREATION ==========================================================
+        # need to confirm that the last sent order traded
+        if self._last_accepted_public_order_id not in Order.current() and num_private_orders > 0 \
+                and not self._last_accepted_public_order_id == 0 and num_my_public_orders == 0:
+            # determine order attributes
+            is_private = True
+            price = manager_order.price
+            units = 1
 
-        # if i have no active public orders, and there are manager order(s)
-        if num_my_public_orders == 0 and num_private_orders > 0:
-            self._create_market_maker_public_order(manager_order)
+            if manager_order.order_side == OrderSide.BUY:
+                order_side = OrderSide.SELL
+            elif manager_order.order_side == OrderSide.SELL:
+                order_side = OrderSide.BUY
 
-        # if stale public order
-        if num_my_public_orders > 0 and num_private_orders < 1:
-            self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
-            self._cancel_order(my_stale_priv_order)
-            self._last_accepted_public_order_id = 0
+            order_type = OrderType.LIMIT
+            ref = f"Private order - {self._tradeID}"
 
-    def _create_market_maker_private_order(self, manager_order):
+            if not self._waiting_for_server:
+                self.inform(f"Creating private order")
+                self._create_new_order(price, units, order_side, order_type, ref, is_private)
 
-        # determine attributes for private order
-        is_private = True
-        price = manager_order.price
-        units = 1
+        # END PRIVATE ORDER CREATION ======================================================
 
-        if manager_order.order_side == OrderSide.BUY:
-            order_side = OrderSide.SELL
-        else:
-            order_side = OrderSide.BUY
+        # PUBLIC ORDER CREATION ===========================================================
+        # no order of mine in the public market, but there is a private request
+        if num_private_orders > 0 and num_my_public_orders == 0:
 
-        order_type = OrderType.LIMIT
-        ref = f"Private order - {self._tradeID}"
-        self.inform(f"Order side is: {order_side}")
-        self._create_new_order(price, units, order_side, order_type, ref, is_private)
+            is_private = False
 
-    def _create_market_maker_public_order(self, manager_order):
+            # need to create private order
+            if self.role() == Role.BUYER:
+                order_side = OrderSide.BUY
+                price = manager_order.price - PROFIT_MARGIN
+            else:
+                order_side = OrderSide.SELL
+                price = manager_order.price + PROFIT_MARGIN
 
-        # if waiting for server, don't do anything
-        if self._waiting_for_server:
-            return
+            units = 1
+            order_type = OrderType.LIMIT
+            ref = f"Public order - {self._tradeID}"
 
-        # determine attributes for public order
-        # simple strategy - make minimum profit
-        is_private = False
-
-        if self.role() == Role.BUYER:
-            price = manager_order.price - PROFIT_MARGIN
-            order_side = OrderSide.BUY
-        elif self.role() == Role.SELLER:
-            price = manager_order.price + PROFIT_MARGIN
-            order_side = OrderSide.SELL
-
-        units = 1
-        order_type = OrderType.LIMIT
-        ref = f"SM - {order_side}-{self._tradeID}"
-
-        self._create_new_order(price, units, order_side, order_type, ref, is_private)
+            if not self._waiting_for_server:
+                self.inform(f"Creating public order")
+                self._create_new_order(price, units, order_side, order_type, ref, is_private)
+        # END PUBLIC ORDER CREATION =======================================================
 
     # SHARED FUNCTIONALITY ################################################################
 
@@ -259,14 +245,14 @@ class DSBot(Agent):
 
         # track state of order book
         num_private_orders, num_my_public_orders, my_stale_priv_order, \
-            manager_order = self._get_order_book_state()
+        manager_order = self._get_order_book_state()
 
-        # if i have ANY orders in the public book, it's stale, so cancel it
-        if my_stale_priv_order is not None and \
-                self._last_accepted_public_order_id not in Order.current():
-            self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
-            self._cancel_order(my_stale_priv_order)
-            self._last_accepted_public_order_id = 0
+        # # if i have ANY orders in the public book, it's stale, so cancel it
+        # if my_stale_priv_order is not None and \
+        #         self._last_accepted_public_order_id not in Order.current():
+        #     self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
+        #     self._cancel_order(my_stale_priv_order)
+        #     self._last_accepted_public_order_id = 0
 
         # PRIVATE ORDER CREATION ==============================================================
         # only create private order if public order traded successfully, and there exists
@@ -293,7 +279,8 @@ class DSBot(Agent):
             # if we are a seller, we buy in private market. Ensure have enough cash
             if (self.role() == Role.BUYER and self._private_widgets_available > 0) or \
                     (self.role() == Role.SELLER and self._cash_available >= price):
-                self._create_new_order(price, units, order_side, order_type, ref, is_private)
+                if not self._waiting_for_server:
+                    self._create_new_order(price, units, order_side, order_type, ref, is_private)
 
         # END PRIVATE ORDER CREATION ==========================================================
 
@@ -373,7 +360,6 @@ class DSBot(Agent):
                 num_my_public_orders += 1
                 my_stale_priv_order = order
 
-
         return num_private_orders, num_my_public_orders, my_stale_priv_order, manager_order
 
     def _create_profitable_order(self, best_ask, best_bid, manager_order, is_private,
@@ -434,10 +420,10 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 915
+    MARKETPLACE_ID = 898
 
-    # B_TYPE = BotType.MARKET_MAKER
-    B_TYPE = BotType.REACTIVE
+    B_TYPE = BotType.MARKET_MAKER
+    # B_TYPE = BotType.REACTIVE
 
     ds_bot = DSBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID, B_TYPE)
     ds_bot.run()

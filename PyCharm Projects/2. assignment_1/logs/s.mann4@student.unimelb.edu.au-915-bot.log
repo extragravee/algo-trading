@@ -32951,3 +32951,1117 @@
 [2020-09-02 20:58:41,307:         agent.DSBot]:     INFO - Order(10770308,Mine,SELL,1@740,M-1597,LIMIT,REF:'SM - OrderSide.SELL-8')
 [2020-09-02 20:58:41,307:         agent.DSBot]:     INFO - Order(10770310,Mine,SELL,1@450,M-1597,LIMIT,REF:'SM - OrderSide.SELL-9')
 [2020-09-02 20:58:41,307:         agent.DSBot]:     INFO - Order(10770311,Mine,BUY,1@280,M-1598,LIMIT,REF:'Private order - 10',PVT_TO:M000)
+
+=============================== Log Started [2020-09-02 21:01:29 AEST] ===============================
+[2020-09-02 21:01:31,747:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-02 21:01:33,904:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-02 21:01:33,904:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-02 21:01:33,905:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-02 21:01:34,409:         agent.DSBot]:     INFO - Session: SID:14205:SessionState.OPEN
+[2020-09-02 21:01:34,666:         agent.DSBot]:     INFO - Order(10773689,Others,BUY,5@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:01:34,666:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:01:34,666:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:01:34,666:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(10773818,Others,SELL,5@660,M-1597,LIMIT)
+[2020-09-02 21:01:35,421:         agent.DSBot]:     INFO - Order(10773855,Mine,BUY,1@660,M-1597,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-09-02 21:01:35,422:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:01:36,682:         agent.DSBot]:     INFO - Order(10773689,Others,BUY,5@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:01:36,682:         agent.DSBot]:     INFO - Order(10773868,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-02 21:01:36,682:         agent.DSBot]:     INFO - Order(10773869,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-02 21:01:36,682:         agent.DSBot]:     INFO - Order(10773870,Others,BUY,4@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:01:36,683:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:01:36,683:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:01:36,683:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(10773857,Others,SELL,4@660,M-1597,LIMIT)
+[2020-09-02 21:01:37,946:         agent.DSBot]:     INFO - Order(10773890,Mine,BUY,1@660,M-1597,LIMIT,REF:'SM - OrderSide.BUY-2')
+[2020-09-02 21:01:37,947:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:01:37,947:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:01:37,947:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(10773889,Others,SELL,1@690,M-1597,LIMIT)
+[2020-09-02 21:01:39,206:         agent.DSBot]:     INFO - Order(10773892,Mine,BUY,1@690,M-1597,LIMIT,REF:'SM - OrderSide.BUY-3')
+[2020-09-02 21:01:39,206:         agent.DSBot]:     INFO - Stale order - SM - OrderSide.BUY-2 being cleared.
+[2020-09-02 21:01:39,206:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:01:39,207:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:01:39,207:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(10773887,Others,SELL,4@720,M-1597,LIMIT)
+[2020-09-02 21:01:39,460:         agent.DSBot]:     INFO - Stale order - SM - OrderSide.BUY-2 being cleared.
+[2020-09-02 21:01:40,464:         agent.DSBot]:     INFO - Order(10773890,Mine,BUY,1@660,M-1597,LIMIT,REF:'SM - OrderSide.BUY-2')
+[2020-09-02 21:01:40,465:         agent.DSBot]:     INFO - Order(10773894,Mine,BUY,1@660,M-1597,CANCEL,REF:'SM - Cancel - SM - OrderSide.BUY-2')
+[2020-09-02 21:01:40,465:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:01:40,717:         agent.DSBot]:     INFO - Order(10773895,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-09-02 21:01:40,718:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:01:40,970:         agent.DSBot]:     INFO - Order(10773899,Mine,BUY,1@660,M-1597,CANCEL,REF:'SM - Cancel - SM - OrderSide.BUY-2')
+[2020-09-02 21:01:40,971:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:01:41,223:         agent.DSBot]:     INFO - Order(10773870,Others,BUY,4@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:01:41,223:         agent.DSBot]:     INFO - Order(10773900,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-02 21:01:41,223:         agent.DSBot]:     INFO - Order(10773901,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-02 21:01:41,224:         agent.DSBot]:     INFO - Order(10773902,Others,BUY,3@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:01:41,224:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:01:41,224:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:01:41,225:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(10773897,Others,SELL,3@720,M-1597,LIMIT)
+[2020-09-02 21:01:41,477:         agent.DSBot]:     INFO - Order(10773902,Others,BUY,3@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:01:41,478:         agent.DSBot]:     INFO - Order(10773903,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 6',PVT_TO:M000)
+[2020-09-02 21:01:41,478:         agent.DSBot]:     INFO - Order(10773904,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 6',PVT_FROM:M000)
+[2020-09-02 21:01:41,478:         agent.DSBot]:     INFO - Order(10773905,Others,BUY,2@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:01:41,478:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:01:41,478:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:01:41,478:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(10773897,Others,SELL,3@720,M-1597,LIMIT)
+[2020-09-02 21:01:41,981:         agent.DSBot]:     INFO - Order(10773905,Others,BUY,2@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:01:41,981:         agent.DSBot]:     INFO - Order(10773906,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-02 21:01:41,981:         agent.DSBot]:     INFO - Order(10773907,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-02 21:01:41,981:         agent.DSBot]:     INFO - Order(10773908,Others,BUY,1@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:01:41,982:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:01:41,982:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:01:41,982:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(10773897,Others,SELL,3@720,M-1597,LIMIT)
+[2020-09-02 21:01:42,235:         agent.DSBot]:     INFO - Order(10773910,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-8')
+[2020-09-02 21:01:42,235:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:01:42,487:         agent.DSBot]:     INFO - Order(10773913,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-9')
+[2020-09-02 21:01:42,488:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:01:42,739:         agent.DSBot]:     INFO - Order(10773916,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-10')
+[2020-09-02 21:01:42,740:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:01:42,992:         agent.DSBot]:     INFO - Order(10773908,Others,BUY,1@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:01:42,992:         agent.DSBot]:     INFO - Order(10773917,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-02 21:01:43,245:         agent.DSBot]:     INFO - Order(10773918,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 12',PVT_TO:M000)
+[2020-09-02 21:01:43,497:         agent.DSBot]:     INFO - Order(10773920,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 13',PVT_TO:M000)
+[2020-09-02 21:01:52,051:         agent.DSBot]:     INFO - Order(10773918,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 12',PVT_TO:M000)
+[2020-09-02 21:01:52,051:         agent.DSBot]:     INFO - Order(10773964,Mine,SELL,1@890,M-1598,CANCEL,REF:'fm-ui 2.0.0-beta.48',PVT_TO:M000)
+[2020-09-02 21:01:52,304:         agent.DSBot]:     INFO - Order(10773920,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 13',PVT_TO:M000)
+[2020-09-02 21:01:52,304:         agent.DSBot]:     INFO - Order(10773966,Mine,SELL,1@890,M-1598,CANCEL,REF:'fm-ui 2.0.0-beta.48',PVT_TO:M000)
+
+=============================== Log Started [2020-09-02 21:02:27 AEST] ===============================
+[2020-09-02 21:02:28,960:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-02 21:02:31,037:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-02 21:02:31,037:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-02 21:02:31,038:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-02 21:02:31,795:         agent.DSBot]:     INFO - Session: SID:14205:SessionState.OPEN
+[2020-09-02 21:02:32,060:         agent.DSBot]:     INFO - Order(10773908,Others,BUY,1@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:02:32,060:         agent.DSBot]:     INFO - Order(10773855,Mine,BUY,1@660,M-1597,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-09-02 21:02:32,060:         agent.DSBot]:     INFO - Order(10773868,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-02 21:02:32,060:         agent.DSBot]:     INFO - Order(10773869,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-02 21:02:32,061:         agent.DSBot]:     INFO - Order(10773892,Mine,BUY,1@690,M-1597,LIMIT,REF:'SM - OrderSide.BUY-3')
+[2020-09-02 21:02:32,061:         agent.DSBot]:     INFO - Order(10773895,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-09-02 21:02:32,061:         agent.DSBot]:     INFO - Order(10773900,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-02 21:02:32,061:         agent.DSBot]:     INFO - Order(10773901,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-02 21:02:32,061:         agent.DSBot]:     INFO - Order(10773903,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 6',PVT_TO:M000)
+[2020-09-02 21:02:32,061:         agent.DSBot]:     INFO - Order(10773904,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 6',PVT_FROM:M000)
+[2020-09-02 21:02:32,061:         agent.DSBot]:     INFO - Order(10773906,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-02 21:02:32,061:         agent.DSBot]:     INFO - Order(10773907,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-02 21:02:32,061:         agent.DSBot]:     INFO - Order(10773910,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-8')
+[2020-09-02 21:02:32,061:         agent.DSBot]:     INFO - Order(10773913,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-9')
+[2020-09-02 21:02:32,061:         agent.DSBot]:     INFO - Order(10773916,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-10')
+[2020-09-02 21:02:32,062:         agent.DSBot]:     INFO - Order(10773917,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+
+=============================== Log Started [2020-09-02 21:04:20 AEST] ===============================
+[2020-09-02 21:04:23,257:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-02 21:04:25,295:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-02 21:04:25,295:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-02 21:04:25,297:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-02 21:04:26,061:         agent.DSBot]:     INFO - Session: SID:14205:SessionState.OPEN
+[2020-09-02 21:04:26,325:         agent.DSBot]:     INFO - Order(10773908,Others,BUY,1@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:04:26,325:         agent.DSBot]:     INFO - Order(10773855,Mine,BUY,1@660,M-1597,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-09-02 21:04:26,326:         agent.DSBot]:     INFO - Order(10773868,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-02 21:04:26,326:         agent.DSBot]:     INFO - Order(10773869,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-02 21:04:26,326:         agent.DSBot]:     INFO - Order(10773892,Mine,BUY,1@690,M-1597,LIMIT,REF:'SM - OrderSide.BUY-3')
+[2020-09-02 21:04:26,326:         agent.DSBot]:     INFO - Order(10773895,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-09-02 21:04:26,326:         agent.DSBot]:     INFO - Order(10773900,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-02 21:04:26,326:         agent.DSBot]:     INFO - Order(10773901,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-02 21:04:26,326:         agent.DSBot]:     INFO - Order(10773903,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 6',PVT_TO:M000)
+[2020-09-02 21:04:26,326:         agent.DSBot]:     INFO - Order(10773904,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 6',PVT_FROM:M000)
+[2020-09-02 21:04:26,326:         agent.DSBot]:     INFO - Order(10773906,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-02 21:04:26,326:         agent.DSBot]:     INFO - Order(10773907,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-02 21:04:26,326:         agent.DSBot]:     INFO - Order(10773910,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-8')
+[2020-09-02 21:04:26,327:         agent.DSBot]:     INFO - Order(10773913,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-9')
+[2020-09-02 21:04:26,327:         agent.DSBot]:     INFO - Order(10773916,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-10')
+[2020-09-02 21:04:26,327:         agent.DSBot]:     INFO - Order(10773917,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-02 21:06:03,249:         agent.DSBot]:     INFO - Order(10775184,Others,BUY,5@890,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:06:03,504:         agent.DSBot]:     INFO - Order(10775190,Others,BUY,5@890,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:06:03,506:         agent.DSBot]:     INFO - Order(10775191,Others,BUY,5@890,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:06:03,758:         agent.DSBot]:     INFO - Order(10775192,Others,BUY,5@890,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:06:05,043:         agent.DSBot]:     INFO - Order(10775242,Others,BUY,5@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:06:37,961:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:06:37,961:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:06:37,961:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(10775581,Others,SELL,4@360,M-1597,LIMIT)
+[2020-09-02 21:06:39,472:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:06:39,472:         agent.DSBot]:     INFO - Order(10775586,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-09-02 21:06:40,729:         agent.DSBot]:     INFO - Order(10775242,Others,BUY,5@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:06:40,729:         agent.DSBot]:     INFO - Order(10775589,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-02 21:06:40,729:         agent.DSBot]:     INFO - Order(10775590,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-02 21:06:40,729:         agent.DSBot]:     INFO - Order(10775591,Others,BUY,4@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:06:40,731:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:06:40,731:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:06:40,731:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(10775588,Others,SELL,3@360,M-1597,LIMIT)
+[2020-09-02 21:06:42,238:         agent.DSBot]:     INFO - Order(10775594,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-2')
+[2020-09-02 21:06:42,240:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:06:43,498:         agent.DSBot]:     INFO - Order(10775591,Others,BUY,4@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:06:43,499:         agent.DSBot]:     INFO - Order(10775599,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-02 21:06:43,499:         agent.DSBot]:     INFO - Order(10775600,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-02 21:06:43,499:         agent.DSBot]:     INFO - Order(10775601,Others,BUY,3@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:06:43,500:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:06:43,501:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:06:43,501:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(10775596,Others,SELL,2@360,M-1597,LIMIT)
+[2020-09-02 21:06:44,761:         agent.DSBot]:     INFO - Order(10775605,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-09-02 21:06:44,763:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:06:46,022:         agent.DSBot]:     INFO - Order(10775601,Others,BUY,3@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:06:46,022:         agent.DSBot]:     INFO - Order(10775611,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-02 21:06:46,022:         agent.DSBot]:     INFO - Order(10775612,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-02 21:06:46,023:         agent.DSBot]:     INFO - Order(10775613,Others,BUY,2@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:06:46,024:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:06:46,024:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:06:46,024:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(10775607,Others,SELL,1@360,M-1597,LIMIT)
+[2020-09-02 21:06:47,313:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:06:47,314:         agent.DSBot]:     INFO - Order(10775647,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-6')
+[2020-09-02 21:06:48,602:         agent.DSBot]:     INFO - Order(10775613,Others,BUY,2@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:06:48,602:         agent.DSBot]:     INFO - Order(10775678,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-02 21:06:48,603:         agent.DSBot]:     INFO - Order(10775679,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-02 21:06:48,603:         agent.DSBot]:     INFO - Order(10775680,Others,BUY,1@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:07:07,885:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:07:07,885:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:07:07,885:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(10775859,Others,SELL,4@360,M-1597,LIMIT)
+[2020-09-02 21:07:09,906:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:07:09,907:         agent.DSBot]:     INFO - Order(10775869,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-8')
+[2020-09-02 21:07:11,171:         agent.DSBot]:     INFO - Order(10775680,Others,BUY,1@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:07:11,171:         agent.DSBot]:     INFO - Order(10775877,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+
+=============================== Log Started [2020-09-02 21:11:34 AEST] ===============================
+[2020-09-02 21:11:36,287:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-02 21:11:38,483:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-02 21:11:38,483:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-02 21:11:38,484:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-02 21:11:39,236:         agent.DSBot]:     INFO - Session: SID:14205:SessionState.OPEN
+[2020-09-02 21:11:40,034:         agent.DSBot]:     INFO - Order(10773908,Others,BUY,1@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:11:40,034:         agent.DSBot]:     INFO - Order(10773855,Mine,BUY,1@660,M-1597,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-09-02 21:11:40,034:         agent.DSBot]:     INFO - Order(10773868,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-02 21:11:40,034:         agent.DSBot]:     INFO - Order(10773869,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-02 21:11:40,034:         agent.DSBot]:     INFO - Order(10773892,Mine,BUY,1@690,M-1597,LIMIT,REF:'SM - OrderSide.BUY-3')
+[2020-09-02 21:11:40,035:         agent.DSBot]:     INFO - Order(10773895,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-09-02 21:11:40,035:         agent.DSBot]:     INFO - Order(10773900,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-02 21:11:40,035:         agent.DSBot]:     INFO - Order(10773901,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-02 21:11:40,035:         agent.DSBot]:     INFO - Order(10773903,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 6',PVT_TO:M000)
+[2020-09-02 21:11:40,035:         agent.DSBot]:     INFO - Order(10773904,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 6',PVT_FROM:M000)
+[2020-09-02 21:11:40,035:         agent.DSBot]:     INFO - Order(10773906,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-02 21:11:40,035:         agent.DSBot]:     INFO - Order(10773907,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-02 21:11:40,035:         agent.DSBot]:     INFO - Order(10773910,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-8')
+[2020-09-02 21:11:40,035:         agent.DSBot]:     INFO - Order(10773913,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-9')
+[2020-09-02 21:11:40,035:         agent.DSBot]:     INFO - Order(10773916,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-10')
+[2020-09-02 21:11:40,035:         agent.DSBot]:     INFO - Order(10773917,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-02 21:11:40,036:         agent.DSBot]:     INFO - Order(10775680,Others,BUY,1@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:11:40,036:         agent.DSBot]:     INFO - Order(10775586,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-09-02 21:11:40,036:         agent.DSBot]:     INFO - Order(10775589,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-02 21:11:40,036:         agent.DSBot]:     INFO - Order(10775590,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-02 21:11:40,036:         agent.DSBot]:     INFO - Order(10775594,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-2')
+[2020-09-02 21:11:40,036:         agent.DSBot]:     INFO - Order(10775599,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-02 21:11:40,036:         agent.DSBot]:     INFO - Order(10775600,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-02 21:11:40,036:         agent.DSBot]:     INFO - Order(10775605,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-09-02 21:11:40,036:         agent.DSBot]:     INFO - Order(10775611,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-02 21:11:40,036:         agent.DSBot]:     INFO - Order(10775612,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-02 21:11:40,036:         agent.DSBot]:     INFO - Order(10775647,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-6')
+[2020-09-02 21:11:40,036:         agent.DSBot]:     INFO - Order(10775678,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-02 21:11:40,037:         agent.DSBot]:     INFO - Order(10775679,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-02 21:11:40,037:         agent.DSBot]:     INFO - Order(10775869,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-8')
+[2020-09-02 21:11:40,037:         agent.DSBot]:     INFO - Order(10775877,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-02 21:11:40,037:         agent.DSBot]:     INFO - Order(10777945,Others,SELL,5@320,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+
+=============================== Log Started [2020-09-02 21:11:57 AEST] ===============================
+[2020-09-02 21:11:59,450:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-02 21:12:01,531:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-02 21:12:01,531:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-02 21:12:01,531:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-02 21:12:02,817:         agent.DSBot]:     INFO - Order(10773908,Others,BUY,1@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:02,817:         agent.DSBot]:     INFO - Order(10773855,Mine,BUY,1@660,M-1597,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-09-02 21:12:02,817:         agent.DSBot]:     INFO - Order(10773868,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-02 21:12:02,817:         agent.DSBot]:     INFO - Order(10773869,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-02 21:12:02,817:         agent.DSBot]:     INFO - Order(10773892,Mine,BUY,1@690,M-1597,LIMIT,REF:'SM - OrderSide.BUY-3')
+[2020-09-02 21:12:02,817:         agent.DSBot]:     INFO - Order(10773895,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-09-02 21:12:02,818:         agent.DSBot]:     INFO - Order(10773900,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-02 21:12:02,818:         agent.DSBot]:     INFO - Order(10773901,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-02 21:12:02,818:         agent.DSBot]:     INFO - Order(10773903,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 6',PVT_TO:M000)
+[2020-09-02 21:12:02,818:         agent.DSBot]:     INFO - Order(10773904,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 6',PVT_FROM:M000)
+[2020-09-02 21:12:02,818:         agent.DSBot]:     INFO - Order(10773906,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-02 21:12:02,818:         agent.DSBot]:     INFO - Order(10773907,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-02 21:12:02,818:         agent.DSBot]:     INFO - Order(10773910,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-8')
+[2020-09-02 21:12:02,818:         agent.DSBot]:     INFO - Order(10773913,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-9')
+[2020-09-02 21:12:02,818:         agent.DSBot]:     INFO - Order(10773916,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-10')
+[2020-09-02 21:12:02,818:         agent.DSBot]:     INFO - Order(10773917,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775680,Others,BUY,1@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775586,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775589,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775590,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775594,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-2')
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775599,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775600,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775605,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775611,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775612,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775647,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-6')
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775678,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-02 21:12:02,819:         agent.DSBot]:     INFO - Order(10775679,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-02 21:12:02,820:         agent.DSBot]:     INFO - Order(10775869,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-8')
+[2020-09-02 21:12:02,820:         agent.DSBot]:     INFO - Order(10775877,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-02 21:12:02,820:         agent.DSBot]:     INFO - Order(10777945,Others,SELL,5@320,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:02,820:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:02,820:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:02,820:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:06,585:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:06,585:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:06,586:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:06,586:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:06,587:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:06,587:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:06,587:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:06,587:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:06,587:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:06,839:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:06,839:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:06,839:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:06,840:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:06,840:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:06,840:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:06,840:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:06,841:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:06,841:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:06,841:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:06,841:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:06,841:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:06,842:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:06,842:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:06,842:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:06,842:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:06,842:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:06,843:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:06,843:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:06,843:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:06,843:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,095:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,095:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,095:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,096:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,096:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,096:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,096:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,097:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,097:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,097:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,097:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,098:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,098:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,098:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,098:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,099:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,099:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,099:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,351:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,351:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,351:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,352:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,352:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,352:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,353:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,353:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,353:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,354:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,354:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,354:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,354:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,354:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,355:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,355:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,355:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,355:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,356:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,356:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,356:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,608:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,608:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,609:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,609:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,609:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,609:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,610:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,610:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,610:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,611:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,611:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,611:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,612:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,612:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,613:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,613:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,613:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,614:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,614:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,614:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,614:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,866:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,866:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,867:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,867:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,867:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,868:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,868:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,868:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,869:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,869:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,869:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,870:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,870:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,870:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,871:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,871:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,871:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,872:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:07,872:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:07,872:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:07,873:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,124:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,124:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,125:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,125:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,126:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,126:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,126:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,127:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,127:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,127:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,128:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,128:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,128:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,129:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,129:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,129:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,129:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,130:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,130:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,130:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,130:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,381:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,382:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,382:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,383:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,383:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,383:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,383:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,384:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,384:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,384:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,385:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,385:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,385:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,386:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,386:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,386:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,387:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,387:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,387:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,387:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,388:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,639:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,639:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,639:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,639:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,640:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,640:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,640:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,640:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,640:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,641:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,641:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,641:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,642:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,642:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,642:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,643:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,643:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,643:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,643:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,643:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,644:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,895:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,895:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,895:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,896:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,896:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,896:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,897:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,897:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,897:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,898:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,898:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,898:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,899:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,899:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,899:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,900:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,900:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,900:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:08,900:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:08,900:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:08,900:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:09,152:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,152:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,152:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:09,153:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,153:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,153:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:09,154:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,154:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,154:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:09,155:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,155:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,155:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:09,155:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,156:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,156:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:09,156:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,156:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,156:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:09,408:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,408:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,408:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:09,409:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,409:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,409:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:09,410:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,410:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,410:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:09,411:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,411:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,411:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:09,412:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,412:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,413:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778549,Others,BUY,3@760,M-1597,LIMIT)
+[2020-09-02 21:12:09,413:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,414:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,414:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778551,Others,BUY,1@730,M-1597,LIMIT)
+[2020-09-02 21:12:09,665:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,666:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,666:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778551,Others,BUY,1@730,M-1597,LIMIT)
+[2020-09-02 21:12:09,667:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,667:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,667:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778553,Others,BUY,2@690,M-1597,LIMIT)
+[2020-09-02 21:12:09,668:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,668:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,668:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778553,Others,BUY,2@690,M-1597,LIMIT)
+[2020-09-02 21:12:09,669:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,669:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,669:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778555,Others,BUY,1@620,M-1597,LIMIT)
+[2020-09-02 21:12:09,670:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,670:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,670:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778555,Others,BUY,1@620,M-1597,LIMIT)
+[2020-09-02 21:12:09,924:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,924:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,925:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:09,925:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,926:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,926:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:09,926:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,927:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,927:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:09,927:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,928:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,928:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:09,928:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,929:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,929:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:09,929:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,930:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,930:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:09,931:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,931:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,931:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:09,932:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,932:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,932:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:09,933:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,933:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,933:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:09,934:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:09,934:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:09,934:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:15,956:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:15,956:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:15,956:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,208:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,208:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,208:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,209:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,209:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,209:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,210:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,210:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,210:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,211:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,211:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,211:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,212:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,212:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,213:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,213:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,213:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,214:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,465:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,466:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,466:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,467:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,467:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,467:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,468:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,468:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,468:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,469:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,469:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,469:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,470:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,470:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,470:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,471:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,471:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,471:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,472:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,472:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,472:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,723:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,723:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,723:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,724:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,724:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,724:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,725:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,725:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,725:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,726:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,726:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,726:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,727:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,727:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,727:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,728:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,728:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,728:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,729:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,729:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,729:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,980:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,981:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,981:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,981:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,981:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,981:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,982:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,982:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,982:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,982:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,983:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,983:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,983:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,983:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,983:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,984:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,984:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,984:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:16,984:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:16,984:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:16,984:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,236:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,236:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,236:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,237:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,237:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,237:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,237:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,237:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,237:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,238:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,238:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,238:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,238:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,238:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,239:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,239:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,239:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,239:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,240:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,240:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,240:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,492:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,492:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,493:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,493:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,493:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,493:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,494:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,494:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,494:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,494:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,494:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,494:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,495:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,495:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,495:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,496:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,496:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,496:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,497:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,497:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,497:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,749:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,749:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,749:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,749:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,750:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,750:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,750:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,750:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,750:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,751:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,751:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,751:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,752:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,752:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,752:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,752:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,752:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,753:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:17,753:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:17,753:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:17,754:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,005:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,005:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,006:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,006:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,006:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,007:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,007:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,007:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,008:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,008:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,008:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,009:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,009:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,009:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,010:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,011:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,011:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,011:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,011:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,012:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,012:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,263:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,263:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,263:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,264:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,264:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,264:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,265:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,265:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,265:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,266:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,266:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,266:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,267:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,267:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,267:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,268:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,268:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,268:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,269:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,269:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,269:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,521:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,521:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,521:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,522:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,522:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,523:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,523:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,523:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,524:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,524:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,524:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,525:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,525:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,526:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,526:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,526:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,527:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,527:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,528:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,528:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,528:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,779:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,780:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,780:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,780:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,781:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,781:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,781:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,782:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,782:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,782:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,783:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,783:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778641,Others,BUY,3@620,M-1597,LIMIT)
+[2020-09-02 21:12:18,784:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,784:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,784:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778649,Others,BUY,2@600,M-1597,LIMIT)
+[2020-09-02 21:12:18,785:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,785:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,785:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778649,Others,BUY,2@600,M-1597,LIMIT)
+[2020-09-02 21:12:18,786:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:18,786:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:18,786:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778649,Others,BUY,2@600,M-1597,LIMIT)
+[2020-09-02 21:12:19,039:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,039:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,039:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778649,Others,BUY,2@600,M-1597,LIMIT)
+[2020-09-02 21:12:19,040:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,041:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,041:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778649,Others,BUY,2@600,M-1597,LIMIT)
+[2020-09-02 21:12:19,042:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,042:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,042:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778649,Others,BUY,2@600,M-1597,LIMIT)
+[2020-09-02 21:12:19,043:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,043:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,043:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778649,Others,BUY,2@600,M-1597,LIMIT)
+[2020-09-02 21:12:19,044:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,044:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,044:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778649,Others,BUY,2@600,M-1597,LIMIT)
+[2020-09-02 21:12:19,297:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,297:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,297:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778735,Others,BUY,1@350,M-1597,LIMIT)
+[2020-09-02 21:12:19,298:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,298:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,298:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778735,Others,BUY,1@350,M-1597,LIMIT)
+[2020-09-02 21:12:19,298:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,298:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,299:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778737,Others,BUY,2@360,M-1597,LIMIT)
+[2020-09-02 21:12:19,299:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,299:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,299:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778737,Others,BUY,2@360,M-1597,LIMIT)
+[2020-09-02 21:12:19,300:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,300:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,300:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778737,Others,BUY,2@360,M-1597,LIMIT)
+[2020-09-02 21:12:19,300:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,300:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,300:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778737,Others,BUY,2@360,M-1597,LIMIT)
+[2020-09-02 21:12:19,301:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,301:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,301:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778737,Others,BUY,2@360,M-1597,LIMIT)
+[2020-09-02 21:12:19,301:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,301:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,301:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778737,Others,BUY,2@360,M-1597,LIMIT)
+[2020-09-02 21:12:19,302:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,302:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,302:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778737,Others,BUY,2@360,M-1597,LIMIT)
+[2020-09-02 21:12:19,302:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:19,303:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:19,303:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778737,Others,BUY,2@360,M-1597,LIMIT)
+[2020-09-02 21:12:24,822:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:24,822:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:24,823:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:25,827:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:25,828:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:25,828:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:26,582:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:26,582:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:26,582:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:26,583:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:26,583:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:26,583:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:26,584:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:26,584:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:26,584:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:26,585:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:26,585:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:26,585:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:26,586:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:26,586:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:26,586:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:26,587:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:26,587:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:26,587:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:26,588:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:26,588:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:26,588:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:26,840:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:26,840:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:26,840:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:26,840:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:26,841:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:26,841:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:26,841:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:26,841:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:26,841:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:26,842:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:26,842:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:26,842:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:26,842:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:26,842:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:26,842:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:27,094:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:27,094:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:27,094:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:27,095:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:27,095:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:27,095:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:27,096:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:27,096:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:27,097:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778747,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:27,098:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:27,098:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:27,098:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778735,Others,BUY,1@350,M-1597,LIMIT)
+[2020-09-02 21:12:27,099:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:27,099:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:27,099:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778735,Others,BUY,1@350,M-1597,LIMIT)
+[2020-09-02 21:12:27,100:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:27,100:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:27,100:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778735,Others,BUY,1@350,M-1597,LIMIT)
+[2020-09-02 21:12:27,101:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:27,101:         agent.DSBot]:     INFO - Not enough widgets, but want to respond to: 
+[2020-09-02 21:12:27,101:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778735,Others,BUY,1@350,M-1597,LIMIT)
+
+=============================== Log Started [2020-09-02 21:12:32 AEST] ===============================
+[2020-09-02 21:12:34,470:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-02 21:12:36,469:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-02 21:12:36,470:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-02 21:12:36,470:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-02 21:12:39,984:         agent.DSBot]:     INFO - Session: SID:14205:SessionState.OPEN
+[2020-09-02 21:12:40,768:         agent.DSBot]:     INFO - Order(10773908,Others,BUY,1@890,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:40,768:         agent.DSBot]:     INFO - Order(10773855,Mine,BUY,1@660,M-1597,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-09-02 21:12:40,769:         agent.DSBot]:     INFO - Order(10773868,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-02 21:12:40,769:         agent.DSBot]:     INFO - Order(10773869,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-02 21:12:40,769:         agent.DSBot]:     INFO - Order(10773892,Mine,BUY,1@690,M-1597,LIMIT,REF:'SM - OrderSide.BUY-3')
+[2020-09-02 21:12:40,769:         agent.DSBot]:     INFO - Order(10773895,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-09-02 21:12:40,769:         agent.DSBot]:     INFO - Order(10773900,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-02 21:12:40,769:         agent.DSBot]:     INFO - Order(10773901,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-02 21:12:40,769:         agent.DSBot]:     INFO - Order(10773903,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 6',PVT_TO:M000)
+[2020-09-02 21:12:40,769:         agent.DSBot]:     INFO - Order(10773904,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 6',PVT_FROM:M000)
+[2020-09-02 21:12:40,769:         agent.DSBot]:     INFO - Order(10773906,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-02 21:12:40,770:         agent.DSBot]:     INFO - Order(10773907,Others,BUY,1@890,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-02 21:12:40,770:         agent.DSBot]:     INFO - Order(10773910,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-8')
+[2020-09-02 21:12:40,770:         agent.DSBot]:     INFO - Order(10773913,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-9')
+[2020-09-02 21:12:40,770:         agent.DSBot]:     INFO - Order(10773916,Mine,BUY,1@720,M-1597,LIMIT,REF:'SM - OrderSide.BUY-10')
+[2020-09-02 21:12:40,770:         agent.DSBot]:     INFO - Order(10773917,Mine,SELL,1@890,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-02 21:12:40,771:         agent.DSBot]:     INFO - Order(10775680,Others,BUY,1@380,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:40,771:         agent.DSBot]:     INFO - Order(10775586,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-09-02 21:12:40,771:         agent.DSBot]:     INFO - Order(10775589,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-02 21:12:40,771:         agent.DSBot]:     INFO - Order(10775590,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-02 21:12:40,771:         agent.DSBot]:     INFO - Order(10775594,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-2')
+[2020-09-02 21:12:40,771:         agent.DSBot]:     INFO - Order(10775599,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-02 21:12:40,771:         agent.DSBot]:     INFO - Order(10775600,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-02 21:12:40,771:         agent.DSBot]:     INFO - Order(10775605,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-09-02 21:12:40,771:         agent.DSBot]:     INFO - Order(10775611,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-02 21:12:40,771:         agent.DSBot]:     INFO - Order(10775612,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-02 21:12:40,771:         agent.DSBot]:     INFO - Order(10775647,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-6')
+[2020-09-02 21:12:40,771:         agent.DSBot]:     INFO - Order(10775678,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-02 21:12:40,772:         agent.DSBot]:     INFO - Order(10775679,Others,BUY,1@380,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-02 21:12:40,772:         agent.DSBot]:     INFO - Order(10775869,Mine,BUY,1@360,M-1597,LIMIT,REF:'SM - OrderSide.BUY-8')
+[2020-09-02 21:12:40,772:         agent.DSBot]:     INFO - Order(10775877,Mine,SELL,1@380,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-02 21:12:40,772:         agent.DSBot]:     INFO - Order(10777945,Others,SELL,5@320,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:40,772:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:40,772:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:12:40,772:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778957,Others,BUY,1@430,M-1597,LIMIT)
+[2020-09-02 21:12:41,778:         agent.DSBot]:     INFO - Order(10778961,Mine,SELL,1@430,M-1597,LIMIT,REF:'SM - OrderSide.SELL-0')
+[2020-09-02 21:12:41,778:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:12:43,036:         agent.DSBot]:     INFO - Order(10777945,Others,SELL,5@320,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:43,036:         agent.DSBot]:     INFO - Order(10778962,Mine,BUY,1@320,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-02 21:12:43,036:         agent.DSBot]:     INFO - Order(10778963,Others,SELL,1@320,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-02 21:12:43,037:         agent.DSBot]:     INFO - Order(10778964,Others,SELL,4@320,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:43,037:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:43,037:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:12:43,037:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778953,Others,BUY,1@360,M-1597,LIMIT)
+[2020-09-02 21:12:44,290:         agent.DSBot]:     INFO - Order(10778965,Mine,SELL,1@360,M-1597,LIMIT,REF:'SM - OrderSide.SELL-2')
+[2020-09-02 21:12:44,291:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:12:45,546:         agent.DSBot]:     INFO - Order(10778964,Others,SELL,4@320,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:45,546:         agent.DSBot]:     INFO - Order(10778966,Mine,BUY,1@320,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-02 21:12:45,546:         agent.DSBot]:     INFO - Order(10778967,Others,SELL,1@320,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-02 21:12:45,546:         agent.DSBot]:     INFO - Order(10778968,Others,SELL,3@320,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:45,546:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:45,546:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:12:45,546:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778951,Others,BUY,2@340,M-1597,LIMIT)
+[2020-09-02 21:12:46,811:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:12:47,065:         agent.DSBot]:     INFO - Order(10778995,Mine,SELL,1@340,M-1597,LIMIT,REF:'SM - OrderSide.SELL-4')
+[2020-09-02 21:12:48,080:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:48,080:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:12:48,081:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10778997,Others,BUY,1@340,M-1597,LIMIT)
+[2020-09-02 21:12:48,334:         agent.DSBot]:     INFO - Order(10778968,Others,SELL,3@320,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:48,334:         agent.DSBot]:     INFO - Order(10779031,Mine,BUY,1@320,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-02 21:12:48,334:         agent.DSBot]:     INFO - Order(10779032,Others,SELL,1@320,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-02 21:12:48,335:         agent.DSBot]:     INFO - Order(10779033,Others,SELL,2@320,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:49,352:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:12:49,356:         agent.DSBot]:     INFO - Order(10779069,Mine,SELL,1@340,M-1597,LIMIT,REF:'SM - OrderSide.SELL-6')
+[2020-09-02 21:12:49,356:         agent.DSBot]:     INFO - Order(10779070,Mine,SELL,1@750,M-1597,LIMIT,REF:'SM - OrderSide.SELL-6')
+[2020-09-02 21:12:50,612:         agent.DSBot]:     INFO - Order(10779033,Others,SELL,2@320,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:50,612:         agent.DSBot]:     INFO - Order(10779073,Mine,BUY,1@320,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-02 21:12:50,612:         agent.DSBot]:     INFO - Order(10779074,Others,SELL,1@320,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-02 21:12:50,613:         agent.DSBot]:     INFO - Order(10779075,Others,SELL,1@320,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:50,613:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:12:50,613:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:12:50,614:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10779072,Others,BUY,1@750,M-1597,LIMIT)
+[2020-09-02 21:12:51,869:         agent.DSBot]:     INFO - Order(10779076,Mine,SELL,1@750,M-1597,LIMIT,REF:'SM - OrderSide.SELL-8')
+[2020-09-02 21:12:51,869:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:12:53,125:         agent.DSBot]:     INFO - Order(10779075,Others,SELL,1@320,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:12:53,125:         agent.DSBot]:     INFO - Order(10779077,Mine,BUY,1@320,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+
+=============================== Log Started [2020-09-02 21:21:11 AEST] ===============================
+[2020-09-02 21:21:13,491:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-02 21:21:15,567:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-02 21:21:15,567:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-02 21:21:15,567:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-02 21:21:16,320:         agent.DSBot]:     INFO - Session: SID:14206:SessionState.OPEN
+[2020-09-02 21:21:16,321:         agent.DSBot]:     INFO - Order(10785266,Others,BUY,5@210,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:26:14,149:         agent.DSBot]:     INFO - Order(10785266,Others,BUY,5@210,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:26:14,149:         agent.DSBot]:     INFO - Order(10786231,Others,BUY,5@210,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:26:15,438:         agent.DSBot]:     INFO - Order(10786277,Others,SELL,5@50,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:26:15,439:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:26:15,439:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:26:15,439:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10786178,Others,BUY,4@180,M-1597,LIMIT)
+[2020-09-02 21:26:17,199:         agent.DSBot]:     INFO - Order(10786284,Mine,SELL,1@180,M-1597,LIMIT,REF:'SM - OrderSide.SELL-0')
+[2020-09-02 21:26:17,201:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:26:18,479:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:26:18,480:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:26:18,480:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10786314,Others,BUY,2@170,M-1597,LIMIT)
+[2020-09-02 21:26:18,481:         agent.DSBot]:     INFO - Order(10786277,Others,SELL,5@50,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:26:18,482:         agent.DSBot]:     INFO - Order(10786316,Mine,BUY,1@50,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-02 21:26:18,482:         agent.DSBot]:     INFO - Order(10786317,Others,SELL,1@50,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-02 21:26:18,482:         agent.DSBot]:     INFO - Order(10786318,Others,SELL,4@50,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:26:19,746:         agent.DSBot]:     INFO - Order(10786331,Mine,SELL,1@170,M-1597,LIMIT,REF:'SM - OrderSide.SELL-2')
+[2020-09-02 21:26:19,748:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:26:21,006:         agent.DSBot]:     INFO - Order(10786318,Others,SELL,4@50,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:26:21,007:         agent.DSBot]:     INFO - Order(10786336,Mine,BUY,1@50,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-02 21:26:21,007:         agent.DSBot]:     INFO - Order(10786337,Others,SELL,1@50,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-02 21:26:21,007:         agent.DSBot]:     INFO - Order(10786338,Others,SELL,3@50,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:26:21,008:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:26:21,009:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:26:21,009:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10786333,Others,BUY,1@170,M-1597,LIMIT)
+[2020-09-02 21:26:22,266:         agent.DSBot]:     INFO - Order(10786341,Mine,SELL,1@170,M-1597,LIMIT,REF:'SM - OrderSide.SELL-4')
+[2020-09-02 21:26:22,268:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:26:23,525:         agent.DSBot]:     INFO - Order(10786338,Others,SELL,3@50,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:26:23,525:         agent.DSBot]:     INFO - Order(10786344,Mine,BUY,1@50,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-02 21:26:23,525:         agent.DSBot]:     INFO - Order(10786345,Others,SELL,1@50,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-02 21:26:23,526:         agent.DSBot]:     INFO - Order(10786346,Others,SELL,2@50,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:26:23,527:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:26:23,527:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:26:23,527:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10786321,Others,BUY,2@70,M-1597,LIMIT)
+[2020-09-02 21:26:24,784:         agent.DSBot]:     INFO - Order(10786351,Mine,SELL,1@70,M-1597,LIMIT,REF:'SM - OrderSide.SELL-6')
+[2020-09-02 21:26:24,786:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:26:26,042:         agent.DSBot]:     INFO - Order(10786346,Others,SELL,2@50,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:26:26,043:         agent.DSBot]:     INFO - Order(10786358,Mine,BUY,1@50,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-02 21:26:26,043:         agent.DSBot]:     INFO - Order(10786359,Others,SELL,1@50,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-02 21:26:26,043:         agent.DSBot]:     INFO - Order(10786360,Others,SELL,1@50,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:26:26,044:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:26:26,045:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:26:26,045:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10786325,Others,BUY,3@70,M-1597,LIMIT)
+[2020-09-02 21:26:27,301:         agent.DSBot]:     INFO - Order(10786363,Mine,SELL,1@70,M-1597,LIMIT,REF:'SM - OrderSide.SELL-8')
+[2020-09-02 21:26:27,302:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:26:28,583:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:26:28,584:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:26:28,584:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10786391,Others,BUY,5@600,M-1597,LIMIT)
+[2020-09-02 21:26:28,586:         agent.DSBot]:     INFO - Order(10786360,Others,SELL,1@50,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:26:28,586:         agent.DSBot]:     INFO - Order(10786394,Mine,BUY,1@50,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-02 21:26:29,850:         agent.DSBot]:     INFO - Order(10786403,Mine,SELL,1@600,M-1597,LIMIT,REF:'SM - OrderSide.SELL-10')
+[2020-09-02 21:26:29,850:         agent.DSBot]:     INFO - Order(10786404,Mine,SELL,1@730,M-1597,LIMIT,REF:'SM - OrderSide.SELL-10')
+[2020-09-02 21:31:13,618:         agent.DSBot]:     INFO - Order(10788422,Others,SELL,5@50,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:31:13,625:         agent.DSBot]:     INFO - Order(10788425,Others,SELL,5@50,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:31:13,878:         agent.DSBot]:     INFO - Order(10788426,Others,SELL,5@50,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:31:13,883:         agent.DSBot]:     INFO - Order(10788427,Others,SELL,5@50,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:31:15,281:         agent.DSBot]:     INFO - Order(10788480,Others,SELL,5@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:31:15,285:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:31:17,316:         agent.DSBot]:     INFO - Order(10788480,Others,SELL,5@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:31:17,316:         agent.DSBot]:     INFO - Order(10788495,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-02 21:31:17,316:         agent.DSBot]:     INFO - Order(10788496,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 11',PVT_FROM:M000)
+[2020-09-02 21:31:17,317:         agent.DSBot]:     INFO - Order(10788497,Others,SELL,4@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:31:19,970:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:31:19,970:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:31:19,970:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10788566,Others,BUY,2@530,M-1597,LIMIT)
+[2020-09-02 21:31:20,749:         agent.DSBot]:     INFO - Order(10788583,Mine,SELL,1@530,M-1597,LIMIT,REF:'SM - OrderSide.SELL-12')
+[2020-09-02 21:31:20,753:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:31:22,015:         agent.DSBot]:     INFO - Order(10788497,Others,SELL,4@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:31:22,015:         agent.DSBot]:     INFO - Order(10788588,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 13',PVT_TO:M000)
+[2020-09-02 21:31:22,016:         agent.DSBot]:     INFO - Order(10788589,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 13',PVT_FROM:M000)
+[2020-09-02 21:31:22,016:         agent.DSBot]:     INFO - Order(10788590,Others,SELL,3@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:31:22,020:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:31:22,020:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:31:22,020:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10788587,Others,BUY,3@500,M-1597,LIMIT)
+[2020-09-02 21:31:23,280:         agent.DSBot]:     INFO - Order(10788597,Mine,SELL,1@500,M-1597,LIMIT,REF:'SM - OrderSide.SELL-14')
+[2020-09-02 21:31:23,284:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:31:24,544:         agent.DSBot]:     INFO - Order(10788590,Others,SELL,3@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:31:24,544:         agent.DSBot]:     INFO - Order(10788604,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 15',PVT_TO:M000)
+[2020-09-02 21:31:24,545:         agent.DSBot]:     INFO - Order(10788605,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 15',PVT_FROM:M000)
+[2020-09-02 21:31:24,545:         agent.DSBot]:     INFO - Order(10788606,Others,SELL,2@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:31:24,549:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:31:24,549:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:31:24,549:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10788577,Others,BUY,5@420,M-1597,LIMIT)
+[2020-09-02 21:31:25,809:         agent.DSBot]:     INFO - Order(10788616,Mine,SELL,1@420,M-1597,LIMIT,REF:'SM - OrderSide.SELL-16')
+[2020-09-02 21:31:25,812:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:31:27,081:         agent.DSBot]:     INFO - Order(10788606,Others,SELL,2@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:31:27,081:         agent.DSBot]:     INFO - Order(10788629,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 17',PVT_TO:M000)
+[2020-09-02 21:31:27,082:         agent.DSBot]:     INFO - Order(10788630,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 17',PVT_FROM:M000)
+[2020-09-02 21:31:27,082:         agent.DSBot]:     INFO - Order(10788631,Others,SELL,1@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:31:27,085:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:31:27,086:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:31:27,086:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10788627,Others,BUY,2@420,M-1597,LIMIT)
+[2020-09-02 21:31:28,415:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:31:28,416:         agent.DSBot]:     INFO - Order(10788671,Mine,SELL,1@420,M-1597,LIMIT,REF:'SM - OrderSide.SELL-18')
+[2020-09-02 21:31:29,750:         agent.DSBot]:     INFO - Order(10788631,Others,SELL,1@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:31:29,750:         agent.DSBot]:     INFO - Order(10788710,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 19',PVT_TO:M000)
+[2020-09-02 21:36:12,267:         agent.DSBot]:     INFO - Order(10792542,Others,SELL,5@50,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:36:12,271:         agent.DSBot]:     INFO - Order(10792543,Others,SELL,5@50,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:36:12,528:         agent.DSBot]:     INFO - Order(10792544,Others,SELL,5@50,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:36:12,536:         agent.DSBot]:     INFO - Order(10792545,Others,SELL,5@50,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:36:14,506:         agent.DSBot]:     INFO - Order(10792593,Others,SELL,5@350,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:36:14,772:         agent.DSBot]:     INFO - Order(10792596,Others,SELL,5@350,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:36:14,779:         agent.DSBot]:     INFO - Order(10792597,Others,SELL,5@350,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:36:14,785:         agent.DSBot]:     INFO - Order(10792598,Others,SELL,5@350,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-02 21:36:16,026:         agent.DSBot]:     INFO - Order(10792645,Others,BUY,5@80,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:41:12,229:         agent.DSBot]:     INFO - Session: SID:14206:SessionState.PAUSED
+[2020-09-02 21:41:14,508:         agent.DSBot]:     INFO - Session: SID:14206:SessionState.CLOSED
+[2020-09-02 21:41:21,545:         agent.DSBot]:     INFO - Session: SID:14207:SessionState.OPEN
+[2020-09-02 21:42:49,345:         agent.DSBot]:     INFO - Order(10801397,Others,SELL,5@200,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:42:49,345:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:42:49,345:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:42:49,345:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10801345,Others,BUY,5@620,M-1597,LIMIT)
+[2020-09-02 21:42:51,122:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:42:51,122:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:42:51,122:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10801472,Others,BUY,3@500,M-1597,LIMIT)
+[2020-09-02 21:42:51,126:         agent.DSBot]:     INFO - Order(10801496,Mine,SELL,1@620,M-1597,LIMIT,REF:'SM - OrderSide.SELL-20')
+[2020-09-02 21:42:51,635:         agent.DSBot]:     INFO - Order(10801496,Mine,SELL,1@620,M-1597,LIMIT,REF:'SM - OrderSide.SELL-20')
+[2020-09-02 21:42:51,635:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:42:52,402:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:42:52,405:         agent.DSBot]:     INFO - Order(10801576,Mine,SELL,1@500,M-1597,LIMIT,REF:'SM - OrderSide.SELL-21')
+[2020-09-02 21:42:52,406:         agent.DSBot]:     INFO - Order(10801577,Mine,SELL,1@570,M-1597,LIMIT,REF:'SM - OrderSide.SELL-21')
+[2020-09-02 21:42:53,914:         agent.DSBot]:     INFO - Order(10801397,Others,SELL,5@200,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:42:53,914:         agent.DSBot]:     INFO - Order(10801584,Mine,BUY,1@200,M-1598,LIMIT,REF:'Private order - 22',PVT_TO:M000)
+[2020-09-02 21:42:53,914:         agent.DSBot]:     INFO - Order(10801585,Others,SELL,1@200,M-1598,LIMIT,REF:'Private order - 22',PVT_FROM:M000)
+[2020-09-02 21:42:53,914:         agent.DSBot]:     INFO - Order(10801586,Others,SELL,4@200,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:42:53,915:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:42:53,915:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:42:53,915:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10801579,Others,BUY,3@570,M-1597,LIMIT)
+[2020-09-02 21:42:55,171:         agent.DSBot]:     INFO - Order(10801587,Mine,SELL,1@570,M-1597,LIMIT,REF:'SM - OrderSide.SELL-23')
+[2020-09-02 21:42:55,172:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:42:56,430:         agent.DSBot]:     INFO - Order(10801586,Others,SELL,4@200,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:42:56,431:         agent.DSBot]:     INFO - Order(10801594,Mine,BUY,1@200,M-1598,LIMIT,REF:'Private order - 24',PVT_TO:M000)
+[2020-09-02 21:42:56,431:         agent.DSBot]:     INFO - Order(10801595,Others,SELL,1@200,M-1598,LIMIT,REF:'Private order - 24',PVT_FROM:M000)
+[2020-09-02 21:42:56,431:         agent.DSBot]:     INFO - Order(10801596,Others,SELL,3@200,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:42:56,432:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:42:56,432:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:42:56,432:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10801581,Others,BUY,1@570,M-1597,LIMIT,REF:'1')
+[2020-09-02 21:42:57,689:         agent.DSBot]:     INFO - Order(10801601,Mine,SELL,1@570,M-1597,LIMIT,REF:'SM - OrderSide.SELL-25')
+[2020-09-02 21:42:57,689:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:42:58,952:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:42:58,952:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:42:58,952:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10801581,Others,BUY,1@570,M-1597,LIMIT,REF:'1')
+[2020-09-02 21:42:58,953:         agent.DSBot]:     INFO - Order(10801596,Others,SELL,3@200,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:42:58,953:         agent.DSBot]:     INFO - Order(10801616,Mine,BUY,1@200,M-1598,LIMIT,REF:'Private order - 26',PVT_TO:M000)
+[2020-09-02 21:42:58,954:         agent.DSBot]:     INFO - Order(10801617,Others,SELL,1@200,M-1598,LIMIT,REF:'Private order - 26',PVT_FROM:M000)
+[2020-09-02 21:42:58,954:         agent.DSBot]:     INFO - Order(10801618,Others,SELL,2@200,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:43:00,226:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:43:00,227:         agent.DSBot]:     INFO - Order(10801655,Mine,SELL,1@570,M-1597,LIMIT,REF:'SM - OrderSide.SELL-27')
+[2020-09-02 21:43:01,498:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:43:01,498:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:43:01,498:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10801581,Others,BUY,1@570,M-1597,LIMIT,REF:'1')
+[2020-09-02 21:43:01,500:         agent.DSBot]:     INFO - Order(10801618,Others,SELL,2@200,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:43:01,501:         agent.DSBot]:     INFO - Order(10801689,Mine,BUY,1@200,M-1598,LIMIT,REF:'Private order - 28',PVT_TO:M000)
+[2020-09-02 21:43:01,501:         agent.DSBot]:     INFO - Order(10801690,Others,SELL,1@200,M-1598,LIMIT,REF:'Private order - 28',PVT_FROM:M000)
+[2020-09-02 21:43:01,501:         agent.DSBot]:     INFO - Order(10801691,Others,SELL,1@200,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:43:02,774:         agent.DSBot]:     INFO - Last public order traded, creating private order.
+[2020-09-02 21:43:02,776:         agent.DSBot]:     INFO - Order(10801726,Mine,SELL,1@570,M-1597,LIMIT,REF:'SM - OrderSide.SELL-29')
+[2020-09-02 21:43:04,043:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-02 21:43:04,043:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-02 21:43:04,043:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(10801735,Others,BUY,4@430,M-1597,LIMIT)
+[2020-09-02 21:43:04,044:         agent.DSBot]:     INFO - Order(10801691,Others,SELL,1@200,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 21:43:04,044:         agent.DSBot]:     INFO - Order(10801749,Mine,BUY,1@200,M-1598,LIMIT,REF:'Private order - 30',PVT_TO:M000)
+[2020-09-02 21:43:05,302:         agent.DSBot]:     INFO - Order(10801754,Mine,SELL,1@430,M-1597,LIMIT,REF:'SM - OrderSide.SELL-31')
