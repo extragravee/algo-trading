@@ -57,6 +57,15 @@ class DSBot(Agent):
             manager_order = self._get_order_book_state()
         self.inform(f"{num_my_public_orders}, {num_private_orders}")
 
+        # CANCELLING STALE ORDERS =========================================================
+        if num_my_public_orders > 0 and num_private_orders == 0:
+            cancel_order = copy.copy(my_stale_priv_order)
+            cancel_order.order_type = OrderType.CANCEL
+            cancel_order.ref = f"Cancel - {my_stale_priv_order.ref}"
+            self.send_order(cancel_order)
+            self._last_accepted_public_order_id = 0
+            return
+
         # PRIVATE ORDER CREATION ==========================================================
         # need to confirm that the last sent order traded
         if self._last_accepted_public_order_id not in Order.current() and num_private_orders > 0 \
@@ -65,19 +74,21 @@ class DSBot(Agent):
             is_private = True
             price = manager_order.price
             units = 1
+            order_side = None
 
-            if manager_order.order_side == OrderSide.BUY:
+            if self.role() == Role.BUYER:
                 order_side = OrderSide.SELL
-            elif manager_order.order_side == OrderSide.SELL:
+            elif self.role() == Role.SELLER:
                 order_side = OrderSide.BUY
-
+            self.inform(f"Private order side is {order_side}, my role is {self.role()}")
             order_type = OrderType.LIMIT
             ref = f"Private order - {self._tradeID}"
 
             if not self._waiting_for_server:
                 self.inform(f"Creating private order")
+                self._last_accepted_public_order_id = 0
                 self._create_new_order(price, units, order_side, order_type, ref, is_private)
-
+                return
         # END PRIVATE ORDER CREATION ======================================================
 
         # PUBLIC ORDER CREATION ===========================================================
@@ -101,6 +112,7 @@ class DSBot(Agent):
             if not self._waiting_for_server:
                 self.inform(f"Creating public order")
                 self._create_new_order(price, units, order_side, order_type, ref, is_private)
+                return
         # END PUBLIC ORDER CREATION =======================================================
 
     # SHARED FUNCTIONALITY ################################################################
