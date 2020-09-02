@@ -34065,3 +34065,28 @@
 [2020-09-02 21:43:04,044:         agent.DSBot]:     INFO - Order(10801691,Others,SELL,1@200,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
 [2020-09-02 21:43:04,044:         agent.DSBot]:     INFO - Order(10801749,Mine,BUY,1@200,M-1598,LIMIT,REF:'Private order - 30',PVT_TO:M000)
 [2020-09-02 21:43:05,302:         agent.DSBot]:     INFO - Order(10801754,Mine,SELL,1@430,M-1597,LIMIT,REF:'SM - OrderSide.SELL-31')
+
+=============================== Log Started [2020-09-02 22:40:30 AEST] ===============================
+[2020-09-02 22:40:32,386:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-02 22:40:34,400:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-02 22:40:34,400:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-02 22:40:34,400:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-02 22:40:34,905:         agent.DSBot]:     INFO - Session: SID:14208:SessionState.CLOSED
+[2020-09-02 22:40:35,421:         agent.DSBot]:     INFO - Order(10809714,Others,BUY,5@160,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 22:40:35,421:         agent.DSBot]:     INFO - 0, 1
+[2020-09-02 22:40:35,422:         agent.DSBot]:     INFO - Creating public order
+[2020-09-02 22:40:36,648:       comms.Request]:    ERROR - Couldn't parse response from server as JSON. Perhaps use a custom data parser if expecting response in different format
+
+=============================== Log Started [2020-09-02 22:40:45 AEST] ===============================
+[2020-09-02 22:40:48,110:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-02 22:40:50,135:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-02 22:40:50,136:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-02 22:40:50,136:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-02 22:40:51,389:         agent.DSBot]:     INFO - Session: SID:14208:SessionState.CLOSED
+[2020-09-02 22:40:51,906:         agent.DSBot]:     INFO - Order(10809714,Others,BUY,5@160,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 22:40:51,906:         agent.DSBot]:     INFO - 0, 1
+[2020-09-02 22:40:51,907:         agent.DSBot]:     INFO - Creating public order
+[2020-09-02 22:42:29,485:         agent.DSBot]:     INFO - Session: SID:14208:SessionState.CLOSED
+[2020-09-02 22:42:29,503:         agent.DSBot]:     INFO - Order(10809714,Others,BUY,5@160,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-02 22:42:29,503:         agent.DSBot]:     INFO - 0, 1
+[2020-09-02 22:42:29,503:         agent.DSBot]:     INFO - Creating public order

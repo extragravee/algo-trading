@@ -432,7 +432,7 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 898
+    MARKETPLACE_ID = 915
 
     B_TYPE = BotType.MARKET_MAKER
     # B_TYPE = BotType.REACTIVE
