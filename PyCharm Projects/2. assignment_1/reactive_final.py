@@ -51,6 +51,71 @@ class DSBot(Agent):
         self._public_widgets_available = 0
 
     # MARKET MAKER FUNCTIONALITY ##########################################################
+    def _make_market(self):
+
+        # track state of order book
+        num_private_orders, num_my_public_orders, \
+            my_stale_priv_order, manager_order = self._get_order_book_state()
+        self.inform(f"{num_my_public_orders}, {num_private_orders}")
+
+        # check if my last public order has traded, and there is a private order
+        if not self._last_accepted_public_order_id == 0 and \
+                (self._last_accepted_public_order_id not in Order.current()) and \
+                num_private_orders > 0:
+            self.inform("Last order traded fine, make private order ==============")
+            #     # reset the flag
+            self._last_accepted_public_order_id = 0
+            self._create_market_maker_private_order(manager_order)
+
+        # if i have no active public orders, and there are manager order(s)
+        if num_my_public_orders == 0 and num_private_orders > 0:
+            self._create_market_maker_public_order(manager_order)
+
+        # if stale public order
+        if num_my_public_orders > 0 and num_private_orders < 1:
+            self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
+            self._cancel_order(my_stale_priv_order)
+            self._last_accepted_public_order_id = 0
+
+    def _create_market_maker_private_order(self, manager_order):
+
+        # determine attributes for private order
+        is_private = True
+        price = manager_order.price
+        units = 1
+
+        if self.role() == OrderSide.BUY:
+            order_side = OrderSide.SELL
+        else:
+            order_side = OrderSide.BUY
+
+        order_type = OrderType.LIMIT
+        ref = f"Private order - {self._tradeID}"
+        self.inform(f"Order side is: {order_side}")
+        self._create_new_order(price, units, order_side, order_type, ref, is_private)
+
+    def _create_market_maker_public_order(self, manager_order):
+
+        # if waiting for server, don't do anything
+        if self._waiting_for_server:
+            return
+
+        # determine attributes for public order
+        # simple strategy - make minimum profit
+        is_private = False
+
+        if self.role() == Role.BUYER:
+            price = manager_order.price - PROFIT_MARGIN
+            order_side = OrderSide.BUY
+        elif self.role() == Role.SELLER:
+            price = manager_order.price + PROFIT_MARGIN
+            order_side = OrderSide.SELL
+
+        units = 1
+        order_type = OrderType.LIMIT
+        ref = f"SM - {order_side}-{self._tradeID}"
+
+        self._create_new_order(price, units, order_side, order_type, ref, is_private)
 
     # SHARED FUNCTIONALITY ################################################################
 
@@ -126,9 +191,11 @@ class DSBot(Agent):
             # if o.mine or o.is_private:
             self.inform(o)
 
-        if self._bot_type == BotType.REACTIVE:
-            if not self._waiting_for_server:
+        if not self._waiting_for_server:
+            if self._bot_type == BotType.REACTIVE:
                 self._react_to_market()
+            elif self._bot_type == BotType.MARKET_MAKER:
+                self._make_market()
 
     def _create_new_order(self,
                           price: int,
@@ -181,7 +248,7 @@ class DSBot(Agent):
     def received_session_info(self, session: Session):
         pass
 
-    # MARKET MAKER FUNCTIONALITY ##########################################################
+    # REACTIVE FUNCTIONALITY ##########################################################
 
     def _react_to_market(self):
         """
@@ -367,10 +434,10 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 915
+    MARKETPLACE_ID = 898
 
-    # B_TYPE = BotType.MARKET_MAKER
-    B_TYPE = BotType.REACTIVE
+    B_TYPE = BotType.MARKET_MAKER
+    # B_TYPE = BotType.REACTIVE
 
     ds_bot = DSBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID, B_TYPE)
     ds_bot.run()
