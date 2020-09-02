@@ -84,7 +84,7 @@ class DSBot(Agent):
         price = manager_order.price
         units = 1
 
-        if self.role() == OrderSide.BUY:
+        if manager_order.order_side == OrderSide.BUY:
             order_side = OrderSide.SELL
         else:
             order_side = OrderSide.BUY
@@ -188,14 +188,13 @@ class DSBot(Agent):
         :param orders: list of order objects (updates)
         """
         for o in orders:
-            # if o.mine or o.is_private:
-            self.inform(o)
+            if o.mine or o.is_private:
+                self.inform(o)
 
-        if not self._waiting_for_server:
-            if self._bot_type == BotType.REACTIVE:
-                self._react_to_market()
-            elif self._bot_type == BotType.MARKET_MAKER:
-                self._make_market()
+        if self._bot_type == BotType.REACTIVE:
+            self._react_to_market()
+        elif self._bot_type == BotType.MARKET_MAKER:
+            self._make_market()
 
     def _create_new_order(self,
                           price: int,
@@ -260,11 +259,11 @@ class DSBot(Agent):
 
         # track state of order book
         num_private_orders, num_my_public_orders, my_stale_priv_order, \
-        manager_order = self._get_order_book_state()
+            manager_order = self._get_order_book_state()
 
         # if i have ANY orders in the public book, it's stale, so cancel it
         if my_stale_priv_order is not None and \
-                not my_stale_priv_order.fm_id == self._last_accepted_public_order_id:
+                self._last_accepted_public_order_id not in Order.current():
             self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
             self._cancel_order(my_stale_priv_order)
             self._last_accepted_public_order_id = 0
@@ -374,6 +373,7 @@ class DSBot(Agent):
                 num_my_public_orders += 1
                 my_stale_priv_order = order
 
+
         return num_private_orders, num_my_public_orders, my_stale_priv_order, manager_order
 
     def _create_profitable_order(self, best_ask, best_bid, manager_order, is_private,
@@ -434,10 +434,10 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 898
+    MARKETPLACE_ID = 915
 
-    B_TYPE = BotType.MARKET_MAKER
-    # B_TYPE = BotType.REACTIVE
+    # B_TYPE = BotType.MARKET_MAKER
+    B_TYPE = BotType.REACTIVE
 
     ds_bot = DSBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID, B_TYPE)
     ds_bot.run()
