@@ -58,11 +58,9 @@ class DSBot(Agent):
         self.inform(f"{num_my_public_orders}, {num_private_orders}")
 
         # CANCELLING STALE ORDERS =========================================================
-        if num_my_public_orders > 0 and num_private_orders == 0:
-            cancel_order = copy.copy(my_stale_priv_order)
-            cancel_order.order_type = OrderType.CANCEL
-            cancel_order.ref = f"Cancel - {my_stale_priv_order.ref}"
-            self.send_order(cancel_order)
+        if num_my_public_orders > 0 and num_private_orders == 0 and not self._waiting_for_server:
+            self.inform(f"Clearing stale public orders ===========================")
+            self._cancel_order(my_stale_priv_order)
             self._last_accepted_public_order_id = 0
             return
 
@@ -234,6 +232,7 @@ class DSBot(Agent):
         Helper function to cancel given order
         :param order: order to be cancelled
         """
+        self._waiting_for_server = True
         cancel_order = copy.copy(order)
         cancel_order.order_type = OrderType.CANCEL
         cancel_order.ref = f"SM - Cancel - {order.ref}"
@@ -257,7 +256,7 @@ class DSBot(Agent):
 
         # track state of order book
         num_private_orders, num_my_public_orders, my_stale_priv_order, \
-        manager_order = self._get_order_book_state()
+            manager_order = self._get_order_book_state()
 
         # # if i have ANY orders in the public book, it's stale, so cancel it
         # if my_stale_priv_order is not None and \
