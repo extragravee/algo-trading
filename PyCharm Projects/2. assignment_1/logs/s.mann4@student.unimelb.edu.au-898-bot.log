@@ -29768,3 +29768,14 @@
 [2020-09-03 15:09:21,888:         agent.DSBot]:     INFO - Order(10855835,Mine,SELL,1@410,M-1572,LIMIT,REF:'Public order - 1')
 [2020-09-03 15:09:21,889:         agent.DSBot]:     INFO - 1, 1
 [2020-09-03 15:09:21,889:         agent.DSBot]:     INFO - before private Last accepted public order ID: 10855835
+
+=============================== Log Started [2020-09-03 20:20:30 AEST] ===============================
+[2020-09-03 20:20:32,800:         agent.DSBot]:     INFO - Requesting initial information for marketplace `898`
+[2020-09-03 20:20:34,845:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-03 20:20:34,845:         agent.DSBot]:     INFO - Market(1572,widget,Widget,False)
+[2020-09-03 20:20:34,845:         agent.DSBot]:     INFO - Market(1573,privateWidget,PrivateWidget,True)
+[2020-09-03 20:20:35,597:         agent.DSBot]:     INFO - Session: SID:14288:SessionState.OPEN
+[2020-09-03 20:20:36,417:         agent.DSBot]:     INFO - Order(10857683,Mine,BUY,1@317,M-1572,LIMIT,REF:'Public order - 0')
+[2020-09-03 20:20:36,417:         agent.DSBot]:     INFO - Order(10857693,Mine,BUY,1@624,M-1572,LIMIT,REF:'Public order - 3')
+[2020-09-03 20:20:36,417:         agent.DSBot]:     INFO - 0, 0
+[2020-09-03 20:20:36,418:         agent.DSBot]:     INFO - before private Last accepted public order ID: 0
