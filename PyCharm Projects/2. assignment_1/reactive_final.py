@@ -62,12 +62,14 @@ class DSBot(Agent):
             self.inform(f"Clearing stale public orders ===========================")
             self._cancel_order(my_stale_priv_order)
             self._last_accepted_public_order_id = 0
+            self.inform(f"after changing Last accepted public order ID: {self._last_accepted_public_order_id}")
             return
 
         # PRIVATE ORDER CREATION ==========================================================
         # need to confirm that the last sent order traded
-        if self._last_accepted_public_order_id not in Order.current() and num_private_orders > 0 \
-                and not self._last_accepted_public_order_id == 0 and num_my_public_orders == 0:
+        self.inform(f"before private Last accepted public order ID: {self._last_accepted_public_order_id}")
+        if (self._last_accepted_public_order_id not in Order.current()) and (num_private_orders > 0) \
+                and (not self._last_accepted_public_order_id == 0) and (num_my_public_orders == 0):
             # determine order attributes
             is_private = True
             price = manager_order.price
@@ -165,7 +167,7 @@ class DSBot(Agent):
         self._waiting_for_server = False
 
         # track my last accepted public order
-        if not order.is_private:
+        if not order.is_private and (not order.order_type == OrderType.CANCEL):
             self._last_accepted_public_order_id = order.fm_id
 
     def order_rejected(self, info, order: Order):
@@ -184,6 +186,7 @@ class DSBot(Agent):
         :param orders: list of order objects (updates)
         """
         for o in orders:
+            # self.inform(o)
             if o.mine or o.is_private:
                 self.inform(o)
 
@@ -431,7 +434,7 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 915
+    MARKETPLACE_ID = 898
 
     B_TYPE = BotType.MARKET_MAKER
     # B_TYPE = BotType.REACTIVE
