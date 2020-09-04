@@ -16817,3 +16817,992 @@
 [2020-09-04 19:35:39,511:         agent.DSBot]:     INFO - Creating private order
 [2020-09-04 19:35:40,044:         agent.DSBot]:     INFO - Order(11231821,Others,BUY,1@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
 [2020-09-04 19:35:40,044:         agent.DSBot]:     INFO - Order(11231971,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 21',PVT_TO:M000)
+
+=============================== Log Started [2020-09-04 19:38:49 AEST] ===============================
+[2020-09-04 19:38:51,534:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 19:38:53,606:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 19:38:53,606:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 19:38:53,606:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 19:38:53,606:         agent.DSBot]:     INFO - Public tick: 5
+[2020-09-04 19:38:53,606:         agent.DSBot]:     INFO - Private tick: 1
+[2020-09-04 19:38:54,109:         agent.DSBot]:     INFO - Session: SID:14444:SessionState.OPEN
+[2020-09-04 19:38:54,895:         agent.DSBot]:     INFO - Order(11229874,Others,SELL,1@640,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:38:54,895:         agent.DSBot]:     INFO - Order(11229633,Mine,SELL,1@640,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:38:54,895:         agent.DSBot]:     INFO - Order(11229822,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:38:54,895:         agent.DSBot]:     INFO - Order(11229823,Others,SELL,1@640,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:38:54,895:         agent.DSBot]:     INFO - Order(11229826,Mine,SELL,1@700,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:38:54,895:         agent.DSBot]:     INFO - Order(11229827,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:38:54,896:         agent.DSBot]:     INFO - Order(11229828,Others,SELL,1@640,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:38:54,896:         agent.DSBot]:     INFO - Order(11229831,Mine,SELL,1@690,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:38:54,896:         agent.DSBot]:     INFO - Order(11229834,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:38:54,896:         agent.DSBot]:     INFO - Order(11229835,Others,SELL,1@640,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:38:54,896:         agent.DSBot]:     INFO - Order(11229838,Mine,SELL,1@690,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:38:54,896:         agent.DSBot]:     INFO - Order(11229872,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:38:54,896:         agent.DSBot]:     INFO - Order(11229873,Others,SELL,1@640,M-1598,LIMIT,REF:'Private order - 9',PVT_FROM:M000)
+[2020-09-04 19:38:54,896:         agent.DSBot]:     INFO - Order(11229903,Mine,SELL,1@700,M-1597,LIMIT,REF:'Public order - 10')
+[2020-09-04 19:38:54,896:         agent.DSBot]:     INFO - Order(11229906,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-04 19:38:54,896:         agent.DSBot]:     INFO - Order(11231821,Others,BUY,1@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:38:54,896:         agent.DSBot]:     INFO - Order(11231723,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 12')
+[2020-09-04 19:38:54,896:         agent.DSBot]:     INFO - Order(11231747,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 13',PVT_TO:M000)
+[2020-09-04 19:38:54,897:         agent.DSBot]:     INFO - Order(11231748,Others,BUY,1@470,M-1598,LIMIT,REF:'Private order - 13',PVT_FROM:M000)
+[2020-09-04 19:38:54,897:         agent.DSBot]:     INFO - Order(11231751,Mine,BUY,1@300,M-1597,LIMIT,REF:'Public order - 14')
+[2020-09-04 19:38:54,897:         agent.DSBot]:     INFO - Order(11231752,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 15',PVT_TO:M000)
+[2020-09-04 19:38:54,897:         agent.DSBot]:     INFO - Order(11231753,Others,BUY,1@470,M-1598,LIMIT,REF:'Private order - 15',PVT_FROM:M000)
+[2020-09-04 19:38:54,897:         agent.DSBot]:     INFO - Order(11231756,Mine,BUY,1@300,M-1597,LIMIT,REF:'Public order - 16')
+[2020-09-04 19:38:54,897:         agent.DSBot]:     INFO - Order(11231759,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 17',PVT_TO:M000)
+[2020-09-04 19:38:54,897:         agent.DSBot]:     INFO - Order(11231760,Others,BUY,1@470,M-1598,LIMIT,REF:'Private order - 17',PVT_FROM:M000)
+[2020-09-04 19:38:54,897:         agent.DSBot]:     INFO - Order(11231784,Mine,BUY,1@300,M-1597,LIMIT,REF:'Public order - 18')
+[2020-09-04 19:38:54,897:         agent.DSBot]:     INFO - Order(11231819,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 19',PVT_TO:M000)
+[2020-09-04 19:38:54,897:         agent.DSBot]:     INFO - Order(11231820,Others,BUY,1@470,M-1598,LIMIT,REF:'Private order - 19',PVT_FROM:M000)
+[2020-09-04 19:38:54,897:         agent.DSBot]:     INFO - Order(11231835,Mine,BUY,1@465,M-1597,LIMIT,REF:'Public order - 20')
+[2020-09-04 19:38:54,898:         agent.DSBot]:     INFO - Order(11231971,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 21',PVT_TO:M000)
+[2020-09-04 19:38:54,898:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:56,655:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:56,906:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:56,907:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:56,908:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:56,908:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:56,909:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:56,909:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:56,910:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,161:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,162:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,162:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,162:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,163:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,164:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,415:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,416:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,416:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,417:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,418:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,418:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,670:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,671:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,672:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,672:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,923:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,924:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,924:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,925:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:57,925:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,177:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,177:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,178:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,178:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,179:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,432:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,432:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,433:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,433:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,433:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,434:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,685:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,686:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,686:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,687:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,687:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,688:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,939:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,940:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,941:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,941:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,942:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:58,942:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,194:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,195:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,195:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,196:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,196:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,197:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,197:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,449:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,450:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,450:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,451:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,451:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,451:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,452:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,705:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,705:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,706:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,707:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,707:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,708:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,959:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,960:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,961:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,962:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:38:59,962:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,214:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,215:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,215:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,216:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,217:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,217:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,468:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,469:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,470:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,470:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,471:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,471:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,723:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,723:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,724:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,724:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,725:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,725:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,726:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,726:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,977:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,977:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,978:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,978:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:00,979:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,001:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,002:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,003:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,254:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,255:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,256:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,256:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,257:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,257:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,508:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,509:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,510:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,510:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,511:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,512:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,512:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,763:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,764:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,764:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,765:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,765:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:07,766:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,018:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,018:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,019:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,019:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,020:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,020:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,272:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,273:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,273:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,274:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,275:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,275:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,527:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,528:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,528:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,528:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,529:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,529:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,780:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,781:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,781:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,782:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,782:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,782:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:08,783:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,034:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,035:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,035:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,036:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,036:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,036:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,288:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,289:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,290:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,290:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,291:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,291:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,544:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,545:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,545:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,546:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,546:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,546:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,547:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,798:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,799:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,799:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,800:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,801:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:09,801:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,053:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,054:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,054:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,055:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,056:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,057:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,308:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,309:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,309:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,310:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,310:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,311:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,562:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,563:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,564:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,565:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,566:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,566:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,818:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,818:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,819:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,820:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,820:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,821:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,821:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,822:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,822:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,823:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:10,823:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:11,076:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,099:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,100:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,101:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,101:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,102:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,102:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,354:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,355:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,356:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,356:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,357:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,357:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,358:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,610:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,610:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,611:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,612:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,612:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,613:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,614:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,866:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,867:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,867:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,868:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,869:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,870:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:17,870:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,122:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,123:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,124:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,125:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,125:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,126:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,379:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,379:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,380:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,381:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,381:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,382:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,383:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,634:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,635:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,635:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,635:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,636:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,636:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,887:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,888:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,889:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,889:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,890:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,891:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:18,891:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,142:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,143:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,144:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,144:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,145:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,145:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,397:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,398:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,399:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,399:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,400:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,401:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,401:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,653:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,653:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,654:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,654:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,655:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,655:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,656:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,907:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,908:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,908:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,909:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:19,910:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,161:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,161:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,162:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,162:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,163:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,163:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,164:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,416:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,417:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,417:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,418:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,418:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,419:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,670:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,670:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,671:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,671:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,672:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,672:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,673:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,674:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,674:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,675:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:20,675:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:26,946:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:26,947:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:26,948:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:26,949:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:26,950:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:26,950:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,202:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,203:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,204:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,204:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,205:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,206:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,206:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,458:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,459:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,460:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,460:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,461:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,462:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,714:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,714:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,715:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,715:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,716:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,716:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,716:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,969:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,969:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,970:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,971:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,972:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,972:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:27,973:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,225:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,226:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,227:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,227:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,228:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,229:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,480:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,481:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,482:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,482:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,483:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,484:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,484:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,736:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,737:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,737:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,738:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,739:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,740:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,740:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,993:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,993:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,994:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,995:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,995:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:28,996:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,248:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,249:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,250:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,250:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,251:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,252:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,252:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,504:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,505:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,506:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,507:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,508:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,759:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,760:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,761:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,761:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,762:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:29,763:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,015:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,016:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,017:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,017:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,018:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,019:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,271:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,272:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,273:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,274:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,275:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,527:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,528:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,529:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,530:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,531:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,532:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,533:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,533:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,786:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,786:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,787:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,788:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,789:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:30,790:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:32,798:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 19:39:33,050:         agent.DSBot]:     INFO - Units left to trade = 0
+
+=============================== Log Started [2020-09-04 19:39:35 AEST] ===============================
+[2020-09-04 19:39:37,659:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 19:39:39,731:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 19:39:39,731:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 19:39:39,731:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 19:39:39,731:         agent.DSBot]:     INFO - Public tick: 5
+[2020-09-04 19:39:39,732:         agent.DSBot]:     INFO - Private tick: 1
+[2020-09-04 19:39:40,234:         agent.DSBot]:     INFO - Session: SID:14444:SessionState.OPEN
+[2020-09-04 19:39:41,266:         agent.DSBot]:     INFO - Order(11229874,Others,SELL,1@640,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:39:41,266:         agent.DSBot]:     INFO - Order(11229633,Mine,SELL,1@640,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:39:41,266:         agent.DSBot]:     INFO - Order(11229822,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:39:41,266:         agent.DSBot]:     INFO - Order(11229823,Others,SELL,1@640,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:39:41,266:         agent.DSBot]:     INFO - Order(11229826,Mine,SELL,1@700,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:39:41,267:         agent.DSBot]:     INFO - Order(11229827,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:39:41,267:         agent.DSBot]:     INFO - Order(11229828,Others,SELL,1@640,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:39:41,267:         agent.DSBot]:     INFO - Order(11229831,Mine,SELL,1@690,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:39:41,267:         agent.DSBot]:     INFO - Order(11229834,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:39:41,267:         agent.DSBot]:     INFO - Order(11229835,Others,SELL,1@640,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:39:41,267:         agent.DSBot]:     INFO - Order(11229838,Mine,SELL,1@690,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:39:41,267:         agent.DSBot]:     INFO - Order(11229872,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:39:41,267:         agent.DSBot]:     INFO - Order(11229873,Others,SELL,1@640,M-1598,LIMIT,REF:'Private order - 9',PVT_FROM:M000)
+[2020-09-04 19:39:41,267:         agent.DSBot]:     INFO - Order(11229903,Mine,SELL,1@700,M-1597,LIMIT,REF:'Public order - 10')
+[2020-09-04 19:39:41,267:         agent.DSBot]:     INFO - Order(11229906,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-04 19:39:41,267:         agent.DSBot]:     INFO - Order(11231821,Others,BUY,1@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:39:41,267:         agent.DSBot]:     INFO - Order(11231723,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 12')
+[2020-09-04 19:39:41,268:         agent.DSBot]:     INFO - Order(11231747,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 13',PVT_TO:M000)
+[2020-09-04 19:39:41,268:         agent.DSBot]:     INFO - Order(11231748,Others,BUY,1@470,M-1598,LIMIT,REF:'Private order - 13',PVT_FROM:M000)
+[2020-09-04 19:39:41,268:         agent.DSBot]:     INFO - Order(11231751,Mine,BUY,1@300,M-1597,LIMIT,REF:'Public order - 14')
+[2020-09-04 19:39:41,268:         agent.DSBot]:     INFO - Order(11231752,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 15',PVT_TO:M000)
+[2020-09-04 19:39:41,268:         agent.DSBot]:     INFO - Order(11231753,Others,BUY,1@470,M-1598,LIMIT,REF:'Private order - 15',PVT_FROM:M000)
+[2020-09-04 19:39:41,268:         agent.DSBot]:     INFO - Order(11231756,Mine,BUY,1@300,M-1597,LIMIT,REF:'Public order - 16')
+[2020-09-04 19:39:41,268:         agent.DSBot]:     INFO - Order(11231759,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 17',PVT_TO:M000)
+[2020-09-04 19:39:41,268:         agent.DSBot]:     INFO - Order(11231760,Others,BUY,1@470,M-1598,LIMIT,REF:'Private order - 17',PVT_FROM:M000)
+[2020-09-04 19:39:41,268:         agent.DSBot]:     INFO - Order(11231784,Mine,BUY,1@300,M-1597,LIMIT,REF:'Public order - 18')
+[2020-09-04 19:39:41,268:         agent.DSBot]:     INFO - Order(11231819,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 19',PVT_TO:M000)
+[2020-09-04 19:39:41,268:         agent.DSBot]:     INFO - Order(11231820,Others,BUY,1@470,M-1598,LIMIT,REF:'Private order - 19',PVT_FROM:M000)
+[2020-09-04 19:39:41,268:         agent.DSBot]:     INFO - Order(11231835,Mine,BUY,1@465,M-1597,LIMIT,REF:'Public order - 20')
+[2020-09-04 19:39:41,269:         agent.DSBot]:     INFO - Order(11231971,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 21',PVT_TO:M000)
+[2020-09-04 19:40:13,052:         agent.DSBot]:     INFO - Session: SID:14444:SessionState.PAUSED
+[2020-09-04 19:40:15,060:         agent.DSBot]:     INFO - Session: SID:14444:SessionState.CLOSED
+[2020-09-04 19:40:20,076:         agent.DSBot]:     INFO - Session: SID:14446:SessionState.OPEN
+[2020-09-04 19:40:25,098:         agent.DSBot]:     INFO - Order(11234683,Others,SELL,5@80,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:40:27,105:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 19:40:27,105:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-04 19:40:27,105:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11234687,Others,BUY,3@100,M-1597,LIMIT)
+[2020-09-04 19:40:29,117:         agent.DSBot]:     INFO - Order(11234701,Mine,SELL,1@100,M-1597,LIMIT,REF:'SM - OrderSide.SELL-0')
+[2020-09-04 19:40:29,117:         agent.DSBot]:     INFO - Order(11234702,Mine,SELL,1@210,M-1597,LIMIT,REF:'SM - OrderSide.SELL-0')
+[2020-09-04 19:40:29,117:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 19:40:29,117:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 19:40:29,117:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 19:40:30,377:         agent.DSBot]:     INFO - Order(11234683,Others,SELL,5@80,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:40:30,377:         agent.DSBot]:     INFO - Order(11234711,Mine,BUY,1@80,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:40:30,378:         agent.DSBot]:     INFO - Order(11234712,Others,SELL,1@80,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:40:30,378:         agent.DSBot]:     INFO - Order(11234713,Others,SELL,4@80,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:40:30,378:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 19:40:30,378:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-04 19:40:30,378:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11234709,Others,BUY,3@210,M-1597,LIMIT)
+[2020-09-04 19:40:31,888:         agent.DSBot]:     INFO - Order(11234723,Mine,SELL,1@210,M-1597,LIMIT,REF:'SM - OrderSide.SELL-2')
+[2020-09-04 19:40:31,888:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 19:40:31,888:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 19:40:31,888:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 19:40:33,146:         agent.DSBot]:     INFO - Order(11234713,Others,SELL,4@80,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:40:33,147:         agent.DSBot]:     INFO - Order(11234736,Mine,BUY,1@80,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:40:33,147:         agent.DSBot]:     INFO - Order(11234737,Others,SELL,1@80,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:40:33,147:         agent.DSBot]:     INFO - Order(11234738,Others,SELL,3@80,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:40:33,147:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 19:40:33,148:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-04 19:40:33,148:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11234732,Others,BUY,1@210,M-1597,LIMIT)
+[2020-09-04 19:40:34,405:         agent.DSBot]:     INFO - Order(11234748,Mine,SELL,1@210,M-1597,LIMIT,REF:'SM - OrderSide.SELL-4')
+[2020-09-04 19:40:34,405:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 19:40:34,405:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 19:40:34,406:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 19:40:35,662:         agent.DSBot]:     INFO - Order(11234738,Others,SELL,3@80,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:40:35,663:         agent.DSBot]:     INFO - Order(11234752,Mine,BUY,1@80,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:40:35,663:         agent.DSBot]:     INFO - Order(11234753,Others,SELL,1@80,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:40:35,663:         agent.DSBot]:     INFO - Order(11234754,Others,SELL,2@80,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:40:35,663:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 19:40:35,664:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-04 19:40:35,664:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11234687,Others,BUY,3@100,M-1597,LIMIT)
+[2020-09-04 19:40:36,918:         agent.DSBot]:     INFO - Order(11234757,Mine,SELL,1@100,M-1597,LIMIT,REF:'SM - OrderSide.SELL-6')
+[2020-09-04 19:40:36,919:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 19:40:36,919:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 19:40:36,919:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 19:40:38,180:         agent.DSBot]:     INFO - Order(11234754,Others,SELL,2@80,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:40:38,180:         agent.DSBot]:     INFO - Order(11234777,Mine,BUY,1@80,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:40:38,180:         agent.DSBot]:     INFO - Order(11234778,Others,SELL,1@80,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:40:38,180:         agent.DSBot]:     INFO - Order(11234779,Others,SELL,1@80,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:40:38,181:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 19:40:38,181:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-04 19:40:38,181:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11234782,Others,BUY,3@470,M-1597,LIMIT)
+[2020-09-04 19:40:39,438:         agent.DSBot]:     INFO - Order(11234792,Mine,SELL,1@470,M-1597,LIMIT,REF:'SM - OrderSide.SELL-8')
+[2020-09-04 19:40:39,439:         agent.DSBot]:     INFO - Order(11234793,Mine,SELL,1@620,M-1597,LIMIT,REF:'SM - OrderSide.SELL-8')
+[2020-09-04 19:40:39,439:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 19:40:39,439:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 19:40:39,439:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 19:40:40,698:         agent.DSBot]:     INFO - Order(11234779,Others,SELL,1@80,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:40:40,698:         agent.DSBot]:     INFO - Order(11234803,Mine,BUY,1@80,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:45:24,112:         agent.DSBot]:     INFO - Order(11235909,Others,SELL,5@80,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:45:24,367:         agent.DSBot]:     INFO - Order(11235914,Others,SELL,5@80,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:45:24,370:         agent.DSBot]:     INFO - Order(11235918,Others,SELL,5@80,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:45:24,622:         agent.DSBot]:     INFO - Order(11235920,Others,SELL,5@80,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:45:25,913:         agent.DSBot]:     INFO - Order(11235971,Others,SELL,5@870,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:50:22,898:         agent.DSBot]:     INFO - Order(11237500,Others,SELL,5@80,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:50:23,156:         agent.DSBot]:     INFO - Order(11237503,Others,SELL,5@80,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:50:23,165:         agent.DSBot]:     INFO - Order(11237507,Others,SELL,5@80,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:50:23,420:         agent.DSBot]:     INFO - Order(11237509,Others,SELL,5@80,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:50:25,516:         agent.DSBot]:     INFO - Order(11235971,Others,SELL,5@870,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:50:25,517:         agent.DSBot]:     INFO - Order(11237557,Others,SELL,5@870,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:50:27,111:         agent.DSBot]:     INFO - Order(11237612,Others,SELL,5@450,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:50:27,113:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 19:50:27,113:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-04 19:50:27,113:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11237486,Others,BUY,4@700,M-1597,LIMIT)
+[2020-09-04 19:50:29,222:         agent.DSBot]:     INFO - Order(11237667,Mine,SELL,1@700,M-1597,LIMIT,REF:'SM - OrderSide.SELL-10')
+[2020-09-04 19:51:19,694:         agent.DSBot]:     INFO - Order(11237667,Mine,SELL,1@700,M-1597,LIMIT,REF:'SM - OrderSide.SELL-10')
+[2020-09-04 19:51:19,698:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 19:51:19,698:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 19:51:19,698:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 19:51:21,472:         agent.DSBot]:     INFO - Order(11237612,Others,SELL,5@450,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:51:21,472:         agent.DSBot]:     INFO - Order(11237974,Mine,BUY,1@450,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-04 19:51:21,473:         agent.DSBot]:     INFO - Order(11237975,Others,SELL,1@450,M-1598,LIMIT,REF:'Private order - 11',PVT_FROM:M000)
+[2020-09-04 19:51:21,473:         agent.DSBot]:     INFO - Order(11237976,Others,SELL,4@450,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:51:21,476:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 19:51:21,477:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-04 19:51:21,477:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11237966,Others,BUY,4@710,M-1597,LIMIT)
+[2020-09-04 19:51:22,734:         agent.DSBot]:     INFO - Order(11237977,Mine,SELL,1@710,M-1597,LIMIT,REF:'SM - OrderSide.SELL-12')
+[2020-09-04 19:51:22,738:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 19:51:22,739:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 19:51:22,739:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 19:51:23,994:         agent.DSBot]:     INFO - Order(11237976,Others,SELL,4@450,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:51:23,995:         agent.DSBot]:     INFO - Order(11237980,Mine,BUY,1@450,M-1598,LIMIT,REF:'Private order - 13',PVT_TO:M000)
+[2020-09-04 19:51:23,995:         agent.DSBot]:     INFO - Order(11237981,Others,SELL,1@450,M-1598,LIMIT,REF:'Private order - 13',PVT_FROM:M000)
+[2020-09-04 19:51:23,995:         agent.DSBot]:     INFO - Order(11237982,Others,SELL,3@450,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:51:23,998:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 19:51:23,999:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-04 19:51:23,999:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11237979,Others,BUY,3@710,M-1597,LIMIT)
+[2020-09-04 19:51:25,253:         agent.DSBot]:     INFO - Order(11237983,Mine,SELL,1@710,M-1597,LIMIT,REF:'SM - OrderSide.SELL-14')
+[2020-09-04 19:51:25,258:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 19:51:25,258:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 19:51:25,258:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 19:51:26,513:         agent.DSBot]:     INFO - Order(11237982,Others,SELL,3@450,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:51:26,514:         agent.DSBot]:     INFO - Order(11237986,Mine,BUY,1@450,M-1598,LIMIT,REF:'Private order - 15',PVT_TO:M000)
+[2020-09-04 19:51:26,514:         agent.DSBot]:     INFO - Order(11237987,Others,SELL,1@450,M-1598,LIMIT,REF:'Private order - 15',PVT_FROM:M000)
+[2020-09-04 19:51:26,514:         agent.DSBot]:     INFO - Order(11237988,Others,SELL,2@450,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:51:26,517:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 19:51:26,518:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-04 19:51:26,518:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11237985,Others,BUY,2@710,M-1597,LIMIT)
+[2020-09-04 19:51:27,775:         agent.DSBot]:     INFO - Order(11237989,Mine,SELL,1@710,M-1597,LIMIT,REF:'SM - OrderSide.SELL-16')
+[2020-09-04 19:51:27,779:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 19:51:27,779:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 19:51:27,779:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 19:51:29,106:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 19:51:29,106:         agent.DSBot]:     INFO - Responding to: 
+[2020-09-04 19:51:29,107:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11237991,Others,BUY,1@710,M-1597,LIMIT)
+[2020-09-04 19:51:29,112:         agent.DSBot]:     INFO - Order(11237988,Others,SELL,2@450,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:51:29,112:         agent.DSBot]:     INFO - Order(11238024,Mine,BUY,1@450,M-1598,LIMIT,REF:'Private order - 17',PVT_TO:M000)
+[2020-09-04 19:51:29,112:         agent.DSBot]:     INFO - Order(11238025,Others,SELL,1@450,M-1598,LIMIT,REF:'Private order - 17',PVT_FROM:M000)
+[2020-09-04 19:51:29,112:         agent.DSBot]:     INFO - Order(11238026,Others,SELL,1@450,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:51:30,421:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 19:51:30,421:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 19:51:30,422:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 19:51:30,422:         agent.DSBot]:     INFO - Order(11238048,Mine,SELL,1@710,M-1597,LIMIT,REF:'SM - OrderSide.SELL-18')
+[2020-09-04 19:51:30,422:         agent.DSBot]:     INFO - Order(11238049,Mine,SELL,1@770,M-1597,LIMIT,REF:'SM - OrderSide.SELL-18')
+[2020-09-04 19:51:31,687:         agent.DSBot]:     INFO - Order(11238026,Others,SELL,1@450,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:51:31,687:         agent.DSBot]:     INFO - Order(11238056,Mine,BUY,1@450,M-1598,LIMIT,REF:'Private order - 19',PVT_TO:M000)
+[2020-09-04 19:55:22,555:         agent.DSBot]:     INFO - Order(11239789,Others,SELL,5@80,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:55:22,816:         agent.DSBot]:     INFO - Order(11239792,Others,SELL,5@80,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:55:22,835:         agent.DSBot]:     INFO - Order(11239796,Others,SELL,5@80,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:55:23,091:         agent.DSBot]:     INFO - Order(11239798,Others,SELL,5@80,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:55:25,564:         agent.DSBot]:     INFO - Order(11239857,Others,SELL,5@450,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:55:25,843:         agent.DSBot]:     INFO - Order(11239863,Others,SELL,5@450,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:55:25,848:         agent.DSBot]:     INFO - Order(11239864,Others,SELL,5@450,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:55:25,853:         agent.DSBot]:     INFO - Order(11239865,Others,SELL,5@450,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:55:27,044:         agent.DSBot]:     INFO - Order(11239912,Others,SELL,5@800,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+
+=============================== Log Started [2020-09-04 19:59:02 AEST] ===============================
+[2020-09-04 19:59:04,660:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 19:59:06,711:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 19:59:06,711:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 19:59:06,712:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 19:59:06,712:         agent.DSBot]:     INFO - Public tick: 5
+[2020-09-04 19:59:06,712:         agent.DSBot]:     INFO - Private tick: 1
+[2020-09-04 19:59:07,470:         agent.DSBot]:     INFO - Session: SID:14446:SessionState.OPEN
+[2020-09-04 19:59:07,994:         agent.DSBot]:     INFO - Order(11234779,Others,SELL,1@80,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:59:07,994:         agent.DSBot]:     INFO - Order(11234702,Mine,SELL,1@210,M-1597,LIMIT,REF:'SM - OrderSide.SELL-0')
+[2020-09-04 19:59:07,994:         agent.DSBot]:     INFO - Order(11234711,Mine,BUY,1@80,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:59:07,994:         agent.DSBot]:     INFO - Order(11234712,Others,SELL,1@80,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:59:07,994:         agent.DSBot]:     INFO - Order(11234723,Mine,SELL,1@210,M-1597,LIMIT,REF:'SM - OrderSide.SELL-2')
+[2020-09-04 19:59:07,994:         agent.DSBot]:     INFO - Order(11234736,Mine,BUY,1@80,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:59:07,995:         agent.DSBot]:     INFO - Order(11234737,Others,SELL,1@80,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:59:07,995:         agent.DSBot]:     INFO - Order(11234748,Mine,SELL,1@210,M-1597,LIMIT,REF:'SM - OrderSide.SELL-4')
+[2020-09-04 19:59:07,995:         agent.DSBot]:     INFO - Order(11234752,Mine,BUY,1@80,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:59:07,995:         agent.DSBot]:     INFO - Order(11234753,Others,SELL,1@80,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:59:07,995:         agent.DSBot]:     INFO - Order(11234757,Mine,SELL,1@100,M-1597,LIMIT,REF:'SM - OrderSide.SELL-6')
+[2020-09-04 19:59:07,995:         agent.DSBot]:     INFO - Order(11234777,Mine,BUY,1@80,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:59:07,995:         agent.DSBot]:     INFO - Order(11234778,Others,SELL,1@80,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:59:07,995:         agent.DSBot]:     INFO - Order(11234793,Mine,SELL,1@620,M-1597,LIMIT,REF:'SM - OrderSide.SELL-8')
+[2020-09-04 19:59:07,995:         agent.DSBot]:     INFO - Order(11234803,Mine,BUY,1@80,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:59:07,995:         agent.DSBot]:     INFO - Order(11238026,Others,SELL,1@450,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:59:07,995:         agent.DSBot]:     INFO - Order(11237667,Mine,SELL,1@700,M-1597,LIMIT,REF:'SM - OrderSide.SELL-10')
+[2020-09-04 19:59:07,996:         agent.DSBot]:     INFO - Order(11237974,Mine,BUY,1@450,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-04 19:59:07,996:         agent.DSBot]:     INFO - Order(11237975,Others,SELL,1@450,M-1598,LIMIT,REF:'Private order - 11',PVT_FROM:M000)
+[2020-09-04 19:59:07,996:         agent.DSBot]:     INFO - Order(11237977,Mine,SELL,1@710,M-1597,LIMIT,REF:'SM - OrderSide.SELL-12')
+[2020-09-04 19:59:07,996:         agent.DSBot]:     INFO - Order(11237980,Mine,BUY,1@450,M-1598,LIMIT,REF:'Private order - 13',PVT_TO:M000)
+[2020-09-04 19:59:07,996:         agent.DSBot]:     INFO - Order(11237981,Others,SELL,1@450,M-1598,LIMIT,REF:'Private order - 13',PVT_FROM:M000)
+[2020-09-04 19:59:07,996:         agent.DSBot]:     INFO - Order(11237983,Mine,SELL,1@710,M-1597,LIMIT,REF:'SM - OrderSide.SELL-14')
+[2020-09-04 19:59:07,996:         agent.DSBot]:     INFO - Order(11237986,Mine,BUY,1@450,M-1598,LIMIT,REF:'Private order - 15',PVT_TO:M000)
+[2020-09-04 19:59:07,996:         agent.DSBot]:     INFO - Order(11237987,Others,SELL,1@450,M-1598,LIMIT,REF:'Private order - 15',PVT_FROM:M000)
+[2020-09-04 19:59:07,996:         agent.DSBot]:     INFO - Order(11237989,Mine,SELL,1@710,M-1597,LIMIT,REF:'SM - OrderSide.SELL-16')
+[2020-09-04 19:59:07,996:         agent.DSBot]:     INFO - Order(11238024,Mine,BUY,1@450,M-1598,LIMIT,REF:'Private order - 17',PVT_TO:M000)
+[2020-09-04 19:59:07,996:         agent.DSBot]:     INFO - Order(11238025,Others,SELL,1@450,M-1598,LIMIT,REF:'Private order - 17',PVT_FROM:M000)
+[2020-09-04 19:59:07,996:         agent.DSBot]:     INFO - Order(11238049,Mine,SELL,1@770,M-1597,LIMIT,REF:'SM - OrderSide.SELL-18')
+[2020-09-04 19:59:07,997:         agent.DSBot]:     INFO - Order(11238056,Mine,BUY,1@450,M-1598,LIMIT,REF:'Private order - 19',PVT_TO:M000)
+[2020-09-04 19:59:07,997:         agent.DSBot]:     INFO - Order(11239912,Others,SELL,5@800,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:00:22,705:         agent.DSBot]:     INFO - Session: SID:14446:SessionState.PAUSED
+[2020-09-04 20:00:24,963:         agent.DSBot]:     INFO - Session: SID:14446:SessionState.CLOSED
+[2020-09-04 20:00:29,730:         agent.DSBot]:     INFO - Session: SID:14447:SessionState.OPEN
+[2020-09-04 20:00:34,752:         agent.DSBot]:     INFO - Order(11242759,Others,SELL,5@980,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:05:33,578:         agent.DSBot]:     INFO - Order(11242759,Others,SELL,5@980,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:05:33,578:         agent.DSBot]:     INFO - Order(11243790,Others,SELL,5@980,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:05:35,369:         agent.DSBot]:     INFO - Order(11243851,Others,BUY,5@370,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:06:10,136:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:06:10,137:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11244035,Others,SELL,2@340,M-1597,LIMIT)
+[2020-09-04 20:06:12,405:         agent.DSBot]:     INFO - Order(11244047,Mine,BUY,1@340,M-1597,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-09-04 20:06:12,405:         agent.DSBot]:     INFO - Order(11244048,Mine,BUY,1@310,M-1597,LIMIT,REF:'SM - OrderSide.BUY-0')
+[2020-09-04 20:06:12,407:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 20:06:12,407:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:06:12,407:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 20:06:13,916:         agent.DSBot]:     INFO - Order(11243851,Others,BUY,5@370,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:06:13,916:         agent.DSBot]:     INFO - Order(11244055,Mine,SELL,1@370,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 20:06:13,917:         agent.DSBot]:     INFO - Order(11244056,Others,BUY,1@370,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 20:06:13,917:         agent.DSBot]:     INFO - Order(11244057,Others,BUY,4@370,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:06:13,918:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:06:13,919:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11244054,Others,SELL,1@310,M-1597,LIMIT)
+[2020-09-04 20:06:15,175:         agent.DSBot]:     INFO - Order(11244061,Mine,BUY,1@310,M-1597,LIMIT,REF:'SM - OrderSide.BUY-2')
+[2020-09-04 20:06:15,177:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 20:06:15,177:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:06:15,177:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 20:06:16,432:         agent.DSBot]:     INFO - Order(11244057,Others,BUY,4@370,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:06:16,432:         agent.DSBot]:     INFO - Order(11244063,Mine,SELL,1@370,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 20:06:16,432:         agent.DSBot]:     INFO - Order(11244064,Others,BUY,1@370,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 20:06:16,432:         agent.DSBot]:     INFO - Order(11244065,Others,BUY,3@370,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:06:16,434:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:06:16,434:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11244039,Others,SELL,4@330,M-1597,LIMIT)
+[2020-09-04 20:06:17,691:         agent.DSBot]:     INFO - Order(11244066,Mine,BUY,1@330,M-1597,LIMIT,REF:'SM - OrderSide.BUY-4')
+[2020-09-04 20:06:17,693:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 20:06:17,693:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:06:17,693:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 20:06:18,960:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:06:18,960:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11244068,Others,SELL,3@330,M-1597,LIMIT)
+[2020-09-04 20:06:18,962:         agent.DSBot]:     INFO - Order(11244065,Others,BUY,3@370,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:06:18,963:         agent.DSBot]:     INFO - Order(11244083,Mine,SELL,1@370,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 20:06:18,963:         agent.DSBot]:     INFO - Order(11244084,Others,BUY,1@370,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 20:06:18,963:         agent.DSBot]:     INFO - Order(11244085,Others,BUY,2@370,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:06:20,253:         agent.DSBot]:     INFO - Order(11244115,Mine,BUY,1@330,M-1597,LIMIT,REF:'SM - OrderSide.BUY-6')
+[2020-09-04 20:06:20,254:         agent.DSBot]:     INFO - Order(11244116,Mine,BUY,1@320,M-1597,LIMIT,REF:'SM - OrderSide.BUY-6')
+[2020-09-04 20:06:20,256:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 20:06:20,256:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:06:20,256:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 20:06:21,511:         agent.DSBot]:     INFO - Order(11244085,Others,BUY,2@370,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:06:21,512:         agent.DSBot]:     INFO - Order(11244119,Mine,SELL,1@370,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 20:06:21,512:         agent.DSBot]:     INFO - Order(11244120,Others,BUY,1@370,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 20:06:21,512:         agent.DSBot]:     INFO - Order(11244121,Others,BUY,1@370,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:06:21,514:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:06:21,514:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11244118,Others,SELL,1@320,M-1597,LIMIT)
+[2020-09-04 20:06:22,768:         agent.DSBot]:     INFO - Order(11244122,Mine,BUY,1@320,M-1597,LIMIT,REF:'SM - OrderSide.BUY-8')
+[2020-09-04 20:06:22,770:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 20:06:22,771:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:06:22,771:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 20:06:24,025:         agent.DSBot]:     INFO - Order(11244121,Others,BUY,1@370,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:06:24,026:         agent.DSBot]:     INFO - Order(11244123,Mine,SELL,1@370,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 20:10:35,292:         agent.DSBot]:     INFO - Order(11245605,Others,BUY,5@370,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:10:35,563:         agent.DSBot]:     INFO - Order(11245614,Others,BUY,5@370,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:10:35,566:         agent.DSBot]:     INFO - Order(11245615,Others,BUY,5@370,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:10:35,818:         agent.DSBot]:     INFO - Order(11245616,Others,BUY,5@370,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:10:37,155:         agent.DSBot]:     INFO - Order(11245666,Others,BUY,5@700,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:10:37,157:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:10:37,157:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11245544,Others,SELL,5@390,M-1597,LIMIT)
+[2020-09-04 20:10:38,427:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 20:10:38,427:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:10:38,427:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 20:10:38,431:         agent.DSBot]:     INFO - Order(11245677,Mine,BUY,1@390,M-1597,LIMIT,REF:'SM - OrderSide.BUY-10')
+[2020-09-04 20:10:39,755:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:10:39,755:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11245679,Others,SELL,3@390,M-1597,LIMIT)
+[2020-09-04 20:10:39,758:         agent.DSBot]:     INFO - Order(11245666,Others,BUY,5@700,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:10:39,758:         agent.DSBot]:     INFO - Order(11245716,Mine,SELL,1@700,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-04 20:10:39,758:         agent.DSBot]:     INFO - Order(11245717,Others,BUY,1@700,M-1598,LIMIT,REF:'Private order - 11',PVT_FROM:M000)
+[2020-09-04 20:10:39,758:         agent.DSBot]:     INFO - Order(11245718,Others,BUY,4@700,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:10:41,060:         agent.DSBot]:     INFO - Order(11245741,Mine,BUY,1@390,M-1597,LIMIT,REF:'SM - OrderSide.BUY-12')
+[2020-09-04 20:11:01,019:         agent.DSBot]:     INFO - Order(11245741,Mine,BUY,1@390,M-1597,LIMIT,REF:'SM - OrderSide.BUY-12')
+[2020-09-04 20:11:01,021:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 20:11:01,022:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:11:01,022:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 20:11:03,029:         agent.DSBot]:     INFO - Order(11245718,Others,BUY,4@700,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:11:03,030:         agent.DSBot]:     INFO - Order(11245889,Mine,SELL,1@700,M-1598,LIMIT,REF:'Private order - 13',PVT_TO:M000)
+[2020-09-04 20:11:03,030:         agent.DSBot]:     INFO - Order(11245890,Others,BUY,1@700,M-1598,LIMIT,REF:'Private order - 13',PVT_FROM:M000)
+[2020-09-04 20:11:03,030:         agent.DSBot]:     INFO - Order(11245891,Others,BUY,3@700,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:11:03,034:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:11:03,034:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11245888,Others,SELL,4@340,M-1597,LIMIT)
+[2020-09-04 20:11:04,290:         agent.DSBot]:     INFO - Order(11245892,Mine,BUY,1@340,M-1597,LIMIT,REF:'SM - OrderSide.BUY-14')
+[2020-09-04 20:11:04,294:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 20:11:04,295:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:11:04,295:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 20:11:05,549:         agent.DSBot]:     INFO - Order(11245891,Others,BUY,3@700,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:11:05,550:         agent.DSBot]:     INFO - Order(11245895,Mine,SELL,1@700,M-1598,LIMIT,REF:'Private order - 15',PVT_TO:M000)
+[2020-09-04 20:11:05,550:         agent.DSBot]:     INFO - Order(11245896,Others,BUY,1@700,M-1598,LIMIT,REF:'Private order - 15',PVT_FROM:M000)
+[2020-09-04 20:11:05,550:         agent.DSBot]:     INFO - Order(11245897,Others,BUY,2@700,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:11:05,554:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:11:05,554:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11245894,Others,SELL,3@340,M-1597,LIMIT)
+[2020-09-04 20:11:06,809:         agent.DSBot]:     INFO - Order(11245898,Mine,BUY,1@340,M-1597,LIMIT,REF:'SM - OrderSide.BUY-16')
+[2020-09-04 20:11:06,814:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 20:11:06,814:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:11:06,814:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 20:11:08,073:         agent.DSBot]:     INFO - Order(11245897,Others,BUY,2@700,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:11:08,074:         agent.DSBot]:     INFO - Order(11245902,Mine,SELL,1@700,M-1598,LIMIT,REF:'Private order - 17',PVT_TO:M000)
+[2020-09-04 20:11:08,074:         agent.DSBot]:     INFO - Order(11245903,Others,BUY,1@700,M-1598,LIMIT,REF:'Private order - 17',PVT_FROM:M000)
+[2020-09-04 20:11:08,074:         agent.DSBot]:     INFO - Order(11245904,Others,BUY,1@700,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:11:08,077:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:11:08,077:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11245900,Others,SELL,2@340,M-1597,LIMIT)
+[2020-09-04 20:11:09,357:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 20:11:09,357:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:11:09,358:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 20:11:09,370:         agent.DSBot]:     INFO - Order(11245920,Mine,BUY,1@340,M-1597,LIMIT,REF:'SM - OrderSide.BUY-18')
+[2020-09-04 20:11:10,696:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:11:10,696:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11245922,Others,SELL,1@340,M-1597,LIMIT)
+[2020-09-04 20:11:10,702:         agent.DSBot]:     INFO - Order(11245904,Others,BUY,1@700,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:11:10,702:         agent.DSBot]:     INFO - Order(11245957,Mine,SELL,1@700,M-1598,LIMIT,REF:'Private order - 19',PVT_TO:M000)
+[2020-09-04 20:11:12,004:         agent.DSBot]:     INFO - Order(11245981,Mine,BUY,1@340,M-1597,LIMIT,REF:'SM - OrderSide.BUY-20')
+[2020-09-04 20:11:12,008:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 20:11:12,008:         agent.DSBot]:     INFO - Stale order - SM - OrderSide.BUY-20 being cleared.
+[2020-09-04 20:11:13,267:         agent.DSBot]:     INFO - Order(11245981,Mine,BUY,1@340,M-1597,LIMIT,REF:'SM - OrderSide.BUY-20')
+[2020-09-04 20:11:13,267:         agent.DSBot]:     INFO - Order(11245983,Mine,BUY,1@340,M-1597,CANCEL,REF:'SM - Cancel - SM - OrderSide.BUY-20')
+[2020-09-04 20:15:33,123:         agent.DSBot]:     INFO - Order(11248097,Others,BUY,5@370,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:15:33,412:         agent.DSBot]:     INFO - Order(11248104,Others,BUY,5@370,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:15:33,418:         agent.DSBot]:     INFO - Order(11248105,Others,BUY,5@370,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:15:33,422:         agent.DSBot]:     INFO - Order(11248106,Others,BUY,5@370,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:15:35,848:         agent.DSBot]:     INFO - Order(11248156,Others,BUY,5@700,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:15:36,112:         agent.DSBot]:     INFO - Order(11248160,Others,BUY,5@700,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:15:36,122:         agent.DSBot]:     INFO - Order(11248163,Others,BUY,5@700,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:15:36,126:         agent.DSBot]:     INFO - Order(11248164,Others,BUY,5@700,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:15:37,309:         agent.DSBot]:     INFO - Order(11248214,Others,BUY,5@500,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:15:37,312:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:15:37,312:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11248073,Others,SELL,3@260,M-1597,LIMIT)
+[2020-09-04 20:15:38,597:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 20:15:38,597:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:15:38,597:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 20:15:38,611:         agent.DSBot]:     INFO - Order(11248232,Mine,BUY,1@260,M-1597,LIMIT,REF:'SM - OrderSide.BUY-21')
+[2020-09-04 20:15:40,029:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:15:40,029:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11248071,Others,SELL,2@290,M-1597,LIMIT)
+[2020-09-04 20:15:40,041:         agent.DSBot]:     INFO - Order(11248214,Others,BUY,5@500,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:15:40,041:         agent.DSBot]:     INFO - Order(11248278,Mine,SELL,1@500,M-1598,LIMIT,REF:'Private order - 22',PVT_TO:M000)
+[2020-09-04 20:15:40,041:         agent.DSBot]:     INFO - Order(11248279,Others,BUY,1@500,M-1598,LIMIT,REF:'Private order - 22',PVT_FROM:M000)
+[2020-09-04 20:15:40,041:         agent.DSBot]:     INFO - Order(11248280,Others,BUY,4@500,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:15:41,216:         agent.DSBot]:     INFO - Order(11248323,Mine,BUY,1@290,M-1597,LIMIT,REF:'SM - OrderSide.BUY-23')
+[2020-09-04 20:19:42,784:         agent.DSBot]:     INFO - Order(11248323,Mine,BUY,1@290,M-1597,LIMIT,REF:'SM - OrderSide.BUY-23')
+[2020-09-04 20:19:42,793:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 20:19:42,793:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:19:42,793:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 20:19:44,611:         agent.DSBot]:     INFO - Order(11248280,Others,BUY,4@500,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:19:44,611:         agent.DSBot]:     INFO - Order(11250945,Mine,SELL,1@500,M-1598,LIMIT,REF:'Private order - 24',PVT_TO:M000)
+[2020-09-04 20:19:44,611:         agent.DSBot]:     INFO - Order(11250946,Others,BUY,1@500,M-1598,LIMIT,REF:'Private order - 24',PVT_FROM:M000)
+[2020-09-04 20:19:44,611:         agent.DSBot]:     INFO - Order(11250947,Others,BUY,3@500,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:19:44,621:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:19:44,621:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11250941,Others,SELL,3@250,M-1597,LIMIT)
+[2020-09-04 20:19:45,887:         agent.DSBot]:     INFO - Order(11250949,Mine,BUY,1@250,M-1597,LIMIT,REF:'SM - OrderSide.BUY-25')
+[2020-09-04 20:19:45,900:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 20:19:45,900:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:19:45,901:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 20:19:47,164:         agent.DSBot]:     INFO - Order(11250947,Others,BUY,3@500,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:19:47,165:         agent.DSBot]:     INFO - Order(11250956,Mine,SELL,1@500,M-1598,LIMIT,REF:'Private order - 26',PVT_TO:M000)
+[2020-09-04 20:19:47,165:         agent.DSBot]:     INFO - Order(11250957,Others,BUY,1@500,M-1598,LIMIT,REF:'Private order - 26',PVT_FROM:M000)
+[2020-09-04 20:19:47,165:         agent.DSBot]:     INFO - Order(11250958,Others,BUY,2@500,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:19:47,175:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:19:47,175:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11250951,Others,SELL,2@250,M-1597,LIMIT)
+[2020-09-04 20:19:48,440:         agent.DSBot]:     INFO - Order(11250960,Mine,BUY,1@250,M-1597,LIMIT,REF:'SM - OrderSide.BUY-27')
+[2020-09-04 20:19:48,452:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 20:19:48,452:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:19:48,452:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 20:19:49,531:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:19:49,531:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11250962,Others,SELL,1@250,M-1597,LIMIT)
+[2020-09-04 20:19:49,577:         agent.DSBot]:     INFO - Order(11250958,Others,BUY,2@500,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:19:49,578:         agent.DSBot]:     INFO - Order(11250979,Mine,SELL,1@500,M-1598,LIMIT,REF:'Private order - 28',PVT_TO:M000)
+[2020-09-04 20:19:49,578:         agent.DSBot]:     INFO - Order(11250980,Others,BUY,1@500,M-1598,LIMIT,REF:'Private order - 28',PVT_FROM:M000)
+[2020-09-04 20:19:49,578:         agent.DSBot]:     INFO - Order(11250981,Others,BUY,1@500,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:19:51,089:         agent.DSBot]:     INFO - Order(11251017,Mine,BUY,1@250,M-1597,LIMIT,REF:'SM - OrderSide.BUY-29')
+[2020-09-04 20:19:51,099:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 20:19:51,100:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:19:51,100:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 20:19:52,328:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:19:52,328:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11250948,Others,SELL,1@270,M-1597,LIMIT)
+[2020-09-04 20:19:52,343:         agent.DSBot]:     INFO - Order(11250981,Others,BUY,1@500,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:19:52,343:         agent.DSBot]:     INFO - Order(11251052,Mine,SELL,1@500,M-1598,LIMIT,REF:'Private order - 30',PVT_TO:M000)
+[2020-09-04 20:19:53,531:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 20:19:53,531:         agent.DSBot]:     INFO - Stale order - SM - OrderSide.BUY-31 being cleared.
+[2020-09-04 20:19:53,554:         agent.DSBot]:     INFO - Order(11251087,Mine,BUY,1@270,M-1597,LIMIT,REF:'SM - OrderSide.BUY-31')
+[2020-09-04 20:19:54,834:         agent.DSBot]:     INFO - Order(11251087,Mine,BUY,1@270,M-1597,LIMIT,REF:'SM - OrderSide.BUY-31')
+[2020-09-04 20:19:54,834:         agent.DSBot]:     INFO - Order(11251089,Mine,BUY,1@270,M-1597,CANCEL,REF:'SM - Cancel - SM - OrderSide.BUY-31')
+[2020-09-04 20:20:32,557:         agent.DSBot]:     INFO - Session: SID:14447:SessionState.PAUSED
+[2020-09-04 20:20:34,820:         agent.DSBot]:     INFO - Session: SID:14447:SessionState.CLOSED
+[2020-09-04 20:20:39,590:         agent.DSBot]:     INFO - Session: SID:14448:SessionState.OPEN
+[2020-09-04 20:20:44,616:         agent.DSBot]:     INFO - Order(11251567,Others,SELL,5@670,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:20:59,680:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 20:20:59,681:         agent.DSBot]:     INFO - Responding to profitable order.
+[2020-09-04 20:20:59,681:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11251627,Others,BUY,3@770,M-1597,LIMIT)
+[2020-09-04 20:21:00,938:         agent.DSBot]:     INFO - Order(11251642,Mine,SELL,1@770,M-1597,LIMIT,REF:'SM - OrderSide.SELL-0')
+[2020-09-04 20:21:00,939:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 20:21:00,939:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:21:00,939:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 20:21:02,194:         agent.DSBot]:     INFO - Order(11251567,Others,SELL,5@670,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:21:02,195:         agent.DSBot]:     INFO - Order(11251647,Mine,BUY,1@670,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 20:21:02,195:         agent.DSBot]:     INFO - Order(11251648,Others,SELL,1@670,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 20:21:02,195:         agent.DSBot]:     INFO - Order(11251649,Others,SELL,4@670,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:21:02,195:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 20:21:02,195:         agent.DSBot]:     INFO - Responding to profitable order.
+[2020-09-04 20:21:02,195:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11251644,Others,BUY,2@770,M-1597,LIMIT)
+[2020-09-04 20:21:03,450:         agent.DSBot]:     INFO - Order(11251650,Mine,SELL,1@770,M-1597,LIMIT,REF:'SM - OrderSide.SELL-2')
+[2020-09-04 20:21:03,451:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 20:21:03,451:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:21:03,451:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 20:21:04,959:         agent.DSBot]:     INFO - Order(11251649,Others,SELL,4@670,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:21:04,959:         agent.DSBot]:     INFO - Order(11251658,Mine,BUY,1@670,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 20:21:04,959:         agent.DSBot]:     INFO - Order(11251659,Others,SELL,1@670,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 20:21:04,960:         agent.DSBot]:     INFO - Order(11251660,Others,SELL,3@670,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:21:44,163:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 20:21:44,163:         agent.DSBot]:     INFO - Responding to profitable order.
+[2020-09-04 20:21:44,163:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11251830,Others,BUY,2@680,M-1597,LIMIT)
+[2020-09-04 20:21:45,925:         agent.DSBot]:     INFO - Order(11251838,Mine,SELL,1@680,M-1597,LIMIT,REF:'SM - OrderSide.SELL-4')
+[2020-09-04 20:21:45,926:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 20:21:45,926:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:21:45,926:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 20:21:47,183:         agent.DSBot]:     INFO - Order(11251660,Others,SELL,3@670,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:21:47,183:         agent.DSBot]:     INFO - Order(11251841,Mine,BUY,1@670,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 20:21:47,183:         agent.DSBot]:     INFO - Order(11251842,Others,SELL,1@670,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 20:21:47,184:         agent.DSBot]:     INFO - Order(11251843,Others,SELL,2@670,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:21:47,184:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 20:21:47,184:         agent.DSBot]:     INFO - Responding to profitable order.
+[2020-09-04 20:21:47,185:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11251840,Others,BUY,1@680,M-1597,LIMIT)
+[2020-09-04 20:21:48,441:         agent.DSBot]:     INFO - Order(11251845,Mine,SELL,1@680,M-1597,LIMIT,REF:'SM - OrderSide.SELL-6')
+[2020-09-04 20:21:48,441:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 20:21:48,442:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:21:48,442:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 20:21:49,700:         agent.DSBot]:     INFO - Order(11251843,Others,SELL,2@670,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:21:49,700:         agent.DSBot]:     INFO - Order(11251851,Mine,BUY,1@670,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 20:21:49,701:         agent.DSBot]:     INFO - Order(11251852,Others,SELL,1@670,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 20:21:49,701:         agent.DSBot]:     INFO - Order(11251853,Others,SELL,1@670,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:22:00,520:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 20:22:00,520:         agent.DSBot]:     INFO - Responding to profitable order.
+[2020-09-04 20:22:00,520:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11251912,Others,BUY,2@680,M-1597,LIMIT)
+[2020-09-04 20:22:01,027:         agent.DSBot]:     INFO - Order(11251924,Mine,SELL,1@680,M-1597,LIMIT,REF:'SM - OrderSide.SELL-8')
+[2020-09-04 20:22:01,027:         agent.DSBot]:     INFO - Order(11251925,Mine,SELL,1@780,M-1597,LIMIT,REF:'SM - OrderSide.SELL-8')
+[2020-09-04 20:22:01,028:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 20:22:01,028:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:22:01,029:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 20:22:02,283:         agent.DSBot]:     INFO - Order(11251853,Others,SELL,1@670,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:22:02,284:         agent.DSBot]:     INFO - Order(11251928,Mine,BUY,1@670,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 20:25:43,257:         agent.DSBot]:     INFO - Order(11252865,Others,SELL,5@670,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:25:43,768:         agent.DSBot]:     INFO - Order(11252875,Others,SELL,5@670,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:25:43,770:         agent.DSBot]:     INFO - Order(11252876,Others,SELL,5@670,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:25:44,027:         agent.DSBot]:     INFO - Order(11252883,Others,SELL,5@670,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 20:25:45,066:         agent.DSBot]:     INFO - Order(11252930,Others,BUY,5@330,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:25:45,067:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:25:45,067:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11252813,Others,SELL,4@230,M-1597,LIMIT)
+[2020-09-04 20:25:46,577:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 20:25:46,577:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:25:46,577:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 20:25:46,578:         agent.DSBot]:     INFO - Order(11252935,Mine,BUY,1@230,M-1597,LIMIT,REF:'SM - OrderSide.BUY-10')
+[2020-09-04 20:25:48,085:         agent.DSBot]:     INFO - Order(11252930,Others,BUY,5@330,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:25:48,085:         agent.DSBot]:     INFO - Order(11252939,Mine,SELL,1@330,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-04 20:25:48,086:         agent.DSBot]:     INFO - Order(11252940,Others,BUY,1@330,M-1598,LIMIT,REF:'Private order - 11',PVT_FROM:M000)
+[2020-09-04 20:25:48,086:         agent.DSBot]:     INFO - Order(11252941,Others,BUY,4@330,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:25:48,088:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:25:48,088:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11252937,Others,SELL,3@230,M-1597,LIMIT)
+[2020-09-04 20:25:49,350:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 20:25:49,350:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:25:49,350:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 20:25:49,350:         agent.DSBot]:     INFO - Order(11252947,Mine,BUY,1@230,M-1597,LIMIT,REF:'SM - OrderSide.BUY-12')
+[2020-09-04 20:25:50,639:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:25:50,639:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11252981,Others,SELL,2@220,M-1597,LIMIT)
+[2020-09-04 20:25:50,640:         agent.DSBot]:     INFO - Order(11252941,Others,BUY,4@330,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:25:50,641:         agent.DSBot]:     INFO - Order(11252988,Mine,SELL,1@330,M-1598,LIMIT,REF:'Private order - 13',PVT_TO:M000)
+[2020-09-04 20:25:50,641:         agent.DSBot]:     INFO - Order(11252989,Others,BUY,1@330,M-1598,LIMIT,REF:'Private order - 13',PVT_FROM:M000)
+[2020-09-04 20:25:50,641:         agent.DSBot]:     INFO - Order(11252990,Others,BUY,3@330,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:25:51,899:         agent.DSBot]:     INFO - Order(11252993,Mine,BUY,1@220,M-1597,LIMIT,REF:'SM - OrderSide.BUY-14')
+[2020-09-04 20:25:51,901:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 20:25:51,902:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:25:51,902:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 20:25:53,158:         agent.DSBot]:     INFO - Order(11252990,Others,BUY,3@330,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:25:53,158:         agent.DSBot]:     INFO - Order(11252999,Mine,SELL,1@330,M-1598,LIMIT,REF:'Private order - 15',PVT_TO:M000)
+[2020-09-04 20:25:53,158:         agent.DSBot]:     INFO - Order(11253000,Others,BUY,1@330,M-1598,LIMIT,REF:'Private order - 15',PVT_FROM:M000)
+[2020-09-04 20:25:53,158:         agent.DSBot]:     INFO - Order(11253001,Others,BUY,2@330,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:25:53,160:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:25:53,160:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11252995,Others,SELL,1@220,M-1597,LIMIT)
+[2020-09-04 20:25:54,417:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 20:25:54,418:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:25:54,418:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 20:25:54,419:         agent.DSBot]:     INFO - Order(11253003,Mine,BUY,1@220,M-1597,LIMIT,REF:'SM - OrderSide.BUY-16')
+[2020-09-04 20:25:55,676:         agent.DSBot]:     INFO - Order(11253001,Others,BUY,2@330,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:25:55,676:         agent.DSBot]:     INFO - Order(11253004,Mine,SELL,1@330,M-1598,LIMIT,REF:'Private order - 17',PVT_TO:M000)
+[2020-09-04 20:25:55,676:         agent.DSBot]:     INFO - Order(11253005,Others,BUY,1@330,M-1598,LIMIT,REF:'Private order - 17',PVT_FROM:M000)
+[2020-09-04 20:25:55,676:         agent.DSBot]:     INFO - Order(11253006,Others,BUY,1@330,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:25:55,678:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 20:25:55,678:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11252985,Others,SELL,3@230,M-1597,LIMIT)
+[2020-09-04 20:25:56,934:         agent.DSBot]:     INFO - Order(11253007,Mine,BUY,1@230,M-1597,LIMIT,REF:'SM - OrderSide.BUY-18')
+[2020-09-04 20:25:56,937:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 20:25:56,937:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 20:25:56,937:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 20:25:58,194:         agent.DSBot]:     INFO - Order(11253006,Others,BUY,1@330,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:25:58,194:         agent.DSBot]:     INFO - Order(11253013,Mine,SELL,1@330,M-1598,LIMIT,REF:'Private order - 19',PVT_TO:M000)
+[2020-09-04 20:29:22,809:         agent.DSBot]:     INFO - Session: SID:14448:SessionState.OPEN
+[2020-09-04 20:29:22,821:         agent.DSBot]:     INFO - Order(11251853,Others,SELL,1@670,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:29:22,821:         agent.DSBot]:     INFO - Order(11251642,Mine,SELL,1@770,M-1597,LIMIT,REF:'SM - OrderSide.SELL-0')
+[2020-09-04 20:29:22,822:         agent.DSBot]:     INFO - Order(11251647,Mine,BUY,1@670,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 20:29:22,822:         agent.DSBot]:     INFO - Order(11251648,Others,SELL,1@670,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 20:29:22,822:         agent.DSBot]:     INFO - Order(11251650,Mine,SELL,1@770,M-1597,LIMIT,REF:'SM - OrderSide.SELL-2')
+[2020-09-04 20:29:22,822:         agent.DSBot]:     INFO - Order(11251658,Mine,BUY,1@670,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 20:29:22,822:         agent.DSBot]:     INFO - Order(11251659,Others,SELL,1@670,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 20:29:22,822:         agent.DSBot]:     INFO - Order(11251838,Mine,SELL,1@680,M-1597,LIMIT,REF:'SM - OrderSide.SELL-4')
+[2020-09-04 20:29:22,822:         agent.DSBot]:     INFO - Order(11251841,Mine,BUY,1@670,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 20:29:22,822:         agent.DSBot]:     INFO - Order(11251842,Others,SELL,1@670,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 20:29:22,822:         agent.DSBot]:     INFO - Order(11251845,Mine,SELL,1@680,M-1597,LIMIT,REF:'SM - OrderSide.SELL-6')
+[2020-09-04 20:29:22,823:         agent.DSBot]:     INFO - Order(11251851,Mine,BUY,1@670,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 20:29:22,823:         agent.DSBot]:     INFO - Order(11251852,Others,SELL,1@670,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 20:29:22,823:         agent.DSBot]:     INFO - Order(11251925,Mine,SELL,1@780,M-1597,LIMIT,REF:'SM - OrderSide.SELL-8')
+[2020-09-04 20:29:22,823:         agent.DSBot]:     INFO - Order(11251928,Mine,BUY,1@670,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 20:29:22,823:         agent.DSBot]:     INFO - Order(11253006,Others,BUY,1@330,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 20:29:22,823:         agent.DSBot]:     INFO - Order(11252935,Mine,BUY,1@230,M-1597,LIMIT,REF:'SM - OrderSide.BUY-10')
+[2020-09-04 20:29:22,823:         agent.DSBot]:     INFO - Order(11252939,Mine,SELL,1@330,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-04 20:29:22,823:         agent.DSBot]:     INFO - Order(11252940,Others,BUY,1@330,M-1598,LIMIT,REF:'Private order - 11',PVT_FROM:M000)
+[2020-09-04 20:29:22,823:         agent.DSBot]:     INFO - Order(11252947,Mine,BUY,1@230,M-1597,LIMIT,REF:'SM - OrderSide.BUY-12')
+[2020-09-04 20:29:22,823:         agent.DSBot]:     INFO - Order(11252988,Mine,SELL,1@330,M-1598,LIMIT,REF:'Private order - 13',PVT_TO:M000)
+[2020-09-04 20:29:22,823:         agent.DSBot]:     INFO - Order(11252989,Others,BUY,1@330,M-1598,LIMIT,REF:'Private order - 13',PVT_FROM:M000)
+[2020-09-04 20:29:22,823:         agent.DSBot]:     INFO - Order(11252993,Mine,BUY,1@220,M-1597,LIMIT,REF:'SM - OrderSide.BUY-14')
+[2020-09-04 20:29:22,824:         agent.DSBot]:     INFO - Order(11252999,Mine,SELL,1@330,M-1598,LIMIT,REF:'Private order - 15',PVT_TO:M000)
+[2020-09-04 20:29:22,824:         agent.DSBot]:     INFO - Order(11253000,Others,BUY,1@330,M-1598,LIMIT,REF:'Private order - 15',PVT_FROM:M000)
+[2020-09-04 20:29:22,824:         agent.DSBot]:     INFO - Order(11253003,Mine,BUY,1@220,M-1597,LIMIT,REF:'SM - OrderSide.BUY-16')
+[2020-09-04 20:29:22,824:         agent.DSBot]:     INFO - Order(11253004,Mine,SELL,1@330,M-1598,LIMIT,REF:'Private order - 17',PVT_TO:M000)
+[2020-09-04 20:29:22,824:         agent.DSBot]:     INFO - Order(11253005,Others,BUY,1@330,M-1598,LIMIT,REF:'Private order - 17',PVT_FROM:M000)
+[2020-09-04 20:29:22,824:         agent.DSBot]:     INFO - Order(11253007,Mine,BUY,1@230,M-1597,LIMIT,REF:'SM - OrderSide.BUY-18')
+[2020-09-04 20:29:22,824:         agent.DSBot]:     INFO - Order(11253013,Mine,SELL,1@330,M-1598,LIMIT,REF:'Private order - 19',PVT_TO:M000)
