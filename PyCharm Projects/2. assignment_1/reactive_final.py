@@ -30,7 +30,7 @@ from typing import List
 SUBMISSION = {"number": "921322", "name": "Sidakpreet Mann"}
 
 # ------ Add a variable called PROFIT_MARGIN -----
-PROFIT_MARGIN = 3
+PROFIT_MARGIN = 10
 MAX_PRICE = 1000
 MANAGER_ID = "M000"
 
@@ -87,7 +87,7 @@ class DSBot(Agent):
         if num_my_public_orders > 0 and num_private_orders == 0 and \
                 not self._waiting_for_server:
 
-            self.inform(f"Clearing stale public orders ===========================")
+            # self.inform(f"Clearing stale public orders ===========================")
             self._cancel_order(my_stale_priv_order)
             self._last_accepted_public_order_id = 0
             return
@@ -276,6 +276,7 @@ class DSBot(Agent):
         # send order through
         self._waiting_for_server = True
         self.send_order(new_order)
+
         self._tradeID += 1
 
     def _cancel_order(self, order):
@@ -325,10 +326,13 @@ class DSBot(Agent):
         num_private_orders, num_my_public_orders, my_stale_priv_order, \
             manager_order = self._get_order_book_state()
 
+        if num_private_orders == 0:
+            self._units_to_trade = 0
+
         # CANCELLING STALE ORDERS =========================================================
         if num_private_orders == 0 and num_my_public_orders > 0 and \
                 not self._waiting_for_server:
-            self.inform(f"Units left to trade = {self._units_to_trade}")
+            # self.inform(f"Units left to trade = {self._units_to_trade}")
             self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
             self._cancel_order(my_stale_priv_order)
             self._last_accepted_public_order_id = 0
@@ -369,8 +373,8 @@ class DSBot(Agent):
         # stale orders should be cleared at this stage; there exists a private order
         # create an order based on best bid / ask
 
-        if num_private_orders > 0 and not self._waiting_for_server and \
-                num_my_public_orders == 0 and self._units_to_trade > 0:
+        if (num_private_orders > 0) and (not self._waiting_for_server) and \
+                (num_my_public_orders == 0) and (self._units_to_trade > 0):
 
             is_private = False
             self._create_profitable_order(best_ask, best_bid, manager_order, is_private,
@@ -463,6 +467,10 @@ class DSBot(Agent):
         :param best_bid_order: order object of best bidder
         :param best_ask_order: order object of best seller
         """
+
+        if self._units_to_trade == 0:
+            return
+
         # if buyer
         if self.role() == Role.BUYER:
             # if the best selling price is less than
