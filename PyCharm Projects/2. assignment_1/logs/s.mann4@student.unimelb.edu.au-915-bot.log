@@ -15462,3 +15462,1358 @@
 [2020-09-03 21:57:28,198:         agent.DSBot]:     INFO - Units left to trade = 0
 [2020-09-03 21:57:28,201:         agent.DSBot]:     INFO - Units left to trade = 0
 [2020-09-03 21:57:28,204:         agent.DSBot]:     INFO - Units left to trade = 0
+
+=============================== Log Started [2020-09-04 15:12:58 AEST] ===============================
+[2020-09-04 15:13:00,837:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 15:13:02,835:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 15:13:02,835:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 15:13:02,836:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 15:13:03,337:         agent.DSBot]:     INFO - Session: SID:14441:SessionState.CLOSED
+[2020-09-04 15:13:03,338:         agent.DSBot]:     INFO - 0, 0
+
+=============================== Log Started [2020-09-04 15:13:30 AEST] ===============================
+[2020-09-04 15:13:32,220:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 15:13:34,249:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 15:13:34,250:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 15:13:34,250:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 15:13:34,251:         agent.DSBot]:     INFO - Public tick: 5
+[2020-09-04 15:13:34,251:         agent.DSBot]:     INFO - Private tick: 1
+[2020-09-04 15:13:34,754:         agent.DSBot]:     INFO - Session: SID:14441:SessionState.CLOSED
+[2020-09-04 15:13:34,755:         agent.DSBot]:     INFO - 0, 0
+
+=============================== Log Started [2020-09-04 18:59:05 AEST] ===============================
+[2020-09-04 18:59:07,403:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 18:59:09,462:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 18:59:09,462:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 18:59:09,463:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 18:59:09,463:         agent.DSBot]:     INFO - Public tick: 5
+[2020-09-04 18:59:09,463:         agent.DSBot]:     INFO - Private tick: 1
+[2020-09-04 18:59:09,965:         agent.DSBot]:     INFO - Session: SID:14441:SessionState.CLOSED
+[2020-09-04 18:59:09,965:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:00,146:         agent.DSBot]:     INFO - Session: SID:14442:SessionState.OPEN
+[2020-09-04 19:00:04,916:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,418:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,419:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,419:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,419:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,420:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,420:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,420:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,420:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,420:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,922:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,922:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,923:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,923:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,923:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,923:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,924:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,924:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:05,924:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,175:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,175:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,176:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,176:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,176:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,176:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,177:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,177:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,177:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,177:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,177:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,428:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,429:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,430:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,430:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,430:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,430:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,431:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,431:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,431:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,431:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,431:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,432:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,683:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:00:06,683:         agent.DSBot]:     INFO - Order(11221541,Others,BUY,5@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:00:06,684:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:06,684:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:00:06,684:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:06,684:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:06,684:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:06,685:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:06,685:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:06,686:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:06,686:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:06,686:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:06,938:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:06,938:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:06,939:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:06,939:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:08,695:         agent.DSBot]:     INFO - Order(11221555,Mine,BUY,1@10,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:00:08,695:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:14,966:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:14,967:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:14,968:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:14,968:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:14,969:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,219:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,220:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,220:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,221:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,221:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,221:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,221:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,222:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,472:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,473:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,474:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,474:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,474:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,475:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:15,475:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:22,500:         agent.DSBot]:     INFO - Order(11221555,Mine,BUY,1@10,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:00:22,500:         agent.DSBot]:     INFO - Order(11221576,Mine,BUY,1@10,M-1597,CANCEL,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:00:22,501:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:22,501:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:00:22,501:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:00:23,006:         agent.DSBot]:     INFO - Order(11221541,Others,BUY,5@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:00:23,006:         agent.DSBot]:     INFO - Order(11221577,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:00:23,006:         agent.DSBot]:     INFO - Order(11221578,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:00:23,006:         agent.DSBot]:     INFO - Order(11221579,Others,BUY,4@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:00:23,007:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:00:23,007:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:00:24,262:         agent.DSBot]:     INFO - Order(11221580,Mine,BUY,1@10,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:00:24,263:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:25,519:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:25,519:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:25,520:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:25,771:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:25,772:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:25,773:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:25,774:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:25,774:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:25,775:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:26,026:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:26,026:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:26,027:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:26,027:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:26,027:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:26,027:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:26,028:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:26,028:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:26,028:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:26,028:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:00:26,029:         agent.DSBot]:     INFO - 1, 1
+
+=============================== Log Started [2020-09-04 19:01:37 AEST] ===============================
+[2020-09-04 19:01:39,565:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 19:01:41,616:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 19:01:41,616:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 19:01:41,616:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 19:01:41,617:         agent.DSBot]:     INFO - Public tick: 5
+[2020-09-04 19:01:41,617:         agent.DSBot]:     INFO - Private tick: 1
+[2020-09-04 19:01:42,118:         agent.DSBot]:     INFO - Session: SID:14442:SessionState.OPEN
+[2020-09-04 19:01:42,372:         agent.DSBot]:     INFO - Order(11221579,Others,BUY,4@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:01:42,373:         agent.DSBot]:     INFO - Order(11221577,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:01:42,373:         agent.DSBot]:     INFO - Order(11221578,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:01:42,373:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:42,373:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:01:42,875:         agent.DSBot]:     INFO - Order(11221744,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:01:42,876:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:01:45,638:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:01:45,889:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:01:45,890:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:01:45,890:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:01:45,891:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:01:45,892:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:01:45,892:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:01:45,893:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:01:46,144:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:01:46,144:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:01:46,145:         agent.DSBot]:     INFO - 1, 1
+[2020-09-04 19:01:46,146:         agent.DSBot]:     INFO - Order(11221744,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:01:46,146:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:46,146:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:01:46,146:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:01:46,147:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:46,147:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:46,147:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:46,148:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:46,148:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:46,399:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:46,400:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:46,400:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:47,153:         agent.DSBot]:     INFO - Order(11221579,Others,BUY,4@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:01:47,153:         agent.DSBot]:     INFO - Order(11221767,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:01:47,154:         agent.DSBot]:     INFO - Order(11221768,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:01:47,154:         agent.DSBot]:     INFO - Order(11221769,Others,BUY,3@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:01:47,154:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:47,154:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:01:48,661:         agent.DSBot]:     INFO - Order(11221770,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:01:48,661:         agent.DSBot]:     INFO - Order(11221771,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:01:48,662:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:48,662:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:01:48,662:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:01:49,917:         agent.DSBot]:     INFO - Order(11221769,Others,BUY,3@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:01:49,918:         agent.DSBot]:     INFO - Order(11221774,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:01:49,918:         agent.DSBot]:     INFO - Order(11221775,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:01:49,918:         agent.DSBot]:     INFO - Order(11221776,Others,BUY,2@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:01:49,918:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:49,919:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:01:51,173:         agent.DSBot]:     INFO - Order(11221777,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:01:51,173:         agent.DSBot]:     INFO - Order(11221778,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:01:51,174:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:51,174:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:01:51,174:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:01:52,429:         agent.DSBot]:     INFO - Order(11221776,Others,BUY,2@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:01:52,429:         agent.DSBot]:     INFO - Order(11221781,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:01:52,429:         agent.DSBot]:     INFO - Order(11221782,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:01:52,429:         agent.DSBot]:     INFO - Order(11221783,Others,BUY,1@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:01:52,429:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:52,430:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:01:53,687:         agent.DSBot]:     INFO - Order(11221784,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:01:53,687:         agent.DSBot]:     INFO - Order(11221785,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:01:53,688:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:01:53,688:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:01:53,688:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:01:54,942:         agent.DSBot]:     INFO - Order(11221783,Others,BUY,1@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:01:54,943:         agent.DSBot]:     INFO - Order(11221788,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:01:54,943:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,445:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,446:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,446:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,447:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,448:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,700:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,701:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,701:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,702:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,703:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,703:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,704:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,956:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,956:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,957:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,957:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,958:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,958:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,958:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,959:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,959:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,960:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:55,960:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:01:56,211:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,249:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,249:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,250:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,250:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,251:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,252:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,504:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,505:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,506:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,507:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,507:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,508:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,760:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,760:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,761:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,761:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,762:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,762:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,763:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:05,763:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:06,015:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:06,016:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:06,016:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:06,017:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:08,525:         agent.DSBot]:     INFO - Order(11221837,Mine,SELL,4@10,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:02:08,526:         agent.DSBot]:     INFO - Order(11221838,Mine,SELL,3@620,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:02:08,526:         agent.DSBot]:     INFO - Order(11221839,Mine,SELL,1@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:02:08,527:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,051:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,052:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,052:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,304:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,304:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,305:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,306:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,306:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,307:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,558:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,559:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,559:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,560:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,560:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,561:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,561:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,812:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,813:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,813:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,814:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,814:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,815:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,815:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:15,816:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:18,573:         agent.DSBot]:     INFO - Order(11221866,Mine,BUY,5@1000,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:02:18,574:         agent.DSBot]:     INFO - Order(11221867,Mine,BUY,4@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:02:18,574:         agent.DSBot]:     INFO - Order(11221868,Mine,BUY,1@710,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:02:18,574:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:24,847:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:24,847:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,099:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,099:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,099:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,100:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,100:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,101:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,352:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,352:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,353:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,353:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,353:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,354:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,354:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,605:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,605:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,605:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,606:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,606:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,606:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,607:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,607:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,607:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:25,607:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:31,127:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:35,643:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:35,895:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:35,896:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:35,896:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:35,897:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:35,897:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:35,898:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,150:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,151:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,151:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,152:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,153:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,154:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,405:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,405:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,406:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,406:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,407:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,407:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,408:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,408:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,409:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,660:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,660:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,661:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:36,661:         agent.DSBot]:     INFO - 0, 0
+
+=============================== Log Started [2020-09-04 19:02:44 AEST] ===============================
+[2020-09-04 19:02:46,244:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 19:02:48,262:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 19:02:48,262:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 19:02:48,262:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 19:02:48,262:         agent.DSBot]:     INFO - Public tick: 5
+[2020-09-04 19:02:48,263:         agent.DSBot]:     INFO - Private tick: 1
+[2020-09-04 19:02:48,770:         agent.DSBot]:     INFO - Session: SID:14442:SessionState.OPEN
+[2020-09-04 19:02:49,028:         agent.DSBot]:     INFO - Order(11221783,Others,BUY,1@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:02:49,028:         agent.DSBot]:     INFO - Order(11221577,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:02:49,028:         agent.DSBot]:     INFO - Order(11221578,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:02:49,028:         agent.DSBot]:     INFO - Order(11221744,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:02:49,028:         agent.DSBot]:     INFO - Order(11221767,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:02:49,029:         agent.DSBot]:     INFO - Order(11221768,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:02:49,029:         agent.DSBot]:     INFO - Order(11221771,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:02:49,029:         agent.DSBot]:     INFO - Order(11221774,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:02:49,029:         agent.DSBot]:     INFO - Order(11221775,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:02:49,029:         agent.DSBot]:     INFO - Order(11221778,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:02:49,029:         agent.DSBot]:     INFO - Order(11221781,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:02:49,029:         agent.DSBot]:     INFO - Order(11221782,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:02:49,029:         agent.DSBot]:     INFO - Order(11221785,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:02:49,029:         agent.DSBot]:     INFO - Order(11221788,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:02:49,030:         agent.DSBot]:     INFO - Order(11221838,Mine,SELL,3@620,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:02:49,030:         agent.DSBot]:     INFO - Order(11221839,Mine,SELL,1@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:02:49,030:         agent.DSBot]:     INFO - Order(11221867,Mine,BUY,4@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:02:49,030:         agent.DSBot]:     INFO - Order(11221868,Mine,BUY,1@710,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:02:49,030:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:55,802:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:55,802:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:55,803:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:55,803:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:55,803:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:55,804:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:55,804:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,056:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,057:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,057:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,058:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,058:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,059:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,059:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,312:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,312:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,313:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,313:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,313:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,314:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,314:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,314:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,315:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,315:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,567:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:02:56,567:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:02,340:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:04,098:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:05,603:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:05,603:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:05,604:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:05,604:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:05,605:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:05,605:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:05,606:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:05,858:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:05,858:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:05,859:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:05,859:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:05,860:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,111:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,112:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,112:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,113:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,113:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,114:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,114:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,115:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,366:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,366:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,367:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,367:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,368:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,368:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:06,369:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,405:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,406:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,406:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,407:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,658:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,659:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,659:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,660:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,660:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,661:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,661:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,912:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,913:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,914:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,914:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,915:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,915:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,916:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:15,916:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:16,168:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:16,168:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:16,169:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:16,169:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:16,170:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:16,170:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:16,171:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:16,172:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,203:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,204:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,456:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,456:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,457:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,457:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,458:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,458:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,710:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,711:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,712:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,713:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,965:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,965:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:25,966:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:26,217:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:26,218:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:26,218:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:26,218:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:26,219:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:26,219:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:26,220:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:26,220:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:26,471:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:26,472:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:26,472:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:26,473:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:35,504:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:35,505:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:35,506:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:35,506:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:35,757:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:35,758:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:35,759:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:35,759:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:35,760:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:35,761:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,013:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,014:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,014:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,015:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,016:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,017:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,268:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,268:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,269:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,269:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,269:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,269:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,270:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,270:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,270:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,522:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:36,523:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:45,553:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:45,554:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:45,554:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:45,555:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:45,555:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:45,556:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:45,807:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:45,808:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:45,808:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:45,809:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:45,810:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:45,810:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,063:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,063:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,064:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,065:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,065:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,066:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,066:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,318:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,319:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,319:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,320:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,320:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,321:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,322:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:46,322:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,350:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,350:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,601:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,602:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,603:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,603:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,603:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,604:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,604:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,856:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,857:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,858:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,859:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,859:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:55,860:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:56,112:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:56,112:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:56,113:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:56,113:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:56,114:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:56,114:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:56,115:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:56,115:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:56,367:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:56,368:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:56,369:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:03:56,369:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,401:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,401:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,402:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,402:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,654:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,654:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,655:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,656:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,656:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,908:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,909:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,910:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,911:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,911:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,912:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:05,913:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:06,165:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:06,166:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:06,166:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:06,167:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:06,167:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:06,168:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:06,168:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:06,169:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:06,169:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:06,170:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:06,421:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,455:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,455:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,456:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,457:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,457:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,458:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,710:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,710:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,711:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,712:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,712:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,713:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,965:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,966:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,967:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,967:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,968:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,968:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,969:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,970:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:15,970:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:16,221:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:16,222:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:16,223:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:16,223:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:16,224:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:16,225:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,258:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,259:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,259:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,260:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,512:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,512:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,513:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,514:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,514:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,515:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,767:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,767:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,768:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,769:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,769:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,770:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:25,771:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:26,022:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:26,022:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:26,023:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:26,023:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:26,024:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:26,024:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:26,024:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:26,025:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:26,025:         agent.DSBot]:     INFO - 0, 0
+[2020-09-04 19:04:26,025:         agent.DSBot]:     INFO - 0, 0
+
+=============================== Log Started [2020-09-04 19:04:29 AEST] ===============================
+[2020-09-04 19:04:31,688:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 19:04:33,680:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 19:04:33,680:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 19:04:33,680:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 19:04:33,680:         agent.DSBot]:     INFO - Public tick: 5
+[2020-09-04 19:04:33,681:         agent.DSBot]:     INFO - Private tick: 1
+[2020-09-04 19:04:34,182:         agent.DSBot]:     INFO - Session: SID:14442:SessionState.OPEN
+[2020-09-04 19:04:34,440:         agent.DSBot]:     INFO - Order(11221783,Others,BUY,1@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:04:34,441:         agent.DSBot]:     INFO - Order(11221577,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:04:34,441:         agent.DSBot]:     INFO - Order(11221578,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:04:34,441:         agent.DSBot]:     INFO - Order(11221744,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:04:34,441:         agent.DSBot]:     INFO - Order(11221767,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:04:34,441:         agent.DSBot]:     INFO - Order(11221768,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:04:34,441:         agent.DSBot]:     INFO - Order(11221771,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:04:34,442:         agent.DSBot]:     INFO - Order(11221774,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:04:34,442:         agent.DSBot]:     INFO - Order(11221775,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:04:34,442:         agent.DSBot]:     INFO - Order(11221778,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:04:34,442:         agent.DSBot]:     INFO - Order(11221781,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:04:34,442:         agent.DSBot]:     INFO - Order(11221782,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:04:34,442:         agent.DSBot]:     INFO - Order(11221785,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:04:34,442:         agent.DSBot]:     INFO - Order(11221788,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:04:34,442:         agent.DSBot]:     INFO - Order(11221838,Mine,SELL,3@620,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:04:34,442:         agent.DSBot]:     INFO - Order(11221839,Mine,SELL,1@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:04:34,443:         agent.DSBot]:     INFO - Order(11221867,Mine,BUY,4@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:04:34,443:         agent.DSBot]:     INFO - Order(11221868,Mine,BUY,1@710,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:05:04,331:         agent.DSBot]:     INFO - Order(11222350,Others,BUY,5@680,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:05:04,583:         agent.DSBot]:     INFO - Order(11222353,Others,BUY,5@680,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:05:04,583:         agent.DSBot]:     INFO - Order(11222354,Others,BUY,5@680,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:05:04,584:         agent.DSBot]:     INFO - Order(11222355,Others,BUY,5@680,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:05:05,592:         agent.DSBot]:     INFO - Order(11222400,Others,SELL,5@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:05:05,593:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:05,593:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:05:05,593:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:05,844:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:05,845:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:05,845:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:05,846:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:05,846:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:05,847:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:05,847:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,100:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,100:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,101:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,101:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,102:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,102:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,103:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,355:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,356:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,357:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,357:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,358:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,359:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,359:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,610:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,611:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,611:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,612:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,612:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,613:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,613:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,614:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,866:         agent.DSBot]:     INFO - Order(11222431,Mine,SELL,1@350,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:05:06,866:         agent.DSBot]:     INFO - Order(11222432,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:05:06,867:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:06,867:         agent.DSBot]:     INFO - Private order side is OrderSide.BUY, my role is Role.SELLER
+[2020-09-04 19:05:06,867:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:05:07,120:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:07,373:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:08,126:         agent.DSBot]:     INFO - Order(11222400,Others,SELL,5@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:05:08,126:         agent.DSBot]:     INFO - Order(11222440,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:05:08,126:         agent.DSBot]:     INFO - Order(11222441,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:05:08,126:         agent.DSBot]:     INFO - Order(11222442,Others,SELL,4@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:05:08,127:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:08,127:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:05:09,383:         agent.DSBot]:     INFO - Order(11222443,Mine,SELL,1@350,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:05:09,383:         agent.DSBot]:     INFO - Order(11222444,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:05:09,383:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:09,383:         agent.DSBot]:     INFO - Private order side is OrderSide.BUY, my role is Role.SELLER
+[2020-09-04 19:05:09,384:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:05:10,640:         agent.DSBot]:     INFO - Order(11222442,Others,SELL,4@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:05:10,640:         agent.DSBot]:     INFO - Order(11222447,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:05:10,640:         agent.DSBot]:     INFO - Order(11222448,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:05:10,640:         agent.DSBot]:     INFO - Order(11222449,Others,SELL,3@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:05:10,641:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:10,641:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:05:11,896:         agent.DSBot]:     INFO - Order(11222450,Mine,SELL,1@350,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:05:11,897:         agent.DSBot]:     INFO - Order(11222451,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:05:11,897:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:11,897:         agent.DSBot]:     INFO - Private order side is OrderSide.BUY, my role is Role.SELLER
+[2020-09-04 19:05:11,897:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:05:13,153:         agent.DSBot]:     INFO - Order(11222449,Others,SELL,3@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:05:13,153:         agent.DSBot]:     INFO - Order(11222452,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:05:13,153:         agent.DSBot]:     INFO - Order(11222453,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:05:13,154:         agent.DSBot]:     INFO - Order(11222454,Others,SELL,2@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:05:13,154:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:13,154:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:05:14,409:         agent.DSBot]:     INFO - Order(11222455,Mine,SELL,1@350,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:05:14,409:         agent.DSBot]:     INFO - Order(11222456,Mine,SELL,1@550,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:05:14,410:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:14,410:         agent.DSBot]:     INFO - Private order side is OrderSide.BUY, my role is Role.SELLER
+[2020-09-04 19:05:14,410:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:05:15,665:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:15,665:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:15,666:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:15,917:         agent.DSBot]:     INFO - Order(11222454,Others,SELL,2@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:05:15,917:         agent.DSBot]:     INFO - Order(11222460,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:05:15,918:         agent.DSBot]:     INFO - Order(11222461,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:05:15,918:         agent.DSBot]:     INFO - Order(11222462,Others,SELL,1@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:05:15,918:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:15,918:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:05:15,918:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:15,919:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:15,919:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:15,919:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:15,920:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:15,920:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:15,920:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,172:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,173:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,173:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,174:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,175:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,175:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,428:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,428:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,428:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,429:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,430:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,430:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,431:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,682:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,683:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,683:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,684:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,684:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:16,685:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:17,188:         agent.DSBot]:     INFO - Order(11222489,Mine,SELL,1@350,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:05:17,189:         agent.DSBot]:     INFO - Order(11222490,Mine,SELL,1@570,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:05:17,189:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:05:17,189:         agent.DSBot]:     INFO - Private order side is OrderSide.BUY, my role is Role.SELLER
+[2020-09-04 19:05:17,189:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:05:18,446:         agent.DSBot]:     INFO - Order(11222462,Others,SELL,1@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:05:18,447:         agent.DSBot]:     INFO - Order(11222493,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+
+=============================== Log Started [2020-09-04 19:07:26 AEST] ===============================
+[2020-09-04 19:07:28,525:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 19:07:30,516:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 19:07:30,517:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 19:07:30,517:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 19:07:30,517:         agent.DSBot]:     INFO - Public tick: 5
+[2020-09-04 19:07:30,517:         agent.DSBot]:     INFO - Private tick: 1
+[2020-09-04 19:07:31,021:         agent.DSBot]:     INFO - Session: SID:14442:SessionState.OPEN
+[2020-09-04 19:07:31,282:         agent.DSBot]:     INFO - Order(11221783,Others,BUY,1@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:07:31,283:         agent.DSBot]:     INFO - Order(11221577,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:07:31,283:         agent.DSBot]:     INFO - Order(11221578,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:07:31,283:         agent.DSBot]:     INFO - Order(11221744,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:07:31,283:         agent.DSBot]:     INFO - Order(11221767,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:07:31,283:         agent.DSBot]:     INFO - Order(11221768,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:07:31,283:         agent.DSBot]:     INFO - Order(11221771,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:07:31,284:         agent.DSBot]:     INFO - Order(11221774,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:07:31,284:         agent.DSBot]:     INFO - Order(11221775,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:07:31,284:         agent.DSBot]:     INFO - Order(11221778,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:07:31,284:         agent.DSBot]:     INFO - Order(11221781,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:07:31,284:         agent.DSBot]:     INFO - Order(11221782,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:07:31,284:         agent.DSBot]:     INFO - Order(11221785,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:07:31,284:         agent.DSBot]:     INFO - Order(11221788,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:07:31,285:         agent.DSBot]:     INFO - Order(11221838,Mine,SELL,3@620,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:07:31,285:         agent.DSBot]:     INFO - Order(11221839,Mine,SELL,1@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:07:31,285:         agent.DSBot]:     INFO - Order(11221867,Mine,BUY,4@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:07:31,285:         agent.DSBot]:     INFO - Order(11221868,Mine,BUY,1@710,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:07:31,285:         agent.DSBot]:     INFO - Order(11222462,Others,SELL,1@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:07:31,285:         agent.DSBot]:     INFO - Order(11222432,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:07:31,285:         agent.DSBot]:     INFO - Order(11222440,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:07:31,285:         agent.DSBot]:     INFO - Order(11222441,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:07:31,285:         agent.DSBot]:     INFO - Order(11222444,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:07:31,285:         agent.DSBot]:     INFO - Order(11222447,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:07:31,286:         agent.DSBot]:     INFO - Order(11222448,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:07:31,286:         agent.DSBot]:     INFO - Order(11222451,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:07:31,286:         agent.DSBot]:     INFO - Order(11222452,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:07:31,286:         agent.DSBot]:     INFO - Order(11222453,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:07:31,286:         agent.DSBot]:     INFO - Order(11222456,Mine,SELL,1@550,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:07:31,286:         agent.DSBot]:     INFO - Order(11222460,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:07:31,286:         agent.DSBot]:     INFO - Order(11222461,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:07:31,286:         agent.DSBot]:     INFO - Order(11222490,Mine,SELL,1@570,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:07:31,286:         agent.DSBot]:     INFO - Order(11222493,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:10:05,351:         agent.DSBot]:     INFO - Order(11223601,Others,BUY,5@680,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:10:05,603:         agent.DSBot]:     INFO - Order(11223602,Others,BUY,5@680,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:10:05,604:         agent.DSBot]:     INFO - Order(11223603,Others,BUY,5@680,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:10:05,605:         agent.DSBot]:     INFO - Order(11223604,Others,BUY,5@680,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:10:07,637:         agent.DSBot]:     INFO - Order(11223653,Others,SELL,5@350,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:10:07,640:         agent.DSBot]:     INFO - Order(11223657,Others,SELL,5@350,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:10:07,640:         agent.DSBot]:     INFO - Order(11223658,Others,SELL,5@350,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:10:07,892:         agent.DSBot]:     INFO - Order(11223659,Others,SELL,5@350,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:10:09,422:         agent.DSBot]:     INFO - Order(11223713,Others,BUY,5@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:10:09,423:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:10:09,423:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:10:10,957:         agent.DSBot]:     INFO - Order(11223766,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:11:47,708:         agent.DSBot]:     INFO - Order(11223766,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:11:47,709:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:11:47,709:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:11:47,709:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:11:48,970:         agent.DSBot]:     INFO - Order(11223713,Others,BUY,5@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:11:48,970:         agent.DSBot]:     INFO - Order(11224260,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:11:48,970:         agent.DSBot]:     INFO - Order(11224261,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:11:48,971:         agent.DSBot]:     INFO - Order(11224262,Others,BUY,4@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:11:48,972:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:11:48,972:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:11:50,728:         agent.DSBot]:     INFO - Order(11224263,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:11:50,728:         agent.DSBot]:     INFO - Order(11224264,Mine,BUY,1@250,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:11:50,730:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:11:50,730:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:11:50,730:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:11:51,985:         agent.DSBot]:     INFO - Order(11224262,Others,BUY,4@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:11:51,986:         agent.DSBot]:     INFO - Order(11224265,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:11:51,986:         agent.DSBot]:     INFO - Order(11224266,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:11:51,986:         agent.DSBot]:     INFO - Order(11224267,Others,BUY,3@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:11:51,988:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:11:51,988:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:11:53,243:         agent.DSBot]:     INFO - Order(11224268,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:13:47,103:         agent.DSBot]:     INFO - Order(11224268,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:13:47,104:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:13:47,104:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:13:47,104:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:13:48,372:         agent.DSBot]:     INFO - Order(11224267,Others,BUY,3@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:13:48,372:         agent.DSBot]:     INFO - Order(11224908,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:13:48,373:         agent.DSBot]:     INFO - Order(11224909,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:13:48,373:         agent.DSBot]:     INFO - Order(11224910,Others,BUY,2@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:13:48,376:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:13:48,376:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:13:49,630:         agent.DSBot]:     INFO - Order(11224911,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:13:49,631:         agent.DSBot]:     INFO - Order(11224912,Mine,BUY,1@260,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:13:49,633:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:13:49,633:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:13:49,634:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:13:50,889:         agent.DSBot]:     INFO - Order(11224910,Others,BUY,2@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:13:50,889:         agent.DSBot]:     INFO - Order(11224915,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:13:50,889:         agent.DSBot]:     INFO - Order(11224916,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:13:50,889:         agent.DSBot]:     INFO - Order(11224917,Others,BUY,1@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:13:50,891:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:13:50,891:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:13:52,146:         agent.DSBot]:     INFO - Order(11224918,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:13:52,147:         agent.DSBot]:     INFO - Order(11224919,Mine,BUY,1@260,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:13:52,149:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:13:52,150:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:13:52,150:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:13:53,405:         agent.DSBot]:     INFO - Order(11224917,Others,BUY,1@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:13:53,405:         agent.DSBot]:     INFO - Order(11224922,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+
+=============================== Log Started [2020-09-04 19:14:58 AEST] ===============================
+[2020-09-04 19:15:00,405:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 19:15:02,417:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 19:15:02,418:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 19:15:02,418:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 19:15:02,418:         agent.DSBot]:     INFO - Public tick: 5
+[2020-09-04 19:15:02,418:         agent.DSBot]:     INFO - Private tick: 1
+[2020-09-04 19:15:02,921:         agent.DSBot]:     INFO - Session: SID:14442:SessionState.OPEN
+[2020-09-04 19:15:03,439:         agent.DSBot]:     INFO - Order(11221783,Others,BUY,1@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:15:03,439:         agent.DSBot]:     INFO - Order(11221577,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:15:03,439:         agent.DSBot]:     INFO - Order(11221578,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:15:03,439:         agent.DSBot]:     INFO - Order(11221744,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:15:03,439:         agent.DSBot]:     INFO - Order(11221767,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:15:03,439:         agent.DSBot]:     INFO - Order(11221768,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:15:03,439:         agent.DSBot]:     INFO - Order(11221771,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:15:03,440:         agent.DSBot]:     INFO - Order(11221774,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:15:03,440:         agent.DSBot]:     INFO - Order(11221775,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:15:03,440:         agent.DSBot]:     INFO - Order(11221778,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:15:03,440:         agent.DSBot]:     INFO - Order(11221781,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:15:03,440:         agent.DSBot]:     INFO - Order(11221782,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:15:03,440:         agent.DSBot]:     INFO - Order(11221785,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:15:03,440:         agent.DSBot]:     INFO - Order(11221788,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:15:03,440:         agent.DSBot]:     INFO - Order(11221838,Mine,SELL,3@620,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:15:03,440:         agent.DSBot]:     INFO - Order(11221839,Mine,SELL,1@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:15:03,440:         agent.DSBot]:     INFO - Order(11221867,Mine,BUY,4@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:15:03,440:         agent.DSBot]:     INFO - Order(11221868,Mine,BUY,1@710,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:15:03,440:         agent.DSBot]:     INFO - Order(11222462,Others,SELL,1@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:15:03,441:         agent.DSBot]:     INFO - Order(11222432,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:15:03,441:         agent.DSBot]:     INFO - Order(11222440,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:15:03,441:         agent.DSBot]:     INFO - Order(11222441,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:15:03,441:         agent.DSBot]:     INFO - Order(11222444,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:15:03,441:         agent.DSBot]:     INFO - Order(11222447,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:15:03,441:         agent.DSBot]:     INFO - Order(11222448,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:15:03,441:         agent.DSBot]:     INFO - Order(11222451,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:15:03,441:         agent.DSBot]:     INFO - Order(11222452,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:15:03,441:         agent.DSBot]:     INFO - Order(11222453,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:15:03,441:         agent.DSBot]:     INFO - Order(11222456,Mine,SELL,1@550,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:15:03,441:         agent.DSBot]:     INFO - Order(11222460,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:15:03,441:         agent.DSBot]:     INFO - Order(11222461,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:15:03,442:         agent.DSBot]:     INFO - Order(11222490,Mine,SELL,1@570,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:15:03,442:         agent.DSBot]:     INFO - Order(11222493,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:15:03,442:         agent.DSBot]:     INFO - Order(11224917,Others,BUY,1@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:15:03,442:         agent.DSBot]:     INFO - Order(11223766,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:15:03,442:         agent.DSBot]:     INFO - Order(11224260,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:15:03,442:         agent.DSBot]:     INFO - Order(11224261,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:15:03,442:         agent.DSBot]:     INFO - Order(11224264,Mine,BUY,1@250,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:15:03,442:         agent.DSBot]:     INFO - Order(11224265,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:15:03,442:         agent.DSBot]:     INFO - Order(11224266,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:15:03,442:         agent.DSBot]:     INFO - Order(11224268,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:15:03,442:         agent.DSBot]:     INFO - Order(11224908,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:15:03,442:         agent.DSBot]:     INFO - Order(11224909,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:15:03,443:         agent.DSBot]:     INFO - Order(11224912,Mine,BUY,1@260,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:15:03,443:         agent.DSBot]:     INFO - Order(11224915,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:15:03,443:         agent.DSBot]:     INFO - Order(11224916,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:15:03,443:         agent.DSBot]:     INFO - Order(11224919,Mine,BUY,1@260,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:15:03,443:         agent.DSBot]:     INFO - Order(11224922,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:15:03,443:         agent.DSBot]:     INFO - Order(11225338,Others,BUY,5@680,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:15:03,443:         agent.DSBot]:     INFO - Order(11225339,Others,BUY,5@680,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:15:03,444:         agent.DSBot]:     INFO - Order(11225344,Others,SELL,5@350,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:15:03,444:         agent.DSBot]:     INFO - Order(11225345,Others,SELL,5@350,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:15:03,445:         agent.DSBot]:     INFO - Order(11225346,Others,SELL,5@350,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:15:03,445:         agent.DSBot]:     INFO - Order(11225347,Others,SELL,5@350,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:15:05,709:         agent.DSBot]:     INFO - Order(11225399,Others,BUY,5@270,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:15:05,710:         agent.DSBot]:     INFO - Order(11225402,Others,BUY,5@270,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:15:05,961:         agent.DSBot]:     INFO - Order(11225403,Others,BUY,5@270,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:15:05,962:         agent.DSBot]:     INFO - Order(11225407,Others,BUY,5@270,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:15:07,222:         agent.DSBot]:     INFO - Order(11225457,Others,BUY,5@970,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:15:07,222:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:15:07,222:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:15:07,727:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,729:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,729:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,730:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,730:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,731:         agent.DSBot]:     INFO - Order(11225469,Mine,BUY,1@965,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:15:07,731:         agent.DSBot]:     INFO - Order(11225470,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:15:07,732:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,732:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,984:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,985:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,985:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,986:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,986:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,987:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:07,988:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,239:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,240:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,240:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,240:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,241:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,241:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,242:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,493:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,494:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,495:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,495:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,496:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,496:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,497:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,749:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,750:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,750:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,751:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,751:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,752:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:08,752:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,004:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,005:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,006:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,006:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,007:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,008:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,010:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,261:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,262:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,262:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,263:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,264:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,264:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,264:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,516:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,517:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,518:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,518:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,519:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,520:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,520:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:09,521:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+[2020-09-04 19:15:10,777:         agent.DSBot]:    ERROR - Exception in DSBot.received_orders() method. Run with DEBUG for details.
+
+=============================== Log Started [2020-09-04 19:16:08 AEST] ===============================
+[2020-09-04 19:16:10,827:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 19:16:12,852:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 19:16:12,853:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 19:16:12,853:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 19:16:12,854:         agent.DSBot]:     INFO - Public tick: 5
+[2020-09-04 19:16:12,854:         agent.DSBot]:     INFO - Private tick: 1
+[2020-09-04 19:16:13,615:         agent.DSBot]:     INFO - Session: SID:14442:SessionState.OPEN
+[2020-09-04 19:16:13,881:         agent.DSBot]:     INFO - Order(11221783,Others,BUY,1@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:13,881:         agent.DSBot]:     INFO - Order(11221577,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:16:13,882:         agent.DSBot]:     INFO - Order(11221578,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:16:13,882:         agent.DSBot]:     INFO - Order(11221744,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:16:13,882:         agent.DSBot]:     INFO - Order(11221767,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:16:13,882:         agent.DSBot]:     INFO - Order(11221768,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:16:13,882:         agent.DSBot]:     INFO - Order(11221771,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:16:13,882:         agent.DSBot]:     INFO - Order(11221774,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:16:13,882:         agent.DSBot]:     INFO - Order(11221775,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:16:13,882:         agent.DSBot]:     INFO - Order(11221778,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:16:13,882:         agent.DSBot]:     INFO - Order(11221781,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:16:13,883:         agent.DSBot]:     INFO - Order(11221782,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:16:13,883:         agent.DSBot]:     INFO - Order(11221785,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:16:13,883:         agent.DSBot]:     INFO - Order(11221788,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:16:13,883:         agent.DSBot]:     INFO - Order(11221838,Mine,SELL,3@620,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:16:13,883:         agent.DSBot]:     INFO - Order(11221839,Mine,SELL,1@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:16:13,883:         agent.DSBot]:     INFO - Order(11221867,Mine,BUY,4@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:16:13,883:         agent.DSBot]:     INFO - Order(11221868,Mine,BUY,1@710,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:16:13,883:         agent.DSBot]:     INFO - Order(11222462,Others,SELL,1@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:13,883:         agent.DSBot]:     INFO - Order(11222432,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:16:13,884:         agent.DSBot]:     INFO - Order(11222440,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:16:13,884:         agent.DSBot]:     INFO - Order(11222441,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:16:13,884:         agent.DSBot]:     INFO - Order(11222444,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:16:13,884:         agent.DSBot]:     INFO - Order(11222447,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:16:13,884:         agent.DSBot]:     INFO - Order(11222448,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:16:13,884:         agent.DSBot]:     INFO - Order(11222451,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:16:13,884:         agent.DSBot]:     INFO - Order(11222452,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:16:13,884:         agent.DSBot]:     INFO - Order(11222453,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:16:13,884:         agent.DSBot]:     INFO - Order(11222456,Mine,SELL,1@550,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:16:13,884:         agent.DSBot]:     INFO - Order(11222460,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:16:13,885:         agent.DSBot]:     INFO - Order(11222461,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:16:13,885:         agent.DSBot]:     INFO - Order(11222490,Mine,SELL,1@570,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:16:13,885:         agent.DSBot]:     INFO - Order(11222493,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:16:13,885:         agent.DSBot]:     INFO - Order(11224917,Others,BUY,1@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:13,885:         agent.DSBot]:     INFO - Order(11223766,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:16:13,885:         agent.DSBot]:     INFO - Order(11224260,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:16:13,885:         agent.DSBot]:     INFO - Order(11224261,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:16:13,885:         agent.DSBot]:     INFO - Order(11224264,Mine,BUY,1@250,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:16:13,885:         agent.DSBot]:     INFO - Order(11224265,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:16:13,885:         agent.DSBot]:     INFO - Order(11224266,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:16:13,885:         agent.DSBot]:     INFO - Order(11224268,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:16:13,886:         agent.DSBot]:     INFO - Order(11224908,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:16:13,886:         agent.DSBot]:     INFO - Order(11224909,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:16:13,886:         agent.DSBot]:     INFO - Order(11224912,Mine,BUY,1@260,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:16:13,886:         agent.DSBot]:     INFO - Order(11224915,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:16:13,886:         agent.DSBot]:     INFO - Order(11224916,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:16:13,886:         agent.DSBot]:     INFO - Order(11224919,Mine,BUY,1@260,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:16:13,886:         agent.DSBot]:     INFO - Order(11224922,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:16:13,886:         agent.DSBot]:     INFO - Order(11225457,Others,BUY,5@970,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:13,886:         agent.DSBot]:     INFO - Order(11225470,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:16:13,886:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:16:13,886:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:16:15,141:         agent.DSBot]:     INFO - Order(11225880,Mine,BUY,1@965,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:16:15,141:         agent.DSBot]:     INFO - Order(11225881,Mine,BUY,1@450,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:16:15,142:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:16:15,142:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:16:15,142:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:16:16,652:         agent.DSBot]:     INFO - Order(11225457,Others,BUY,5@970,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:16,653:         agent.DSBot]:     INFO - Order(11225901,Mine,SELL,1@970,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:16:16,653:         agent.DSBot]:     INFO - Order(11225902,Others,BUY,1@970,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:16:16,653:         agent.DSBot]:     INFO - Order(11225903,Others,BUY,4@970,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:16,653:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:16:16,653:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:16:17,919:         agent.DSBot]:     INFO - Order(11225937,Mine,BUY,1@965,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:16:17,920:         agent.DSBot]:     INFO - Order(11225938,Mine,BUY,1@620,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:16:17,921:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:16:17,921:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:16:17,921:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:16:19,180:         agent.DSBot]:     INFO - Order(11225903,Others,BUY,4@970,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:19,180:         agent.DSBot]:     INFO - Order(11225947,Mine,SELL,1@970,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:16:19,180:         agent.DSBot]:     INFO - Order(11225948,Others,BUY,1@970,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:16:19,180:         agent.DSBot]:     INFO - Order(11225949,Others,BUY,3@970,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:19,181:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:16:19,181:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:16:20,436:         agent.DSBot]:     INFO - Order(11225950,Mine,BUY,1@965,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:16:20,437:         agent.DSBot]:     INFO - Order(11225951,Mine,BUY,1@540,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:16:20,437:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:16:20,437:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:16:20,437:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:16:21,693:         agent.DSBot]:     INFO - Order(11225949,Others,BUY,3@970,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:21,694:         agent.DSBot]:     INFO - Order(11225952,Mine,SELL,1@970,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:16:21,694:         agent.DSBot]:     INFO - Order(11225953,Others,BUY,1@970,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:16:21,694:         agent.DSBot]:     INFO - Order(11225954,Others,BUY,2@970,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:21,695:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:16:21,695:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:16:22,950:         agent.DSBot]:     INFO - Order(11225955,Mine,BUY,1@965,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:16:22,950:         agent.DSBot]:     INFO - Order(11225956,Mine,BUY,1@560,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:16:22,951:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:16:22,951:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:16:22,951:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:16:24,207:         agent.DSBot]:     INFO - Order(11225954,Others,BUY,2@970,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:24,207:         agent.DSBot]:     INFO - Order(11225959,Mine,SELL,1@970,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:16:24,207:         agent.DSBot]:     INFO - Order(11225960,Others,BUY,1@970,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:16:24,208:         agent.DSBot]:     INFO - Order(11225961,Others,BUY,1@970,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:24,208:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:16:24,208:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:16:25,465:         agent.DSBot]:     INFO - Order(11225962,Mine,BUY,1@965,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:16:25,466:         agent.DSBot]:     INFO - Order(11225963,Mine,BUY,1@560,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:16:25,466:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:16:25,466:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:16:25,467:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:16:26,726:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:16:26,727:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:16:26,728:         agent.DSBot]:     INFO - Order(11225961,Others,BUY,1@970,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:16:26,729:         agent.DSBot]:     INFO - Order(11225985,Mine,SELL,1@970,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:16:27,997:         agent.DSBot]:     INFO - Order(11226014,Mine,BUY,1@965,M-1597,LIMIT,REF:'Public order - 10')
+[2020-09-04 19:16:27,998:         agent.DSBot]:     INFO - Order(11226015,Mine,BUY,1@620,M-1597,LIMIT,REF:'Public order - 10')
+
+=============================== Log Started [2020-09-04 19:18:45 AEST] ===============================
+[2020-09-04 19:18:47,158:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-04 19:18:49,216:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 19:18:49,216:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-04 19:18:49,217:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-04 19:18:49,217:         agent.DSBot]:     INFO - Public tick: 5
+[2020-09-04 19:18:49,217:         agent.DSBot]:     INFO - Private tick: 1
+[2020-09-04 19:18:49,975:         agent.DSBot]:     INFO - Session: SID:14442:SessionState.OPEN
+[2020-09-04 19:18:50,241:         agent.DSBot]:     INFO - Order(11221783,Others,BUY,1@680,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:18:50,241:         agent.DSBot]:     INFO - Order(11221577,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:18:50,241:         agent.DSBot]:     INFO - Order(11221578,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:18:50,241:         agent.DSBot]:     INFO - Order(11221744,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:18:50,241:         agent.DSBot]:     INFO - Order(11221767,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:18:50,242:         agent.DSBot]:     INFO - Order(11221768,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:18:50,242:         agent.DSBot]:     INFO - Order(11221771,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:18:50,242:         agent.DSBot]:     INFO - Order(11221774,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:18:50,242:         agent.DSBot]:     INFO - Order(11221775,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:18:50,242:         agent.DSBot]:     INFO - Order(11221778,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:18:50,242:         agent.DSBot]:     INFO - Order(11221781,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:18:50,242:         agent.DSBot]:     INFO - Order(11221782,Others,BUY,1@680,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:18:50,242:         agent.DSBot]:     INFO - Order(11221785,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:18:50,242:         agent.DSBot]:     INFO - Order(11221788,Mine,SELL,1@680,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:18:50,242:         agent.DSBot]:     INFO - Order(11221838,Mine,SELL,3@620,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:18:50,243:         agent.DSBot]:     INFO - Order(11221839,Mine,SELL,1@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:18:50,243:         agent.DSBot]:     INFO - Order(11221867,Mine,BUY,4@590,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:18:50,243:         agent.DSBot]:     INFO - Order(11221868,Mine,BUY,1@710,M-1597,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 19:18:50,243:         agent.DSBot]:     INFO - Order(11222462,Others,SELL,1@350,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:18:50,243:         agent.DSBot]:     INFO - Order(11222432,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:18:50,243:         agent.DSBot]:     INFO - Order(11222440,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:18:50,243:         agent.DSBot]:     INFO - Order(11222441,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:18:50,243:         agent.DSBot]:     INFO - Order(11222444,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:18:50,243:         agent.DSBot]:     INFO - Order(11222447,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:18:50,243:         agent.DSBot]:     INFO - Order(11222448,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:18:50,243:         agent.DSBot]:     INFO - Order(11222451,Mine,SELL,1@600,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:18:50,243:         agent.DSBot]:     INFO - Order(11222452,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:18:50,244:         agent.DSBot]:     INFO - Order(11222453,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:18:50,244:         agent.DSBot]:     INFO - Order(11222456,Mine,SELL,1@550,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:18:50,244:         agent.DSBot]:     INFO - Order(11222460,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:18:50,244:         agent.DSBot]:     INFO - Order(11222461,Others,SELL,1@350,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:18:50,244:         agent.DSBot]:     INFO - Order(11222490,Mine,SELL,1@570,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:18:50,244:         agent.DSBot]:     INFO - Order(11222493,Mine,BUY,1@350,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:18:50,244:         agent.DSBot]:     INFO - Order(11224917,Others,BUY,1@270,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:18:50,244:         agent.DSBot]:     INFO - Order(11223766,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:18:50,244:         agent.DSBot]:     INFO - Order(11224260,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:18:50,244:         agent.DSBot]:     INFO - Order(11224261,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:18:50,244:         agent.DSBot]:     INFO - Order(11224264,Mine,BUY,1@250,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:18:50,244:         agent.DSBot]:     INFO - Order(11224265,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:18:50,245:         agent.DSBot]:     INFO - Order(11224266,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:18:50,245:         agent.DSBot]:     INFO - Order(11224268,Mine,BUY,1@265,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:18:50,245:         agent.DSBot]:     INFO - Order(11224908,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:18:50,245:         agent.DSBot]:     INFO - Order(11224909,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:18:50,245:         agent.DSBot]:     INFO - Order(11224912,Mine,BUY,1@260,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:18:50,245:         agent.DSBot]:     INFO - Order(11224915,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:18:50,245:         agent.DSBot]:     INFO - Order(11224916,Others,BUY,1@270,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:18:50,245:         agent.DSBot]:     INFO - Order(11224919,Mine,BUY,1@260,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:18:50,245:         agent.DSBot]:     INFO - Order(11224922,Mine,SELL,1@270,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:18:50,245:         agent.DSBot]:     INFO - Order(11225961,Others,BUY,1@970,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:18:50,245:         agent.DSBot]:     INFO - Order(11225470,Mine,BUY,1@670,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:18:50,245:         agent.DSBot]:     INFO - Order(11225881,Mine,BUY,1@450,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:18:50,246:         agent.DSBot]:     INFO - Order(11225901,Mine,SELL,1@970,M-1598,LIMIT,REF:'Private order - 1',PVT_TO:M000)
+[2020-09-04 19:18:50,246:         agent.DSBot]:     INFO - Order(11225902,Others,BUY,1@970,M-1598,LIMIT,REF:'Private order - 1',PVT_FROM:M000)
+[2020-09-04 19:18:50,246:         agent.DSBot]:     INFO - Order(11225938,Mine,BUY,1@620,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:18:50,246:         agent.DSBot]:     INFO - Order(11225947,Mine,SELL,1@970,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:18:50,246:         agent.DSBot]:     INFO - Order(11225948,Others,BUY,1@970,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:18:50,246:         agent.DSBot]:     INFO - Order(11225951,Mine,BUY,1@540,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:18:50,246:         agent.DSBot]:     INFO - Order(11225952,Mine,SELL,1@970,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:18:50,246:         agent.DSBot]:     INFO - Order(11225953,Others,BUY,1@970,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:18:50,246:         agent.DSBot]:     INFO - Order(11225956,Mine,BUY,1@560,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:18:50,246:         agent.DSBot]:     INFO - Order(11225959,Mine,SELL,1@970,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:18:50,246:         agent.DSBot]:     INFO - Order(11225960,Others,BUY,1@970,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:18:50,246:         agent.DSBot]:     INFO - Order(11225963,Mine,BUY,1@560,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:18:50,247:         agent.DSBot]:     INFO - Order(11225985,Mine,SELL,1@970,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:18:50,247:         agent.DSBot]:     INFO - Order(11226015,Mine,BUY,1@620,M-1597,LIMIT,REF:'Public order - 10')
+[2020-09-04 19:20:02,977:         agent.DSBot]:     INFO - Session: SID:14442:SessionState.PAUSED
+[2020-09-04 19:20:04,985:         agent.DSBot]:     INFO - Session: SID:14442:SessionState.CLOSED
+[2020-09-04 19:20:10,000:         agent.DSBot]:     INFO - Session: SID:14444:SessionState.OPEN
+[2020-09-04 19:20:15,019:         agent.DSBot]:     INFO - Order(11227425,Others,BUY,5@110,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:20:15,019:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:20:15,019:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:20:16,527:         agent.DSBot]:     INFO - Order(11227441,Mine,BUY,1@105,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:25:14,605:         agent.DSBot]:     INFO - Order(11227425,Others,BUY,5@110,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:25:14,605:         agent.DSBot]:     INFO - Order(11228201,Others,BUY,5@110,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:25:14,606:         agent.DSBot]:     INFO - 1, 0
+[2020-09-04 19:25:14,606:         agent.DSBot]:     INFO - Clearing stale public orders ===========================
+[2020-09-04 19:25:14,606:         agent.DSBot]:     INFO - after changing Last accepted public order ID: 0
+[2020-09-04 19:25:15,880:         agent.DSBot]:     INFO - Order(11228251,Others,BUY,5@170,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:25:16,901:         agent.DSBot]:     INFO - Order(11227441,Mine,BUY,1@105,M-1597,LIMIT,REF:'Public order - 0')
+[2020-09-04 19:25:16,902:         agent.DSBot]:     INFO - Order(11228274,Mine,BUY,1@105,M-1597,CANCEL,REF:'SM - Cancel - Public order - 0')
+[2020-09-04 19:25:16,902:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:25:16,902:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:25:18,164:         agent.DSBot]:     INFO - Order(11228286,Mine,BUY,1@165,M-1597,LIMIT,REF:'Public order - 1')
+[2020-09-04 19:30:14,206:         agent.DSBot]:     INFO - Order(11228251,Others,BUY,5@170,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:30:14,206:         agent.DSBot]:     INFO - Order(11229530,Others,BUY,5@170,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:30:14,207:         agent.DSBot]:     INFO - 1, 0
+[2020-09-04 19:30:14,207:         agent.DSBot]:     INFO - Clearing stale public orders ===========================
+[2020-09-04 19:30:14,207:         agent.DSBot]:     INFO - after changing Last accepted public order ID: 0
+[2020-09-04 19:30:16,285:         agent.DSBot]:     INFO - Order(11229590,Others,SELL,5@640,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:30:16,549:         agent.DSBot]:     INFO - Order(11228286,Mine,BUY,1@165,M-1597,LIMIT,REF:'Public order - 1')
+[2020-09-04 19:30:16,549:         agent.DSBot]:     INFO - Order(11229599,Mine,BUY,1@165,M-1597,CANCEL,REF:'SM - Cancel - Public order - 1')
+[2020-09-04 19:30:16,550:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:30:16,550:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:30:17,849:         agent.DSBot]:     INFO - Order(11229633,Mine,SELL,1@640,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:30:38,141:         agent.DSBot]:     INFO - Order(11229633,Mine,SELL,1@640,M-1597,LIMIT,REF:'Public order - 2')
+[2020-09-04 19:30:38,142:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:30:38,142:         agent.DSBot]:     INFO - Private order side is OrderSide.BUY, my role is Role.SELLER
+[2020-09-04 19:30:38,142:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:30:39,913:         agent.DSBot]:     INFO - Order(11229590,Others,SELL,5@640,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:30:39,913:         agent.DSBot]:     INFO - Order(11229822,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 3',PVT_TO:M000)
+[2020-09-04 19:30:39,913:         agent.DSBot]:     INFO - Order(11229823,Others,SELL,1@640,M-1598,LIMIT,REF:'Private order - 3',PVT_FROM:M000)
+[2020-09-04 19:30:39,913:         agent.DSBot]:     INFO - Order(11229824,Others,SELL,4@640,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:30:39,916:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:30:39,916:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:30:41,171:         agent.DSBot]:     INFO - Order(11229825,Mine,SELL,1@640,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:30:41,172:         agent.DSBot]:     INFO - Order(11229826,Mine,SELL,1@700,M-1597,LIMIT,REF:'Public order - 4')
+[2020-09-04 19:30:41,174:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:30:41,174:         agent.DSBot]:     INFO - Private order side is OrderSide.BUY, my role is Role.SELLER
+[2020-09-04 19:30:41,174:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:30:42,431:         agent.DSBot]:     INFO - Order(11229824,Others,SELL,4@640,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:30:42,432:         agent.DSBot]:     INFO - Order(11229827,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 5',PVT_TO:M000)
+[2020-09-04 19:30:42,432:         agent.DSBot]:     INFO - Order(11229828,Others,SELL,1@640,M-1598,LIMIT,REF:'Private order - 5',PVT_FROM:M000)
+[2020-09-04 19:30:42,432:         agent.DSBot]:     INFO - Order(11229829,Others,SELL,3@640,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:30:42,434:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:30:42,435:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:30:43,691:         agent.DSBot]:     INFO - Order(11229830,Mine,SELL,1@640,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:30:43,691:         agent.DSBot]:     INFO - Order(11229831,Mine,SELL,1@690,M-1597,LIMIT,REF:'Public order - 6')
+[2020-09-04 19:30:43,694:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:30:43,694:         agent.DSBot]:     INFO - Private order side is OrderSide.BUY, my role is Role.SELLER
+[2020-09-04 19:30:43,694:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:30:44,948:         agent.DSBot]:     INFO - Order(11229829,Others,SELL,3@640,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:30:44,949:         agent.DSBot]:     INFO - Order(11229834,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 7',PVT_TO:M000)
+[2020-09-04 19:30:44,949:         agent.DSBot]:     INFO - Order(11229835,Others,SELL,1@640,M-1598,LIMIT,REF:'Private order - 7',PVT_FROM:M000)
+[2020-09-04 19:30:44,949:         agent.DSBot]:     INFO - Order(11229836,Others,SELL,2@640,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:30:44,952:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:30:44,952:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:30:46,208:         agent.DSBot]:     INFO - Order(11229837,Mine,SELL,1@640,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:30:46,209:         agent.DSBot]:     INFO - Order(11229838,Mine,SELL,1@690,M-1597,LIMIT,REF:'Public order - 8')
+[2020-09-04 19:30:46,211:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:30:46,212:         agent.DSBot]:     INFO - Private order side is OrderSide.BUY, my role is Role.SELLER
+[2020-09-04 19:30:46,212:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:30:47,514:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:30:47,515:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:30:47,520:         agent.DSBot]:     INFO - Order(11229836,Others,SELL,2@640,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:30:47,520:         agent.DSBot]:     INFO - Order(11229872,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 9',PVT_TO:M000)
+[2020-09-04 19:30:47,520:         agent.DSBot]:     INFO - Order(11229873,Others,SELL,1@640,M-1598,LIMIT,REF:'Private order - 9',PVT_FROM:M000)
+[2020-09-04 19:30:47,520:         agent.DSBot]:     INFO - Order(11229874,Others,SELL,1@640,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:30:48,821:         agent.DSBot]:     INFO - Order(11229902,Mine,SELL,1@640,M-1597,LIMIT,REF:'Public order - 10')
+[2020-09-04 19:30:48,822:         agent.DSBot]:     INFO - Order(11229903,Mine,SELL,1@700,M-1597,LIMIT,REF:'Public order - 10')
+[2020-09-04 19:30:48,824:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:30:48,824:         agent.DSBot]:     INFO - Private order side is OrderSide.BUY, my role is Role.SELLER
+[2020-09-04 19:30:48,824:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:30:50,079:         agent.DSBot]:     INFO - Order(11229874,Others,SELL,1@640,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:30:50,079:         agent.DSBot]:     INFO - Order(11229906,Mine,BUY,1@640,M-1598,LIMIT,REF:'Private order - 11',PVT_TO:M000)
+[2020-09-04 19:35:15,993:         agent.DSBot]:     INFO - Order(11231616,Others,SELL,5@640,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:35:16,281:         agent.DSBot]:     INFO - Order(11231627,Others,SELL,5@640,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:35:16,535:         agent.DSBot]:     INFO - Order(11231628,Others,SELL,5@640,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:35:16,540:         agent.DSBot]:     INFO - Order(11231629,Others,SELL,5@640,M-1598,CANCEL,REF:'c-T012',PVT_FROM:M000)
+[2020-09-04 19:35:17,676:         agent.DSBot]:     INFO - Order(11231676,Others,BUY,5@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:35:17,679:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:35:17,680:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:35:19,574:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:35:19,575:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:35:19,575:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:35:19,580:         agent.DSBot]:     INFO - Order(11231722,Mine,BUY,1@465,M-1597,LIMIT,REF:'Public order - 12')
+[2020-09-04 19:35:19,580:         agent.DSBot]:     INFO - Order(11231723,Mine,BUY,1@290,M-1597,LIMIT,REF:'Public order - 12')
+[2020-09-04 19:35:20,901:         agent.DSBot]:     INFO - Order(11231676,Others,BUY,5@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:35:20,901:         agent.DSBot]:     INFO - Order(11231747,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 13',PVT_TO:M000)
+[2020-09-04 19:35:20,901:         agent.DSBot]:     INFO - Order(11231748,Others,BUY,1@470,M-1598,LIMIT,REF:'Private order - 13',PVT_FROM:M000)
+[2020-09-04 19:35:20,902:         agent.DSBot]:     INFO - Order(11231749,Others,BUY,4@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:35:20,906:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:35:20,906:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:35:22,162:         agent.DSBot]:     INFO - Order(11231750,Mine,BUY,1@465,M-1597,LIMIT,REF:'Public order - 14')
+[2020-09-04 19:35:22,162:         agent.DSBot]:     INFO - Order(11231751,Mine,BUY,1@300,M-1597,LIMIT,REF:'Public order - 14')
+[2020-09-04 19:35:22,165:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:35:22,166:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:35:22,166:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:35:23,421:         agent.DSBot]:     INFO - Order(11231749,Others,BUY,4@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:35:23,421:         agent.DSBot]:     INFO - Order(11231752,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 15',PVT_TO:M000)
+[2020-09-04 19:35:23,422:         agent.DSBot]:     INFO - Order(11231753,Others,BUY,1@470,M-1598,LIMIT,REF:'Private order - 15',PVT_FROM:M000)
+[2020-09-04 19:35:23,422:         agent.DSBot]:     INFO - Order(11231754,Others,BUY,3@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:35:23,426:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:35:23,427:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:35:24,682:         agent.DSBot]:     INFO - Order(11231755,Mine,BUY,1@465,M-1597,LIMIT,REF:'Public order - 16')
+[2020-09-04 19:35:24,682:         agent.DSBot]:     INFO - Order(11231756,Mine,BUY,1@300,M-1597,LIMIT,REF:'Public order - 16')
+[2020-09-04 19:35:24,687:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:35:24,687:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:35:24,687:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:35:25,942:         agent.DSBot]:     INFO - Order(11231754,Others,BUY,3@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:35:25,942:         agent.DSBot]:     INFO - Order(11231759,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 17',PVT_TO:M000)
+[2020-09-04 19:35:25,943:         agent.DSBot]:     INFO - Order(11231760,Others,BUY,1@470,M-1598,LIMIT,REF:'Private order - 17',PVT_FROM:M000)
+[2020-09-04 19:35:25,943:         agent.DSBot]:     INFO - Order(11231761,Others,BUY,2@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:35:25,947:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:35:25,948:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:35:27,263:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:35:27,263:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:35:27,263:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:35:27,264:         agent.DSBot]:     INFO - Order(11231783,Mine,BUY,1@465,M-1597,LIMIT,REF:'Public order - 18')
+[2020-09-04 19:35:27,264:         agent.DSBot]:     INFO - Order(11231784,Mine,BUY,1@300,M-1597,LIMIT,REF:'Public order - 18')
+[2020-09-04 19:35:28,627:         agent.DSBot]:     INFO - Order(11231761,Others,BUY,2@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:35:28,627:         agent.DSBot]:     INFO - Order(11231819,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 19',PVT_TO:M000)
+[2020-09-04 19:35:28,628:         agent.DSBot]:     INFO - Order(11231820,Others,BUY,1@470,M-1598,LIMIT,REF:'Private order - 19',PVT_FROM:M000)
+[2020-09-04 19:35:28,628:         agent.DSBot]:     INFO - Order(11231821,Others,BUY,1@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:35:28,633:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:35:28,633:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 19:35:29,680:         agent.DSBot]:     INFO - Order(11231835,Mine,BUY,1@465,M-1597,LIMIT,REF:'Public order - 20')
+[2020-09-04 19:35:39,508:         agent.DSBot]:     INFO - Order(11231835,Mine,BUY,1@465,M-1597,LIMIT,REF:'Public order - 20')
+[2020-09-04 19:35:39,511:         agent.DSBot]:     INFO - 0, 1
+[2020-09-04 19:35:39,511:         agent.DSBot]:     INFO - Private order side is OrderSide.SELL, my role is Role.BUYER
+[2020-09-04 19:35:39,511:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 19:35:40,044:         agent.DSBot]:     INFO - Order(11231821,Others,BUY,1@470,M-1598,LIMIT,REF:'T012',PVT_FROM:M000)
+[2020-09-04 19:35:40,044:         agent.DSBot]:     INFO - Order(11231971,Mine,SELL,1@470,M-1598,LIMIT,REF:'Private order - 21',PVT_TO:M000)

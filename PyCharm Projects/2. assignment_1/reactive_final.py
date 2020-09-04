@@ -7,6 +7,19 @@ Sidakpreet Mann
 Notes:
     1. Profitable trade printing only implemented for reactive bot type
     2. In reactive type, if order does not immediately trade, it remains in the book
+    3. Orders are rounded such that the mod price tick is subtracted from the price
+        This is done as profit margins can just be increased to offset this
+
+What to do better next time:
+    1. Track my own orders in a dict while they are active
+    2. Track my cancelled orders in a separate dict
+    3. Track manager orders in a separate dict
+    4. At each update, check if they are in Order.current(), and make decisions based on
+        the remaining quantity of the manager order / internal incentive
+    5. Subclass the strategies, really messy to have it all in one file
+    6. Avoid manual tracking of all orders, go with the provided functions
+        of the web socket as they are rigorously tested
+    7. Async techniques, and how to use them effectively
 """
 import copy
 from enum import Enum
@@ -17,7 +30,7 @@ from typing import List
 SUBMISSION = {"number": "921322", "name": "Sidakpreet Mann"}
 
 # ------ Add a variable called PROFIT_MARGIN -----
-PROFIT_MARGIN = 10
+PROFIT_MARGIN = 3
 
 
 # Enum for the roles of the bot
@@ -51,16 +64,18 @@ class DSBot(Agent):
         self._private_widgets_available = 0
         self._public_widgets_available = 0
         self._units_to_trade = 0
+        self._session_is_open = False
+        self._price_tick = 1
 
     # MARKET MAKER FUNCTIONALITY ##########################################################
     def _make_market(self):
 
         num_private_orders, num_my_public_orders, my_stale_priv_order, \
             manager_order = self._get_order_book_state()
-        self.inform(f"{num_my_public_orders}, {num_private_orders}")
 
         # CANCELLING STALE ORDERS =========================================================
         if num_my_public_orders > 0 and num_private_orders == 0 and not self._waiting_for_server:
+            self.inform(f"{num_my_public_orders}, {num_private_orders}")
             self.inform(f"Clearing stale public orders ===========================")
             self._cancel_order(my_stale_priv_order)
             self._last_accepted_public_order_id = 0
@@ -73,6 +88,7 @@ class DSBot(Agent):
         if (self._last_accepted_public_order_id not in Order.current()) and (num_private_orders > 0) \
                 and (not self._last_accepted_public_order_id == 0) and (num_my_public_orders == 0):
             # determine order attributes
+            self.inform(f"{num_my_public_orders}, {num_private_orders}")
             is_private = True
             price = manager_order.price
             units = 1
@@ -95,7 +111,8 @@ class DSBot(Agent):
 
         # PUBLIC ORDER CREATION ===========================================================
         # no order of mine in the public market, but there is a private request
-        if num_private_orders > 0 and num_my_public_orders == 0:
+        if num_private_orders > 0 and num_my_public_orders == 0 and not self._waiting_for_server:
+            self.inform(f"{num_my_public_orders}, {num_private_orders}")
 
             is_private = False
 
@@ -111,10 +128,10 @@ class DSBot(Agent):
             order_type = OrderType.LIMIT
             ref = f"Public order - {self._tradeID}"
 
-            if not self._waiting_for_server:
-                self.inform(f"Creating public order")
-                self._create_new_order(price, units, order_side, order_type, ref, is_private)
-                return
+            self.inform(f"Creating public order")
+
+            self._create_new_order(price, units, order_side, order_type, ref, is_private)
+            return
         # END PUBLIC ORDER CREATION =======================================================
 
     # SHARED FUNCTIONALITY ################################################################
@@ -153,12 +170,17 @@ class DSBot(Agent):
         markets_to_trade = self.markets
         for key in markets_to_trade:
             self.inform(markets_to_trade[key])
-
             # initialise market ids
             if markets_to_trade[key].private_market:
                 self._private_market_id = key
             else:
                 self._public_market_id = key
+
+        # track public market price tick
+        self._price_tick = Market(self._public_market_id).price_tick
+
+        self.inform(f"Public tick: {Market(self._public_market_id).price_tick}")
+        self.inform(f"Private tick: {Market(self._private_market_id).price_tick}")
 
     def order_accepted(self, order: Order):
         """
@@ -187,6 +209,10 @@ class DSBot(Agent):
         Notifies new updates in the market
         :param orders: list of order objects (updates)
         """
+        # only call strategies if
+        if not self._session_is_open:
+            return
+
         for o in orders:
             # self.inform(o)
             if o.mine or o.is_private:
@@ -221,6 +247,17 @@ class DSBot(Agent):
         else:
             market = self._public_market_id
 
+            # make sure price is rounded in the public market
+            # always take away rounding, as profit margin can just be increased
+            price -= price % self._price_tick
+
+            # in case price goes less than the tick, or more than ten
+            # set prices to the bounds
+            if price < self._price_tick:
+                price = self._price_tick
+            elif price > 1000:
+                price = 1000
+
         new_order.market = Market(market)
         new_order.price = price
         new_order.units = units
@@ -247,8 +284,18 @@ class DSBot(Agent):
         pass
 
     def received_session_info(self, session: Session):
-        pass
 
+        # when bot is running and session is reset
+        if session.is_open:
+            self._waiting_for_server = False
+            self._tradeID = 0
+            self._last_accepted_public_order_id = 0
+
+            self._assets = {}
+            self._units_to_trade = 0
+            self._session_is_open = True
+        else:
+            self._session_is_open = False
     # REACTIVE FUNCTIONALITY ##########################################################
 
     def _react_to_market(self):
@@ -452,8 +499,8 @@ if __name__ == "__main__":
     FM_PASSWORD = "921322"
     MARKETPLACE_ID = 915
 
-    # B_TYPE = BotType.MARKET_MAKER
-    B_TYPE = BotType.REACTIVE
+    B_TYPE = BotType.MARKET_MAKER
+    # B_TYPE = BotType.REACTIVE
 
     ds_bot = DSBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID, B_TYPE)
     ds_bot.run()
