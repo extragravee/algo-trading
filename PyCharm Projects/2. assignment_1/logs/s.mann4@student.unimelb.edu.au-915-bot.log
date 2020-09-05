@@ -21605,3 +21605,276 @@
 [2020-09-05 15:12:16,546:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
 [2020-09-05 15:12:16,547:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
 [2020-09-05 15:12:17,054:         agent.DSBot]:     INFO - Session: SID:14485:SessionState.OPEN
+
+=============================== Log Started [2020-09-05 15:21:05 AEST] ===============================
+[2020-09-05 15:21:07,323:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-05 15:21:09,348:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-05 15:21:09,349:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-05 15:21:09,349:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-05 15:21:13,865:         agent.DSBot]:     INFO - Session: SID:14487:SessionState.OPEN
+
+=============================== Log Started [2020-09-05 15:25:28 AEST] ===============================
+[2020-09-05 15:25:30,861:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-05 15:25:32,881:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-05 15:25:32,882:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-05 15:25:32,882:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-05 15:25:33,384:         agent.DSBot]:     INFO - Session: SID:14487:SessionState.OPEN
+[2020-09-05 15:25:45,963:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:45,964:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:45,964:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:46,718:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:46,970:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:47,221:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:49,983:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:49,984:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,235:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,235:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,236:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,236:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,237:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,237:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,488:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,489:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,489:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,490:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,490:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,491:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,491:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,743:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,744:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,744:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,745:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,746:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,747:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:50,747:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,000:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,000:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,001:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,001:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,002:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,002:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,002:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,003:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,254:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,255:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,256:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,256:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:51,257:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:53,267:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:54,520:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:55,273:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:55,776:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:56,779:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:57,533:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:58,036:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:58,788:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,040:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,291:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,292:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,292:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,293:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,293:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,545:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,546:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,546:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,546:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,547:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,547:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,548:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,799:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,800:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,801:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,801:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:25:59,802:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,054:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,055:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,056:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,057:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,057:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,058:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,309:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,310:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,310:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,311:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,311:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,312:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,312:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,313:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,313:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,565:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,565:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,566:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,566:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,567:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,567:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:00,568:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:01,822:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:03,077:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:26:04,333:         agent.DSBot]:     INFO - Not enough widgets to trade.
+
+=============================== Log Started [2020-09-05 15:28:12 AEST] ===============================
+[2020-09-05 15:28:14,072:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-05 15:28:16,089:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-05 15:28:16,090:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-05 15:28:16,090:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-05 15:28:16,592:         agent.DSBot]:     INFO - Session: SID:14487:SessionState.OPEN
+
+=============================== Log Started [2020-09-05 15:28:45 AEST] ===============================
+[2020-09-05 15:28:47,295:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-05 15:28:49,320:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-05 15:28:49,321:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-05 15:28:49,321:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-05 15:28:50,073:         agent.DSBot]:     INFO - Session: SID:14487:SessionState.OPEN
+
+=============================== Log Started [2020-09-05 15:33:50 AEST] ===============================
+[2020-09-05 15:33:52,760:         agent.DSBot]:     INFO - Requesting initial information for marketplace `915`
+[2020-09-05 15:33:54,910:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-05 15:33:54,910:         agent.DSBot]:     INFO - Market(1597,widget,Widget,False)
+[2020-09-05 15:33:54,910:         agent.DSBot]:     INFO - Market(1598,privateWidget,PrivateWidget,True)
+[2020-09-05 15:33:55,914:         agent.DSBot]:     INFO - Session: SID:14487:SessionState.OPEN
+[2020-09-05 15:35:47,878:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:47,879:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:47,880:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:48,886:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:49,138:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:49,391:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:49,893:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:49,894:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,145:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,146:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,147:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,147:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,148:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,149:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,149:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,402:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,403:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,405:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,406:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,407:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,408:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,408:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,661:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,662:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,663:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,664:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,665:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,666:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,667:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,669:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,921:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,922:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,923:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,924:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,925:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,926:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,927:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:50,928:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,181:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,182:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,184:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,185:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,186:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,187:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,188:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,440:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,441:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,443:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,444:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,445:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,446:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,698:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,699:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,699:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,700:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,701:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,702:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,953:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,955:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,956:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,957:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,958:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,959:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:51,960:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:52,213:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:52,214:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:52,215:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:52,216:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:52,218:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:52,219:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:52,220:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:52,221:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:52,222:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:52,223:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:52,475:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:53,228:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:54,485:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:35:55,740:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,506:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,507:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,508:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,509:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,510:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,511:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,512:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,764:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,764:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,765:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,766:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,766:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,767:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:00,768:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,020:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,021:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,022:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,023:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,024:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,025:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,025:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,277:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,278:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,279:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,280:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,280:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,281:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,282:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,534:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,535:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,536:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,537:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,538:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,539:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,540:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,791:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,792:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,793:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,793:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,794:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:01,795:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,047:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,048:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,049:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,050:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,051:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,052:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,053:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,306:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,308:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,309:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,311:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,312:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,313:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,315:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,566:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,567:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,568:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,569:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,570:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,570:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,571:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,572:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,573:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,574:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,826:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,827:         agent.DSBot]:     INFO - Not enough widgets to trade.
+[2020-09-05 15:36:02,829:         agent.DSBot]:     INFO - Not enough widgets to trade.

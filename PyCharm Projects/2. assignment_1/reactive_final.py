@@ -138,8 +138,17 @@ class DSBot(Agent):
             units = 1
             order_type = OrderType.LIMIT
             ref = f"Public order - {self._tradeID}"
-
-            self._create_new_order(price, units, order_side, order_type, ref, is_private)
+            if self.role() == Role.BUYER:
+                if self._cash_available >= price:
+                    self._create_new_order(price, units, order_side, order_type, ref, is_private)
+                else:
+                    self.inform(f"Not enough cash to trade.")
+            else:
+                if self.role() == Role.SELLER:
+                    if self._public_widgets_available > 0:
+                        self._create_new_order(price, units, order_side, order_type, ref, is_private)
+                    else:
+                        self.inform(f"Not enough widgets to trade.")
             return
         # END PUBLIC ORDER CREATION =======================================================
 
