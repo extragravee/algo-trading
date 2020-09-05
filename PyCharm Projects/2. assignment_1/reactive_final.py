@@ -114,7 +114,6 @@ class DSBot(Agent):
             ref = f"Private order - {self._tradeID}"
 
             if not self._waiting_for_server:
-                self.inform(f"Creating private order")
                 self._last_accepted_public_order_id = 0
                 self._create_new_order(price, units, order_side, order_type, ref, is_private)
                 return
@@ -139,8 +138,6 @@ class DSBot(Agent):
             units = 1
             order_type = OrderType.LIMIT
             ref = f"Public order - {self._tradeID}"
-
-            self.inform(f"Creating public order")
 
             self._create_new_order(price, units, order_side, order_type, ref, is_private)
             return
@@ -336,7 +333,6 @@ class DSBot(Agent):
             self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
             self._cancel_order(my_stale_priv_order)
             self._last_accepted_public_order_id = 0
-            return
 
         # PRIVATE ORDER CREATION ==============================================================
         # only create private order if public order traded successfully, and there exists
@@ -366,7 +362,7 @@ class DSBot(Agent):
                 self.inform(f"Units left to trade = {self._units_to_trade}")
                 if not self._waiting_for_server:
                     self._create_new_order(price, units, order_side, order_type, ref, is_private)
-            return
+
         # END PRIVATE ORDER CREATION ==========================================================
 
         # PUBLIC ORDER CREATION ===============================================================
@@ -379,7 +375,7 @@ class DSBot(Agent):
             is_private = False
             self._create_profitable_order(best_ask, best_bid, manager_order, is_private,
                                           best_bid_order, best_ask_order)
-            return
+
         # END PUBLIC ORDER CREATION ===========================================================
 
     @staticmethod
@@ -523,8 +519,8 @@ if __name__ == "__main__":
     FM_PASSWORD = "921322"
     MARKETPLACE_ID = 915
 
-    # B_TYPE = BotType.MARKET_MAKER
-    B_TYPE = BotType.REACTIVE
+    B_TYPE = BotType.MARKET_MAKER
+    # B_TYPE = BotType.REACTIVE
 
     ds_bot = DSBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID, B_TYPE)
     ds_bot.run()
