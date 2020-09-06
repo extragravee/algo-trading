@@ -10,6 +10,7 @@ Notes:
     3. Orders are rounded such that the mod price tick is subtracted from the price
         This is done as profit margins can just be increased to offset this
     4. One action is performed per update received, to account for time delays and efficiency
+    5. Assumes bot won't be paused midway, but can be closed and reopened.
 
 What to do better next time:
     1. Track my own orders in a dict while they are active
@@ -21,6 +22,7 @@ What to do better next time:
     6. Avoid manual tracking of all orders, go with the provided functions
         of the web socket as they are rigorously tested
     7. Async techniques, and how to use them effectively
+    8. There is some noticeable overhead, orders are sometimes late to the party, try to optimise
 """
 import copy
 from enum import Enum
@@ -74,6 +76,7 @@ class DSBot(Agent):
         self._public_widgets_available = 0
 
         self._priv_orders = {}
+        self._cant_respond_orders = {}
 
         # market state trackers
         self._session_is_open = False
@@ -86,8 +89,10 @@ class DSBot(Agent):
         num_private_orders, num_my_public_orders, my_stale_priv_order, \
             manager_order = self._get_order_book_state()
 
+        # reset order tracking when no private left - IDLE state
         if num_private_orders == 0:
             self._units_to_trade = 0
+            self._priv_orders = {}
 
         # CANCELLING STALE ORDERS =========================================================
         if num_my_public_orders > 0 and self._units_to_trade < 1 and \
@@ -95,6 +100,7 @@ class DSBot(Agent):
             self._waiting_for_server = True
             self._cancel_order(my_stale_priv_order)
             self._last_accepted_public_order_id = 0
+            self._priv_orders = {}  # reset private order tracking
             return
 
         # PRIVATE ORDER CREATION ==========================================================
@@ -129,13 +135,11 @@ class DSBot(Agent):
         # no order of mine in the public market, but there is a private request
         # num_private_orders, num_my_public_orders, my_stale_priv_order, \
         #     manager_order = self._get_order_book_state()
-        self.inform(f"{num_my_public_orders}, {num_private_orders}, remaining trades => {self._units_to_trade}")
-        self.inform(self._priv_orders)
 
         # if units are >= 1, it over trades one, if its > 1 it under trades one, what the fuck?
         if self._units_to_trade > 0 and num_my_public_orders == 0 and \
                 not self._waiting_for_server:
-            self._waiting_for_server = True
+            # self._waiting_for_server = True
             # self.inform("Creating public order.")
             # determine order attributes
             is_private = False
@@ -325,6 +329,7 @@ class DSBot(Agent):
 
             self._assets = {}
             self._units_to_trade = 0
+            self._priv_orders = {}
             self._session_is_open = True
 
         else:
@@ -345,14 +350,16 @@ class DSBot(Agent):
         num_private_orders, num_my_public_orders, my_stale_priv_order, \
             manager_order = self._get_order_book_state()
 
+        # reset order tracking when no private left - IDLE state
         if num_private_orders == 0:
             self._units_to_trade = 0
+            self._priv_orders = {}
+            self._cant_respond_orders = {}
 
         # CANCELLING STALE ORDERS =========================================================
         if num_my_public_orders > 0 and self._units_to_trade < 1 and \
                 not self._waiting_for_server:
-            # self.inform(f"Units left to trade = {self._units_to_trade}")
-            # self.inform(f"Stale order - {my_stale_priv_order.ref} being cleared.")
+
             self._waiting_for_server = True
             self._cancel_order(my_stale_priv_order)
             self._last_accepted_public_order_id = 0
@@ -365,7 +372,7 @@ class DSBot(Agent):
                 and (num_my_public_orders == 0):
 
             self._last_accepted_public_order_id = 0
-            self.inform("Last public order traded, creating private order.===============")
+            self.inform("Last public order traded, creating private order.")
 
             # determine order attributes
             is_private = True
@@ -387,10 +394,12 @@ class DSBot(Agent):
                 if not self._waiting_for_server:
                     self._units_to_trade -= 1
                     self._create_new_order(price, units, order_side, order_type, ref, is_private)
+            else:
+                self.inform("Not enough assets to trade. Please check widget and cash balance.")
 
         # END PRIVATE ORDER CREATION ==========================================================
 
-        self.inform(f"{num_my_public_orders}, {num_private_orders}, remaining trades => {self._units_to_trade}")
+        # self.inform(f"{num_my_public_orders}, {num_private_orders}, remaining trades => {self._units_to_trade}")
 
         # PUBLIC ORDER CREATION ===============================================================
         # stale orders should be cleared at this stage; there exists a private order
@@ -460,7 +469,8 @@ class DSBot(Agent):
             if order.is_private and not order.mine:
                 num_private_orders += 1
                 manager_order = order
-                if manager_order.original_id not in self._priv_orders:
+                if manager_order.fm_id not in self._priv_orders and \
+                        manager_order.original_id not in self._priv_orders:
                     self._units_to_trade = manager_order.units
                     self._priv_orders[order.fm_id] = order.units
 
@@ -475,12 +485,12 @@ class DSBot(Agent):
                 num_my_public_orders += 1
                 my_stale_priv_order = order
 
-
         return num_private_orders, num_my_public_orders, my_stale_priv_order, manager_order
 
     def _create_profitable_order(self, best_ask, best_bid, manager_order, is_private,
                                  best_bid_order, best_ask_order):
         """
+        For Reactive bot only
         Handle the creation of profitable orders in the public market
         :param best_ask: best asking price
         :param best_bid: best bidding price
@@ -514,14 +524,15 @@ class DSBot(Agent):
 
                 else:
                     if not self._waiting_for_server:
-                        self.inform(f"Not enough cash, but want to respond to: {best_ask_order}")
+                        if best_ask_order.fm_id not in self._cant_respond_orders:
+                            self.inform(f"Not enough cash, but want to respond to: {best_ask_order}")
+                            self._cant_respond_orders[best_ask_order.fm_id] = 1
 
         # if we are sellers
         else:
             # if the best asking price is more than
             # or equal to the price we want to sell at, submit order
             if best_bid >= manager_order.price + PROFIT_MARGIN:
-                self.inform("Creating public order========================")
                 price = best_bid
                 units = 1
                 order_side = OrderSide.SELL
@@ -530,26 +541,26 @@ class DSBot(Agent):
 
                 # only sell if have any public widgets available
                 if self._public_widgets_available > 0:
+                    self.inform("Creating public order.")
                     self._create_new_order(price, units, order_side, order_type, ref, is_private)
                     self.inform("Responding to profitable order.")
                     self._print_trade_opportunity(best_bid_order)
 
                 else:
                     if not self._waiting_for_server:
-                        self.inform(f"Not enough widgets, but want to respond to: {best_bid_order}")
+                        if best_bid_order.fm_id not in self._cant_respond_orders:
+                            self.inform(f"Not enough widgets, but want to respond to: {best_bid_order}")
+                            self._cant_respond_orders[best_bid_order.fm_id] = 1
 
 
 if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 898
+    MARKETPLACE_ID = 915
 
-    B_TYPE = BotType.MARKET_MAKER
-    # B_TYPE = BotType.REACTIVE
-
-    # testing
-    MANAGER_ID = "T033"
+    # B_TYPE = BotType.MARKET_MAKER
+    B_TYPE = BotType.REACTIVE
 
     ds_bot = DSBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID, B_TYPE)
     ds_bot.run()
