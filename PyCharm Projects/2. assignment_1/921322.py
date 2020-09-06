@@ -118,7 +118,6 @@ class DSBot(Agent):
             order_type = OrderType.LIMIT
             ref = f"Private order - {self._tradeID}"
 
-            # send order if not waiting for server
             if not self._waiting_for_server:
                 self._last_accepted_public_order_id = 0
                 self._units_to_trade -= 1
@@ -128,7 +127,8 @@ class DSBot(Agent):
 
         # PUBLIC ORDER CREATION ===========================================================
         # no order of mine in the public market, but there is a private request
-
+        # num_private_orders, num_my_public_orders, my_stale_priv_order, \
+        #     manager_order = self._get_order_book_state()
         self.inform(f"{num_my_public_orders}, {num_private_orders}, remaining trades => {self._units_to_trade}")
         self.inform(self._priv_orders)
 
@@ -548,6 +548,7 @@ if __name__ == "__main__":
     B_TYPE = BotType.MARKET_MAKER
     # B_TYPE = BotType.REACTIVE
 
+    # testing
     MANAGER_ID = "T033"
 
     ds_bot = DSBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID, B_TYPE)
