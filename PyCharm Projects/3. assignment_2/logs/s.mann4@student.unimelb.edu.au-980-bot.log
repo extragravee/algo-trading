@@ -1,0 +1,69 @@
+
+=============================== Log Started [2020-09-16 12:33:51 AEST] ===============================
+[2020-09-16 12:33:54,684:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-16 12:33:56,759:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-16 12:33:57,512:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.OPEN
+[2020-09-16 12:34:15,061:      agent.CAPM Bot]:    ERROR - Oops. Keyboard Interrupt received from user.
+[2020-09-16 12:34:15,062:      agent.CAPM Bot]:     INFO - Shutting Down
+[2020-09-16 12:34:15,062:      agent.CAPM Bot]:     INFO - I have been asked to stop :-(
+
+=============================== Log Started [2020-09-16 12:34:21 AEST] ===============================
+[2020-09-16 12:34:23,435:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-16 12:34:25,522:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-16 12:34:25,522:      agent.CAPM Bot]:     INFO - {'A': [1000, 0, 750, 250], 'B': [0, 250, 750, 100], 'C': [0, 750, 250, 1000], 'Note': [500, 500, 500, 500]}
+[2020-09-16 12:34:26,026:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.OPEN
+
+=============================== Log Started [2020-09-16 12:35:24 AEST] ===============================
+[2020-09-16 12:35:26,610:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-16 12:35:28,679:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-16 12:35:28,680:      agent.CAPM Bot]:     INFO - dict_values([[1000, 0, 750, 250], [0, 250, 750, 100], [0, 750, 250, 1000], [500, 500, 500, 500]])
+
+=============================== Log Started [2020-09-16 12:35:59 AEST] ===============================
+[2020-09-16 12:36:01,140:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-16 12:36:03,152:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-16 12:36:03,153:      agent.CAPM Bot]:    ERROR - Exception in CAPMBot.initialised() method. Run with DEBUG for details.
+[2020-09-16 12:36:03,676:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.OPEN
+
+=============================== Log Started [2020-09-16 12:36:52 AEST] ===============================
+[2020-09-16 12:36:54,346:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-16 12:36:56,414:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-16 12:36:56,415:      agent.CAPM Bot]:     INFO - dict_values([[1000, 0, 750, 250], [0, 250, 750, 100], [0, 750, 250, 1000], [500, 500, 500, 500]])
+[2020-09-16 12:36:56,917:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.OPEN
+
+=============================== Log Started [2020-09-16 13:15:48 AEST] ===============================
+[2020-09-16 13:15:50,223:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-16 13:15:52,280:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-16 13:15:52,281:      agent.CAPM Bot]:    ERROR - Exception in CAPMBot.initialised() method. Run with DEBUG for details.
+[2020-09-16 13:15:52,786:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.OPEN
+
+=============================== Log Started [2020-09-16 13:16:22 AEST] ===============================
+[2020-09-16 13:16:24,065:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-16 13:16:26,070:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-16 13:16:26,071:      agent.CAPM Bot]:     INFO - {'A': [1000, 0, 750, 250], 'B': [0, 250, 750, 100], 'C': [0, 750, 250, 1000], 'Note': [500, 500, 500, 500]}
+[2020-09-16 13:16:26,826:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.OPEN
+
+=============================== Log Started [2020-09-16 13:16:56 AEST] ===============================
+[2020-09-16 13:16:58,354:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-16 13:17:00,420:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-16 13:17:00,420:      agent.CAPM Bot]:     INFO - {'A': [1000, 0, 750, 250], 'B': [0, 250, 750, 100], 'C': [0, 750, 250, 1000], 'Note': [500, 500, 500, 500]}
+
+=============================== Log Started [2020-09-16 13:30:33 AEST] ===============================
+[2020-09-16 13:30:35,785:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-16 13:30:37,867:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-16 13:30:38,628:      agent.CAPM Bot]:     INFO - Total time taken: 0.7600245475769043
+[2020-09-16 13:30:38,628:      agent.CAPM Bot]:     INFO - {'A': [1000, 0, 750, 250], 'B': [0, 250, 750, 100], 'C': [0, 750, 250, 1000], 'Note': [500, 500, 500, 500]}
+[2020-09-16 13:30:38,628:      agent.CAPM Bot]:     INFO - [[ 156250.    9375. -140625.       0.]
+ [   9375.   83125.  -18750.       0.]
+ [-140625.  -18750.  156250.       0.]
+ [      0.       0.       0.       0.]]
+[2020-09-16 13:30:38,883:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.OPEN
+
+=============================== Log Started [2020-09-16 13:32:01 AEST] ===============================
+[2020-09-16 13:32:03,650:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-16 13:32:05,769:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-16 13:32:05,770:      agent.CAPM Bot]:     INFO - {'A': [1000, 0, 750, 250], 'B': [0, 250, 750, 100], 'C': [0, 750, 250, 1000], 'Note': [500, 500, 500, 500]}
+[2020-09-16 13:32:05,770:      agent.CAPM Bot]:     INFO - [[ 156250.    9375. -140625.       0.]
+ [   9375.   83125.  -18750.       0.]
+ [-140625.  -18750.  156250.       0.]
+ [      0.       0.       0.       0.]]
+[2020-09-16 13:32:06,525:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.OPEN

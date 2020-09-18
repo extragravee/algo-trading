@@ -133,10 +133,7 @@ class DSBot(Agent):
 
         # PUBLIC ORDER CREATION ===========================================================
         # no order of mine in the public market, but there is a private request
-        # num_private_orders, num_my_public_orders, my_stale_priv_order, \
-        #     manager_order = self._get_order_book_state()
 
-        # if units are >= 1, it over trades one, if its > 1 it under trades one, what the fuck?
         if self._units_to_trade > 0 and num_my_public_orders == 0 and \
                 not self._waiting_for_server:
             # self._waiting_for_server = True

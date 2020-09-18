@@ -1,0 +1,157 @@
+
+=============================== Log Started [2020-09-04 21:08:22 AEST] ===============================
+[2020-09-04 21:08:25,097:         agent.DSBot]:     INFO - Requesting initial information for marketplace `953`
+[2020-09-04 21:08:27,160:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 21:08:27,160:         agent.DSBot]:     INFO - Market(1698,widget,Widget,False)
+[2020-09-04 21:08:27,160:         agent.DSBot]:     INFO - Market(1699,privateWidget,PrivateWidget,True)
+[2020-09-04 21:08:27,914:         agent.DSBot]:     INFO - Session: SID:14449:SessionState.CLOSED
+[2020-09-04 21:09:01,039:         agent.DSBot]:     INFO - Session: SID:14452:SessionState.OPEN
+[2020-09-04 21:09:10,572:         agent.DSBot]:     INFO - Session: SID:14452:SessionState.OPEN
+
+=============================== Log Started [2020-09-04 21:09:47 AEST] ===============================
+[2020-09-04 21:09:49,567:         agent.DSBot]:     INFO - Requesting initial information for marketplace `953`
+[2020-09-04 21:09:51,593:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 21:09:51,593:         agent.DSBot]:     INFO - Market(1698,widget,Widget,False)
+[2020-09-04 21:09:51,594:         agent.DSBot]:     INFO - Market(1699,privateWidget,PrivateWidget,True)
+[2020-09-04 21:09:52,095:         agent.DSBot]:     INFO - Session: SID:14452:SessionState.OPEN
+[2020-09-04 21:09:52,096:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:09:54,105:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:09:55,361:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:09:56,619:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:09:57,873:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:09:59,129:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:10:00,386:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:10:02,145:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:10:02,901:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:10:04,157:         agent.DSBot]:     INFO - Creating private order
+
+=============================== Log Started [2020-09-04 21:10:50 AEST] ===============================
+[2020-09-04 21:10:52,589:         agent.DSBot]:     INFO - Requesting initial information for marketplace `953`
+[2020-09-04 21:10:54,649:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 21:10:54,649:         agent.DSBot]:     INFO - Market(1698,widget,Widget,False)
+[2020-09-04 21:10:54,649:         agent.DSBot]:     INFO - Market(1699,privateWidget,PrivateWidget,True)
+[2020-09-04 21:10:55,402:         agent.DSBot]:     INFO - Session: SID:14452:SessionState.OPEN
+[2020-09-04 21:14:22,626:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:14:25,392:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:14:26,397:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:14:27,907:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:14:28,912:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:14:30,425:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:14:31,430:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:14:32,937:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:14:34,194:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:14:35,450:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:19:28,441:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:20:22,630:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:20:24,888:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:20:26,144:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:20:27,401:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:20:35,178:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:20:35,934:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:20:37,190:         agent.DSBot]:     INFO - Creating private order
+[2020-09-04 21:20:38,446:         agent.DSBot]:     INFO - Creating public order
+[2020-09-04 21:20:39,700:         agent.DSBot]:     INFO - Creating private order
+
+=============================== Log Started [2020-09-04 21:22:03 AEST] ===============================
+[2020-09-04 21:22:05,465:         agent.DSBot]:     INFO - Requesting initial information for marketplace `953`
+[2020-09-04 21:22:07,488:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 21:22:07,488:         agent.DSBot]:     INFO - Market(1698,widget,Widget,False)
+[2020-09-04 21:22:07,488:         agent.DSBot]:     INFO - Market(1699,privateWidget,PrivateWidget,True)
+[2020-09-04 21:22:07,990:         agent.DSBot]:     INFO - Session: SID:14452:SessionState.OPEN
+[2020-09-04 21:24:32,012:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 21:24:32,013:         agent.DSBot]:     INFO - Responding to profitable order.
+[2020-09-04 21:24:32,013:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11275710,Others,BUY,1@650,M-1698,LIMIT,REF:' Public Order 1')
+[2020-09-04 21:24:33,769:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:24:33,769:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 21:29:06,397:         agent.DSBot]:     INFO - Session: SID:14452:SessionState.PAUSED
+[2020-09-04 21:29:08,406:         agent.DSBot]:     INFO - Session: SID:14452:SessionState.CLOSED
+[2020-09-04 21:30:49,460:         agent.DSBot]:     INFO - Session: SID:14454:SessionState.OPEN
+[2020-09-04 21:32:06,949:         agent.DSBot]:     INFO - Session: SID:14454:SessionState.CLOSED
+[2020-09-04 21:32:44,564:         agent.DSBot]:     INFO - Session: SID:14455:SessionState.OPEN
+[2020-09-04 21:32:50,835:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 21:32:50,836:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11279073,Others,SELL,1@60,M-1698,LIMIT)
+[2020-09-04 21:36:56,866:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:36:56,866:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 21:36:58,877:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 21:36:58,877:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11280524,Others,SELL,7@0,M-1698,LIMIT,REF:'fm-ui 2.0.0-beta.48')
+[2020-09-04 21:37:00,139:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:37:00,139:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 21:38:07,899:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 21:38:07,900:         agent.DSBot]:     INFO - Responding to profitable order.
+[2020-09-04 21:38:07,900:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11281046,Others,BUY,1@490,M-1698,LIMIT)
+[2020-09-04 21:38:10,666:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:38:10,666:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 21:38:11,924:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 21:38:11,924:         agent.DSBot]:     INFO - Responding to profitable order.
+[2020-09-04 21:38:11,925:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11281071,Others,BUY,1@490,M-1698,LIMIT)
+[2020-09-04 21:38:15,197:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:38:15,197:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 21:38:16,455:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 21:38:16,456:         agent.DSBot]:     INFO - Responding to profitable order.
+[2020-09-04 21:38:16,456:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11281048,Others,BUY,1@330,M-1698,LIMIT,REF:'11281036')
+[2020-09-04 21:38:17,712:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:38:17,712:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 21:38:18,970:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 21:38:18,971:         agent.DSBot]:     INFO - Responding to profitable order.
+[2020-09-04 21:38:18,971:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11281048,Others,BUY,1@330,M-1698,LIMIT,REF:'11281036')
+[2020-09-04 21:38:20,229:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:38:20,230:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 21:38:21,487:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 21:38:21,488:         agent.DSBot]:     INFO - Responding to profitable order.
+[2020-09-04 21:38:21,488:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11280567,Others,BUY,1@290,M-1698,LIMIT,REF:' Public Order 1')
+[2020-09-04 21:38:22,746:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:38:22,746:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 21:38:24,002:         agent.DSBot]:     INFO - Creating public order========================
+[2020-09-04 21:38:24,003:         agent.DSBot]:     INFO - Responding to profitable order.
+[2020-09-04 21:38:24,003:         agent.DSBot]:     INFO - I am a Role.SELLER with profitable order Order(11280567,Others,BUY,1@290,M-1698,LIMIT,REF:' Public Order 1')
+[2020-09-04 21:43:15,270:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:43:15,270:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 21:43:16,780:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 21:43:16,781:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11282772,Others,SELL,1@390,M-1698,LIMIT,REF:'11282763')
+[2020-09-04 21:43:18,039:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:43:18,039:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 21:43:20,561:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 21:43:20,561:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11282844,Others,SELL,1@390,M-1698,LIMIT,REF:'11282763')
+[2020-09-04 21:43:22,071:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:43:22,071:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 21:43:24,083:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 21:43:24,083:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11282914,Others,SELL,1@390,M-1698,LIMIT,REF:'11282763')
+[2020-09-04 21:43:24,586:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:43:24,586:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 21:43:25,844:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 21:43:25,844:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11282955,Others,SELL,1@260,M-1698,LIMIT,REF:'Reactive Order')
+[2020-09-04 21:44:17,783:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:44:17,783:         agent.DSBot]:     INFO - Units left to trade = 1
+[2020-09-04 21:44:19,290:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 21:44:19,291:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-09-04 21:44:20,546:         agent.DSBot]:     INFO - Units left to trade = 0
+[2020-09-04 21:44:20,546:         agent.DSBot]:     INFO - Stale order - fm-ui 2.0.0-beta.48 being cleared.
+[2020-09-04 21:48:23,932:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 21:48:23,933:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11284852,Others,SELL,1@130,M-1698,LIMIT,REF:'11284830')
+[2020-09-04 21:48:25,200:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:48:25,200:         agent.DSBot]:     INFO - Units left to trade = 5
+[2020-09-04 21:48:27,744:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 21:48:27,744:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11284964,Others,SELL,1@130,M-1698,LIMIT,REF:'11284830')
+[2020-09-04 21:48:30,293:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:48:30,294:         agent.DSBot]:     INFO - Units left to trade = 4
+[2020-09-04 21:48:32,827:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 21:48:32,827:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11285051,Others,SELL,1@130,M-1698,LIMIT,REF:'11284830')
+[2020-09-04 21:48:33,335:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:48:33,335:         agent.DSBot]:     INFO - Units left to trade = 3
+[2020-09-04 21:48:35,358:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 21:48:35,358:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11285126,Others,SELL,1@130,M-1698,LIMIT,REF:'11284830')
+[2020-09-04 21:48:35,863:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:48:35,863:         agent.DSBot]:     INFO - Units left to trade = 2
+[2020-09-04 21:48:37,886:         agent.DSBot]:     INFO - Responding to profitable order
+[2020-09-04 21:48:37,886:         agent.DSBot]:     INFO - I am a Role.BUYER with profitable order Order(11285144,Others,SELL,1@130,M-1698,LIMIT,REF:'11284830')
+[2020-09-04 21:48:38,394:         agent.DSBot]:     INFO - Last public order traded, creating private order.===============
+[2020-09-04 21:48:38,394:         agent.DSBot]:     INFO - Units left to trade = 1
+
+=============================== Log Started [2020-09-04 21:51:35 AEST] ===============================
+[2020-09-04 21:51:37,439:         agent.DSBot]:     INFO - Requesting initial information for marketplace `953`
+[2020-09-04 21:51:39,584:         agent.DSBot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-04 21:51:39,584:         agent.DSBot]:     INFO - Market(1698,widget,Widget,False)
+[2020-09-04 21:51:39,584:         agent.DSBot]:     INFO - Market(1699,privateWidget,PrivateWidget,True)
+[2020-09-04 21:51:40,086:         agent.DSBot]:     INFO - Session: SID:14455:SessionState.OPEN
+[2020-09-04 21:52:50,129:         agent.DSBot]:     INFO - Session: SID:14455:SessionState.PAUSED
+[2020-09-04 21:52:52,138:         agent.DSBot]:     INFO - Session: SID:14455:SessionState.CLOSED
