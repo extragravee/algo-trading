@@ -67,3 +67,40 @@
  [-140625.  -18750.  156250.       0.]
  [      0.       0.       0.       0.]]
 [2020-09-16 13:32:06,525:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.OPEN
+
+=============================== Log Started [2020-09-21 21:39:34 AEST] ===============================
+[2020-09-21 21:39:39,429:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-21 21:39:41,664:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-21 21:39:41,665:      agent.CAPM Bot]:     INFO - {'A': 1734, 'B': 1735, 'C': 1736, 'Note': 1737}
+[2020-09-21 21:39:41,665:      agent.CAPM Bot]:     INFO - {'A': [1000, 0, 750, 250], 'B': [0, 250, 750, 100], 'C': [0, 750, 250, 1000], 'Note': [500, 500, 500, 500]}
+[2020-09-21 21:39:42,168:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.CLOSED
+[2020-09-21 21:39:42,168:      agent.CAPM Bot]:     INFO - Received orders
+[2020-09-21 21:39:42,168:      agent.CAPM Bot]:     INFO - [20, 20, 20, 20]
+[2020-09-21 21:39:42,178:      agent.CAPM Bot]:     INFO - Portfolio var: 38250000.0
+
+=============================== Log Started [2020-09-21 21:41:16 AEST] ===============================
+[2020-09-21 21:41:17,977:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-21 21:41:20,122:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-21 21:41:20,122:      agent.CAPM Bot]:     INFO - {'A': 1734, 'B': 1735, 'C': 1736, 'Note': 1737}
+[2020-09-21 21:41:20,122:      agent.CAPM Bot]:     INFO - {'A': [1000, 0, 750, 250], 'B': [0, 250, 750, 100], 'C': [0, 750, 250, 1000], 'Note': [500, 500, 500, 500]}
+[2020-09-21 21:41:20,875:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.CLOSED
+[2020-09-21 21:41:20,876:      agent.CAPM Bot]:     INFO - Received orders
+[2020-09-21 21:41:20,876:      agent.CAPM Bot]:     INFO - Portfolio var: 38250000.0
+
+=============================== Log Started [2020-09-21 21:43:37 AEST] ===============================
+[2020-09-21 21:43:39,172:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-21 21:43:41,217:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-21 21:43:41,217:      agent.CAPM Bot]:     INFO - {'A': 1734, 'B': 1735, 'C': 1736, 'Note': 1737}
+[2020-09-21 21:43:41,217:      agent.CAPM Bot]:     INFO - {'A': [1000, 0, 750, 250], 'B': [0, 250, 750, 100], 'C': [0, 750, 250, 1000], 'Note': [500, 500, 500, 500]}
+
+=============================== Log Started [2020-09-21 21:47:36 AEST] ===============================
+[2020-09-21 21:47:38,580:      agent.CAPM Bot]:     INFO - Requesting initial information for marketplace `980`
+[2020-09-21 21:47:40,627:      agent.CAPM Bot]:     INFO - Initialisation complete. Received marketplace information.
+[2020-09-21 21:47:40,627:      agent.CAPM Bot]:     INFO - Market IDs: {'A': 1734, 'B': 1735, 'C': 1736, 'Note': 1737}
+[2020-09-21 21:47:40,628:      agent.CAPM Bot]:     INFO - Payoffs   : {'A': [1000, 0, 750, 250], 'B': [0, 250, 750, 100], 'C': [0, 750, 250, 1000], 'Note': [500, 500, 500, 500]}
+[2020-09-21 21:47:41,381:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.CLOSED
+[2020-09-21 21:47:41,382:      agent.CAPM Bot]:     INFO - Portfolio var: 38250000.0
+[2020-09-21 21:48:15,503:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.CLOSED
+[2020-09-21 21:48:15,504:      agent.CAPM Bot]:     INFO - Portfolio var: 38250000.0
+[2020-09-21 21:48:22,526:      agent.CAPM Bot]:     INFO - Session: SID:15372:SessionState.CLOSED
+[2020-09-21 21:48:22,527:      agent.CAPM Bot]:     INFO - Portfolio var: 38250000.0

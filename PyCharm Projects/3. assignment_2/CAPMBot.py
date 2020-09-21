@@ -16,11 +16,14 @@ from fmclient import Order, OrderSide, OrderType
 # Submission details
 SUBMISSION = {"number": "921322", "name": "Sidakpreet Mann"}
 
+# CONSTANTS
+CENTS_IN_DOLLAR = 100
+
 
 class CAPMBot(Agent):
 
     def __init__(self, account, email, password, marketplace_id,
-                 risk_penalty=0.001, session_time=20):
+            risk_penalty=0.001, session_time=20):
         """
         Constructor for the Bot
         :param account: Account name
@@ -38,6 +41,11 @@ class CAPMBot(Agent):
         self._market_ids = {}
 
         self._asset_units = []
+        self._cash_available = 0
+        self._cash_settled = 0
+        self._current_port_variance = 0
+        self._current_exp_return = 0
+        self._current_performance = 0
 
     def initialised(self):
         # Extract payoff distribution for each security
@@ -51,13 +59,41 @@ class CAPMBot(Agent):
             description = market_info.description
             self._payoffs[security] = [int(a) for a in description.split(",")]
 
-        self.inform(self._market_ids)
-        self.inform(self._payoffs)
+        self.inform(f"Market IDs: {self._market_ids}")
+        self.inform(f"Payoffs   : {self._payoffs}")
 
-    def _get_portfolio_variance(self):
+    @staticmethod
+    def _portfolio_performance(exp_return, risk_penalty, variance):
+        """
+        Calculates portfolio performance based on the risk preference
+        :param exp_return   : expected payoff / return of portfolio
+        :param risk_penalty : risk preference parameter
+        :param variance     : variance of the portfolio
+        :return             : score/utility for performance
+        """
+        return exp_return - risk_penalty * variance
 
-        self.inform(self._asset_units)
-        weights = np.array(self._asset_units)
+    def _get_expected_return(self, units, cash):
+        """
+        Calculates expected return of a portfolio given units and
+        available cash
+        :param units: vector of units in some portfolio
+        :param cash : available cash
+        :return     : exp. return of portfolio based on diff. state payoffs
+        """
+        x = list(self._payoffs.values())
+
+        return sum(
+            np.dot(np.dot(1 / len(x), units), x)) + cash / CENTS_IN_DOLLAR
+
+    def _get_portfolio_variance(self, units):
+        """
+        Calculates variance (scalar) of portfolio given units vector and stored
+        payoff values
+        :param units: vector of weights of portfolio
+        :return     : scalar variance of the portfolio
+        """
+        weights = np.array(units)
         covar_matrix = np.cov(list(self._payoffs.values()), bias=True)
         return np.dot(np.dot(weights, covar_matrix),
                       weights.transpose())
@@ -85,8 +121,9 @@ class CAPMBot(Agent):
         pass
 
     def received_orders(self, orders: List[Order]):
-        self.inform("Received orders")
-        self.inform(f"Portfolio var: {self._get_portfolio_variance()}")
+        # seems to be called before received holdings, so don't calculate
+        # the portfolio variance here! As this has old number of units
+        pass
 
     def received_session_info(self, session: Session):
         pass
@@ -95,15 +132,46 @@ class CAPMBot(Agent):
         pass
 
     def received_holdings(self, holdings):
-        self._asset_units = [holdings.assets[market].units_available
-                             for market in holdings.assets]
+
+        # have to assume here that assets are arranged here in the same
+        # order as the order in which payoffs were received
+
+        self._cash_available = holdings.cash_available
+        self._cash_settled = holdings.cash
+
+        self._asset_units = []
+        for market in holdings.assets:
+            self._asset_units.append(holdings.assets[market].units)
+
+        # update portfolio variance
+        self._current_port_variance = self._get_portfolio_variance(
+            self._asset_units)
+
+        # update portfolio return
+        # return is based on SETTLED cash, and not on cash available
+        self._current_exp_return = \
+            self._get_expected_return(self._asset_units,
+                                      self._cash_settled)
+
+        # update current performance
+        self._current_performance = self._portfolio_performance(
+            self._current_exp_return,
+            self._risk_penalty,
+            self._current_port_variance)
+
+        # scaffolding
+        self.inform(f"=============================")
+        self.inform(f"Portfolio var: {self._current_port_variance}")
+        self.inform(f"Exp return   : {self._current_exp_return}")
+        self.inform(f"Performance  : {self._current_performance}")
 
 
 if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 980  # replace this with the marketplace id
+    MARKETPLACE_ID = 1017  # replace this with the marketplace id
 
-    bot = CAPMBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID)
+    bot = CAPMBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID,
+                  risk_penalty=0.007)
     bot.run()
