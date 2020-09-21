@@ -7,7 +7,6 @@ Sidakpreet Mann
 Notes:
     1. Covar matrix is calculated only initially, as it's known
 """
-import time
 from typing import List
 import numpy as np
 from fmclient import Agent, Session
@@ -109,7 +108,8 @@ class CAPMBot(Agent):
 
         # track best bid_ask prices and orders
         # key - market, value - [best price, best price order]
-        best_bids = {'A': [0, 0], 'B': [0, 0], 'C': [0, 0], 'note': [0, 0]}
+        best_bids = {'A': [0, None], 'B': [0, None],
+                     'C': [0, None], 'note': [0, None]}
         best_asks = {'A': [VERY_HIGH_ASK, None], 'B': [VERY_HIGH_ASK, None],
                      'C': [VERY_HIGH_ASK, None], 'note': [VERY_HIGH_ASK, None]}
 
@@ -154,7 +154,7 @@ class CAPMBot(Agent):
     def received_orders(self, orders: List[Order]):
         # seems to be called before received holdings, so don't calculate
         # the portfolio variance here! As this has old number of units
-        self._get_best_bid_ask()
+        self.inform(f"{self._get_best_bid_ask()}")
 
     def received_session_info(self, session: Session):
         pass
