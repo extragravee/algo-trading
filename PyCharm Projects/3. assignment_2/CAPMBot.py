@@ -18,6 +18,7 @@ SUBMISSION = {"number": "921322", "name": "Sidakpreet Mann"}
 
 # CONSTANTS
 CENTS_IN_DOLLAR = 100
+VERY_HIGH_ASK = 999999
 
 
 class CAPMBot(Agent):
@@ -98,6 +99,36 @@ class CAPMBot(Agent):
         return np.dot(np.dot(weights, covar_matrix),
                       weights.transpose())
 
+    def _get_best_bid_ask(self):
+        """
+        Walks the order book and determines what the best bid and asks are
+        for each market
+        :return     : dictionaries of best bid and ask orders for each
+                        market
+        """
+
+        # track best bid_ask prices and orders
+        # key - market, value - [best price, best price order]
+        best_bids = {'A': [0, 0], 'B': [0, 0], 'C': [0, 0], 'note': [0, 0]}
+        best_asks = {'A': [VERY_HIGH_ASK, None], 'B': [VERY_HIGH_ASK, None],
+                     'C': [VERY_HIGH_ASK, None], 'note': [VERY_HIGH_ASK, None]}
+
+        # track current best bids and asks
+        for order_id, order in Order.current().items():
+            self.inform(order)
+            self.inform(order.market.item)
+
+            if order.order_side == OrderSide.BUY:
+                if order.price > best_bids[order.market.item][0]:
+                    best_bids[order.market.item][0] = order.price
+                    best_bids[order.market.item][1] = order
+            else:
+                if order.price < best_asks[order.market.item][0]:
+                    best_asks[order.market.item][0] = order.price
+                    best_asks[order.market.item][1] = order
+
+        return best_bids, best_asks
+
     def get_potential_performance(self, orders):
         """
         Returns the portfolio performance if the given list of orders is
@@ -123,7 +154,7 @@ class CAPMBot(Agent):
     def received_orders(self, orders: List[Order]):
         # seems to be called before received holdings, so don't calculate
         # the portfolio variance here! As this has old number of units
-        pass
+        self._get_best_bid_ask()
 
     def received_session_info(self, session: Session):
         pass
