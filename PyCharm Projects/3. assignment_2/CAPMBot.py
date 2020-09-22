@@ -7,6 +7,7 @@ Sidakpreet Mann
 Notes:
     1. Covar matrix is calculated only initially, as it's known
 """
+import itertools
 from typing import List
 import numpy as np
 from fmclient import Agent, Session
@@ -63,6 +64,8 @@ class CAPMBot(Agent):
         self.inform(f"Payoffs   : {self._payoffs}")
 
     @staticmethod
+    # this shouldn't really exist, just use this in the potential
+    # performance function
     def _portfolio_performance(exp_return, risk_penalty, variance):
         """
         Calculates portfolio performance based on the risk preference
@@ -83,8 +86,8 @@ class CAPMBot(Agent):
         """
         x = list(self._payoffs.values())
 
-        return sum(
-            np.dot(np.dot(1 / len(x), units), x)) + cash / CENTS_IN_DOLLAR
+        return (sum(np.dot(np.dot(1 / (len(x)),
+                                  units), x)) + cash) / CENTS_IN_DOLLAR
 
     def _get_portfolio_variance(self, units):
         """
@@ -94,7 +97,8 @@ class CAPMBot(Agent):
         :return     : scalar variance of the portfolio
         """
         weights = np.array(units)
-        covar_matrix = np.cov(list(self._payoffs.values()), bias=True)
+        covar_matrix = np.dot(1 / (CENTS_IN_DOLLAR ** 2),
+                              np.cov(list(self._payoffs.values()), bias=True))
         return np.dot(np.dot(weights, covar_matrix),
                       weights.transpose())
 
@@ -108,15 +112,15 @@ class CAPMBot(Agent):
 
         # track best bid_ask prices and orders
         # key - market, value - [best price, best price order]
-        best_bids = {'A': [0, None], 'B': [0, None],
-                     'C': [0, None], 'note': [0, None]}
+        best_bids = {'A': [-1, None], 'B': [-1, None],
+                     'C': [-1, None], 'note': [-1, None]}
         best_asks = {'A': [VERY_HIGH_ASK, None], 'B': [VERY_HIGH_ASK, None],
                      'C': [VERY_HIGH_ASK, None], 'note': [VERY_HIGH_ASK, None]}
 
         # track current best bids and asks
         for order_id, order in Order.current().items():
-            self.inform(order)
-            self.inform(order.market.item)
+            # self.inform(order)
+            # self.inform(order.market.item)
 
             if order.order_side == OrderSide.BUY:
                 if order.price > best_bids[order.market.item][0]:
@@ -128,6 +132,51 @@ class CAPMBot(Agent):
                     best_asks[order.market.item][1] = order
 
         return best_bids, best_asks
+
+    def _generate_combinations_potential_orders(self):
+
+        bids, asks = self._get_best_bid_ask()
+
+        # filter out when there is NO order in the bid side / ask side
+        bids = [x[1] for x in list(bids.values()) if x[1] is not None]
+        asks = [x[1] for x in list(asks.values()) if x[1] is not None]
+
+        orders = bids + asks
+        self.inform("Best bid and asks: ")
+        self.inform(f"Orders: {orders}")
+
+        valid_combinations = []
+
+        # in case there is only one valid trade-able order
+        if len(orders) == 1:
+            valid_combinations = orders
+
+        # generate combinations of possible orders to be executed
+        for i in range(1, len(orders)):
+            combs = list(itertools.combinations(orders, i))
+
+            # filter out order combinations where bid and ask is from
+            # the same market
+            for comb in combs:
+                if not self._duplicates_in_list(comb):
+                    valid_combinations.append(comb)
+
+        self.inform(f"Valid combinations: ")
+        for z in valid_combinations:
+            self.inform(z)
+
+    @staticmethod
+    def _duplicates_in_list(list_of_orders):
+        """
+        Receives a list of orders and determines if those orders exist in the
+        same market
+        :param list_of_orders: list of 8 best bid and asks from the 4 markets
+        :return              : True if orders list contains order in the same
+                                market.
+        """
+        list_of_orders = [x.market for x in list_of_orders]
+
+        return len(set(list_of_orders)) < len(list_of_orders)
 
     def get_potential_performance(self, orders):
         """
@@ -154,7 +203,8 @@ class CAPMBot(Agent):
     def received_orders(self, orders: List[Order]):
         # seems to be called before received holdings, so don't calculate
         # the portfolio variance here! As this has old number of units
-        self.inform(f"{self._get_best_bid_ask()}")
+        # self.inform(f"{self._get_best_bid_ask()}")
+        self._generate_combinations_potential_orders()
 
     def received_session_info(self, session: Session):
         pass
