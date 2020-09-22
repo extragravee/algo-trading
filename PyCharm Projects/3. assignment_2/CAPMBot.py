@@ -152,19 +152,17 @@ class CAPMBot(Agent):
             valid_combinations = orders
 
         # generate combinations of possible orders to be executed
-        for i in range(1, len(orders)):
+        for i in range(1, len(orders)+1):
             combs = list(itertools.combinations(orders, i))
 
             # filter out order combinations where bid and ask is from
             # the same market
-            for comb in combs:
-                if not self._duplicates_in_list(comb):
-                    valid_combinations.append(comb)
+            valid_combinations += filter(self._duplicates_in_list, combs)
 
         # scaffolding
-        self.inform(f"Valid combinations: ")
+        self.inform(f"Valid combinations: {len(valid_combinations)}")
         for z in valid_combinations:
-            self.inform(z)
+            self.inform(f"{len(z)} {z}")
 
         # now that valid combinations are being generated, they need to be
         # simulated for potential change in performance
@@ -181,7 +179,7 @@ class CAPMBot(Agent):
         """
         list_of_orders = [x.market for x in list_of_orders]
 
-        return len(set(list_of_orders)) < len(list_of_orders)
+        return len(set(list_of_orders)) == len(list_of_orders)
 
     def get_potential_performance(self, orders):
         """
