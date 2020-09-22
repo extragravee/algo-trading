@@ -161,9 +161,14 @@ class CAPMBot(Agent):
                 if not self._duplicates_in_list(comb):
                     valid_combinations.append(comb)
 
+        # scaffolding
         self.inform(f"Valid combinations: ")
         for z in valid_combinations:
             self.inform(z)
+
+        # now that valid combinations are being generated, they need to be
+        # simulated for potential change in performance
+        return valid_combinations
 
     @staticmethod
     def _duplicates_in_list(list_of_orders):
