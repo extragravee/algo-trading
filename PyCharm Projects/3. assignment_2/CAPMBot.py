@@ -24,7 +24,7 @@ VERY_HIGH_ASK = 999999
 class CAPMBot(Agent):
 
     def __init__(self, account, email, password, marketplace_id,
-            risk_penalty=0.001, session_time=20):
+            risk_penalty=0.001, session_time=20, aggressiveness_param=0.01):
         """
         Constructor for the Bot
         :param account: Account name
@@ -41,12 +41,14 @@ class CAPMBot(Agent):
         self._session_time = session_time
         self._market_ids = {}
 
-        self._asset_units = []
+        self._asset_units = {}
         self._cash_available = 0
         self._cash_settled = 0
         self._current_port_variance = 0
         self._current_exp_return = 0
         self._current_performance = 0
+
+        self._aggressiveness_param = aggressiveness_param
 
     def initialised(self):
         # Extract payoff distribution for each security
@@ -93,6 +95,10 @@ class CAPMBot(Agent):
         """
         Calculates variance (scalar) of portfolio given units vector and stored
         payoff values
+
+        Portfolio variance = W . Covar Matrix . Wt
+        Where W is vector of weights, Wt is W transpose
+
         :param units: vector of weights of portfolio
         :return     : scalar variance of the portfolio
         """
@@ -102,7 +108,8 @@ class CAPMBot(Agent):
         return np.dot(np.dot(weights, covar_matrix),
                       weights.transpose())
 
-    def _get_best_bid_ask(self):
+    @staticmethod
+    def _get_best_bid_ask():
         """
         Walks the order book and determines what the best bid and asks are
         for each market
@@ -142,31 +149,89 @@ class CAPMBot(Agent):
         asks = [x[1] for x in list(asks.values()) if x[1] is not None]
 
         orders = bids + asks
-        self.inform("Best bid and asks: ")
-        self.inform(f"Orders: {orders}")
+        # self.inform("Best bid and asks: ")
+        # self.inform(f"Orders: {orders}")
 
-        valid_combinations = []
+        # tracks the profitable combination that satisfies aggressiveness
+        # param
+        valid_combination = []
 
-        # in case there is only one valid trade-able order
-        if len(orders) == 1:
-            valid_combinations = orders
+        # # CASE 1 -  there is only one valid trade-able order
+        # if len(orders) == 1:
+        #     if self.get_potential_performance(orders) > \
+        #             self._aggressiveness_param:
+        #         return orders
 
+        # CASE 2 - multiple valid trade-able orders
         # generate combinations of possible orders to be executed
-        for i in range(1, len(orders)+1):
+        for i in range(1, len(orders) + 1):
+
             combs = list(itertools.combinations(orders, i))
+            new_set = filter(self._duplicates_in_list, combs)
 
-            # filter out order combinations where bid and ask is from
-            # the same market
-            valid_combinations += filter(self._duplicates_in_list, combs)
+            # careful! filter is an iterable object, if you loop over it once
+            # u no longer have access to all sets of orders u have looped over!
 
-        # scaffolding
-        self.inform(f"Valid combinations: {len(valid_combinations)}")
-        for z in valid_combinations:
-            self.inform(f"{len(z)} {z}")
+            # for each order in this set, test if profitable
+            # STOP ONCE THE FIRST PROFITABLE ENOUGH SET OF ORDERS IS FOUND
+
+            for order_set in new_set:
+                # self.get_potential_performance(list(order_set))
+                if self.get_potential_performance(list(order_set)) \
+                        > self._aggressiveness_param:
+                    return list(order_set)
+
+        return valid_combination
+
+        # # scaffolding
+        # self.inform(f"Valid combinations: {len(valid_combinations)}")
+        # for z in valid_combinations:
+        #     self.inform(f"{len(z)} {z}")
 
         # now that valid combinations are being generated, they need to be
         # simulated for potential change in performance
-        return valid_combinations
+
+    def get_potential_performance(self, orders: List[Order]):
+        """
+        Returns the portfolio performance if the given list of orders is
+        executed. The performance as per the following formula: Performance
+        = ExpectedPayoff - b * PayoffVariance, where b is the penalty for
+        risk.
+        :param orders      : list of orders to be simulated on portfolio
+        :return performance: percentage increase in portfolio performance
+        """
+        self.inform("Testing performance of: ")
+        self.inform(orders)
+
+        cash = self._cash_settled
+        units = self._asset_units.copy()
+        self.inform(units)
+        # simulate list of orders executing
+        for order in orders:
+            # for a buy order that exists in the market, we sell to it
+            if order.order_side == OrderSide.BUY:
+                cash += order.price
+                units[order.market.item] -= 1
+
+            # for a sell order, we buy from it
+            else:
+                cash -= order.price
+                units[order.market.item] += 1
+
+        self.inform(f"Cash: {cash}, Units: {units}")
+        x = list(units.values())
+
+        variance = self._get_portfolio_variance(x)
+
+        performance = self._portfolio_performance(
+            self._get_expected_return(x, cash),
+            self._risk_penalty,
+            variance)
+
+        self.inform(f"Performance for this set of stuff is: "
+                    f"{performance}")
+
+        return performance
 
     @staticmethod
     def _duplicates_in_list(list_of_orders):
@@ -180,15 +245,6 @@ class CAPMBot(Agent):
         list_of_orders = [x.market for x in list_of_orders]
 
         return len(set(list_of_orders)) == len(list_of_orders)
-
-    def get_potential_performance(self, orders):
-        """
-        Returns the portfolio performance if the given list of orders is
-        executed. The performance as per the following formula: Performance
-        = ExpectedPayoff - b * PayoffVariance, where b is the penalty for
-        risk. :param orders: list of orders :return:
-        """
-        pass
 
     def is_portfolio_optimal(self):
         """
@@ -223,18 +279,19 @@ class CAPMBot(Agent):
         self._cash_available = holdings.cash_available
         self._cash_settled = holdings.cash
 
-        self._asset_units = []
+        self._asset_units = {}
         for market in holdings.assets:
-            self._asset_units.append(holdings.assets[market].units)
+            self._asset_units[market.item] = holdings.assets[market].units
+        # self.inform(f"Units recorded: {self._asset_units}")
 
         # update portfolio variance
         self._current_port_variance = self._get_portfolio_variance(
-            self._asset_units)
+            list(self._asset_units.values()))
 
         # update portfolio return
         # return is based on SETTLED cash, and not on cash available
         self._current_exp_return = \
-            self._get_expected_return(self._asset_units,
+            self._get_expected_return(list(self._asset_units.values()),
                                       self._cash_settled)
 
         # update current performance

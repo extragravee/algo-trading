@@ -14,17 +14,22 @@ def duplicates_in_list(comb1):
 
     return len(set(temp1)) == len(temp1)
 
+
 valid_combinations = []
 
 print("all=====================")
-for i in range(1, len(temp)+1):
+for i in range(1, len(temp) + 1):
     combs = list(itertools.combinations(temp, i))
-    valid_combinations += filter(duplicates_in_list, combs)
+    new_set = filter(duplicates_in_list, combs)
+
+    print("New set")
+    for order in new_set:
+        print(order)
+
+    valid_combinations += new_set
     # for comb in combs:
     #     if not duplicates_in_list(comb):
     #         valid_combinations.append(comb)
-    print(combs)
-print("all=====================")
-# print(valid_combinations)
-for combination in valid_combinations:
-    print(combination)
+
+# for order in valid_combinations:
+#     print(order)
