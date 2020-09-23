@@ -6,6 +6,10 @@ Sidakpreet Mann
 
 Notes:
     1. Covar matrix is calculated only initially, as it's known
+    2. Best set of orders to trade gets selected based on aggressiveness_param
+        be default set to 1% (new portfolio performance must be at least 1%
+        better performance for those trades to go through, this can be custom
+        set when instantiating the bot
 """
 import itertools
 from typing import List
