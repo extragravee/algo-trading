@@ -48,7 +48,7 @@ class CAPMBot(Agent):
         self._current_exp_return = 0
         self._current_performance = 0
 
-        self._aggressiveness_param = aggressiveness_param
+        self._aggressiveness_param = aggressiveness_param + 1
 
     def initialised(self):
         # Extract payoff distribution for each security
@@ -152,17 +152,6 @@ class CAPMBot(Agent):
         # self.inform("Best bid and asks: ")
         # self.inform(f"Orders: {orders}")
 
-        # tracks the profitable combination that satisfies aggressiveness
-        # param
-        valid_combination = []
-
-        # # CASE 1 -  there is only one valid trade-able order
-        # if len(orders) == 1:
-        #     if self.get_potential_performance(orders) > \
-        #             self._aggressiveness_param:
-        #         return orders
-
-        # CASE 2 - multiple valid trade-able orders
         # generate combinations of possible orders to be executed
         for i in range(1, len(orders) + 1):
 
@@ -174,22 +163,14 @@ class CAPMBot(Agent):
 
             # for each order in this set, test if profitable
             # STOP ONCE THE FIRST PROFITABLE ENOUGH SET OF ORDERS IS FOUND
-
             for order_set in new_set:
                 # self.get_potential_performance(list(order_set))
                 if self.get_potential_performance(list(order_set)) \
-                        > self._aggressiveness_param:
+                        > self._aggressiveness_param * self._current_performance:
                     return list(order_set)
 
-        return valid_combination
-
-        # # scaffolding
-        # self.inform(f"Valid combinations: {len(valid_combinations)}")
-        # for z in valid_combinations:
-        #     self.inform(f"{len(z)} {z}")
-
-        # now that valid combinations are being generated, they need to be
-        # simulated for potential change in performance
+        # return a list of NO orders that should be executed
+        return []
 
     def get_potential_performance(self, orders: List[Order]):
         """
@@ -263,7 +244,8 @@ class CAPMBot(Agent):
         # seems to be called before received holdings, so don't calculate
         # the portfolio variance here! As this has old number of units
         # self.inform(f"{self._get_best_bid_ask()}")
-        self._generate_combinations_potential_orders()
+        valid = self._generate_combinations_potential_orders()
+        self.inform(f"Chosen order is: {valid}")
 
     def received_session_info(self, session: Session):
         pass
