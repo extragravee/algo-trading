@@ -248,7 +248,15 @@ class CAPMBot(Agent):
         # seems to be called before received holdings, so don't calculate
         # the portfolio variance here! As this has old number of units
         # self.inform(f"{self._get_best_bid_ask()}")
+
+        # Reactive orders
+        # returns a valid set of orders that will improve performance
         valid = self._generate_combinations_potential_orders()
+
+        # Market maker orders
+        # simulate all 4 A B C note, price 0 and change in performance is the
+        # max price to be paid. Try buy and sell and see if any can be exec
+
         self.inform(f"Chosen order is: {valid}")
 
     def received_session_info(self, session: Session):
