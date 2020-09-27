@@ -250,7 +250,7 @@ class DSBot(Agent):
         elif self._bot_type == BotType.MARKET_MAKER:
             self._make_market()
 
-    def _create_new_order(self,
+    def  Go_create_new_order(self,
                           price: int,
                           units: int,
                           order_side: OrderSide,

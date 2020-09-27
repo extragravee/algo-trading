@@ -12,6 +12,7 @@ Notes:
         set when instantiating the bot
 """
 import itertools
+from enum import Enum
 from typing import List
 import numpy as np
 from fmclient import Agent, Session
@@ -23,6 +24,12 @@ SUBMISSION = {"number": "921322", "name": "Sidakpreet Mann"}
 # CONSTANTS
 CENTS_IN_DOLLAR = 100
 VERY_HIGH_ASK = 999999
+WAIT_3_SECONDS = 3
+
+# Bot type enum
+class BotType(Enum):
+    MARKET_MAKER = 0
+    REACTIVE = 1
 
 
 class CAPMBot(Agent):
@@ -40,6 +47,9 @@ class CAPMBot(Agent):
         """
         super().__init__(account, email, password, marketplace_id,
                          name="CAPM Bot")
+
+        self._bot_type = BotType.REACTIVE
+
         self._payoffs = {}
         self._risk_penalty = risk_penalty
         self._session_time = session_time
@@ -53,6 +63,10 @@ class CAPMBot(Agent):
         self._current_performance = 0
 
         self._aggressiveness_param = aggressiveness_param + 1
+        self._waiting = False
+
+        # reactive bot
+        self._reactive_orders = []
 
     def initialised(self):
         # Extract payoff distribution for each security
@@ -66,8 +80,34 @@ class CAPMBot(Agent):
             description = market_info.description
             self._payoffs[security] = [int(a) for a in description.split(",")]
 
+        # bot starts off as a market maker FOR NOW IT IS REACTIVE FOR TESTING
+        self._bot_type = BotType.REACTIVE
+
+        # TESTING ======================================
+        # if bot is reactive, then get best orders every three seconds
+
+        self.execute_periodically_conditionally(
+                    self._reactive_strategy,
+                    WAIT_3_SECONDS,
+                    self._is_bot_reactive)
+
+        # if bot is market maker, create profitable orders every three seconds
+        self.execute_periodically_conditionally(
+                    self._market_making,
+                    WAIT_3_SECONDS,
+                    self._is_bot_reactive)
+
+        # TESTING ======================================
+
         self.inform(f"Market IDs: {self._market_ids}")
         self.inform(f"Payoffs   : {self._payoffs}")
+
+    def _is_bot_reactive(self):
+        return self._bot_type==BotType.REACTIVE
+
+    @staticmethod
+    def _market_making():
+        pass
 
     @staticmethod
     # this shouldn't really exist, just use this in the potential
@@ -144,8 +184,15 @@ class CAPMBot(Agent):
 
         return best_bids, best_asks
 
-    def _generate_combinations_potential_orders(self):
+    def _reactive_strategy(self):
+        """
+        REACTIVE STRATEGY
+        =================
+        Generates combinations of profitable orders currently in the order book
+        Called every 3 seconds periodically
+        sets reactive_orders attribute to a list of orders to be executed
 
+        """
         bids, asks = self._get_best_bid_ask()
 
         # filter out when there is NO order in the bid side / ask side
@@ -156,7 +203,11 @@ class CAPMBot(Agent):
         # self.inform("Best bid and asks: ")
         # self.inform(f"Orders: {orders}")
 
+        # initially no valid orders
+        self._reactive_orders = None
+
         # generate combinations of possible orders to be executed
+        # when first order that is good enough is found, stop looking
         for i in range(1, len(orders) + 1):
 
             combs = list(itertools.combinations(orders, i))
@@ -166,15 +217,29 @@ class CAPMBot(Agent):
             # u no longer have access to all sets of orders u have looped over!
 
             # for each order in this set, test if profitable
-            # STOP ONCE THE FIRST PROFITABLE ENOUGH SET OF ORDERS IS FOUND
             for order_set in new_set:
                 # self.get_potential_performance(list(order_set))
                 if self.get_potential_performance(list(order_set)) \
                         > self._aggressiveness_param * self._current_performance:
-                    return list(order_set)
+                    self._reactive_orders = list(order_set)
+                    break
 
-        # return a list of NO orders that should be executed
-        return []
+            if self._reactive_orders is not None:
+                break
+
+        self.inform(f"Chosen order: {self._reactive_orders}")
+
+        return
+
+    @staticmethod
+    def _send_orders(orders: List[Order]):
+        """
+        Receives a list of orders to be executed in the market
+        :param orders: list of favourable orders
+        """
+        # send all orders
+        for order in orders:
+            pass
 
     def get_potential_performance(self, orders: List[Order]):
         """
@@ -185,12 +250,12 @@ class CAPMBot(Agent):
         :param orders      : list of orders to be simulated on portfolio
         :return performance: percentage increase in portfolio performance
         """
-        self.inform("Testing performance of: ")
-        self.inform(orders)
+        # self.inform("Testing performance of: ")
+        # self.inform(orders)
 
         cash = self._cash_settled
         units = self._asset_units.copy()
-        self.inform(units)
+        # self.inform(units)
         # simulate list of orders executing
         for order in orders:
             # for a buy order that exists in the market, we sell to it
@@ -203,7 +268,7 @@ class CAPMBot(Agent):
                 cash -= order.price
                 units[order.market.item] += 1
 
-        self.inform(f"Cash: {cash}, Units: {units}")
+        # self.inform(f"Cash: {cash}, Units: {units}")
         x = list(units.values())
 
         variance = self._get_portfolio_variance(x)
@@ -213,8 +278,8 @@ class CAPMBot(Agent):
             self._risk_penalty,
             variance)
 
-        self.inform(f"Performance for this set of stuff is: "
-                    f"{performance}")
+        # self.inform(f"Performance for {orders} is: "
+        #             f"{performance}")
 
         return performance
 
@@ -250,14 +315,24 @@ class CAPMBot(Agent):
         # self.inform(f"{self._get_best_bid_ask()}")
 
         # Reactive orders
-        # returns a valid set of orders that will improve performance
-        valid = self._generate_combinations_potential_orders()
-
-        # Market maker orders
-        # simulate all 4 A B C note, price 0 and change in performance is the
-        # max price to be paid. Try buy and sell and see if any can be exec
-
-        self.inform(f"Chosen order is: {valid}")
+        # self.inform(f"Updated orders: {orders}")
+        # # if there is a set of valid reactive orders, they should be sent
+        # if self._reactive_orders is not None and not self._waiting:
+        #
+        #     self.inform(f"should execute {self._reactive_orders}")
+        #
+        #     # order management
+        #     self._waiting = True
+        #     # self._send_orders(self._reactive_orders)
+        #     self._waiting = False
+        #
+        #     # reset reactive orders to None left
+        #     self._reactive_orders = None
+        #
+        # # Market maker orders
+        # # simulate all 4 A B C note, price 0 and change in performance is the
+        # # max price to be paid. Try buy and sell and see if any can be exec
+        return
 
     def received_session_info(self, session: Session):
         pass
@@ -299,6 +374,8 @@ class CAPMBot(Agent):
         self.inform(f"Portfolio var: {self._current_port_variance}")
         self.inform(f"Exp return   : {self._current_exp_return}")
         self.inform(f"Performance  : {self._current_performance}")
+
+
 
 
 if __name__ == "__main__":
