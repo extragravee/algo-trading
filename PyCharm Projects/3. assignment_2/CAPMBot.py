@@ -25,6 +25,7 @@ SUBMISSION = {"number": "921322", "name": "Sidakpreet Mann"}
 CENTS_IN_DOLLAR = 100
 VERY_HIGH_ASK = 999999
 WAIT_3_SECONDS = 3
+MIN_CASH_THRESHOLD = 5000
 
 # Bot type enum
 class BotType(Enum):
@@ -64,6 +65,7 @@ class CAPMBot(Agent):
 
         self._aggressiveness_param = aggressiveness_param + 1
         self._waiting = False
+        self._order_id = 0
 
         # reactive bot
         self._reactive_orders = []
@@ -101,6 +103,22 @@ class CAPMBot(Agent):
 
         self.inform(f"Market IDs: {self._market_ids}")
         self.inform(f"Payoffs   : {self._payoffs}")
+
+    def _check_if_enough_cash(self):
+        """
+        Checks if there is enough cash to trade, if not
+        sell some notes
+
+        atm checking against arbitrary threshold, might be better to get best
+        bid and asks, and sell notes till we have at least enough cash for
+        the highest ask out of any market
+        :return:
+        """
+        if self._cash_available < MIN_CASH_THRESHOLD:
+            # sell notes to get cash
+            # self._sell_notes
+            pass
+        pass
 
     def _is_bot_reactive(self):
         return self._bot_type==BotType.REACTIVE
@@ -152,8 +170,8 @@ class CAPMBot(Agent):
         return np.dot(np.dot(weights, covar_matrix),
                       weights.transpose())
 
-    @staticmethod
-    def _get_best_bid_ask():
+    # @staticmethod
+    def _get_best_bid_ask(self):
         """
         Walks the order book and determines what the best bid and asks are
         for each market
@@ -173,14 +191,18 @@ class CAPMBot(Agent):
             # self.inform(order)
             # self.inform(order.market.item)
 
+            dict_key = order.market.item
+            if dict_key.lower() == "note":
+                dict_key = "note"
+
             if order.order_side == OrderSide.BUY:
-                if order.price > best_bids[order.market.item][0]:
-                    best_bids[order.market.item][0] = order.price
-                    best_bids[order.market.item][1] = order
+                if order.price > best_bids[dict_key][0]:
+                    best_bids[dict_key][0] = order.price
+                    best_bids[dict_key][1] = order
             else:
-                if order.price < best_asks[order.market.item][0]:
-                    best_asks[order.market.item][0] = order.price
-                    best_asks[order.market.item][1] = order
+                if order.price < best_asks[dict_key][0]:
+                    best_asks[dict_key][0] = order.price
+                    best_asks[dict_key][1] = order
 
         return best_bids, best_asks
 
@@ -229,17 +251,40 @@ class CAPMBot(Agent):
 
         self.inform(f"Chosen order: {self._reactive_orders}")
 
+        # if there are profitable orders, send them through
+        if self._reactive_orders is not None and not self._waiting:
+
+            self._waiting = True
+            self._send_orders(self._reactive_orders)
+            self._waiting = False
+
         return
 
-    @staticmethod
-    def _send_orders(orders: List[Order]):
+    def _send_orders(self, orders):
         """
-        Receives a list of orders to be executed in the market
+        Sends through a list of orders
         :param orders: list of favourable orders
         """
-        # send all orders
+
+        # REACTIVE ORDERS
         for order in orders:
-            pass
+
+            price_tick = order.market.price_tick
+
+            new_order = Order.create_new()
+            new_order.price = order.price - (order.price % price_tick)
+            new_order.market = order.market
+            new_order.units = 1
+
+            if order.order_side == OrderSide.BUY:
+                new_order.order_side = OrderSide.SELL
+            else:
+                new_order.order_side = OrderSide.BUY
+
+            new_order.order_type = OrderType.LIMIT
+            new_order.ref = f"Order {self._order_id} - SM"
+
+            self.send_order(new_order)
 
     def get_potential_performance(self, orders: List[Order]):
         """
@@ -304,10 +349,10 @@ class CAPMBot(Agent):
         pass
 
     def order_accepted(self, order):
-        pass
+        self.inform(f"Accepted: {order} - {order.market.item}")
 
     def order_rejected(self, info, order):
-        pass
+        self.inform(f"Wish to trade, but can not because: {info}")
 
     def received_orders(self, orders: List[Order]):
         # seems to be called before received holdings, so don't calculate
@@ -382,7 +427,7 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 1017  # replace this with the marketplace id
+    MARKETPLACE_ID = 1054  # replace this with the marketplace id
 
     bot = CAPMBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID,
                   risk_penalty=0.007)
