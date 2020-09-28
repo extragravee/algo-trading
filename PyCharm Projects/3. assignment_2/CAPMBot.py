@@ -313,21 +313,24 @@ class CAPMBot(Agent):
         return
 
     def check_if_enough_assets(self, orders: List[Order]):
-
+        """
+        Received orders are the orders in the market! so for a buy order,
+        we sell to it, and for a sell order, we buy from it
+        :param orders:
+        :return:
+        """
         to_spend = 0
 
         for order in orders:
-            if order.order_side == OrderSide.BUY:
+            if order.order_side == OrderSide.SELL:
                 to_spend += order.price
 
             else:
                 # if reached the shorting quota, then invalid order
-                # self.inform(f"{self._asset_units[order.market.item]}, {self._short_units_allowed[order.market.item]}")
                 if self._asset_units[order.market.item] == \
                         self._short_units_allowed[order.market.item]:
                     # self.inform(f"Not enough units to sell here! {order}")
                     return False
-
 
         # invalid order, as not enough cash to buy
         if to_spend > self._cash_available:
