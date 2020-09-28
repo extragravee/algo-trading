@@ -77,11 +77,10 @@ class CAPMBot(Agent):
         self._num_orders_sent = 0
 
     def initialised(self):
+
         # Extract payoff distribution for each security
         for market_id, market_info in self.markets.items():
-            # store market id for each item -- see if it's more efficient to
-            # also store the Market() objects here
-            # instead of creating them every time a new order is needed
+            # store market id for each item
             self._market_ids[market_info.item] = market_id
 
             security = market_info.item
@@ -91,9 +90,7 @@ class CAPMBot(Agent):
         # bot starts off as a market maker FOR NOW IT IS REACTIVE FOR TESTING
         self._bot_type = BotType.REACTIVE
 
-        # TESTING ======================================
-        # if bot is reactive, then get best orders every three seconds
-
+        # if bot is reactive, then get best orders every one seconds
         self.execute_periodically_conditionally(
             self._reactive_strategy,
             WAIT_1_SECOND,
@@ -110,7 +107,6 @@ class CAPMBot(Agent):
             self._cancel_my_orders,
             WAIT_6_SECONDS,
             self._is_bot_reactive)
-        # TESTING ======================================
 
         self.inform(f"Market IDs: {self._market_ids}")
         self.inform(f"Payoffs   : {self._payoffs}")
@@ -234,8 +230,6 @@ class CAPMBot(Agent):
 
         # track current best bids and asks
         for order_id, order in Order.current().items():
-            # self.inform(order)
-            # self.inform(order.market.item)
 
             dict_key = order.market.item.lower()
 
@@ -270,8 +264,6 @@ class CAPMBot(Agent):
         asks = [x[1] for x in list(asks.values()) if x[1] is not None]
 
         orders = bids + asks
-        # self.inform("Best bid and asks: ")
-        # self.inform(f"Orders: {orders}")
 
         # initially no valid orders
         self._reactive_orders = None
@@ -289,18 +281,21 @@ class CAPMBot(Agent):
             # for each order in this set, test if profitable
             for order_set in new_set:
 
-                # make sure have enough units or cash to execute this
+                # check if have enough cash/units for order_set
                 if self.check_if_enough_assets(list(order_set)):
 
+                    # check if performance of order_set > current performance
                     if self.get_potential_performance(list(order_set)) \
-                            > self._aggressiveness_param * self._current_performance:
+                            > self._aggressiveness_param * \
+                            self._current_performance:
+
                         self._reactive_orders = list(order_set)
                         break
 
             if self._reactive_orders is not None:
                 break
 
-        # scaffolding
+        # Print the selected order set to be executed
         if self._reactive_orders is not None and self.is_session_active():
             self.inform(f"Chosen order set: {self._reactive_orders}")
 
@@ -314,14 +309,18 @@ class CAPMBot(Agent):
 
     def check_if_enough_assets(self, orders: List[Order]):
         """
+
         Received orders are the orders in the market! so for a buy order,
         we sell to it, and for a sell order, we buy from it
-        :param orders:
-        :return:
+        :param orders: Order set received
+        :return      : True if there are enough assets to execute each order
+                        in the order set received
         """
         to_spend = 0
 
+        # orders are the PRESENT orders in the market
         for order in orders:
+
             if order.order_side == OrderSide.SELL:
                 to_spend += order.price
 
@@ -376,12 +375,10 @@ class CAPMBot(Agent):
         :param orders      : list of orders to be simulated on portfolio
         :return performance: percentage increase in portfolio performance
         """
-        # self.inform("Testing performance of: ")
-        # self.inform(orders)
 
         cash = self._cash_settled
         units = self._asset_units.copy()
-        # self.inform(units)
+
         # simulate list of orders executing
         for order in orders:
             # for a buy order that exists in the market, we sell to it
@@ -403,9 +400,6 @@ class CAPMBot(Agent):
             self._get_expected_return(x, cash),
             self._risk_penalty,
             variance)
-
-        # self.inform(f"Performance for {orders} is: "
-        #             f"{performance}")
 
         return performance
 
@@ -478,12 +472,11 @@ class CAPMBot(Agent):
 
     def received_session_info(self, session: Session):
 
-        # if any session update instead of a pause, we want to reset orders
-        # to be sent
-        if session.is_paused or session.is_closed:
-            self._reactive_orders = None
-            self._waiting = False
-            self._order_id = 0
+        # at every session update, reset valid instance vars
+        self._reactive_orders = None
+        self._waiting = False
+        self._order_id = 0
+        self._num_orders_sent = 0
 
     def pre_start_tasks(self):
         pass
