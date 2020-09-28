@@ -59,6 +59,7 @@ class CAPMBot(Agent):
         self._risk_penalty = risk_penalty
         self._session_time = session_time
         self._market_ids = {}
+        self._short_units_allowed = {}
 
         self._asset_units = {}
         self._cash_available = 0
@@ -73,6 +74,7 @@ class CAPMBot(Agent):
 
         # reactive bot
         self._reactive_orders = []
+        self._num_orders_sent = 0
 
     def initialised(self):
         # Extract payoff distribution for each security
@@ -287,11 +289,11 @@ class CAPMBot(Agent):
             # for each order in this set, test if profitable
             for order_set in new_set:
                 # self.get_potential_performance(list(order_set))
-                if self.get_potential_performance(list(order_set)) \
-                        > self._aggressiveness_param * self._current_performance:
+                # make sure have enough units or cash to execute this
+                if self.check_if_enough_assets(list(order_set)):
 
-                    # make sure have enough units or cash to execute this
-                    if self.check_if_enough_assets(list(order_set)):
+                    if self.get_potential_performance(list(order_set)) \
+                            > self._aggressiveness_param * self._current_performance:
                         self._reactive_orders = list(order_set)
                         break
 
@@ -306,19 +308,32 @@ class CAPMBot(Agent):
         if self._reactive_orders is not None and not self._waiting:
             self._waiting = True
             self._send_orders(self._reactive_orders)
-            self._waiting = False
+            self._num_orders_sent += len(self._reactive_orders)
 
         return
+
     def check_if_enough_assets(self, orders: List[Order]):
 
         to_spend = 0
+
         for order in orders:
             if order.order_side == OrderSide.BUY:
                 to_spend += order.price
 
             else:
-                if order.market.item:
-                    pass
+                # if reached the shorting quota, then invalid order
+                # self.inform(f"{self._asset_units[order.market.item]}, {self._short_units_allowed[order.market.item]}")
+                if self._asset_units[order.market.item] == \
+                        self._short_units_allowed[order.market.item]:
+                    # self.inform(f"Not enough units to sell here! {order}")
+                    return False
+
+
+        # invalid order, as not enough cash to buy
+        if to_spend > self._cash_available:
+            return False
+
+        return True
 
     def _send_orders(self, orders):
         """
@@ -414,10 +429,17 @@ class CAPMBot(Agent):
     def order_accepted(self, order):
         self.inform(f"Accepted: {order} - {order.market.item}")
 
+        # make sure that all orders are accepted, till then keep
+        # waiting for server
+        self._num_orders_sent -= 1
+        if self._num_orders_sent == 0:
+            self._waiting = False
+
     def order_rejected(self, info, order):
 
         self.inform("SOME ORDER WAS REJECTED.^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
-        self.inform(order)
+        self.inform(f"{order.market.item}, {order}")
+        self.inform(f"{info}")
         # if not info['response']['message'] == "Closed Session.":
         #     self.inform(info)
         #     self.inform(
@@ -472,6 +494,9 @@ class CAPMBot(Agent):
         self._asset_units = {}
         for market in holdings.assets:
             self._asset_units[market.item] = holdings.assets[market].units
+            self._short_units_allowed[market.item] = \
+                -1 * holdings.assets[market].units_granted_short
+
         # self.inform(f"Units recorded: {self._asset_units}")
 
         # update portfolio variance - don't need to update everytime
@@ -503,7 +528,7 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 1054  # replace this with the marketplace id
+    MARKETPLACE_ID = 1017  # replace this with the marketplace id
 
     bot = CAPMBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID,
                   risk_penalty=0.007)
