@@ -288,7 +288,7 @@ class CAPMBot(Agent):
 
             # for each order in this set, test if profitable
             for order_set in new_set:
-                # self.get_potential_performance(list(order_set))
+
                 # make sure have enough units or cash to execute this
                 if self.check_if_enough_assets(list(order_set)):
 
@@ -434,7 +434,9 @@ class CAPMBot(Agent):
 
         # make sure that all orders are accepted, till then keep
         # waiting for server
-        self._num_orders_sent -= 1
+        if not order.order_type == OrderType.CANCEL:
+            self._num_orders_sent -= 1
+            self.inform(f"Num_orders_left: {self._num_orders_sent}")
         if self._num_orders_sent == 0:
             self._waiting = False
 
