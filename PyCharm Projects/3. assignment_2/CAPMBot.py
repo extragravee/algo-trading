@@ -5,12 +5,12 @@ Sidakpreet Mann
 921322
 
 Notes:
-    1. Covar matrix is calculated only initially, as it's known
-    2. Best set of orders to trade gets selected based on aggressiveness_param
-        be default set to 1% (new portfolio performance must be at least 1%
-        better performance for those trades to go through, this can be custom
-        set when instantiating the bot
+    1. Best set of orders to trade gets selected based on aggressiveness_param
+        be default set to 0% (new portfolio performance must be at least
+        better that current performance for those trades to go through,
+        this can be custom set when instantiating the bot
 """
+import copy
 import itertools
 from enum import Enum
 from typing import List
@@ -24,8 +24,12 @@ SUBMISSION = {"number": "921322", "name": "Sidakpreet Mann"}
 # CONSTANTS
 CENTS_IN_DOLLAR = 100
 VERY_HIGH_ASK = 999999
+VERY_LOW_BID = -1
 WAIT_3_SECONDS = 3
+WAIT_1_SECOND = 1
 MIN_CASH_THRESHOLD = 5000
+WAIT_6_SECONDS = 6
+
 
 # Bot type enum
 class BotType(Enum):
@@ -36,7 +40,7 @@ class BotType(Enum):
 class CAPMBot(Agent):
 
     def __init__(self, account, email, password, marketplace_id,
-            risk_penalty=0.001, session_time=20, aggressiveness_param=0.01):
+            risk_penalty=0.001, session_time=20, aggressiveness_param=0.00):
         """
         Constructor for the Bot
         :param account: Account name
@@ -89,20 +93,33 @@ class CAPMBot(Agent):
         # if bot is reactive, then get best orders every three seconds
 
         self.execute_periodically_conditionally(
-                    self._reactive_strategy,
-                    WAIT_3_SECONDS,
-                    self._is_bot_reactive)
+            self._reactive_strategy,
+            WAIT_1_SECOND,
+            self._is_bot_reactive)
 
         # if bot is market maker, create profitable orders every three seconds
         self.execute_periodically_conditionally(
-                    self._market_making,
-                    WAIT_3_SECONDS,
-                    self._is_bot_reactive)
+            self._market_making,
+            WAIT_3_SECONDS,
+            self._is_bot_mm)
 
+        # cancelling stale orders every 6 seconds if bot is REACTIVE
+        self.execute_periodically_conditionally(
+            self._cancel_my_orders,
+            WAIT_6_SECONDS,
+            self._is_bot_reactive)
         # TESTING ======================================
 
         self.inform(f"Market IDs: {self._market_ids}")
         self.inform(f"Payoffs   : {self._payoffs}")
+
+    # conditions for periodic orders, for some reason only works properly
+    # with function pointers
+    def _is_bot_reactive(self):
+        return self._bot_type == BotType.REACTIVE
+
+    def _is_bot_mm(self):
+        return self._bot_type == BotType.MARKET_MAKER
 
     def _check_if_enough_cash(self):
         """
@@ -120,12 +137,39 @@ class CAPMBot(Agent):
             pass
         pass
 
-    def _is_bot_reactive(self):
-        return self._bot_type==BotType.REACTIVE
+    # # combine bot type with cancelling orders
+    # def _cancel_reactive_stale_orders(self):
+    #     """
+    #     Checks if bot is reactive and cancels stale orders in the
+    #     market
+    #     """
+    #     if self._is_bot_reactive():
+    #         self._cancel_stale_orders()
 
-    @staticmethod
-    def _market_making():
+    def _mm_stale_orders(self):
         pass
+
+    def _cancel_my_orders(self):
+        """
+        Cancels all of my orders in the market
+        """
+        for order_id, order in Order.current().items():
+
+            # if I have an active order, cancel it
+            if order.mine and not self._waiting:
+                self.inform(f"---- Cancelling order: {order} - "
+                            f"{order.market.item}")
+
+                self._waiting = True
+                cancel_order = copy.copy(order)
+                cancel_order.order_type = OrderType.CANCEL
+                cancel_order.ref = f"Cancel - {order.ref} - SM"
+                self.send_order(cancel_order)
+                self._waiting = False
+
+    def _market_making(self):
+        if self._waiting:
+            return
 
     @staticmethod
     # this shouldn't really exist, just use this in the potential
@@ -181,19 +225,17 @@ class CAPMBot(Agent):
 
         # track best bid_ask prices and orders
         # key - market, value - [best price, best price order]
-        best_bids = {'A': [-1, None], 'B': [-1, None],
-                     'C': [-1, None], 'note': [-1, None]}
-        best_asks = {'A': [VERY_HIGH_ASK, None], 'B': [VERY_HIGH_ASK, None],
-                     'C': [VERY_HIGH_ASK, None], 'note': [VERY_HIGH_ASK, None]}
+        best_bids = {'a': [VERY_LOW_BID, None], 'b': [VERY_LOW_BID, None],
+                     'c': [VERY_LOW_BID, None], 'note': [VERY_LOW_BID, None]}
+        best_asks = {'a': [VERY_HIGH_ASK, None], 'b': [VERY_HIGH_ASK, None],
+                     'c': [VERY_HIGH_ASK, None], 'note': [VERY_HIGH_ASK, None]}
 
         # track current best bids and asks
         for order_id, order in Order.current().items():
             # self.inform(order)
             # self.inform(order.market.item)
 
-            dict_key = order.market.item
-            if dict_key.lower() == "note":
-                dict_key = "note"
+            dict_key = order.market.item.lower()
 
             if order.order_side == OrderSide.BUY:
                 if order.price > best_bids[dict_key][0]:
@@ -215,6 +257,10 @@ class CAPMBot(Agent):
         sets reactive_orders attribute to a list of orders to be executed
 
         """
+        # do nothing if sending through orders
+        if self._waiting:
+            return
+
         bids, asks = self._get_best_bid_ask()
 
         # filter out when there is NO order in the bid side / ask side
@@ -243,28 +289,45 @@ class CAPMBot(Agent):
                 # self.get_potential_performance(list(order_set))
                 if self.get_potential_performance(list(order_set)) \
                         > self._aggressiveness_param * self._current_performance:
-                    self._reactive_orders = list(order_set)
-                    break
+
+                    # make sure have enough units or cash to execute this
+                    if self.check_if_enough_assets(list(order_set)):
+                        self._reactive_orders = list(order_set)
+                        break
 
             if self._reactive_orders is not None:
                 break
 
-        self.inform(f"Chosen order: {self._reactive_orders}")
+        # scaffolding
+        if self._reactive_orders is not None and self.is_session_active():
+            self.inform(f"Chosen order set: {self._reactive_orders}")
 
         # if there are profitable orders, send them through
         if self._reactive_orders is not None and not self._waiting:
-
             self._waiting = True
             self._send_orders(self._reactive_orders)
             self._waiting = False
 
         return
+    def check_if_enough_assets(self, orders: List[Order]):
+
+        to_spend = 0
+        for order in orders:
+            if order.order_side == OrderSide.BUY:
+                to_spend += order.price
+
+            else:
+                if order.market.item:
+                    pass
 
     def _send_orders(self, orders):
         """
-        Sends through a list of orders
+        Creates *corresponding* orders to the list of orders received
         :param orders: list of favourable orders
         """
+
+        if not self.is_session_active():
+            return
 
         # REACTIVE ORDERS
         for order in orders:
@@ -352,7 +415,14 @@ class CAPMBot(Agent):
         self.inform(f"Accepted: {order} - {order.market.item}")
 
     def order_rejected(self, info, order):
-        self.inform(f"Wish to trade, but can not because: {info}")
+
+        self.inform("SOME ORDER WAS REJECTED.^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+        self.inform(order)
+        # if not info['response']['message'] == "Closed Session.":
+        #     self.inform(info)
+        #     self.inform(
+        #         f"Wish to trade, but can not because: {info['response']['message']} - "
+        #         f"{order.market.item}")
 
     def received_orders(self, orders: List[Order]):
         # seems to be called before received holdings, so don't calculate
@@ -380,7 +450,13 @@ class CAPMBot(Agent):
         return
 
     def received_session_info(self, session: Session):
-        pass
+
+        # if any session update instead of a pause, we want to reset orders
+        # to be sent
+        if session.is_paused or session.is_closed:
+            self._reactive_orders = None
+            self._waiting = False
+            self._order_id = 0
 
     def pre_start_tasks(self):
         pass
@@ -398,7 +474,8 @@ class CAPMBot(Agent):
             self._asset_units[market.item] = holdings.assets[market].units
         # self.inform(f"Units recorded: {self._asset_units}")
 
-        # update portfolio variance
+        # update portfolio variance - don't need to update everytime
+        # but doing it in case "new info" arrives
         self._current_port_variance = self._get_portfolio_variance(
             list(self._asset_units.values()))
 
@@ -419,8 +496,7 @@ class CAPMBot(Agent):
         self.inform(f"Portfolio var: {self._current_port_variance}")
         self.inform(f"Exp return   : {self._current_exp_return}")
         self.inform(f"Performance  : {self._current_performance}")
-
-
+        self.inform(f"=============================")
 
 
 if __name__ == "__main__":
