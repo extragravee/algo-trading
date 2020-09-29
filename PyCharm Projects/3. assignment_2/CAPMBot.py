@@ -6,8 +6,8 @@ Sidakpreet Mann
 
 Notes:
     1. Best set of orders to trade gets selected based on aggressiveness_param
-        be default set to 0% (new portfolio performance must be at least
-        better that current performance for those trades to go through,
+        be default set to 1% (new portfolio performance must be at least 1%
+        better than the  current performance for those trades to go through,
         this can be custom set when instantiating the bot
 """
 import copy
@@ -15,7 +15,7 @@ import itertools
 from enum import Enum
 from typing import List
 import numpy as np
-from fmclient import Agent, Session
+from fmclient import Agent, Session, Market
 from fmclient import Order, OrderSide, OrderType
 
 # Submission details
@@ -26,9 +26,11 @@ CENTS_IN_DOLLAR = 100
 VERY_HIGH_ASK = 999999
 VERY_LOW_BID = -1
 WAIT_3_SECONDS = 3
-WAIT_1_SECOND = 1
-MIN_CASH_THRESHOLD = 5000
+WAIT_2_SECOND = 2
 WAIT_6_SECONDS = 6
+WAIT_10_SECONDS = 10
+MIN_CASH_THRESHOLD = 500
+NOTE_SELLING_PRICE = 495
 
 
 # Bot type enum
@@ -40,7 +42,7 @@ class BotType(Enum):
 class CAPMBot(Agent):
 
     def __init__(self, account, email, password, marketplace_id,
-            risk_penalty=0.001, session_time=20, aggressiveness_param=0.00):
+            risk_penalty=0.001, session_time=20, aggressiveness_param=0.01):
         """
         Constructor for the Bot
         :param account: Account name
@@ -93,7 +95,7 @@ class CAPMBot(Agent):
         # if bot is reactive, then get best orders every one seconds
         self.execute_periodically_conditionally(
             self._reactive_strategy,
-            WAIT_1_SECOND,
+            WAIT_2_SECOND,
             self._is_bot_reactive)
 
         # if bot is market maker, create profitable orders every three seconds
@@ -108,6 +110,12 @@ class CAPMBot(Agent):
             WAIT_6_SECONDS,
             self._is_bot_reactive)
 
+        # sell notes if not enough cash every 10 seconds
+        self.execute_periodically(
+            self._sell_notes,
+            WAIT_6_SECONDS
+        )
+
         self.inform(f"Market IDs: {self._market_ids}")
         self.inform(f"Payoffs   : {self._payoffs}")
 
@@ -119,33 +127,42 @@ class CAPMBot(Agent):
     def _is_bot_mm(self):
         return self._bot_type == BotType.MARKET_MAKER
 
-    def _check_if_enough_cash(self):
-        """
-        Checks if there is enough cash to trade, if not
-        sell some notes
+    def _sell_notes(self):
 
-        atm checking against arbitrary threshold, might be better to get best
-        bid and asks, and sell notes till we have at least enough cash for
-        the highest ask out of any market
-        :return:
-        """
-        if self._cash_available < MIN_CASH_THRESHOLD:
-            # sell notes to get cash
-            # self._sell_notes
-            pass
-        pass
+        # stop if initialising OR if have enough cash
+        if len(self._asset_units.keys()) == 0 or \
+                self._cash_available > MIN_CASH_THRESHOLD:
+            return
 
-    # # combine bot type with cancelling orders
-    # def _cancel_reactive_stale_orders(self):
-    #     """
-    #     Checks if bot is reactive and cancels stale orders in the
-    #     market
-    #     """
-    #     if self._is_bot_reactive():
-    #         self._cancel_stale_orders()
+        # find the note key
+        note_key = ""
+        for asset in self._asset_units:
+            if asset.lower() == "note":
+                note_key = asset
 
-    def _mm_stale_orders(self):
-        pass
+        # check if have notes available to short
+        if self._asset_units[note_key] > self._short_units_allowed[note_key]:
+
+            self.inform(f"Selling notes+++++++++++++++++++++++++++++++")
+            self.inform(f"Cash avail: {self._cash_available}")
+            self.inform(f"Sell notes: {self._asset_units}")
+            # create note sell orders for some price to obtain quick cash
+            market = Market(self._market_ids[note_key])
+            price_tick = market.price_tick
+            new_order = Order.create_new()
+            new_order.price = NOTE_SELLING_PRICE - \
+                              (NOTE_SELLING_PRICE % price_tick)
+            new_order.market = market
+            new_order.units = 1
+            new_order.order_side = OrderSide.SELL
+            new_order.order_type = OrderType.LIMIT
+
+            new_order.ref = f"Order {self._order_id} - SM"
+
+            self._waiting = True
+            self._order_id += 1
+            self._num_orders_sent += 1
+            self.send_order(new_order)
 
     def _cancel_my_orders(self):
         """
@@ -153,7 +170,7 @@ class CAPMBot(Agent):
         """
         for order_id, order in Order.current().items():
 
-            # if I have an active order, cancel it
+            # if I have an active order, cancel it UNLESS
             if order.mine and not self._waiting:
                 self.inform(f"---- Cancelling order: {order} - "
                             f"{order.market.item}")
@@ -275,37 +292,47 @@ class CAPMBot(Agent):
             combs = list(itertools.combinations(orders, i))
             new_set = filter(self._duplicates_in_list, combs)
 
-            # careful! filter is an iterable object, if you loop over it once
-            # u no longer have access to all sets of orders u have looped over!
-
-            # for each order in this set, test if profitable
-            for order_set in new_set:
-
-                # check if have enough cash/units for order_set
-                if self.check_if_enough_assets(list(order_set)):
-
-                    # check if performance of order_set > current performance
-                    if self.get_potential_performance(list(order_set)) \
-                            > self._aggressiveness_param * \
-                            self._current_performance:
-
-                        self._reactive_orders = list(order_set)
-                        break
-
-            if self._reactive_orders is not None:
+            if not self.is_portfolio_optimal(new_set):
                 break
 
         # Print the selected order set to be executed
         if self._reactive_orders is not None and self.is_session_active():
             self.inform(f"Chosen order set: {self._reactive_orders}")
+            # self.inform(f"Cash available: {self._cash_available}")
 
         # if there are profitable orders, send them through
         if self._reactive_orders is not None and not self._waiting:
             self._waiting = True
             self._send_orders(self._reactive_orders)
             self._num_orders_sent += len(self._reactive_orders)
+            self._reactive_orders = None
 
         return
+
+    def is_portfolio_optimal(self, new_set):
+        """
+        Returns true if the current holdings are optimal (as per the
+        performance formula), false otherwise.
+        :new_set: a set of orders to be tested
+        """
+        # for each order in this set, test if profitable
+        for order_set in new_set:
+
+            list_orders = list(order_set)
+
+            # check if have enough cash/units for order_set
+            if self.check_if_enough_assets(list_orders):
+
+                # check if performance of order_set > current performance
+                if self.get_potential_performance(list_orders) \
+                        > self._aggressiveness_param * \
+                        self._current_performance:
+
+                    # when the first profitable order set found, stop
+                    self._reactive_orders = list_orders
+                    return False
+
+        return True
 
     def check_if_enough_assets(self, orders: List[Order]):
         """
@@ -325,13 +352,13 @@ class CAPMBot(Agent):
                 to_spend += order.price
 
             else:
-                # if reached the shorting quota, then invalid order
+                # if reached the shorting quota, then invalid order set
                 if self._asset_units[order.market.item] == \
                         self._short_units_allowed[order.market.item]:
                     # self.inform(f"Not enough units to sell here! {order}")
                     return False
 
-        # invalid order, as not enough cash to buy
+        # if not enough cash to buy, then invalid order set
         if to_spend > self._cash_available:
             return False
 
@@ -361,9 +388,13 @@ class CAPMBot(Agent):
             else:
                 new_order.order_side = OrderSide.BUY
 
+                # don't send invalid orders, kill switch for edge cases
+                if new_order.price > self._cash_available:
+                    return
+
             new_order.order_type = OrderType.LIMIT
             new_order.ref = f"Order {self._order_id} - SM"
-
+            self._order_id += 1
             self.send_order(new_order)
 
     def get_potential_performance(self, orders: List[Order]):
@@ -415,13 +446,6 @@ class CAPMBot(Agent):
         list_of_orders = [x.market for x in list_of_orders]
 
         return len(set(list_of_orders)) == len(list_of_orders)
-
-    def is_portfolio_optimal(self):
-        """
-        Returns true if the current holdings are optimal (as per the
-        performance formula), false otherwise. :return:
-        """
-        pass
 
     def order_accepted(self, order):
         self.inform(f"Accepted: {order} - {order.market.item}")
@@ -491,8 +515,9 @@ class CAPMBot(Agent):
 
         self._asset_units = {}
         for market in holdings.assets:
-            self._asset_units[market.item] = holdings.assets[market].units
-            self._short_units_allowed[market.item] = \
+            key = market.item
+            self._asset_units[key] = holdings.assets[market].units
+            self._short_units_allowed[key] = \
                 -1 * holdings.assets[market].units_granted_short
 
         # self.inform(f"Units recorded: {self._asset_units}")
@@ -526,8 +551,9 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 1017  # replace this with the marketplace id
+    MARKETPLACE_ID = 1054  # replace this with the marketplace id
 
+    # risk penalty based on my student ID
     bot = CAPMBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID,
                   risk_penalty=0.007)
     bot.run()
