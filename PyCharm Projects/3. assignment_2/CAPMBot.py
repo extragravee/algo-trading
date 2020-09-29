@@ -4,12 +4,12 @@ Assignment 2 - CAPM
 Sidakpreet Mann
 921322
 
-Notes:
+PLEASE READ:
     1. Best set of orders to trade gets selected based on aggressiveness_param
-        be default set to 1% (new portfolio performance must be at least 1%
+        be default set to 0% (new portfolio performance must be at least 0%
         better than the  current performance for those trades to go through,
-        this can be custom set when instantiating the bot. This makes multi
-        unit orders more probable)
+        this can be custom set when instantiating the bot. Increasing this param
+        makes multi-unit orders more probable)
     2. Notes sold when cash drops below arbitrary threshold.
 """
 import copy
@@ -44,7 +44,7 @@ class BotType(Enum):
 class CAPMBot(Agent):
 
     def __init__(self, account, email, password, marketplace_id,
-            risk_penalty=0.001, session_time=20, aggressiveness_param=0.02):
+            risk_penalty=0.001, session_time=20, aggressiveness_param=0.00):
         """
         Constructor for the Bot
         :param account: Account name
@@ -174,7 +174,7 @@ class CAPMBot(Agent):
 
             # if I have an active order, cancel it UNLESS
             if order.mine and not self._waiting:
-                self.inform(f"---- Cancelling order: {order} - "
+                self.inform(f"--Cancelling order: {order} - "
                             f"{order.market.item}")
 
                 self._waiting = True
@@ -189,8 +189,6 @@ class CAPMBot(Agent):
             return
 
     @staticmethod
-    # this shouldn't really exist, just use this in the potential
-    # performance function
     def _portfolio_performance(exp_return, risk_penalty, variance):
         """
         Calculates portfolio performance based on the risk preference
@@ -462,14 +460,9 @@ class CAPMBot(Agent):
 
     def order_rejected(self, info, order):
 
-        self.inform("SOME ORDER WAS REJECTED.^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+        self.inform("ORDER WAS REJECTED.^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
         self.inform(f"{order.market.item}, {order}")
         self.inform(f"{info}")
-        # if not info['response']['message'] == "Closed Session.":
-        #     self.inform(info)
-        #     self.inform(
-        #         f"Wish to trade, but can not because: {info['response']['message']} - "
-        #         f"{order.market.item}")
 
     def received_orders(self, orders: List[Order]):
         # seems to be called before received holdings, so don't calculate
@@ -495,7 +488,6 @@ class CAPMBot(Agent):
 
         # have to assume here that assets are arranged here in the same
         # order as the order in which payoffs were received
-
         self._cash_available = holdings.cash_available
         self._cash_settled = holdings.cash
 
@@ -505,8 +497,6 @@ class CAPMBot(Agent):
             self._asset_units[key] = holdings.assets[market].units
             self._short_units_allowed[key] = \
                 -1 * holdings.assets[market].units_granted_short
-
-        # self.inform(f"Units recorded: {self._asset_units}")
 
         # update portfolio variance - don't need to update everytime
         # but doing it in case "new info" arrives
