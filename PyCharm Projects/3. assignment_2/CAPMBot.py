@@ -107,8 +107,8 @@ class CAPMBot(Agent):
             self._payoffs[security] = [int(a) for a in description.split(",")]
 
         # bot starts off as a market maker FOR NOW IT IS REACTIVE FOR TESTING
-        self._bot_type = BotType.MARKET_MAKER
-        # self._bot_type = BotType.REACTIVE
+        # self._bot_type = BotType.MARKET_MAKER
+        self._bot_type = BotType.REACTIVE
 
         # REACTIVE BOT =======================================================
 
