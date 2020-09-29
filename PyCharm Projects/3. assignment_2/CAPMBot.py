@@ -8,7 +8,9 @@ Notes:
     1. Best set of orders to trade gets selected based on aggressiveness_param
         be default set to 1% (new portfolio performance must be at least 1%
         better than the  current performance for those trades to go through,
-        this can be custom set when instantiating the bot
+        this can be custom set when instantiating the bot. This makes multi
+        unit orders more probable)
+    2. Notes sold when cash drops below arbitrary threshold.
 """
 import copy
 import itertools
@@ -42,7 +44,7 @@ class BotType(Enum):
 class CAPMBot(Agent):
 
     def __init__(self, account, email, password, marketplace_id,
-            risk_penalty=0.001, session_time=20, aggressiveness_param=0.01):
+            risk_penalty=0.001, session_time=20, aggressiveness_param=0.02):
         """
         Constructor for the Bot
         :param account: Account name
@@ -142,10 +144,10 @@ class CAPMBot(Agent):
 
         # check if have notes available to short
         if self._asset_units[note_key] > self._short_units_allowed[note_key]:
-
-            self.inform(f"Selling notes+++++++++++++++++++++++++++++++")
             self.inform(f"Cash avail: {self._cash_available}")
-            self.inform(f"Sell notes: {self._asset_units}")
+            self.inform(f"Selling notes+++++++++++++++++++++++++++++++")
+
+            # self.inform(f"Sell notes: {self._asset_units}")
             # create note sell orders for some price to obtain quick cash
             market = Market(self._market_ids[note_key])
             price_tick = market.price_tick
@@ -472,23 +474,7 @@ class CAPMBot(Agent):
     def received_orders(self, orders: List[Order]):
         # seems to be called before received holdings, so don't calculate
         # the portfolio variance here! As this has old number of units
-        # self.inform(f"{self._get_best_bid_ask()}")
 
-        # Reactive orders
-        # self.inform(f"Updated orders: {orders}")
-        # # if there is a set of valid reactive orders, they should be sent
-        # if self._reactive_orders is not None and not self._waiting:
-        #
-        #     self.inform(f"should execute {self._reactive_orders}")
-        #
-        #     # order management
-        #     self._waiting = True
-        #     # self._send_orders(self._reactive_orders)
-        #     self._waiting = False
-        #
-        #     # reset reactive orders to None left
-        #     self._reactive_orders = None
-        #
         # # Market maker orders
         # # simulate all 4 A B C note, price 0 and change in performance is the
         # # max price to be paid. Try buy and sell and see if any can be exec
