@@ -11,10 +11,18 @@ PLEASE READ:
         this can be custom set when instantiating the bot. Increasing this param
         makes multi-unit orders more probable)
     2. Notes sold when cash drops below arbitrary threshold.
+    3. EVERY 1 SECOND:
+        3.1 Clear all current orders
+        3.2 If portfolio not optimal, execute reactive strategy
+        3.3 If portfolio is optimal, execute market maker strategy
+            3.3.1 With MM strategy, send orders, then wait 2.5 seconds before
+            3.3.2 proceeding. Rationale is that portfolio is currently optimal, and
+            3.3.3 any trades that go through past now would be favourable.
 """
 import copy
 import logging
 import itertools
+import time
 from enum import Enum
 from typing import List
 import numpy as np
@@ -141,7 +149,7 @@ class CAPMBot(Agent):
 
         self.execute_periodically(
             self._execute_appropriate_strategy,
-            WAIT_6_SECONDS
+            1
         )
 
         self.inform(f"Market IDs: {self._market_ids}")
@@ -150,6 +158,12 @@ class CAPMBot(Agent):
         return
 
     def _execute_appropriate_strategy(self):
+
+        if self._current_performance == 0:
+            return
+
+        if self._bot_type == BotType.MARKET_MAKER:
+            time.sleep(2.5)
 
         # cancel all current orders
         self._cancel_my_orders()
@@ -162,10 +176,10 @@ class CAPMBot(Agent):
         is_optimal = self._reactive_strategy()
         if not is_optimal:
             self.inform("Executed Reactive strategy")
-            self.inform("=*="*15)
+            # self.inform("=*=" * 15)
         else:
-            self.inform("Executing Market Maker:")
-            self.inform("=*=" * 15)
+            self.inform("Executed Market Maker strategy")
+            # self.inform("=*=" * 15)
 
         # any orders that didn't immediately trade are stale
         # cancel stale orders
@@ -175,6 +189,12 @@ class CAPMBot(Agent):
         if is_optimal:
             self._bot_type = BotType.MARKET_MAKER
             self._market_making_strategy()
+
+        self.inform(f"=============================")
+        self.inform(f"Portfolio var: {self._current_port_variance}")
+        self.inform(f"Exp return   : {self._current_exp_return}")
+        self.inform(f"Performance  : {self._current_performance}")
+        self.inform(f"=============================")
 
     # conditions for periodic orders, for some reason only works properly
     # with function pointers
@@ -202,29 +222,11 @@ class CAPMBot(Agent):
         if self._waiting or (len(self._asset_units.keys()) == 0):
             return
 
-        # # if any previous orders have traded, then cancel all orders,
-        # # recalculate mm orders. If none have traded, do nothing
-        # counter = 0
-        # for fm_id, order in Order.current().items():
-        #     if order.mine:
-        #         counter += 1
-
-        # # if number of current orders is the same as last recorded active
-        # # orders, then do nothing
-        # if counter > 0 and counter == self._num_active_mm_orders:
-        #     return
-
-        # # if the current number of active orders is not the same as last
-        # # recorded active orders - means some orders traded, so reset
-        # if counter != self._num_active_mm_orders:
-        #     self._cancel_my_orders()
-        #     self._num_active_mm_orders = 0
-
         self._mm_orders = {}
 
         # acquire list of all securities
         securities = list(self._payoffs.keys())
-        self.inform(securities)
+        # self.inform(securities)
 
         # for each security, determine the prices of valid buys and sells that
         # can be created in the market
@@ -252,7 +254,7 @@ class CAPMBot(Agent):
             self._waiting = True
             self._send_valid_mm_orders()
 
-        self.inform(f"All potential performances: {self._mm_orders}")
+        # self.inform(f"All potential performances: {self._mm_orders}")
 
     def _send_valid_mm_orders(self):
         """
@@ -398,8 +400,8 @@ class CAPMBot(Agent):
 
             # if I have an active order, cancel it UNLESS
             if order.mine and not self._waiting:
-                self.inform(f"--Cancelling order: {order} - "
-                            f"{order.market.item}")
+                # self.inform(f"--Cancelling order: {order} - "
+                #             f"{order.market.item}")
 
                 self._waiting = True
                 cancel_order = copy.copy(order)
@@ -522,8 +524,8 @@ class CAPMBot(Agent):
                 break
 
         # Print the selected order set to be executed
-        if not portfolio_currently_optimal and self.is_session_active():
-            self.inform(f"Chosen order set: {self._reactive_orders}")
+        # if not portfolio_currently_optimal and self.is_session_active():
+            # self.inform(f"Chosen order set: {self._reactive_orders}")
             # self.inform(f"Cash available: {self._cash_available}")
 
         # if there are profitable orders, send them through
@@ -662,13 +664,13 @@ class CAPMBot(Agent):
         return len(set(list_of_orders)) == len(list_of_orders)
 
     def order_accepted(self, order):
-        self.inform(f"Accepted: {order} - {order.market.item}")
+        # self.inform(f"Accepted: {order} - {order.market.item}")
 
         # make sure that all orders are accepted, till then keep
         # waiting for server
         if not order.order_type == OrderType.CANCEL:
             self._num_orders_sent -= 1
-            self.inform(f"Num_orders_left: {self._num_orders_sent}")
+            # self.inform(f"Num_orders_left: {self._num_orders_sent}")
         if self._num_orders_sent == 0:
             self._waiting = False
 
@@ -690,6 +692,9 @@ class CAPMBot(Agent):
         self._waiting = False
         self._order_id = 0
         self._num_orders_sent = 0
+
+        self._mm_orders = {}
+        self._num_active_mm_orders = 0
 
     def pre_start_tasks(self):
         pass
@@ -724,14 +729,6 @@ class CAPMBot(Agent):
             self._current_exp_return,
             self._risk_penalty,
             self._current_port_variance)
-
-        # scaffolding
-        self.inform(f"=============================")
-        self.inform(f"Portfolio var: {self._current_port_variance}")
-        self.inform(f"Exp return   : {self._current_exp_return}")
-        self.inform(f"Performance  : {self._current_performance}")
-        self.inform(f"=============================")
-
 
 if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
