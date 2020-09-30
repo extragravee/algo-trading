@@ -5,6 +5,7 @@ Sidakpreet Mann
 921322
 
 PLEASE READ:
+    0. Selling notes is independent from strategies
     1. Best set of orders to trade gets selected based on aggressiveness_param
         be default set to 0% (new portfolio performance must be at least 0%
         better than the  current performance for those trades to go through,
@@ -90,7 +91,15 @@ class CAPMBot(Agent):
         self._mm_orders = {}
         self._num_active_mm_orders = 0
 
+    @staticmethod
+    def _initialise_custom_log():
+        logging.getLogger("agent").setLevel(10)
+        for handler in logging.getLogger("agent").handlers:
+            handler.setLevel(10)
+
     def initialised(self):
+        # self._initialise_custom_log()
+
         """
         Called once at the beginning to initialse periodic functions and
         instance attributes
@@ -227,8 +236,15 @@ class CAPMBot(Agent):
             order.market = Market(self._market_ids[key[0]])
             price_tick = order.market.price_tick
 
-            order.price = self._mm_orders[key] - \
+            price = self._mm_orders[key] - \
                           (self._mm_orders[key] % price_tick)
+
+            if price <= order.market.min_price:
+                price = order.market.min_price
+            elif price >= order.market.max_price:
+                price = order.market.max_price
+
+            order.price = price
 
             order.order_side = key[-1]
             order.order_type = OrderType.LIMIT
@@ -345,7 +361,7 @@ class CAPMBot(Agent):
             new_order.order_side = OrderSide.SELL
             new_order.order_type = OrderType.LIMIT
 
-            new_order.ref = f"Order {self._order_id} - SM"
+            new_order.ref = "Order need_cash - SM"
 
             self._waiting = True
             self._order_id += 1
@@ -356,10 +372,11 @@ class CAPMBot(Agent):
         """
         Cancels all of my orders in the market
         """
-        for order_id, order in Order.current().items():
+        for _, order in Order.current().items():
 
             # if I have an active order, cancel it UNLESS
             if order.mine and not self._waiting:
+                self.inform(f"{order.ref}, {order}")
                 # self.inform(f"--Cancelling order: {order} - "
                 #             f"{order.market.item}")
 
@@ -702,7 +719,7 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 1054  # replace this with the marketplace id
+    MARKETPLACE_ID = 1058  # replace this with the marketplace id
 
     # risk penalty based on my student ID
     bot = CAPMBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID,
