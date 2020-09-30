@@ -60,8 +60,6 @@ class CAPMBot(Agent):
         super().__init__(account, email, password, marketplace_id,
                          name="CAPM Bot")
 
-        self._bot_type = BotType.REACTIVE
-
         self._payoffs = {}
         self._risk_penalty = risk_penalty
         self._session_time = session_time
@@ -89,13 +87,13 @@ class CAPMBot(Agent):
 
     @staticmethod
     def _initialise_custom_log():
-        logging.getLogger("agent").setLevel(15)
+        logging.getLogger("agent").setLevel(10)
         for handler in logging.getLogger("agent").handlers:
-            handler.setLevel(15)
+            handler.setLevel(10)
 
     def initialised(self):
 
-        self._initialise_custom_log()
+        # self._initialise_custom_log()
 
         # Extract payoff distribution for each security
         for market_id, market_info in self.markets.items():
@@ -107,24 +105,24 @@ class CAPMBot(Agent):
             self._payoffs[security] = [int(a) for a in description.split(",")]
 
         # bot starts off as a market maker FOR NOW IT IS REACTIVE FOR TESTING
-        self._bot_type = BotType.MARKET_MAKER
-        # self._bot_type = BotType.REACTIVE
+        # self._bot_type = BotType.MARKET_MAKER
+        self._bot_type = BotType.REACTIVE
 
         # REACTIVE BOT =======================================================
 
-        # if bot is reactive, then get best orders every one seconds
-        self.execute_periodically_conditionally(
-            self._reactive_strategy,
-            WAIT_2_SECOND,
-            self._is_bot_reactive
-        )
-
-        # cancelling stale orders every 6 seconds if bot is REACTIVE
-        self.execute_periodically_conditionally(
-            self._cancel_my_orders,
-            WAIT_6_SECONDS,
-            self._is_bot_reactive
-        )
+        # # if bot is reactive, then get best orders every one seconds
+        # self.execute_periodically_conditionally(
+        #     self._reactive_strategy,
+        #     WAIT_2_SECOND,
+        #     self._is_bot_reactive
+        # )
+        #
+        # # cancelling stale orders every 6 seconds if bot is REACTIVE
+        # self.execute_periodically_conditionally(
+        #     self._cancel_my_orders,
+        #     WAIT_6_SECONDS,
+        #     self._is_bot_reactive
+        # )
 
         # # sell notes if not enough cash every 10 seconds
         # self.execute_periodically(
@@ -135,16 +133,48 @@ class CAPMBot(Agent):
         # MARKET MAKER BOT ===================================================
 
         # if bot is market maker, create profitable orders every three seconds
-        self.execute_periodically_conditionally(
-            self._market_making_strategy,
-            WAIT_6_SECONDS,
-            self._is_bot_mm
+        # self.execute_periodically_conditionally(
+        #     self._market_making_strategy,
+        #     WAIT_6_SECONDS,
+        #     self._is_bot_mm
+        # )
+
+        self.execute_periodically(
+            self._execute_appropriate_strategy,
+            WAIT_6_SECONDS
         )
 
         self.inform(f"Market IDs: {self._market_ids}")
         self.inform(f"Payoffs   : {self._payoffs}")
 
         return
+
+    def _execute_appropriate_strategy(self):
+
+        # cancel all current orders
+        self._cancel_my_orders()
+
+        # check if have enough cash - sell notes if needed
+        self._sell_notes()
+
+        self._bot_type = BotType.REACTIVE
+        # run reactive strategy - (determines if portfolio is optimal)
+        is_optimal = self._reactive_strategy()
+        if not is_optimal:
+            self.inform("Executed Reactive strategy")
+            self.inform("=*="*15)
+        else:
+            self.inform("Executing Market Maker:")
+            self.inform("=*=" * 15)
+
+        # any orders that didn't immediately trade are stale
+        # cancel stale orders
+        self._cancel_my_orders()
+
+        # market make only if we are at an optimal state
+        if is_optimal:
+            self._bot_type = BotType.MARKET_MAKER
+            self._market_making_strategy()
 
     # conditions for periodic orders, for some reason only works properly
     # with function pointers
@@ -172,23 +202,23 @@ class CAPMBot(Agent):
         if self._waiting or (len(self._asset_units.keys()) == 0):
             return
 
-        # if any previous orders have traded, then cancel all orders,
-        # recalculate mm orders. If none have traded, do nothing
-        counter = 0
-        for fm_id, order in Order.current().items():
-            if order.mine:
-                counter += 1
+        # # if any previous orders have traded, then cancel all orders,
+        # # recalculate mm orders. If none have traded, do nothing
+        # counter = 0
+        # for fm_id, order in Order.current().items():
+        #     if order.mine:
+        #         counter += 1
 
-        # if number of current orders is the same as last recorded active
-        # orders, then do nothing
-        if counter > 0 and counter == self._num_active_mm_orders:
-            return
+        # # if number of current orders is the same as last recorded active
+        # # orders, then do nothing
+        # if counter > 0 and counter == self._num_active_mm_orders:
+        #     return
 
-        # if the current number of active orders is not the same as last
-        # recorded active orders - means some orders traded, so reset
-        if counter != self._num_active_mm_orders:
-            self._cancel_my_orders()
-            self._num_active_mm_orders = 0
+        # # if the current number of active orders is not the same as last
+        # # recorded active orders - means some orders traded, so reset
+        # if counter != self._num_active_mm_orders:
+        #     self._cancel_my_orders()
+        #     self._num_active_mm_orders = 0
 
         self._mm_orders = {}
 
@@ -254,6 +284,7 @@ class CAPMBot(Agent):
         Removes invalid market maker orders from list of potential orders
         Records the price adjusted by the profit margin of the orders
         """
+        cash_avail = self._cash_available
 
         # track invalid order keys
         to_del = []
@@ -267,13 +298,13 @@ class CAPMBot(Agent):
                 self._mm_orders[key] -= PROFIT_MARGIN
 
                 # if have to spend more than available cash, delete that order
-                if self._mm_orders[key] > self._cash_available:
+                if self._mm_orders[key] > cash_avail:
                     # self.inform(f"Can't do {key}, {self._mm_orders[key]}")
                     to_del.append(key)
 
                 # otherwise adjust cash available
                 else:
-                    self._cash_available -= self._mm_orders[key]
+                    cash_avail -= self._mm_orders[key]
 
             # if we need to create a sell order
             else:
@@ -458,7 +489,12 @@ class CAPMBot(Agent):
         Called every 3 seconds periodically
         sets reactive_orders attribute to a list of orders to be executed
 
+        :return: Returns True if portfolio is currently optimal & no reactive
+                    orders were executed
         """
+
+        portfolio_currently_optimal = True
+
         # do nothing if sending through orders
         if self._waiting:
             return
@@ -482,27 +518,30 @@ class CAPMBot(Agent):
             new_set = filter(self._duplicates_in_list, combs)
 
             if not self.is_portfolio_optimal(new_set):
+                portfolio_currently_optimal = False
                 break
 
         # Print the selected order set to be executed
-        if self._reactive_orders is not None and self.is_session_active():
+        if not portfolio_currently_optimal and self.is_session_active():
             self.inform(f"Chosen order set: {self._reactive_orders}")
             # self.inform(f"Cash available: {self._cash_available}")
 
         # if there are profitable orders, send them through
-        if self._reactive_orders is not None and not self._waiting:
+        if not portfolio_currently_optimal and not self._waiting:
             self._waiting = True
             self._send_orders(self._reactive_orders)
             self._num_orders_sent += len(self._reactive_orders)
             self._reactive_orders = None
 
-        return
+        return portfolio_currently_optimal
 
     def is_portfolio_optimal(self, new_set):
         """
         Returns true if the current holdings are optimal (as per the
         performance formula), false otherwise.
         :new_set: a set of orders to be tested
+
+        :return: Returns true if given set(orders) will not improve performance
         """
         # for each order in this set, test if profitable
         for order_set in new_set:
@@ -635,9 +674,9 @@ class CAPMBot(Agent):
 
     def order_rejected(self, info, order):
 
-        self.inform("ORDER WAS REJECTED.^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+        self.inform("Order not sent through:")
         self.inform(f"{order.market.item}, {order}")
-        self.inform(f"{info}")
+        self.inform(f"{info['response']['message']}")
 
     def received_orders(self, orders: List[Order]):
         # seems to be called before received holdings, so don't calculate
@@ -698,7 +737,7 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 1054  # replace this with the marketplace id
+    MARKETPLACE_ID = 1017  # replace this with the marketplace id
 
     # risk penalty based on my student ID
     bot = CAPMBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID,
