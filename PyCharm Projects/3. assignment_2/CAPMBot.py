@@ -107,8 +107,8 @@ class CAPMBot(Agent):
             self._payoffs[security] = [int(a) for a in description.split(",")]
 
         # bot starts off as a market maker FOR NOW IT IS REACTIVE FOR TESTING
-        # self._bot_type = BotType.MARKET_MAKER
-        self._bot_type = BotType.REACTIVE
+        self._bot_type = BotType.MARKET_MAKER
+        # self._bot_type = BotType.REACTIVE
 
         # REACTIVE BOT =======================================================
 
@@ -266,9 +266,14 @@ class CAPMBot(Agent):
             if key[-1] == OrderSide.BUY:
                 self._mm_orders[key] -= PROFIT_MARGIN
 
+                # if have to spend more than available cash, delete that order
                 if self._mm_orders[key] > self._cash_available:
                     # self.inform(f"Can't do {key}, {self._mm_orders[key]}")
                     to_del.append(key)
+
+                # otherwise adjust cash available
+                else:
+                    self._cash_available -= self._mm_orders[key]
 
             # if we need to create a sell order
             else:
@@ -276,6 +281,9 @@ class CAPMBot(Agent):
 
         for key in to_del:
             del self._mm_orders[key]
+
+        # note - unit tests are already accounted for within the is_portfolio_
+        # optimal function
 
     def get_potential_performance(self, orders: List[Order]):
         """
@@ -690,7 +698,7 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 1017  # replace this with the marketplace id
+    MARKETPLACE_ID = 1054  # replace this with the marketplace id
 
     # risk penalty based on my student ID
     bot = CAPMBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID,
