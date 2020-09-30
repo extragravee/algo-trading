@@ -5,6 +5,10 @@ Sidakpreet Mann
 921322
 
 PLEASE READ:
+
+    I think I've designed this to work better and well in situations where
+    markets are liquid and have a high volume like the simulations.
+
     0. Selling notes is independent from strategies
     1. Best set of orders to trade gets selected based on aggressiveness_param
         be default set to 0% (new portfolio performance must be at least 0%
@@ -133,7 +137,24 @@ class CAPMBot(Agent):
         return
 
     def _execute_appropriate_strategy(self):
+        """
+        ===================
+        Controller function - Execute this control flow every second
+        ===================
 
+        1. Start with clean slate - delete my outstanding orders in the market
+        2. Check if portfolio is optimal and implement reactive strat
+            concurrently. This is more efficient.
+        3. If Reactive can be implemented, portfolio is not optimal
+        4. Once reactive is implemented, clear out all of our sent orders
+            as they are stale
+        5. If Reactive can't be implemented, portfolio is optimal
+            and hence can implement market maker .Once market maker is
+            implemented, wait 1.25 seconds so there is some time for the sent
+            orders to be executed
+
+        :return:
+        """
         if self._current_performance == 0:
             return
 
@@ -143,7 +164,7 @@ class CAPMBot(Agent):
         self.inform(f"Performance  : {self._current_performance}")
         self.inform(f"=============================")
 
-        # ff bot is market maker, stall for 1.25 seconds (check notes)
+        # if bot is market maker, stall for 1.25 seconds (check notes)
         if self._bot_type == BotType.MARKET_MAKER:
             time.sleep(MM_STALL_TIME)
 
