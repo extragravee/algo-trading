@@ -134,15 +134,16 @@ class CAPMBot(Agent):
 
     def _execute_appropriate_strategy(self):
 
+        if self._current_performance == 0:
+            return
+
         self.inform(f"=============================")
         self.inform(f"Portfolio var: {self._current_port_variance}")
         self.inform(f"Exp return   : {self._current_exp_return}")
         self.inform(f"Performance  : {self._current_performance}")
         self.inform(f"=============================")
 
-        if self._current_performance == 0:
-            return
-
+        # ff bot is market maker, stall for 1.25 seconds (check notes)
         if self._bot_type == BotType.MARKET_MAKER:
             time.sleep(MM_STALL_TIME)
 
@@ -227,7 +228,7 @@ class CAPMBot(Agent):
 
     def _send_valid_mm_orders(self):
         """
-        Creates and executes list of valid market maker orders
+        Executes list of valid market maker orders
         :return: List[Order] of valid orders
         """
         for key in self._mm_orders:
@@ -267,6 +268,7 @@ class CAPMBot(Agent):
         # track invalid order keys
         to_del = []
 
+        # set price for order = change in ($) performance * 100 cents
         for key in self._mm_orders.keys():
             self._mm_orders[key] = \
                 int(100*abs(self._current_performance - self._mm_orders[key]))
@@ -277,7 +279,6 @@ class CAPMBot(Agent):
 
                 # if have to spend more than available cash, delete that order
                 if self._mm_orders[key] > cash_avail:
-                    # self.inform(f"Can't do {key}, {self._mm_orders[key]}")
                     to_del.append(key)
 
                 # otherwise adjust cash available
@@ -316,7 +317,6 @@ class CAPMBot(Agent):
                 cash -= order.price
                 units[order.market.item] += 1
 
-        # self.inform(f"Cash: {cash}, Units: {units}")
         x = list(units.values())
 
         variance = self._get_portfolio_variance(x)
@@ -376,10 +376,6 @@ class CAPMBot(Agent):
 
             # if I have an active order, cancel it UNLESS
             if order.mine and not self._waiting:
-                self.inform(f"{order.ref}, {order}")
-                # self.inform(f"--Cancelling order: {order} - "
-                #             f"{order.market.item}")
-
                 self._waiting = True
                 cancel_order = copy.copy(order)
                 cancel_order.order_type = OrderType.CANCEL
@@ -417,7 +413,7 @@ class CAPMBot(Agent):
         payoff values
 
         Portfolio variance = W . Covar Matrix . Wt
-        Where W is vector of weights, Wt is W transpose
+        Where W is vector of units, Wt is W transpose
 
         :param units: vector of weights of portfolio
         :return     : scalar variance of the portfolio
@@ -719,7 +715,7 @@ if __name__ == "__main__":
     FM_ACCOUNT = "ardent-founder"
     FM_EMAIL = "s.mann4@student.unimelb.edu.au"
     FM_PASSWORD = "921322"
-    MARKETPLACE_ID = 1058  # replace this with the marketplace id
+    MARKETPLACE_ID = 1054  # replace this with the marketplace id
 
     # risk penalty based on my student ID
     bot = CAPMBot(FM_ACCOUNT, FM_EMAIL, FM_PASSWORD, MARKETPLACE_ID,
